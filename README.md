@@ -11,4 +11,4 @@ Nasjonal informasjonstjeneste for laboratorie- og radiologisvar
 https://ehelse.no/aktuelt/utvikler-nye-samhandlingslosninger
 
 ## Mapping
-Beskrivelse av mapping mellom XML og FHIR ressurser finners [her](https://www.github.com/hl7norway/NILAR/mapping.md "her"). 
+Beskrivelse av mapping mellom XML og FHIR ressurser finners [her]( mapping.md "her"). 

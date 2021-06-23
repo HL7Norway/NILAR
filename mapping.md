@@ -6,7 +6,7 @@ I noen av overskriftene har vi lag til en rolle som gir et hint om hvilken rolle
 Kolonnen "implementert" sier om vi har implementert dette i FHIR ressurser. "Delvis" betyr at det finnes en verdi, men at den ikke trenger å være endelig.
 Vi oppdaterer dette etterhvert som vi får ting på plass i endepunktene.
 
-Kolonnene value og attributes inneholder eksempelverdier fra en [svarmelding](https://www.github.com/hl7norway/NILAR/svarmelding.xml "svarmelding"). 
+Kolonnene value og attributes inneholder eksempelverdier fra en [svarmelding](svarmelding.xml "svarmelding"). 
 
 ### Hvordan komme med tilbakemeldinger på dokumentet
 Tilbakemeldinger på dokumentet kan sendes til nilar@nhn.no.
