@@ -14,18 +14,22 @@ Tilbakemeldinger på dokumentet kan sendes til nilar@nhn.no.
 ### Levetid på dokumentet
 Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressursene. Vi antar at det vil være på plass i løpet av Q4 2021.
 
+### Diskusjoner
+#### Presented form
+Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som ikke blir mappet tilgjengelig. Dette kan ha konsekvenser for 
+Personvernkomponent.
+
 
 ## ServReport (Diagnostic Report)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | Type |  | V=SVAR_LAB | DN=Svarrapport-Laboratoriemedisin |  |  | DN=DiagnosticReport.category, V=DiagnosticReport.code | Volven=8279, Begynner med SVAR_... | Nei |
-| MIGversion | v1.4 2012-02-15 |  |  |  |  |  |  |
-| GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  |  |
+| MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  | Nei |
+| GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention).  | Nei |
 | MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  |  |  |
-| ServReport |  |  |  |  |  |  |  |
 | ServReport.ServType |  | V=N | DN=Ny |  |  | DiagnosticReport.status |  | Ja |
-| ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  |  |  |
-| ServReport.Status |  | V=F | DN=Endelig rapport |  |  |  |  |
+| ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Nei |
+| ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status | I kombinasjon med ServType | Nei |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category | Volven=8202 | Ja, delvis |
 | ServReport.ServProvId | 55b6344fc-a61d-4a67-95fe-7276613785ab |  |  |  |  | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id |  | Nei |
 | ServReport.Comment | Kontroll |  |  |  |  | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
@@ -35,10 +39,9 @@ Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressurse
 |-|-|-|-|-|-|-|-|-|
 | ServReport.ServReq.IssueDate |  | V=2017-09-20 |  |  |  | ServiceRequest.authoredOn |  | Ja |
 | ServReport.ServReq.Id | e312fde3-66aa-40da-bec7-26abf4d29e82 |  |  |  |  | DiagnosticReport.basedon, link til servicerequest, ServiceRequest.requisition |  | Ja |
-| ServReport.ServReq.ReasonAsText |  |  |  |  |  |  |  |
 | ServReport.ServReq.ReasonAsText.Heading |  | V="PROB" | DN="Aktuell problemstilling" |  |  | Volven=8231, ServiceRequest.reasonCode -> code |  | Nei |
 | ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text |  | Nei |
-| ServReport.ServReq.PaymentCat |  |  |  |  |  |  |  |
+| ServReport.ServReq.PaymentCat |  |  |  |  |  | | Skal ikke mappes |  |
 
 ## Patient (Patient)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -127,5 +130,6 @@ Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressurse
 | ServReport.RelServProv.HCP.Address |  |  |  |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.Type |  | V=WP | DN=Arbeidsadresse |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.TeleAddress |  | V=tel:73112233 |  |  |  |  |  |
+
 
 
