@@ -50,15 +50,15 @@ Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressurse
 | ServReport.Patient.ResponsibleHcp |  |  |  |  |  |  |  |
 | ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  | ServiceRequest.requester |  | Nei |
 
-## ResponsibleHcp (Practitionar, Rolle = 'rekvirent')
+## ResponsibleHcp (Practitioner, Rolle = 'ResponsibleHcp')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.ResponsibleHcp.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | Practitioner.name |  | Nei |
+| ServReport.Patient.ResponsibleHcp.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  |  |  |  |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson |  |  |  |  |  |  |  |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Name | Magnar Koman, LIS1 |  |  |  |  | Practitioner.name |  | Nei |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Id | 9144889 |  |  |  |  | Practitioner.identification.value |  | Nei |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.TypeId |  | V=HPR | DN=HPR-nummer |  |  | Practitioner.identification.system |  | Nei |
+| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Name | Magnar Koman, LIS1 |  |  |  |  | Practitioner.name |  | Ja |
+| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Id | 9144889 |  |  |  |  | Practitioner.identifier.value |  | Ja |
+| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.TypeId |  | V=HPR | DN=HPR-nummer |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
 
 ## AnalysedSubject (Specimen)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -86,44 +86,44 @@ Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressurse
 | ServReport.Patient.ResultItem.RefAnalysedSubject | 1 |  |  |  |  | Observation.Specimen |  | Ja, delvis |
 | ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Nei |
 
-## ServProvider (Organization, Rolle = 'lab')
+## ServProvider (Organization, Rolle = 'ServProvider')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.ServProvider.HCP |  |  |  |  |  | Performer? |  | Nei |
+| ServReport.ServProvider.HCP |  |  |  |  |  | Observation.performer -> practitioner? |  | Nei |
 | ServReport.ServProvider.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Name | ST OLAVS HOSPITAL HF |  |  |  |  |  |  |
+| ServReport.ServProvider.HCP.Inst.Name | ST OLAVS HOSPITAL HF |  |  |  |  | Organization.name | Sammen med Dept.Name | Ja |
 | ServReport.ServProvider.HCP.Inst.Id | 59 |  |  |  |  |  |  |
 | ServReport.ServProvider.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
 | ServReport.ServProvider.HCP.Inst.Dept |  |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept.Name | Medisinsk mikrobiologi |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
+| ServReport.ServProvider.HCP.Inst.Dept.Name | Medisinsk mikrobiologi |  |  |  |  | Organization.name | Sammen med Inst.Name | Ja |
+| ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Ja |
+| ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Ja, foreløpig |
 
-## Requester (Organization, rolle = 'legekontor')
+## Requester (Organization og Practitioner, rolle = 'Requester')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.Requester |  |  |  |  |  | Mottaker |  |
+| ServReport.Requester |  |  |  |  |  | DiagnosticReport.resultsInterpreter? | ??? | Nei |
 | ServReport.Requester.ComMethod |  | V=EDI | DN=EDI |  |  |  |  |
 | ServReport.Requester.HCP |  |  |  |  |  |  |  |
 | ServReport.Requester.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.Id | 56704 |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
+| ServReport.Requester.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | Organization.name |  | Ja |
+| ServReport.Requester.HCP.Inst.Id | 56704 |  |  |  |  | Organization.identifier.value |  | Ja |
+| ServReport.Requester.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Ja, foreløpig |
 | ServReport.Requester.HCP.Inst.HCPerson |  |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.HCPerson.Name | Rita Lin |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.HCPerson.Id | 258521 |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.HCPerson.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
+| ServReport.Requester.HCP.Inst.HCPerson.Name | Rita Lin |  |  |  |  | Practitioner.name |  | Ja |
+| ServReport.Requester.HCP.Inst.HCPerson.Id | 258521 |  |  |  |  | Practitioner.identifier.value |  | Ja |
+| ServReport.Requester.HCP.Inst.HCPerson.TypeId |  | V=HER | DN=HER-id |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
 
-## RelServProv (Practitionar, rolle = 'lab')
+## RelServProv (Practitioner, rolle = 'RelServProv')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.RelServProv.Relation |  | V=AHP | DN=Ansvarlig helsepersonell |  |  | Observation.performer -> practitioner |  | Nei |
 | ServReport.RelServProv.HCP |  |  |  |  |  |  |  |
 | ServReport.RelServProv.HCP.HCProf |  |  |  |  |  |  |  |
-| ServReport.RelServProv.HCP.HCProf.Type |  | V=BI | DN=Bioingeniør |  |  |  |  |
-| ServReport.RelServProv.HCP.HCProf.Name | Mykke Plasme |  |  |  |  |  |  |
-| ServReport.RelServProv.HCP.HCProf.Id | 9876511 |  |  |  |  | Practitionar.Identifier |  | Nei |
-| ServReport.RelServProv.HCP.HCProf.TypeId |  | V=HPR | DN=HPR-nummer |  |  |  |  |
+| ServReport.RelServProv.HCP.HCProf.Type |  | V=BI | DN=Bioingeniør |  |  | Practitioner.qualification |  | Ja |
+| ServReport.RelServProv.HCP.HCProf.Name | Mykke Plasme |  |  |  |  | Practitioner.name |  | Ja |
+| ServReport.RelServProv.HCP.HCProf.Id | 9876511 |  |  |  |  | Practitioner.identifier.value |  | Ja |
+| ServReport.RelServProv.HCP.HCProf.TypeId |  | V=HPR | DN=HPR-nummer |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
 | ServReport.RelServProv.HCP.Address |  |  |  |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.Type |  | V=WP | DN=Arbeidsadresse |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.TeleAddress |  | V=tel:73112233 |  |  |  |  |  |
