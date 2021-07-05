@@ -75,19 +75,17 @@ Personvernkomponent.
 ## ResultItem (Observation)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.Patient.ResultItem |  |  |  |  |  |  | Numerisk resultat eller tekstlig |
-| ServReport.Patient.ResultiItem.Comment |  |  |  |  |  | Observation.note |  |
+| ServReport.Patient.ResultiItem.Comment |  |  |  |  |  | Observation.note |  | Ja |
 | ServReport.Patient.ResultItem.NumResult |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.NumResult.NumResultValue |  | V=11 | U=pmol/L |  |  | Observation.Value | Kan presiseres at det er quantity | Ja |
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  | Observation.Status | Volven | Ja, delvis |
 | ServReport.Patient.ResultItem.RefInterval |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.RefRange.Text |  | Ja |
-| ServReport.Patient.ResultItem.Investigation |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.Investigation.Id |  | V=NOR05863 | S=2.16.578.1.12.4.1.1.7280 | DN=Us-FT4 |  | Observation.Category | OT kommer når S="2.16.578.1.12.4.1.1.8212" | Ja, delvis |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  |  | Usikker på denne. Mulig den må kombineres med andre statusverdier. | Nei |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | 1 |  |  |  |  | Observation.Specimen |  | Ja, delvis |
-| ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Nei |
+| ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
 
 ## ServProvider (Organization, Rolle = 'ServProvider')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
