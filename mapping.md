@@ -14,10 +14,21 @@ Tilbakemeldinger på dokumentet kan sendes til nilar@nhn.no.
 ### Levetid på dokumentet
 Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressursene. Vi antar at det vil være på plass i løpet av Q4 2021.
 
+### Svarrapport 1.3 og 1.4
+Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 til 1.4 og det legges til grunn at disse ikke er relevante for oppsettet nedenfor. I koden for mapping forventes de å være enkle å håndtere, men foreløpig er det ikke funnet eksempler der endringene er relevante.
+
+|Element|Endring 1.3 -> 1.4|Konsekvens|
+|-|-|-|
+| Message.ServReport | Kardinalitet 1..n -> 0..1 | Array -> Nullable single, må håndtere eventuelle multipler som egne svar |
+| ServReport.ServProvId | Kardinalitet 1 -> 0..1 | Triviell, nullable single |
+| ServReq.Permission | Fjernet | Triviell, ignoreres |
+| StructuredInfo.Type | CS -> CV | CV har noen flere properties, ekstra nullsjekk? Foreløpig ikke i bruk |
+| CodedInfo.Code | CS -> CV | CV har noen flere properties, ekstra nullsjekk? Foreløpig ikke i bruk |
+
+
 ### Diskusjoner
 #### Presented form
-Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som ikke blir mappet tilgjengelig. Dette kan ha konsekvenser for 
-Personvernkomponent.
+Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som ikke blir mappet tilgjengelig. Dette kan ha konsekvenser for Personvernkomponent.
 
 
 ## ServReport (Diagnostic Report)
@@ -77,7 +88,8 @@ Personvernkomponent.
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.ResultiItem.Comment |  |  |  |  |  | Observation.note |  | Ja |
 | ServReport.Patient.ResultItem.NumResult |  |  |  |  |  |  |  |
-| ServReport.Patient.ResultItem.NumResult.NumResultValue |  | V=11 | U=pmol/L |  |  | Observation.Value | Kan presiseres at det er quantity | Ja |
+| ServReport.Patient.ResultItem.(Item as NumResult).NumResultValue |  | V=11 | U=pmol/L |  |  | Observation.Value | Quantity | Ja |
+| ServReport.Patient.ResultItem.(Item as TextResult).TextResultValue | | | | | | Observation.Value | string | Nei |
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  | Observation.Status | Volven | Ja, delvis |
 | ServReport.Patient.ResultItem.RefInterval |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.RefRange.Text |  | Ja |
