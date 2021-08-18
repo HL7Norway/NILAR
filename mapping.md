@@ -38,7 +38,7 @@ Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som
 | MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  | Nei |
 | GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention).  | Nei |
 | MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  |  |  |
-| ServReport.ServType |  | V=N | DN=Ny |  |  | DiagnosticReport.status |  | Ja |
+| ServReport.ServType |  | V=N | DN=Ny |Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ...|  | DiagnosticReport.status |  | Ja |
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Nei |
 | ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status | I kombinasjon med ServType | Nei |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category | Volven=8202 | Ja, delvis |
