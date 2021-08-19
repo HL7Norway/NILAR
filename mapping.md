@@ -38,7 +38,7 @@ Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som
 | MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  | Nei |
 | GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention).  | Nei |
 | MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  |  |  |
-| ServReport.ServType |  | V=N | DN=Ny |Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ...|  | DiagnosticReport.status |  | Ja |
+| ServReport.ServType |  | V=N | DN=Ny | Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ... |  | DiagnosticReport.status |  | Ja |
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Nei |
 | ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status | I kombinasjon med ServType | Nei |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category | Volven=8202 | Ja, delvis |
@@ -89,7 +89,10 @@ Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som
 | ServReport.Patient.ResultiItem.Comment |  |  |  |  |  | Observation.note |  | Ja |
 | ServReport.Patient.ResultItem.NumResult |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.(Item as NumResult).NumResultValue |  | V=11 | U=pmol/L |  |  | Observation.Value | Quantity | Ja |
-| ServReport.Patient.ResultItem.(Item as TextResult).TextResultValue | | | | | | Observation.Value | string | Nei |
+| ServReport.Patient.ResultItem.(Item as TextResult).Heading | | V=VU | | | | Observation.Value | CodeableValue.Code | Nei |
+| ServReport.Patient.ResultItem.(Item as TextResult).TextResultValue | Enkelte kolonier | | | | | Observation.Value | CodeableValue.Text, muligens kompleks verdi, leses inn som XmlNode | Nei |
+| ServReport.Patient.ResultItem.(Item as TextResult).TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | Observation.Value | CodeableValue.Code | Nei |
+| ServReport.Patient.ResultItem.(Item as TextResult).Unit | 10#9/L | | | | | Observation.Value | CodeableValue.Text | Nei |
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  | Observation.Status | Volven | Ja, delvis |
 | ServReport.Patient.ResultItem.RefInterval |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.RefRange.Text |  | Ja |
@@ -98,6 +101,7 @@ Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som
 | ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  |  | Usikker på denne. Mulig den må kombineres med andre statusverdier. | Nei |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | 1 |  |  |  |  | Observation.Specimen |  | Ja, delvis |
 | ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
+| ServReport.Patient.ResultItem.ResultItem |  |  |  |  |  | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Nei |
 
 ## ServProvider (Organization, Rolle = 'ServProvider')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -141,5 +145,33 @@ Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som
 | ServReport.RelServProv.HCP.Address.Type |  | V=WP | DN=Arbeidsadresse |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.TeleAddress |  | V=tel:73112233 |  |  |  |  |  |
 
+## Avklaringspunkter
+### Kodeverk
+Må avklare hvordan vi bruker System og Code. Svært varierende hva som ligger i innkommende meldinger.
+
+### TextResult
+Svært varierende i innkommende meldinger, fra ren tekstverdi uten koder til bare heading uten textsverdi.
+
+### Nøstede resultitem
+Både svarmelding og FHIR har mekansismer for å nøste observasjoner/verdier. Det er ikke angitt noen semantikk for dette i svarmelding, mens FHIR har flere måter å gruppere data.
+
+#### ResultItem
+- Kan inneholde en liste med ResultItem
+- Ingen indikasjon på semantikk
+- Innkommende meldinger viser variasjon i semantikk
+
+#### FHIR Observation
+To (tre) nøstingsmodeller med ulik semantikk
+- hasMember
+  - Ren gruppering av observasjoner, uten spesifikk semantikk
+- derivedFrom
+  - Viser til andre (selvstendige) observasjoner som danner grunnlaget for denne observasjonen
+- Component
+  - Verdier som til sammen utgjør én måling, f.eks. blodtrykk
+  - Ikke egentlig nøsting
+
+#### Hypotese for mapping
+Nøstede ResultItem mappes som hasMember, altså generisk gruppering uten spesifikk semantikk
+- Ingen info i xml som tilsier spesifikk semantikk
 
 
