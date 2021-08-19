@@ -30,6 +30,24 @@ Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 ti
 #### Presented form
 Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som ikke blir mappet tilgjengelig. Dette kan ha konsekvenser for Personvernkomponent.
 
+### Testing
+Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i test-server. Denne er tilgjengelig og kan testes.
+
+#### Endepunkt
+http://51.13.121.9:8080
+
+Ved bruk av Postman eller andre generiske verktøy må man spesifisere at man etterspør FHIR v4 objekter, ellers får man ingen treff. Dett kan gjøres ved å legge en Accept inn i headeren:
+
+Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
+
+#### Eksempelspørringer (id'er må byttes ut med noe man finner i databasen)
+- Generisk: [base]/\<Resource\>
+- Alle pasienter: http://51.13.121.9:8080/Patient
+- Enkelt pasient: http://51.13.121.9:8080/Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6
+- Søk etter pasient: http://51.13.121.9:8080/Patient?identifier=13116900216
+- Finmasket søk etter hemoglobinmålinger: http://51.13.121.9:8080/Observation?patient=Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6&code:text=B-Hemoglobin
+
+
 
 ## ServReport (Diagnostic Report)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -148,6 +166,9 @@ Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som
 ## Avklaringspunkter
 ### Kodeverk
 Må avklare hvordan vi bruker System og Code. Svært varierende hva som ligger i innkommende meldinger.
+
+### Endring og kansellering
+Meldingene inneholder statusinformasjom som indikerer om det er ny, endring eller kansellering av tidligere sendt melding. Vi har ikke aktivt forhold til dette, men håndterer enhver melding med kjent meldingsid som oppdatering. Kansellering er ikke håndtert.
 
 ### TextResult
 Svært varierende i innkommende meldinger, fra ren tekstverdi uten koder til bare heading uten textsverdi.
