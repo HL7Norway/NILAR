@@ -105,12 +105,13 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.ResultiItem.Comment |  |  |  |  |  | Observation.note |  | Ja |
-| ServReport.Patient.ResultItem.NumResult |  |  |  |  |  |  |  |
-| ServReport.Patient.ResultItem.(Item as NumResult).NumResultValue |  | V=11 | U=pmol/L |  |  | Observation.Value | Quantity | Ja |
-| ServReport.Patient.ResultItem.(Item as TextResult).Heading | | V=VU | | | | Observation.Value | CodeableValue.Code | Nei |
-| ServReport.Patient.ResultItem.(Item as TextResult).TextResultValue | Enkelte kolonier | | | | | Observation.Value | CodeableValue.Text, muligens kompleks verdi, leses inn som XmlNode | Nei |
-| ServReport.Patient.ResultItem.(Item as TextResult).TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | Observation.Value | CodeableValue.Code | Nei |
-| ServReport.Patient.ResultItem.(Item as TextResult).Unit | 10#9/L | | | | | Observation.Value | CodeableValue.Text | Nei |
+| ServReport.Patient.ResultItem.NumResult |  |  |  |  |  |  |  | Ja |
+| ServReport.Patient.ResultItem.NumResult.NumResultValue |  | V=11 | U=pmol/L |  |  | Observation.Value | Quantity | Ja |
+| ServReport.Patient.ResultItem.TextResultResult |  |  |  |  |  | Observation.Value | CodeableConcept | Ja |
+| ServReport.Patient.ResultItem.TextResult.Heading | | V=VU | | | | Observation.Value | CodeableConcept.Code | Ja |
+| ServReport.Patient.ResultItem.TextResult.TextResultValue | Enkelte kolonier | | | | | Observation.Value | CodeableConcept.Text, muligens kompleks verdi, leses inn som XmlNode | Ja |
+| ServReport.Patient.ResultItem.TextResult.TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | CodeableConcept.Value | CodeableValue.Code | Ja |
+| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  | Observation.Status | Volven | Ja, delvis |
 | ServReport.Patient.ResultItem.RefInterval |  |  |  |  |  |  |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.RefRange.Text |  | Ja |
