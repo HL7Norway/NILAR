@@ -97,9 +97,12 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.AnalysedSubject.CollectedSample |  |  |  |  |  |  |  |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate |  | V=2017-09-20T07:57:00 |  |  |  | DiagnostigReport.Effective.Period? | Må se påp hvordan dette oppgis. Viktig søkeparameter | Nei |
-| ServReport.Patient.AnalysedSubject.TypeCoded |  | S=2.16.578.1.12.4.1.1.8351 | V=P | DN=Plasma |  | Spescimen.type | Ikke alltid oppgitt. Implisitt med NLK-koder | Nei |
+| ServReport.Patient.AnalysedSubject.Type | Biopsi |  |  |  |  | Specimen.Type | Ja |
+| ServReport.Patient.AnalysedSubject.TypeCoded |  | S=2.16.578.1.12.4.1.1.8351 | V=P | DN=Plasma |  | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
 | ServReport.Patient.AnalysedSubject.Number | 1 |  |  |  |  | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre sstrukturert, eller legges i note når info ligger i meldingen | Ja |
+| ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Aorta |  |  |  |  | Specimen.Collection.BodySite |  | Nei |
 | ServReport.Patient.AnalysedSubject.IdByServProvider | 1 |  |  |  |  |  |  |
+| ServReport.Patient.AnalysedSubject.Comment | Ett av funnene... |  |  |  |  | Specimen.Note |  | Nei |
 
 ## ResultItem (Observation)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
