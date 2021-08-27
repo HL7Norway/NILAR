@@ -82,7 +82,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResponsibleHcp |  |  |  |  |  |  |  |
 | ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  | ServiceRequest.requester |  | Nei |
 
-## ResponsibleHcp (Practitioner, Rolle = 'ResponsibleHcp')
+## ResponsibleHcp (Practitioner, Rolle = 'Rekvirent')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.ResponsibleHcp.HCP.Inst |  |  |  |  |  |  |  |
@@ -129,7 +129,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
-## ServProvider (Organization, Rolle = 'ServProvider')
+## ServProvider (Organization, Rolle = 'Avsender')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.ServProvider.HCP |  |  |  |  |  | Observation.performer -> practitioner? |  | Nei |
@@ -142,7 +142,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Ja |
 | ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Ja, foreløpig |
 
-## Requester (Organization og Practitioner, rolle = 'Requester')
+## Requester (Organization og Practitioner, rolle = 'Mottaker')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Requester |  |  |  |  |  | DiagnosticReport.resultsInterpreter? | ??? | Nei |
@@ -157,7 +157,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Requester.HCP.Inst.HCPerson.Id | 258521 |  |  |  |  | Practitioner.identifier.value |  | Ja |
 | ServReport.Requester.HCP.Inst.HCPerson.TypeId |  | V=HER | DN=HER-id |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
 
-## RelServProv (Practitioner, rolle = 'RelServProv')
+## RelServProv (Practitioner, rolle = 'Utfører/Ansvarlig')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.RelServProv.Relation |  | V=AHP | DN=Ansvarlig helsepersonell |  |  | Observation.performer -> practitioner |  | Nei |
@@ -170,6 +170,19 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.RelServProv.HCP.Address |  |  |  |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.Type |  | V=WP | DN=Arbeidsadresse |  |  |  |  |
 | ServReport.RelServProv.HCP.Address.TeleAddress |  | V=tel:73112233 |  |  |  |  |  |
+
+## CopyDest (Organization, Rolle = 'Kopimottaker')
+| Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
+|-|-|-|-|-|-|-|-|-|
+| ServReport.ServProvider.HCP |  |  |  |  |  | Observation.performer -> practitioner? |  | Nei |
+| ServReport.ServProvider.HCP.Inst |  |  |  |  |  |  |  |
+| ServReport.ServProvider.HCP.Inst.Name | ST OLAVS HOSPITAL HF |  |  |  |  | Organization.name | Sammen med Dept.Name | Nei |
+| ServReport.ServProvider.HCP.Inst.Id | 59 |  |  |  |  |  |  |
+| ServReport.ServProvider.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
+| ServReport.ServProvider.HCP.Inst.Dept |  |  |  |  |  |  |  |
+| ServReport.ServProvider.HCP.Inst.Dept.Name | Medisinsk mikrobiologi |  |  |  |  | Organization.name | Sammen med Inst.Name | Nei |
+| ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Nei |
+| ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Nei |
 
 ## Avklaringspunkter
 ### Kodeverk
