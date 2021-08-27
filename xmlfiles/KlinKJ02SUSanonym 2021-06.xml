@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd" xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-06-26T12:40:03" />
+  <MsgId>5d0a75fd-d184-4f84-9733-67706535a41b</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-06-26T12:40:03" />
+    <Status V="F" DN="Endelig rapport" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>0071428875</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-06-26T10:42:00" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>762F5D45-9902-45D1-93AC-4D69E6915C7A</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <Name>Alive, Stein</Name>
+      <OffId>11064700342</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-06-26T11:23:00" />
+        </CollectedSample>
+        <Type>APS</Type>
+        <IdByServProvider>006666628875</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="umol/L" V="71" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>45-90</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU04998" DN="P-Kreatinin" OT="P-Kreatinin" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-KREAT" DN="S-Kreatinin" OT="S-Kreatinin" />
+        </Investigation>
+        <DevResultInd V="2" DN="Under nedre ref.område" />
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="ml/min/1,73m2" V="122" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>83-136</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NOR15245" DN="Nyre-estimert GFR (overfl.=1,73m2)" OT="Nyre-estimert GFR (overfl.=1,73m2)" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="GFR" DN="GFR beregnet" OT="GFR beregnet" />
+        </Investigation>
+        <DevResultInd V="1" DN="Over øvre ref.område" />
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="mmol/L" V="3.9" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>2,6-6,4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU01459" DN="P-Karbamid" OT="P-Karbamid" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-UREA" DN="S-Urinstoff" OT="S-Urinstoff" />
+        </Investigation>
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="umol/L" V="24" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>5-25</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU01370" DN="P-Bilirubin" OT="P-Bilirubin" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-BIL" DN="S-Bilirubin" OT="S-Bilirubin" />
+        </Investigation>
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="U/L" V="40" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>15-35</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU19654" DN="P-ASAT" OT="P-ASAT" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-ASAT" DN="S-ASAT" OT="S-ASAT" />
+        </Investigation>
+        <DevResultInd V="1" DN="Over øvre ref.område" />
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="U/L" V="55" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>10-45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU19651" DN="P-ALAT" OT="P-ALAT" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-ALAT" DN="S-ALAT" OT="S-ALAT" />
+        </Investigation>
+        <DevResultInd V="1" DN="Over øvre ref.område" />
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="U/L" V="59" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>34-115</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU27783" DN="P-ALP" OT="P-ALP" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-ALP" DN="S-ALP" OT="S-ALP" />
+        </Investigation>
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue U="U/L" V="20" />
+        </NumResult>
+        <ServType V="N" DN="NEW" />
+        <RefInterval>
+          <Descr>10-45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.7280" V="NPU19657" DN="P-GT" OT="P-GT" />
+          <Id S="2.16.578.1.12.4.1.1.8212" V="S-GGT" DN="S-GGT" OT="S-GGT" />
+        </Investigation>
+        <RefAnalysedSubject>006666628875</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Helse Stavanger HF</Name>
+          <Id>983974678</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for medisinsk biokjemi</Name>
+            <Id>89914</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>KKLAB</Id>
+              <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

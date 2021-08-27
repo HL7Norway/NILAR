@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<!-- Dette er en testmelding med fiktive personer -->
+<!-- -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2017-08-31T12:30:47"/>
+	<MsgId>93ee6830-c6a4-11e6-9598-0800200c9a66</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2017-08-31T12:28:47"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>525ccfdc-8e40-4311-b336-3385478d5879</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2017-08-25T13:25:00"/>
+			<PaymentCat V="1" DN="Ordinær pasient. Opphold finansiert gjennom ISF, HELFO, og ordinær finansiering innen psykisk helse og TSB"/>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id>92fee340-13c0-11de-8c30-0800200c9a66</Id>
+			<ReceiptDate V="2017-08-25T13:39:20"/>
+		</ServReq>
+		<Patient>
+			<Sex V="1" DN="Mann"/>
+			<DateOfBirth V="1965-07-15"/>
+			<Name>Gundersen, Roland</Name>
+			<OffId>15076500565</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Kattskinnet legesenter</Name>
+						<HCPerson>
+							<Name>Magnar Koman, LIS1</Name>
+							<Id>9144889</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+				</HCP>
+			</ResponsibleHcp>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Flåklypa 31</StreetAdr>
+				<PostalCode>2560</PostalCode>
+				<City>Alvdal</City>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2017-08-25T12:00:00"/>
+				</CollectedSample>
+				<Type>Serum</Type>
+				<IdByRequester>1104178-1</IdByRequester>
+				<Comment>Kopi, prøven er innsendt av ort. - sengepost A2, Testsykehus HF</Comment>
+				<Number>1</Number>
+				<IdByServProvider>Eks-1-MBIO-Serum</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<TextResult>
+					<Heading V="GR" DN="Gruppe"/>
+					<TextResultValue>Antinukleære antistoff</TextResultValue>
+				</TextResult>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU12544" S="2.16.578.1.12.4.1.1.7280" DN="P-GAD65 IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU26644" S="2.16.578.1.12.4.1.1.7280" DN="P-CENP B IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU12562" S="2.16.578.1.12.4.1.1.7280" DN="P-Scl70 IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU18238" S="2.16.578.1.12.4.1.1.7280" DN="P-Ro60 IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU18237" S="2.16.578.1.12.4.1.1.7280" DN="P-Ro52 IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU26645" S="2.16.578.1.12.4.1.1.7280" DN="P-RNP (70 kDa) IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU12564" S="2.16.578.1.12.4.1.1.7280" DN="P-SSA IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Negativ</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU12567" S="2.16.578.1.12.4.1.1.7280" DN="P-SSB IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="GR" DN="Gruppe"/>
+					<TextResultValue>Immunglobuliner</TextResultValue>
+				</TextResult>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Positiv</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU19814" S="2.16.578.1.12.4.1.1.7280" DN="P-IgG"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Positiv</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU19795" S="2.16.578.1.12.4.1.1.7280" DN="P-IgA"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Positiv</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU19825" S="2.16.578.1.12.4.1.1.7280" DN="P-IgM"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="GR" DN="Gruppe"/>
+					<TextResultValue>Komplement</TextResultValue>
+				</TextResult>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Positiv</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU01727" S="2.16.578.1.12.4.1.1.7280" DN="P-Komplement C3"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Positiv</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU01737" S="2.16.578.1.12.4.1.1.7280" DN="P-Komplement C4"/>
+					</Investigation>
+					<InvDate V="2017-08-30"/>
+				</ResultItem>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>ST OLAVS HOSPITAL HF</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91126</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="ARP" DN="Ansvarlig for rapport"/>
+			<HCP>
+				<Inst>
+					<Name>Avdeling for medisinsk mikrobiologi</Name>
+				</Inst>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:72573200"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

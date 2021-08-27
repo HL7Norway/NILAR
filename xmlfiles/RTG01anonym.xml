@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Type V="S" DN="Svar" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-03-17T13:03:39" />
+  <MsgId>29ca4d95-44ae-60bf-8b2e-93121386033c</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2020-02-24T13:16:05" />
+    <Status V="F" DN="Endelig rapport" />
+    <MsgDescr V="RTG" DN="Røntgen" />
+    <ServProvId>NOMMRG0012422347</ServProvId>
+    <ServReq>
+      <IssueDate V="2020-02-24" />
+      <Id />
+      <IdByServProvider>NORHST0011483289</IdByServProvider>
+      <ReasonAsText>
+        <Heading V="PROB" DN="Aktuell problemstilling" />
+      </ReasonAsText>
+    </ServReq>
+    <Patient>
+      <Name>ALIVE, STEIN</Name>
+      <OffId>11064700342</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation V="REK" DN="Rekvirent" />
+        <HCP>
+          <HCProf>
+            <Name>Jones May</Name>
+            <Id>9144919</Id>
+            <TypeId V="HPR" DN="HPR-nummer" />
+          </HCProf>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslovegen 1</StreetAdr>
+        <PostalCode>4020</PostalCode>
+        <City>STAVANGER</City>
+      </Address>
+      <InfItem>
+        <Observation>
+          <Description xsi:type="xsd:string">hallux valgus protokoll</Description>
+        </Observation>
+        <Type V="ANAM" DN="Sykehistorie" />
+      </InfItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+          <TextResultValue xsi:type="xsd:string">24.02.2020, 12:43, RG Fot høyre
+
+Bilder tatt både med og uten belastning. Vises til siste undersøkelse fra 25. april -13. Ingen hallux valgus. Intermetatarsalvinkel mellom 1. og 2. metatars måler cirka 9 grader. Det ses imidlertid lett artrose i første MTP-ledd som er tilkommet siden forrige undersøkelse. Ingen holdepunkt for artritt. Normale forhold i de øvrige ledd.
+
+R: Lett artrose i første MTP-ledd.
+
+Mehdi Behzadi</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="SNH0AA" S="2.16.578.1.12.4.1.1.7270" DN="RG Fot" OT="RG Fot" />
+          <Spec V="ZTX0XA" S="2.16.578.1.12.4.1.1.7270" DN="Høyresidig bildediagnostisk undersøkelse" OT="Høyresidig bildediagnostisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2020-02-24T12:48:58" />
+        <IdResultItem>NORHST0015251637</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-02-24T13:16:05" />
+        <DescrDate V="2020-02-24T13:16:05" />
+        <CounterSignDate V="2020-02-24T13:16:05" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <Inst>
+          <Name>Helse Stavanger HF</Name>
+          <Id>44</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Helse Stavanger HF, HST Bildediagnostikk (hovedrtg.)</Name>
+            <Id>89903</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>110598</Id>
+              <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+            </AdditionalId>
+            <AdditionalId>
+              <Id>RAD-HST</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <AdditionalId>
+            <Id>100083</Id>
+            <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+          </AdditionalId>
+          <AdditionalId>
+            <Id>983974678</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+   <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <CopyDestRole>
+        <MsgType V="S" DN="Svar" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>HINNATREKANTEN LEGESENTER AS</Name>
+          <Id>96952</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <HCPerson>
+            <Name>JAN ROBERT JOHANNESSEN</Name>
+            <Id>96966</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>7119658</Id>
+              <Type V="HPR" DN="HPR-nummer" />
+            </AdditionalId>
+          </HCPerson>
+          <AdditionalId>
+            <Id>924324821</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </CopyDest>
+    <RelServProv>
+      <Relation V="ALE" DN="Ansvarlig Lege" />
+      <HCP>
+        <HCProf>
+          <Type V="LE" DN="Lege" />
+          <Name>Koman, Magnar</Name>
+          <Id />
+          <TypeId V="HPR" DN="HPR-nummer" />
+        </HCProf>
+        <Address>
+          <Type V="WP" DN="Arbeidsadresse" />
+          <TeleAddress V="tel:51515151" />
+        </Address>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

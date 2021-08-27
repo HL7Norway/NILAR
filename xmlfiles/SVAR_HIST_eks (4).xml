@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-04-06T11:46:27" />
+  <MsgId>D3497B5A-796A-49D8-BC4D-3B222E296A66</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-04-06T11:46:27" />
+    <ApprDate V="2021-04-06T11:13:52" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="HIST" DN="Histologi" />
+    <ServProvId>BU 21 041xx</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU21041xx_Page01_06.04.2021_11-46.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>BU21041xx_Page01_06.04.2021_11-46.tif</FileReference>
+    </RefDoc>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU21041xx_Page02_06.04.2021_11-46.tif</Id>
+      <Description>SnapshotPage2</Description>
+      <FileReference>BU21041xx_Page02_06.04.2021_11-46.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2021-03-09T10:53:10" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOI" />
+      <Id>NULL</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-09T00:00:00" />
+        </CollectedSample>
+        <Type>Ikke angitt</Type>
+        <IdByServProvider>BU 21 041xx</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NOR25048" S="2.16.578.1.12.4.1.1.7280" DN="Ve-Histologi" />
+        </Investigation>
+        <InvDate V="2021-04-06T11:13:52" />
+        <IdResultItem>532</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>BU 21 041xx</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Mykke Plasma</Name>
+              <Id>plamyk</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Andine And</Name>
+              <Id>andand</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Preparattype (neoadjuvant terapi): s.c.mastectomi
+Side: venstre
+Lokalisasjon: sentralt og lateralt
+Tumorrest (vital), invasiv: påvist
+Histologisk type (WHO, 5. utgave): infiltrerende karsinom NST
+Tumorstørrelse, invasiv: 27 (estimat fra 3 skiver)X21 mm 
+Tilstedeværelse av in situ karsinom, inkl type: ikke påvist
+Invasjon i spesielle strukturer (lymfe- og/eller blodkar, hud, muskel, nerver, Mb Paget): ikke påvist
+Terapirespons: partiell
+Terapirespons (RCP 2016), % rest ift opprinnelig størrelse: 10-50%  (kfr. vurdering) 
+Reseksjonsrender:. Minste avstand til kraniale del av ventrale rand (blå tusj): 1 mm
+
+Fra BU2104091: SN-biopsi fra venstre aksille
+Antall lymfeknuter: 5 (4 stk. lymfeknuter som ble undersøkt i frysesnitt pluss 1 lymfeknute i resterende fettvev)  
+Antall lymfeknuter med metastaser: 1 med isolerte tumorceller (ITC); pN0(i+)
+
+ypTNM (8. utgave): T2N0 (i+)Mx</TextResultValue>
+            <TextCode V="T 04030" S="2.16.578.1.12.4.1.1.7010" DN="venstre mamma hos kvinne" />
+            <TextCode V="M 85003" S="2.16.578.1.12.4.1.1.7010" DN="infiltrerende duktalt karsinom" />
+            <TextCode V="P 11060" S="2.16.578.1.12.4.1.1.7010" DN="total reseksjon" />
+            <TextCode V="P 51100" S="2.16.578.1.12.4.1.1.7010" DN="kjemoterapi UNS" />
+            <TextCode V="F 01080" S="2.16.578.1.12.4.1.1.7010" DN="status etter cytostatika-behandling innføres" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="VU" DN="Vurdering" />
+            <TextResultValue>Det har vært betydelig effekt av behandlingen med resttumor med sterkt redusert størrelse og med lav andel tumorceller. 
+I SN ble det påvist isolerte tumorceller (N0(i+), kfr BU2104091.</TextResultValue>
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Mottatt ablasert venstre mamma som ferskt prep.. Dorsalflaten tusjes sort, laterale del av forflaten tusjes grønt kaudalt og blått kranialt. Det legges 5 sagittale snitt inn fra bakflaten i laterale del av mamma. Det påvises vesentlig fettvev og noen drag av bindevev. Ingen tumor. 3 biter nedfryses i 3 rør kl. 11.15. (ØG)
+
+Bøtte merket " preparat venstre bryst" inneholder en ablasert mamma uten axilletoilette uten hud og uten mamille.
+Vekt: 272g.
+Mål ablasat: Mediolateralt 16cm, kraniokaudalt 13cm, ventrodorsalt 3,5cm.
+Fascien:Intakt.
+Orientering: Lang tråd lateralt
+Reseksjonsflater farges blått på kraniale del av ventrale flate, grønt på kaudale del av ventrale flate og sort dorsalt.
+Ablasatet er ved biobanking allerede skåret delvis i sagittale skiver, skjærer videre restererende deler av ablasatet. 
+På snittflaten identifiseres det ingen suspekte områder ved palpasjon eller inspeksjon. 
+
+Snittuttak:
+1-12: Representative snitt i området for tidligere tumor, 6 og 7 som storsnitt.
+13: Representativt snitt medialt i resektatet.
+Rest.
+
+Totalt antall briketter: 13 til fettfremføring.
+
+Tileggsmakro 25.03.21 (sunrei): 
+14-19: Todelte storsnitt skive 9-11 (se makrofoto)
+rest.
+</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="MA" S="2.16.578.1.12.4.1.1.8219" DN="Makroskopisk undersøkelse" />
+          </Investigation>
+          <RefAnalysedSubject>BU 21 041xx</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Ullevål</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-UL</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>Mykke Plasma</Name>
+            <Id>plamyk</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <HCPerson>
+            <Name>Andine And</Name>
+            <Id>andand</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN=" Svar" />
+        <ActComMethod V="PST" DN="Post" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+          <Id>974707160</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          <Dept>
+            <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+            <Id>974707160</Id>
+            <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          </Dept>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Postboks 5313 Majorstuen</StreetAdr>
+          <PostalCode>0304</PostalCode>
+          <City>OSLO</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>

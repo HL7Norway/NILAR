@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-03-17T12:36:14" />
+  <MsgId>fc8a611d-e2ba-4e33-bcd2-f9f85aa7e322</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-03-17T12:36:14" />
+    <Status V="F" />
+    <Ack V="J" />
+    <MsgDescr V="RTG" />
+    <ServProvId>NORCSS0006517187</ServProvId>
+    <ServReq>
+      <IssueDate V="2021-01-27" />
+      <Id>M_1T30GU3-1CZ-EEE-Q4Q-1JFI2K5RPR</Id>
+      <ReceiptDate V="2021-01-27" />
+      <IdByServProvider>NORSTA0006856254</IdByServProvider>
+      <ReasonAsText>
+        <Heading V="PROB" DN="Problemstilling" />
+        <TextResultValue>Selvbet.us.:  Nei  
+Prioritet:  Elektiv/normal  
+</TextResultValue>
+      </ReasonAsText>
+    </ServReq>
+    <Patient>
+      <Sex V="1" />
+      <DateOfBirth V="1971-11-08" />
+      <Name>Alive, STEIN</Name>
+      <OffId>11064700342</OffId>
+      <TypeOffId V="FNR" />
+      <InfItem>
+        <Observation>
+          <Description>Problemstilling:  "FJERNER 5 LINJER MED TEKST HER" MRIKONT  Ingen kjente kontraindikasjoner NOPAC1  Pasienten har IKKE pacemaker/ICD NOMHJK  Pasienten har IKKE mekanisk hjerteklaff/stentgraft NOIVK1  Pasienten har IKKE intrakranielle vaskulære klips NOSHU  Pasienten har IKKE (V/P) shunt NONEV1  Pasienten har IKKE nevrostimulator NOCOC1  Pasienten har IKKE cochleaimplantat (CI) NOMEY1  Pasienten har IKKE kjent fremmedlegeme av metall i øyet NONYS  Pasienten har IKKE kjent nyresvikt NOVEKT  Pasienten er IKKE over 130 kg NOMPR1  Pasienten har IKKE metall i kroppen NOKLA1  Pasienten har IKKE klaustrofobi NOPRY1  Pasienten kan ligge stille og på rygg MOB  Pasienten er IKKE rullestolbruker/immobil NOKOM1  Pasienten har IKKE kommunikasjonsproblemer eller behov for tolk</Description>
+        </Observation>
+        <Type V="OPPL" DN="Klinisk opplysning" />
+      </InfItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="FU" DN="Funn og undersøkelsesresultat" />
+          <TextResultValue>MR Lumbosacralcolumna\  
+16.03.2021 MR Lumbosacralcolumna  
+Pasienten har ikke møtt til avtalt time.  Hvis det er aktuelt med ny time må pasienten ta kontakt med Aleris Røntgen. Hvis vi har mottatt henvisning oppbevares den hos Aleris Røntgen i inntil ett år.  
+
+Radiolog:Signering, Radiolog / Signert:Stubberud, Nina Blåhella  
+</TextResultValue>
+        </TextResult>
+        <StatusInvestigation V="3" />
+        <DescrDate V="2021-03-17" />
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="DLE" DN="Dikterende lege" />
+          <HCP>
+            <HCProf>
+              <Type V="LE" DN="Lege" />
+              <Name>AND,Andine</Name>
+              <Id>andand</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="SLE" DN="Signerende lege" />
+          <HCP>
+            <HCProf>
+              <Type V="LE" DN="Lege" />
+              <Name>Mykke Plasma</Name>
+              <Id>NS9999</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" DN="MR Lumbosacralcolumna\" />
+          </Investigation>
+          <InvDate V="2021-03-16T00:00:00" />
+          <IdResultItem>NORCSS0006517187-1-1</IdResultItem>
+          <StatusInvestigation V="11" DN="Signert" />
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" />
+      <HCP>
+        <Inst>
+          <Name>Aleris Røntgen AS</Name>
+          <Id>88349</Id>
+          <TypeId V="HER" />
+          <Dept>
+            <Name>Stavanger</Name>
+            <Id>104246</Id>
+            <TypeId V="HER" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+   <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

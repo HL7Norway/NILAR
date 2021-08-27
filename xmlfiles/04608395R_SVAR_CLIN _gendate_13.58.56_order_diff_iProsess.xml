@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2018-11-27T13:58:56.5972" />
+  <MsgId>333A8DAC-F254-11E8-A73C-5056AF460000</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2018-11-27T13:58:56" />
+    <Status V="P" DN="Foreløpig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>04608395R</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2018-11-27T13:57:42" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>04608395</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>04608395</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1969-11-13" />
+      <Name>Testpasient Danser, Line Plo</Name>
+      <OffId>13116900216</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslo Adr</StreetAdr>
+        <PostalCode>0170</PostalCode>
+        <City>Oslo</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-11-27T13:56:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>0460839512</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-11-27T13:56:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>0460839503</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-11-27T13:56:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>0460839501</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-11-27T13:56:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>0460839511</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-11-27T13:56:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>0460839507</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mm</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>1 - 17</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03404" S="2.16.578.1.12.4.1.1.7230" DN="SR" OT="B-SR" />
+        </Investigation>
+        <IdResultItem>0460839512_000860</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839512</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>g/dL</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>11.7 - 15.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05172" S="2.16.578.1.12.4.1.1.7230" DN="HB" OT="B-Hemoglobin" />
+        </Investigation>
+        <IdResultItem>0460839503_000360</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#12/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3.9 - 5.2</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01960" S="2.16.578.1.12.4.1.1.7230" DN="ERY" OT="B-Erytrocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000310</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.35 - 0.46</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01961" S="2.16.578.1.12.4.1.1.7230" DN="EVF" OT="B-EVF" />
+        </Investigation>
+        <IdResultItem>0460839503_000390</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>pg</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>27 - 33</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU26880" S="2.16.578.1.12.4.1.1.7230" DN="MCH" OT="B-MCH" />
+        </Investigation>
+        <IdResultItem>0460839503_000530</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>g/dL</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>31 - 35</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05278" S="2.16.578.1.12.4.1.1.7230" DN="MCHC" OT="B-MCHC" />
+        </Investigation>
+        <IdResultItem>0460839503_000540</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>fL</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>82 - 98</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01944" S="2.16.578.1.12.4.1.1.7230" DN="MCV" OT="B-MCV" />
+        </Investigation>
+        <IdResultItem>0460839503_000570</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>30 - 100</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU08694" S="2.16.578.1.12.4.1.1.7230" DN="RET" OT="B-Retikulocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000730</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>145 - 390</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03568" S="2.16.578.1.12.4.1.1.7230" DN="TRC" OT="B-Trombocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000870</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU18156" S="2.16.578.1.12.4.1.1.7230" DN="DIFF" OT="B-Differensialtelling" />
+        </Investigation>
+        <IdResultItem>0460839503_000230</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3.5 - 10.0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02593" S="2.16.578.1.12.4.1.1.7230" DN="LEUK" OT="B-Leukocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000460</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>1.5 - 7.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02902" S="2.16.578.1.12.4.1.1.7230" DN="NEUT" OT="B-Neutrofile granulocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000660</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>1.1 - 3.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02636" S="2.16.578.1.12.4.1.1.7230" DN="LYMF" OT="B-Lymfocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000480</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.2 - 0.8</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02840" S="2.16.578.1.12.4.1.1.7230" DN="MONO" OT="B-Monocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000600</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 0.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01933" S="2.16.578.1.12.4.1.1.7230" DN="EOS" OT="B-Eosinofile granulocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000270</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>10#9/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 0.1</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01349" S="2.16.578.1.12.4.1.1.7230" DN="BASO" OT="B-Basofile granulocytter" />
+        </Investigation>
+        <IdResultItem>0460839503_000070</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839503</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.8 - 1.2</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01685" S="2.16.578.1.12.4.1.1.7230" DN="INR" OT="P-INR" />
+        </Investigation>
+        <IdResultItem>0460839511_000430</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839511</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>137 - 144</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03429" S="2.16.578.1.12.4.1.1.7230" DN="PNA" OT="P-Natrium" />
+        </Investigation>
+        <IdResultItem>0460839501_002810</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3.5 - 4.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03230" S="2.16.578.1.12.4.1.1.7230" DN="PK" OT="P-Kalium" />
+        </Investigation>
+        <IdResultItem>0460839501_002440</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>98 - 107</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01536" S="2.16.578.1.12.4.1.1.7230" DN="CL" OT="P-Klorid" />
+        </Investigation>
+        <IdResultItem>0460839501_001960</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>2.15 - 2.51</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01443" S="2.16.578.1.12.4.1.1.7230" DN="CA" OT="P-Kalsium" />
+        </Investigation>
+        <IdResultItem>0460839501_001880</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.71 - 0.94</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02647" S="2.16.578.1.12.4.1.1.7230" DN="MG" OT="P-Magnesium" />
+        </Investigation>
+        <IdResultItem>0460839501_002760</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>µmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>155 - 350</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU09356" S="2.16.578.1.12.4.1.1.7230" DN="URAT" OT="P-Urat" />
+        </Investigation>
+        <IdResultItem>0460839501_003310</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>µmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>5 - 25</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01370" S="2.16.578.1.12.4.1.1.7230" DN="BILT" OT="P-Bilirubin total" />
+        </Investigation>
+        <IdResultItem>0460839501_001860</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>U/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>10 - 45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19651" S="2.16.578.1.12.4.1.1.7230" DN="ALAT" OT="P-ALAT" />
+        </Investigation>
+        <IdResultItem>0460839501_001620</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>U/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>105 - 205</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19658" S="2.16.578.1.12.4.1.1.7230" DN="LD" OT="P-LD" />
+        </Investigation>
+        <IdResultItem>0460839501_002630</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>U/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>35 - 105</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU53077" S="2.16.578.1.12.4.1.1.7230" DN="AFOS" OT="P-Alkalisk Fosfatase" />
+        </Investigation>
+        <IdResultItem>0460839501_001600</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>U/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>10 - 75</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19657" S="2.16.578.1.12.4.1.1.7230" DN="GT" OT="P-GT" />
+        </Investigation>
+        <IdResultItem>0460839501_002290</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>2.6 - 6.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01459" S="2.16.578.1.12.4.1.1.7230" DN="UREA" OT="P-Karbamid" />
+        </Investigation>
+        <IdResultItem>0460839501_003340</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>µmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>45 - 90</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU04998" S="2.16.578.1.12.4.1.1.7230" DN="KREA" OT="P-Kreatinin" />
+        </Investigation>
+        <IdResultItem>0460839501_002570</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mmol/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>
+          </Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02192" S="2.16.578.1.12.4.1.1.7230" DN="PGLU" OT="P-Glukose" />
+        </Investigation>
+        <IdResultItem>0460839501_002180</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>g/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>36 - 45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19673" S="2.16.578.1.12.4.1.1.7230" DN="ALB" OT="P-Albumin" />
+        </Investigation>
+        <IdResultItem>0460839501_001640</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mIU/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.50 - 3.6</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03577" S="2.16.578.1.12.4.1.1.7230" DN="TSH" OT="P-TSH" />
+        </Investigation>
+        <IdResultItem>0460839501_003290</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>µg/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;5</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19719" S="2.16.578.1.12.4.1.1.7230" DN="CEA" OT="P-CEA" />
+        </Investigation>
+        <IdResultItem>0460839507_004940</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839507</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>mg/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19748" S="2.16.578.1.12.4.1.1.7230" DN="CRP" OT="P-C-Reaktivt protein" />
+        </Investigation>
+        <IdResultItem>0460839501_002010</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460839501</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummer i Enhetsregister" />
+          <Dept>
+            <Name>Avd. for medisinsk biokjemi, Radiumhospitalet</Name>
+            <Id>R</Id>
+            <TypeId V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            <AdditionalId>
+              <Id>Unilab</Id>
+              <Type V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

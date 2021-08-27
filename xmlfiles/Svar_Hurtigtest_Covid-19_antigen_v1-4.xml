@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<!-- Dette er en testmelding med fiktive personer -->
+<!-- Eksempel for Hurtigtester (Covid-19 antigen test) -->
+<!-- Prøvesvar på hurtigtester (NPU-kode NPU59390 ) vil alltid ha status "ny". Gjelder informasjon i begge forekomster av <ServType>. Svar på disse prøvene kan ikke endres eller kanselleres -->
+<!-- -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2020-12-20T13:59:04"/>
+	<MsgId>b4bbe8b2-ca52-41cb-bb19-4bfdac6d7387</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2020-12-20T13:58:49"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>25507d3f-c0b5-430a-a17a-177fc68d48fb</ServProvId>
+		<Patient>
+			<Name>Telokk, Gry</Name>
+			<OffId>12057900499</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<!-- Når svarene foreligger ved virksomheten uten at prøven sendes til analyse hos en ekstern part, skal rekvirent være en som er ansvarlig for at virksomheten kan utføre lokale analyser. Legekontoret kan velge å ha en fast rekvirent for denne typen prøvesvar, eller den enkelte legen/helsepersonell med rekvisisjonsrett kan oppgis. Ved en kommunal teststasjon vil det ofte være en fast medisinskfaglig ansvarlig som teststasjonen benytter. Dette kan være kommuneoverlegen. -->
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Trondheim kommune - Smittevern</Name>
+						<HCPerson>
+							<Name>Kommuneoverlege May Jones</Name>
+							<Id>9144919</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+				</HCP>
+			</ResponsibleHcp>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Lungegaardsbakken 13</StreetAdr>
+				<PostalCode>5020</PostalCode>
+				<City>Bergen</City>
+			</Address>
+			<InfItem>
+				<!-- Kliniske opplysninger inkluderes ved behov -->
+				<Observation>
+					<Description>Eventuelle kliniske opplysninger</Description>
+				</Observation>
+				<Type V="OPPL" DN="Klinisk opplysning"/>
+			</InfItem>
+			<!-- Prøvemateriale skal oppgis med koden HNX Hals+nasopharynxsekret -->
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2020-12-20T13:47:41"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="HNX" DN="Hals+nasopharynxsekret"/>
+				<IdByServProvider>VIR2701269201</IdByServProvider>
+			</AnalysedSubject>
+			<!-- Selve resultatet oppgis i feltet <TextResultValue> med kodetekst hentet fra kodeverk med
+OID=8340. Svar skal oppgis med en av følgende kodetekster: Påvist, Ikke påvist, Inkonklusiv -->
+			<!-- Hurtigtester levert av Abbott eller Roche skal oppgis med NLK-kode NPU59390 Us-SARS-relatert koronavirus (inkl. SARS-CoV-2) antigen -->
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Påvist</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU59390" S="2.16.578.1.12.4.1.1.7280" DN="Us-SARS-relatert koronavirus (inkl. SARS-CoV-2) antigen"/>
+				</Investigation>
+				<InvDate V="2020-12-20T13:57:35"/>
+				<Comment>Her kan man legge inn en kommentar til resultatet ved behov</Comment>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>VIR2701269201</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<!-- Avsender -->
+		<!-- Hvis prøven tas på et legekontor kan avsender være en lege som ligger i Adresseregisteret, eller legekontoret kan sende fra en tjeneste som er oppført i Adresseregisteret, for eksempel Laboratoriemedisin -->
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Trondheim kommune</Name>
+					<Id>2342</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Smittevern</Name>
+						<Id>104849</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<!-- Mottaker. Alle svar på hurtigtester skal sendes til MSIS labdatabase. MSIS registeret skal bare ha positive svar -->
+		<!-- Merk at Requester benyttes som hovedmottaker i svarrapporten selv om dette ikke er en faktisk rekvirent -->
+		<!-- Det er ikke viktig hvem av MSIS labdatabase og MSIS register som er hovedmottaker -->		
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>FHI</Name>
+					<Id>85217</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Fellesmottak for registerdata, Korona- og luftveismottak</Name>
+						<Id>140170</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</Requester>
+		<CopyDest>
+			<Role V="COP" DN="Kopimottaker"/>
+			<HCP>
+				<Inst>
+					<Name>FHI</Name>
+					<Id>85217</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Meldesystem for smittsomme sykdommer (MSIS)</Name>
+						<Id>103979</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</CopyDest>
+		<!-- Kopi til fastlege -->
+		<CopyDest>
+			<Role V="COP" DN="Kopimottaker"/>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</CopyDest>
+		<!-- Her skal navn på ansvarlig enhet og/eller person oppgis. Telefonnummer som mottaker kan benytte ved eventuelle spørsmål skal oppgis -->
+		<!-- Ved et legekontor kan kontakttelefonnummer til legekontoret oppgis -->
+		<!-- AHP Ansvarlig helsepersonell skal benyttes i Relation hvis oppgitt ansvarlig er en person. Navn på ansvarlig helsepersonell skal da oppgis sammen med enhet eller kun med navn på helsepersonell. Se HIS 1174 for flere detaljer -->
+		<RelServProv>
+			<Relation V="ARP" DN="Ansvarlig for rapport"/>
+			<HCP>
+				<Inst>
+					<Name>Trondheim kommune, teststasjon Leutenhaven</Name>
+				</Inst>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:00000000"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

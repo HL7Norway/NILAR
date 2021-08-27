@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-03-26T09:00:25" />
+  <MsgId>B1146B85-2D4D-5B5A-9845-96E8EDD0E5AC</MsgId>
+  <!--MsgId_WithDLref:DL.SDS-DOCDBOUS-01.Patologi_Prod_Ous.963893.349.555-->
+  <ServReport>
+    <ServType V="A" DN="Tillegg" />
+    <IssueDate V="2021-03-26T09:00:25" />
+    <ApprDate V="2021-03-26T08:48:43" />
+    <Status V="A" DN="Tillegg til rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CYTO" DN="Cytologi" />
+    <ServProvId>CM 21 xxxxx770</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>CM21xxxxx770_Page01_26.03.2021_09-00.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>CM21xxxxx770_Page01_26.03.2021_09-00.tif</FileReference>
+    </RefDoc>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>CM21xxxxx770_Page02_26.03.2021_09-00.tif</Id>
+      <Description>SnapshotPage2</Description>
+      <FileReference>CM21xxxxx770_Page02_26.03.2021_09-00.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2021-02-10T13:48:32" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOP" />
+      <Id>NULL</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-02-10T13:30:00" />
+        </CollectedSample>
+        <Type>lavage/skyllevæske</Type>
+        <IdByServProvider>CM 21 xxxxx770</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny">
+        </ServType>
+        <Investigation>
+          <Id V="NOR25524" S="2.16.578.1.12.4.1.1.7280" DN="Ce-Cytologisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2021-03-26T08:48:43" />
+        <IdResultItem>555</IdResultItem>
+        <StatusInvestigation V="4" DN="Tillegg" />
+        <RefAnalysedSubject>CM 21 xxxxx770</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Magnar Koman</Name>
+              <Id>Mako</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>TILLEGGSKOMMENTAR: Hormonreseptor analyse viser svak og fokal ekspresjon av ER (&lt;10% av tumorcellene), negativ farging for PR (0%).</TextResultValue>
+          </TextResult>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <ServType V="M" DN="Endring">
+        </ServType>
+        <Investigation>
+          <Id V="NOR25524" S="2.16.578.1.12.4.1.1.7280" DN="Ce-Cytologisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2021-02-11T11:13:04" />
+        <IdResultItem>363</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>CM 21 xxxxx770</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Rita Lin</Name>
+              <Id>linra</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Pleuravæske: Adenokarsinom, forenlig med metastase fra høygradig serøst adenokarsinom, primærtumor i høyre tube 
+</TextResultValue>
+            <TextCode V="T 2Y610" S="2.16.578.1.12.4.1.1.7010" DN="cytologisk materiale fra pleura" />
+            <TextCode V="M 84606" S="2.16.578.1.12.4.1.1.7010" DN="serost papillært adenokarsinom (metastase)" />
+          </TextResult>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Radiumhospitalet</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-RA</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>Rita Lin</Name>
+            <Id>linra</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN=" Svar">
+        </MsgType>
+        <ActComMethod V="PST" DN="Post">
+        </ActComMethod>
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+          <Id>974707160</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          <Dept>
+            <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+            <Id>974707160</Id>
+            <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          </Dept>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Postboks 5313 Majorstuen</StreetAdr>
+          <PostalCode>0304</PostalCode>
+          <City>OSLO</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>

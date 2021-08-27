@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-01-20T12:03:54" />
+  <MsgId>28ade42d-7e1d-4968-8df3-eae67220ea2b</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-01-18" />
+    <Status V="F" DN="Endelig rapport" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>365DUKN0</ServProvId>
+    <Comment>* Kommentarer hematologianalyser: 
+Maskinell leukocyttelling: Ingen patologiske celler påvist.</Comment>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-01-18" />
+      <PaymentCat V="1" DN="Ordinær pasient" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>365DUKN0</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <DateOfBirth V="1971-11-08" />
+      <Name>ALIVE, STEIN</Name>
+      <OffId>11064700342</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>4020 STAVANGER</StreetAdr>
+        <PostalCode>
+        </PostalCode>
+        <City>
+        </City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-01-18T13:40:00" />
+        </CollectedSample>
+        <IdByServProvider>365DUKN0</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="14.3" U="g/dL" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>13,4   - 17,0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="B-HB" S="2.16.578.1.12.4.1.1.8212" DN="B-Hemoglobin" OT="B-Hemoglobin" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="9.6" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3,5    - 10,0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="B-LEUKOC" S="2.16.578.1.12.4.1.1.8212" DN="B-Leukocytter" OT="B-Leukocytter" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <TextResultValue>UTFØRT</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>-</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="UTSTRYK" S="2.16.578.1.12.4.1.1.8212" DN="B-Leukocytter m/diff." OT="B-Leukocytter m/diff." />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="5.7" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>1,5    - 7,3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NØYTROFI" S="2.16.578.1.12.4.1.1.8212" DN="-     Nøytrofile" OT="-     Nøytrofile" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="2.7" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>1,1    - 3,3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="LYMFOCYT" S="2.16.578.1.12.4.1.1.8212" DN="-     Lymfocytter" OT="-     Lymfocytter" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.9" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0,2    - 0,8</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="MONOCYTT" S="2.16.578.1.12.4.1.1.8212" DN="-     Monocytter" OT="-     Monocytter" />
+        </Investigation>
+        <DevResultInd V="3" DN="Utenfor referansegrensene" />
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.2" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;0,4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="EOSINOFI" S="2.16.578.1.12.4.1.1.8212" DN="-     Eosinofile" OT="-     Eosinofile" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.1" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;0,2</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="BASOFILE" S="2.16.578.1.12.4.1.1.8212" DN="-     Basofile" OT="-     Basofile" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="418" U="10^9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>145    - 348</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="B-TROMBO" S="2.16.578.1.12.4.1.1.8212" DN="B-Trombocytter" OT="B-Trombocytter" />
+        </Investigation>
+        <DevResultInd V="3" DN="Utenfor referansegrensene" />
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="4.50" U="10^12/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>4,25   - 5,71</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="B-ERYTRO" S="2.16.578.1.12.4.1.1.8212" DN="B-Erytrocytter" OT="B-Erytrocytter" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="142" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>137    - 145</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-NATRIU" S="2.16.578.1.12.4.1.1.8212" DN="S-Natrium" OT="S-Natrium" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="4.8" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3,6    - 5,0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-KALIUM" S="2.16.578.1.12.4.1.1.8212" DN="S-Kalium" OT="S-Kalium" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="55" U="umol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>60     - 105</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-KREATI" S="2.16.578.1.12.4.1.1.8212" DN="S-Kreatinin" OT="S-Kreatinin" />
+        </Investigation>
+        <DevResultInd V="3" DN="Utenfor referansegrensene" />
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="106" U="mL/min/1,73m2" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&gt;61</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-GFR" S="2.16.578.1.12.4.1.1.8212" DN="S-eGFR (CKD-EPI)" OT="S-eGFR (CKD-EPI)" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="6.6" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3,5    - 8,1</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-UREA" S="2.16.578.1.12.4.1.1.8212" DN="S-Urinstoff" OT="S-Urinstoff" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="379" U="umol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>230    - 480</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-URSYRE" S="2.16.578.1.12.4.1.1.8212" DN="S-Urinsyre" OT="S-Urinsyre" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="24" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;70</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-ALAT" S="2.16.578.1.12.4.1.1.8212" DN="S-ALAT" OT="S-ALAT" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="127" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;115</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-GGT" S="2.16.578.1.12.4.1.1.8212" DN="S-Gamma GT" OT="S-Gamma GT" />
+        </Investigation>
+        <DevResultInd V="3" DN="Utenfor referansegrensene" />
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="80" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;105</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-ALKFOS" S="2.16.578.1.12.4.1.1.8212" DN="S-Fosfatase, alkalisk" OT="S-Fosfatase, alkalisk" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="61" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;280</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-CK" S="2.16.578.1.12.4.1.1.8212" DN="S-CK" OT="S-CK" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="2.92" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>Alltid *-merket</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="TRIIKFAS" S="2.16.578.1.12.4.1.1.8212" DN="S-Triglys ikke fastende" OT="S-Triglys ikke fastende" />
+        </Investigation>
+        <DevResultInd V="3" DN="Utenfor referansegrensene" />
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="3.8" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3,9    - 7,8</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-KOLEST" S="2.16.578.1.12.4.1.1.8212" DN="S-Kolesterol" OT="S-Kolesterol" />
+        </Investigation>
+        <DevResultInd V="3" DN="Utenfor referansegrensene" />
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.8" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0,8    - 2,1</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-HDL-KO" S="2.16.578.1.12.4.1.1.8212" DN="S-HDL-kolesterol" OT="S-HDL-kolesterol" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="2.1" U="mmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>2,0    - 5,3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="S-LDL-KO" S="2.16.578.1.12.4.1.1.8212" DN="S-LDL-kolesterol" OT="S-LDL-kolesterol" />
+        </Investigation>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Fürst Medisinsk Laboratorium</Name>
+          <Id>84526</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret (HER-id)" />
+          <Dept>
+            <Name>Klinisk kjemisk avdeling</Name>
+            <Id>KKAVD</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+          </Dept>
+          <AdditionalId>
+            <Id>931469851</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+     <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

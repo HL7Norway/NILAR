@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<!-- Dette er en testmelding med fiktive personer -->
+<!-- -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_RTG" DN="Svarrapport-Radiologi"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2017-09-27T15:13:12"/>
+	<MsgId>ad4efd30-c6a4-11e6-9598-0800200c9a66</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2017-09-27T11:05:16"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="UL" DN="Ultralyd"/>
+		<ServProvId>0cdc0f30-4085-11de-8a39-0800200c9a66</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2017-09-03T11:05:16"/>
+			<PaymentCat V="1" DN="Ordinær pasient. Opphold finansiert gjennom ISF, HELFO, og ordinær finansiering innen psykisk helse og TSB"/>
+			<MsgDescr V="UL" DN="Ultralyd"/>
+			<Id>6a716290-4084-11de-8a39-0800200c9a66</Id>
+			<ReceiptDate V="2017-09-03T10:20:00"/>
+		</ServReq>
+		<!-- Pasientopplysninger -->
+		<Patient>
+			<Sex V="1" DN="Mann"/>
+			<DateOfBirth V="1965-07-15"/>
+			<Name>Gundersen, Roland</Name>
+			<OffId>15076500565</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Kattskinnet legesenter</Name>
+						<HCPerson>
+							<Name>Rita Lin</Name>
+							<Id>9144900</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+				</HCP>
+			</ResponsibleHcp>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Flåklypa 31</StreetAdr>
+				<PostalCode>2560</PostalCode>
+				<City>Alvdal</City>
+			</Address>
+			<!-- Undersøkelsesresultat -->
+			<ResultItem>
+				<TextResult>
+					<Heading V="GR" DN="Gruppe"/>
+					<TextResultValue><div xmlns="http://www.w3.org/1999/xhtml"><p><strong>R: Svært forstørret lever med generelt inhomogent ekko uten fokale lesjoner. Reversert flow i vena porta. Et betydelig nettverk av karstrukturer mot milthilus. Betydelig forstørret milt – jfr. kommentar.</strong></p><br/><p>Leveren ses jevnt over med litt inhomogent ekko uten solitære knuter eller fokale lesjoner verken uten eller med i.v. kontrast. Overflaten er lett småbuklet. Lever er svært forstørret og treffer milten i ve flanke og strekker seg flere cm under hø. costalbue, kantene er avrundede. I vena porta ses ved både fargedoppler og spektraldoppler tydelig reversert flow fra lever mot midtlinjen/milten. Vena lienalis er betydelig dilatert.  Det er et stort nettverk av slyngede kar i milthilus. Milten er svært forstørret og strekker seg til ve crista iliaca. Således er den over 20 cm craniocaudalt. Det er ingen tegn til rekanaliserte umbilicalvener i området for ligamentum falsiforme. Leverarterien fremviser kraftig flow med RI i hilus på 0,7 og intrahepatisk på 0,75. Vena cava og de tre levervener er åpne med god flowvariasjon. <br/>Ved kontrast us konsentrerte man seg om ev fokale lesjoner. Transittid ble ikke målt.</p></div>
+					</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RelServProv>
+					<Relation V="AHP" DN="Ansvarlig helsepersonell"/>
+					<HCP>
+						<HCProf>
+							<Name>Magnar Koman</Name>
+							<Id>9144889</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCProf>
+						<Address>
+							<Type V="WP" DN="Arbeidsadresse"/>
+							<TeleAddress V="tel:72825350"/>
+						</Address>
+					</HCP>
+				</RelServProv>
+				<ResultItem>
+					<Investigation>
+						<Id V="SJJ0AK" S="2.16.578.1.12.4.1.1.7270" DN="UL Lever"/>
+						<Spec V="ZTX0EA" S="2.16.578.1.12.4.1.1.7270" DN="Intravenøs kontrast"/>
+					</Investigation>
+					<InvDate V="2017-09-27T09:30:00"/>
+					<IdResultItem>T062201HE01</IdResultItem>
+					<StatusInvestigation V="11" DN="Signert"/>
+				</ResultItem>
+				<ResultItem>
+					<Investigation>
+						<Id V="SJM0AK" S="2.16.578.1.12.4.1.1.7270" DN="UL Milt"/>
+					</Investigation>
+					<InvDate V="2017-09-27T09:30:00"/>
+					<IdResultItem>T062201LI01</IdResultItem>
+					<StatusInvestigation V="11" DN="Signert"/>
+				</ResultItem>
+			</ResultItem>
+		</Patient>
+		<!-- Opplysninger om mottaker -->
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>ST OLAVS HOSPITAL HF</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Bildediagnostikk</Name> 
+						<Id>91120</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<!-- Opplysninger om avsender -->
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>258521</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="ARP" DN="Ansvarlig for rapport"/>
+			<HCP>
+				<Inst>
+					<Name>Klinikk for bildediagnostikk, Gastrosenteret</Name>
+				</Inst>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:72825350"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd" xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-02-18T11:00:19" />
+  <MsgId>7425A49E-80A8-4774-B178-CEA4F9D0E0A6</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-02-15T08:31:06" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CYTO" DN="Cytologi" />
+    <ServProvId>C2105717</ServProvId>
+    <RefDoc>
+      <IssueDate V="2021-02-18T11:00:20" />
+      <MsgType V="A" DN="Vedlegg" />
+      <MimeType>application/pdf</MimeType>
+      <Description>C2105717</Description>
+      <Content>
+        <Base64Container xsi:schemaLocation="http://www.kith.no/xmlstds/base64container kith-base64.xsd" xmlns="http://www.kith.no/xmlstds/base64container">
+Cj4+CnN0YXJ0eHJlZgoyMDE5MwolJUVP</Base64Container>
+      </Content>
+    </RefDoc>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-02-15T08:31:06" />
+      <MsgDescr V="CYTO" DN="Cytologi" />
+      <Id>F860BC9F-449E-44AA-8B4F-DD8D97CAA4F3</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>71138186</IdByServProvider>
+      <ReasonAsText>
+        <Heading V="PROB" DN="Problemstilling" />
+        <TextResultValue>Gynekologiske opplysninger: 
+IUD/Spiral
+Årsak til cervixprøve
+Screening
+</TextResultValue>
+      </ReasonAsText>
+      <ReasonAsText>
+        <Heading V="MU" DN="Screening" />
+      </ReasonAsText>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1971-11-08" />
+      <Name>Danser, Line</Name>
+      <OffId>13116900216</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-02-11T14:16:00" />
+        </CollectedSample>
+        <Type>Cervix</Type>
+        <AnatomicalOrigin>Cervix screening (VBC)</AnatomicalOrigin>
+        <IdByServProvider>71138186</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="C" S="2.16.578.1.12.4.1.1.8219" DN="Cytologi" />
+        </Investigation>
+        <InvDate V="2021-02-18T10:01:00" />
+        <IdResultItem>1089381</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>71138186</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="SCR" DN="Screener" />
+          <HCP>
+            <HCProf>
+              <Name>Andine And</Name>
+              <Id>50032</Id>
+              <TypeId DN="Off. identifikator for helsepersonell (HPR-nummer)" V="HPR" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>Normal cervixcytologi. </TextResultValue>
+            <TextCode V="T8310A" S="2.16.578.1.12.4.1.1.7010" />
+            <TextCode V="P06000" S="2.16.578.1.12.4.1.1.7010" />
+            <TextCode V="M00100" S="2.16.578.1.12.4.1.1.7010" />
+          </TextResult>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Stavanger Universitetssjukehus</Name>
+          <Id>983974678</Id>
+          <!--Stavanger Universitetssjukehus-->
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avdeling for Patologi (HST)</Name>
+            <Id>142612</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>8300</Id>
+              <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+ <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svarrapport" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>Oslo universitetssykehus HF Kreftregisteret, </Name>
+          <Id>96084</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <AdditionalId>
+            <Id>974707160</Id>
+            <Type V="ENH" DN="Organisasjonsnummer i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>

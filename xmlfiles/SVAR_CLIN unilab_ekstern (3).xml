@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-04-06T14:58:01.5979" />
+  <MsgId>B81D11D6-77D7-11EB-AE5E-5056AF45FF00</MsgId>
+  <ServReport>
+    <ServType V="M" DN="Endring" />
+    <IssueDate V="2021-04-03T17:25:32" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+    <ServProvId>200612xxA</ServProvId>
+    <ServReq>
+      <ServType V="M" DN="Endring" />
+      <IssueDate V="2021-04-03T16:23:23" />
+      <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+      <Id>200612xx</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>200612xx</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+		<DateOfBirth V="19xx-xx-xx" />
+		<Name>Telokk, Gry</Name>
+		<OffId>12057900499</OffId>
+		<TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation DN="Rekvirent" V="REK" />
+        <HCP>
+          <Inst>
+            <Name>Kommunal akutt døgnenhet 1</Name>
+            <HCPerson>
+              <Name>AND, Andine, Lege</Name>
+              <Id>50032</Id>
+              <TypeId DN="HPR-nummer" V="HPR" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslogate 1</StreetAdr>
+        <PostalCode>0187</PostalCode>
+        <City>OSLO</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-04-03T16:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>200612xx03</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-04-03T16:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>200612xx01</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-04-03T16:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>200612xxD3</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="12.0" U="g/dL" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>11.7 - 15.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin" OT="B-Hemoglobin" />
+          <Id V="HB" S="2.16.578.1.12.4.1.1.8212" DN="B-Hemoglobin" OT="B-Hemoglobin" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:11" />
+        <IdResultItem>200612xx03_000360</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="89" U="fL" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>82 - 98</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01944" S="2.16.578.1.12.4.1.1.7280" DN="B-MCV" OT="B-MCV" />
+          <Id V="MCV" S="2.16.578.1.12.4.1.1.8212" DN="B-MCV" OT="B-MCV" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:11" />
+        <IdResultItem>200612xx03_000570</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="298" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>145 - 390</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03568" S="2.16.578.1.12.4.1.1.7280" DN="B-Trombocytter" OT="B-Trombocytter" />
+          <Id V="TRC" S="2.16.578.1.12.4.1.1.8212" DN="B-Trombocytter" OT="B-Trombocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:12" />
+        <IdResultItem>200612xx03_000870</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Se svar nedenfor</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU18156" S="2.16.578.1.12.4.1.1.7280" DN="B-Differensialtelling" OT="B-Differensialtelling" />
+          <Id V="DIFF" S="2.16.578.1.12.4.1.1.8212" DN="B-Differensialtelling" OT="B-Differensialtelling" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:12" />
+        <IdResultItem>200612xx03_000230</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="8.0" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>3.5 - 10.0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02593" S="2.16.578.1.12.4.1.1.7280" DN="B-Leukocytter" OT="B-Leukocytter" />
+          <Id V="LEUK" S="2.16.578.1.12.4.1.1.8212" DN="B-Leukocytter" OT="B-Leukocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:12" />
+        <IdResultItem>200612xx03_000460</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="5.6" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>1.5 - 7.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02902" S="2.16.578.1.12.4.1.1.7280" DN="B-Neutrofile granulocytter" OT="B-Neutrofile granulocytter" />
+          <Id V="NEUT" S="2.16.578.1.12.4.1.1.8212" DN="B-Neutrofile granulocytter" OT="B-Neutrofile granulocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:12" />
+        <IdResultItem>200612xx03_000660</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="1.8" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>1.1 - 3.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02636" S="2.16.578.1.12.4.1.1.7280" DN="B-Lymfocytter" OT="B-Lymfocytter" />
+          <Id V="LYMF" S="2.16.578.1.12.4.1.1.8212" DN="B-Lymfocytter" OT="B-Lymfocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:11" />
+        <IdResultItem>200612xx03_000480</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.6" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0.2 - 0.8</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02840" S="2.16.578.1.12.4.1.1.7280" DN="B-Monocytter" OT="B-Monocytter" />
+          <Id V="MONO" S="2.16.578.1.12.4.1.1.8212" DN="B-Monocytter" OT="B-Monocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:11" />
+        <IdResultItem>200612xx03_000600</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.0" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&lt; 0.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01933" S="2.16.578.1.12.4.1.1.7280" DN="B-Eosinofile granulocytter" OT="B-Eosinofile granulocytter" />
+          <Id V="EOS" S="2.16.578.1.12.4.1.1.8212" DN="B-Eosinofile granulocytter" OT="B-Eosinofile granulocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:11" />
+        <IdResultItem>200612xx03_000270</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.0" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&lt; 0.1</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01349" S="2.16.578.1.12.4.1.1.7280" DN="B-Basofile granulocytter" OT="B-Basofile granulocytter" />
+          <Id V="BASO" S="2.16.578.1.12.4.1.1.8212" DN="B-Basofile granulocytter" OT="B-Basofile granulocytter" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:26:11" />
+        <IdResultItem>200612xx03_000070</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx03</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="72" U="mmol/mol" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>20 - 42</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU27300" S="2.16.578.1.12.4.1.1.7280" DN="B-HbA1c" OT="B-HbA1c" />
+          <Id V="HBA1C" S="2.16.578.1.12.4.1.1.8212" DN="B-HbA1c" OT="B-HbA1c" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:57:24" />
+        <Comment>Etterbestilt
+</Comment>
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>200612xxD3_002321</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xxD3</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="136" U="mmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>137 - 144</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03429" S="2.16.578.1.12.4.1.1.7280" DN="P-Natrium" OT="P-Natrium" />
+          <Id V="PNA" S="2.16.578.1.12.4.1.1.8212" DN="P-Natrium" OT="P-Natrium" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:53:41" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>200612xx01_002810</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="4.2" U="mmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>3.5 - 4.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03230" S="2.16.578.1.12.4.1.1.7280" DN="P-Kalium" OT="P-Kalium" />
+          <Id V="PK" S="2.16.578.1.12.4.1.1.8212" DN="P-Kalium" OT="P-Kalium" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:53:41" />
+        <IdResultItem>200612xx01_002440</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.9" U="mmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0.8 - 1.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU03096" S="2.16.578.1.12.4.1.1.7280" DN="P-Fosfat" OT="P-Fosfat" />
+          <Id V="PP" S="2.16.578.1.12.4.1.1.8212" DN="P-Fosfat" OT="P-Fosfat" />
+        </Investigation>
+        <InvDate V="2021-04-03T17:25:31" />
+        <Comment>Etterbestilt
+</Comment>
+        <IdResultItem>200612xx01_002870</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.61" U="mmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0.71 - 0.94</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02647" S="2.16.578.1.12.4.1.1.7280" DN="P-Magnesium" OT="P-Magnesium" />
+          <Id V="MG" S="2.16.578.1.12.4.1.1.8212" DN="P-Magnesium" OT="P-Magnesium" />
+        </Investigation>
+        <InvDate V="2021-04-03T17:25:31" />
+        <Comment>Etterbestilt
+</Comment>
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>200612xx01_002760</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="32" U="U/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>15 - 35</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19654" S="2.16.578.1.12.4.1.1.7280" DN="P-ASAT" OT="P-ASAT" />
+          <Id V="ASAT" S="2.16.578.1.12.4.1.1.8212" DN="P-ASAT" OT="P-ASAT" />
+        </Investigation>
+        <InvDate V="2021-04-03T17:25:31" />
+        <Comment>Etterbestilt
+</Comment>
+        <IdResultItem>200612xx01_001770</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="24" U="U/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>10 - 45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19651" S="2.16.578.1.12.4.1.1.7280" DN="P-ALAT" OT="P-ALAT" />
+          <Id V="ALAT" S="2.16.578.1.12.4.1.1.8212" DN="P-ALAT" OT="P-ALAT" />
+        </Investigation>
+        <InvDate V="2021-04-03T17:25:31" />
+        <Comment>Etterbestilt
+</Comment>
+        <IdResultItem>200612xx01_001620</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="87" U="U/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>35 - 105</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU53077" S="2.16.578.1.12.4.1.1.7280" DN="P-Alkalisk Fosfatase" OT="P-Alkalisk Fosfatase" />
+          <Id V="AFOS" S="2.16.578.1.12.4.1.1.8212" DN="P-Alkalisk Fosfatase" OT="P-Alkalisk Fosfatase" />
+        </Investigation>
+        <InvDate V="2021-04-03T17:25:31" />
+        <Comment>Etterbestilt
+</Comment>
+        <IdResultItem>200612xx01_001600</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="23" U="U/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>10 - 75</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19657" S="2.16.578.1.12.4.1.1.7280" DN="P-GT" OT="P-GT" />
+          <Id V="GT" S="2.16.578.1.12.4.1.1.8212" DN="P-GT" OT="P-GT" />
+        </Investigation>
+        <InvDate V="2021-04-03T17:25:31" />
+        <Comment>Etterbestilt
+</Comment>
+        <IdResultItem>200612xx01_002290</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="85" U="µmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>45 - 90</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU04998" S="2.16.578.1.12.4.1.1.7280" DN="P-Kreatinin" OT="P-Kreatinin" />
+          <Id V="KREA" S="2.16.578.1.12.4.1.1.8212" DN="P-Kreatinin" OT="P-Kreatinin" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:53:41" />
+        <IdResultItem>200612xx01_002570</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="59" U="mL/min/1.73m2" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&gt;60</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR25909" S="2.16.578.1.12.4.1.1.7280" DN="Nyre-estimert GFR CKD-EPI Kreatinin (overfl.=1,73m2)" OT="Nyre-estimert GFR CKD-EPI Kreatinin (overfl.=1,73m2)" />
+          <Id V="GFREST1" S="2.16.578.1.12.4.1.1.8212" DN="Nyre-estimert GFR CKD-EPI Kreatinin (overfl.=1,73m2)" OT="Nyre-estimert GFR CKD-EPI Kreatinin (overfl.=1,73m2)" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:53:41" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>200612xx01_008920</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="12.4" U="mmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr />
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02192" S="2.16.578.1.12.4.1.1.7280" DN="P-Glukose" OT="P-Glukose" />
+          <Id V="PGLU" S="2.16.578.1.12.4.1.1.8212" DN="P-Glukose" OT="P-Glukose" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:53:41" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>200612xx01_002180</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="107" U="mg/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&lt; 4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19748" S="2.16.578.1.12.4.1.1.7280" DN="P-C-Reaktivt protein" OT="P-C-Reaktivt protein" />
+          <Id V="CRP" S="2.16.578.1.12.4.1.1.8212" DN="P-C-Reaktivt protein" OT="P-C-Reaktivt protein" />
+        </Investigation>
+        <InvDate V="2021-04-03T16:53:41" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>200612xx01_002010</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>200612xx01</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avd. for medisinsk biokjemi, Aker</Name>
+            <Id>A</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <RelServProv>
+      <Relation V="ARP" DN="Ansvarlig for rapport" />
+      <HCP>
+        <Inst>
+          <Name>Avd. for medisinsk biokjemi, Aker</Name>
+        </Inst>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

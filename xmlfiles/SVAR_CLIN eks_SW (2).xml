@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-04-06T14:42:03" />
+  <MsgId>b46535466.dat.0</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-04-06T12:02:00" />
+    <Status V="F" DN="Endelig Rapport" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>73043xxx</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <PaymentCat V="1" DN="Ordinær pasient" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>73043xxx</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>156199xx</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+		<DateOfBirth V="19xx-xx-xx" />
+		<Name>Danser, FOLKE</Name>
+		<OffId>14019800513</OffId>
+		<TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-04-06T13:30:00" />
+        </CollectedSample>
+        <IdByServProvider>156199xx</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="69" U="ug/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>10 - 170</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19763" S="2.16.578.1.12.4.1.1.7230" DN="SFER" OT="P-Ferritin" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>1</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="55" U="umol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>45 - 90</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU04998" S="2.16.578.1.12.4.1.1.7230" DN="SKRE" OT="P-Kreatinin" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>2</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="131" U="ml/min/1,73 m2" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>60 - </Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR25909" S="2.16.578.1.12.4.1.1.7230" DN="RGFRK" OT="Nyre-estimert GFR CKD-EPI Kreatinin (overfl.=1,73m2)" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>3</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="16" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>15 - 35</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19654" S="2.16.578.1.12.4.1.1.7230" DN="SAST" OT="P-ASAT" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>4</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="14" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>10 - 45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19651" S="2.16.578.1.12.4.1.1.7230" DN="SALT" OT="P-ALAT" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>5</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="10" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>10 - 45</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19657" S="2.16.578.1.12.4.1.1.7230" DN="SGT" OT="P-GT" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>6</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="106" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>35 - 105</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU53077" S="2.16.578.1.12.4.1.1.7230" DN="SALP" OT="P-ALP" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>7</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="46" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>38 - 52</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19673" S="2.16.578.1.12.4.1.1.7230" DN="SALB" OT="P-Albumin" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>8</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="1.0" U="mg/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.0 - 4.0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19748" S="2.16.578.1.12.4.1.1.7230" DN="SCRP" OT="P-CRP" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:41:59" />
+        <IdResultItem>9</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>156199xx</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Off. identifikator for institusjoner (Enhetsregisteret)" />
+          <Dept>
+            <Name>Klinisk Kjemisk Avdeling</Name>
+            <Id>MBK-UL</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+            <AdditionalId>
+              <Id>SWISSLAB</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

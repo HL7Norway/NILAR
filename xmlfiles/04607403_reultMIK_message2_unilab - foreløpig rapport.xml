@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2018-09-28T14:20:30.1640" />
+  <MsgId>E3B3C69A-C318-55E8-906A-5056AF460000</MsgId>
+  <ServReport>
+    <ServType V="M" DN="Endring" />
+    <IssueDate V="2018-09-28T14:13:46" />
+    <Status V="P" DN="Foreløpig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>04607403</ServProvId>
+    <RefDoc>
+      <MsgType V="REF" DN="Filnavn til vedlegg til svarrapport" />
+      <Id>file://rhs-ulabprgw-01.ad.ous-hf.no\Shares\BAIroot\reportsSBG_Test\04607403_951480_20180928_1420.pdf</Id>
+    </RefDoc>
+    <ServReq>
+      <ServType V="M" DN="Endring" />
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>04607403</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>04607403</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1979-05-12" />
+      <Name>Testpasient Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-09-28T14:13:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>04607403</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <!--start examinations-->
+      <!--end examinations-->
+      <!--start cultures-->
+      <!--start culture 1-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU06061" DN="AERD" S="2.16.578.1.12.4.1.1.7230" OT="Aerob dyrkning" />
+        </Investigation>
+        <InvDate V="2018-09-28T14:20:19" />
+        <Comment>Undersøkelsen er ikke indisert.
+test. fcgfcugfcg g gcucuvuv i giyug9iuygb iuh 9yhg ouyhgb ouyhboygo  oyhgouhoiuhouh o0hoipuhouhnpo i0iuhnoiuhi0u.SLUTT
+</Comment>
+        <IdResultItem>NPU06061_1</IdResultItem>
+        <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <!--end culture 1-->
+      <!--start culture 1 germ 1-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Kytococcus schroeteri</TextResultValue>
+          <TextCode V="KYSCHR" S="2.16.578.1.12.4.1.1.8271" DN="Kytococcus schroeteri" />
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <InvDate V="2018-09-28T14:20:18" />
+        <Comment>Ved 16S rDNA sekvensering kan bakterier påvises direkte i prøvemateriale. Metoden er avhengig av at det er kun en bakterieart til stede, eller at en art dominerer i blandingsflora. 
+Ved 18S rDNA sekvensering kan gjær- og muggsopp påvises direkte i prøvemateriale. Metoden er avhengig av at det kun er en soppart til stede, eller at en art dominerer i en blanding av flere sopparter. Siden metoden fortsatt er under utvikling, bør negativt resultat tolkes med forsiktighet. Dette kan representere et sant negativt funn eller et falskt negativt funn på grunn av hemmere av PCR-reaksjonen i prøvematerialet.
+</Comment>
+        <IdResultItem>Funn_1_1</IdResultItem>
+        <RefIdResultItem>NPU06061_1</RefIdResultItem>
+        <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Enkelte kolonier</TextResultValue>
+          </TextResult>
+          <ServType V="N" DN="Ny" />
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+          </TextResult>
+          <ServType V="N" DN="Ny" />
+          <Investigation>
+            <Id V="AP_D" DN="AP_D" S="2.16.578.1.12.4.1.1.7230" OT="Amfotericin B" />
+          </Investigation>
+          <InvDate V="2018-09-28T14:20:19" />
+          <IdResultItem>AP_D_1_1_5</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+      </ResultItem>
+      <!--end culture 1 germ 1-->
+      <!--start culture 1 germ 2-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Kytococcus sedentarius</TextResultValue>
+          <TextCode V="KYSEDE" S="2.16.578.1.12.4.1.1.8271" DN="Kytococcus sedentarius" />
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <InvDate V="2018-09-28T14:20:19" />
+        <IdResultItem>Funn_1_2</IdResultItem>
+        <RefIdResultItem>NPU06061_1</RefIdResultItem>
+        <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Enkelte kolonier</TextResultValue>
+          </TextResult>
+          <ServType V="N" DN="Ny" />
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+          </TextResult>
+          <ServType V="N" DN="Ny" />
+          <Investigation>
+            <Id V="AP_D" DN="AP_D" S="2.16.578.1.12.4.1.1.7230" OT="Amfotericin B" />
+          </Investigation>
+          <InvDate V="2018-09-28T14:20:19" />
+          <IdResultItem>AP_D_1_2_6</IdResultItem>
+          <RefIdResultItem>Funn_1_2</RefIdResultItem>
+          <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+      </ResultItem>
+      <!--end culture 1 germ 2-->
+      <!--start culture 2-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Blandingsflora</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU17956" DN="ANAD" S="2.16.578.1.12.4.1.1.7230" OT="Anaerob dyrkning" />
+        </Investigation>
+        <InvDate V="2018-09-28T14:20:19" />
+        <IdResultItem>NPU17956_2</IdResultItem>
+        <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <!--end culture 2-->
+      <!--end cultures-->
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <!--Oslo Universitetssykehus HF-->
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avd. for mikrobiologi, Bakteriologi, Rikshospitale</Name>
+            <Id>M</Id>
+            <AdditionalId>Unilab</AdditionalId>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

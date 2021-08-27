@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-03-18T14:01:01" />
+  <MsgId>1755A706-1910-547C-A0B6-E9B773CDC697</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-03-18T14:01:01" />
+    <ApprDate V="2021-03-18T13:43:30" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CYTO" DN="Cytologi" />
+    <ServProvId>CM 21 xxxx260</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>CM21xxxx260_Page01_18.03.2021_14-00.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>CM21xxxx260_Page01_18.03.2021_14-00.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2021-03-16T11:48:12" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOP" />
+      <Id>NULL</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-16T00:00:00" />
+        </CollectedSample>
+        <Type>Exfoliativ</Type>
+        <IdByServProvider>CM 21 xxxx260</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NOR25524" S="2.16.578.1.12.4.1.1.7280" DN="Ce-Cytologisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2021-03-18T13:43:30" />
+        <IdResultItem>27</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>CM 21 xxxx260</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="SCR" DN="Screener" />
+          <HCP>
+            <HCProf>
+              <Name>May Jones</Name>
+              <Id>jonmay</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Koman Magnar</Name>
+              <Id>kommag</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Lin Rita</Name>
+              <Id>linra</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Proteinøst materiale og enkelte makrofager (FNA fra høyre mamma)</TextResultValue>
+            <TextCode V="T 04020" S="2.16.578.1.12.4.1.1.7010" DN="høyre mamma hos kvinne" />
+            <TextCode V="M 09350" S="2.16.578.1.12.4.1.1.7010" DN="se beskrivelse" />
+            <TextCode V="P 11440" S="2.16.578.1.12.4.1.1.7010" DN="punksjonscytologisk prøve" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="VU" DN="Vurdering" />
+            <TextResultValue>Svært cellefattig materiale. Atypiske celler ikke påvist. </TextResultValue>
+          </TextResult>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Radiumhospitalet</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-RA</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>May Jones</Name>
+            <Id>jonmay</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <HCPerson>
+            <Name>koman magne</Name>
+            <Id>kommag</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <HCPerson>
+            <Name>Rita Lin</Name>
+            <Id>linra</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+       <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

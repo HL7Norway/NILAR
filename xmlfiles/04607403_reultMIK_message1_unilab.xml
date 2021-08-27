@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2018-09-28T14:13:46.4656" />
+  <MsgId>F3144BD8-C537-11E8-8694-5056AF460000</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2018-09-28T14:13:46" />
+    <Status V="S" DN="Planlagt" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>04607403</ServProvId>
+    <RefDoc>
+      <MsgType V="REF" DN="Filnavn til vedlegg til svarrapport" />
+      <Id>file://rhs-ulabprgw-01.ad.ous-hf.no\Shares\BAIroot\reportsSBG_Test\04607403_951479_20180928_1413.pdf</Id>
+    </RefDoc>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>04607403</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>04607403</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1979-05-12" />
+      <Name>Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-09-28T14:13:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>04607403</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <!--start examinations-->
+      <!--end examinations-->
+      <!--start cultures-->
+      <!--start culture 1-->
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU06061" DN="AERD" S="2.16.578.1.12.4.1.1.7230" OT="Aerob dyrkning" />
+        </Investigation>
+        <InvDate V="2018-09-28T14:13:45" />
+        <IdResultItem>NPU06061_1</IdResultItem>
+        <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <!--end culture 1-->
+      <!--start culture 2-->
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU17956" DN="ANAD" S="2.16.578.1.12.4.1.1.7230" OT="Anaerob dyrkning" />
+        </Investigation>
+        <InvDate V="2018-09-28T14:13:46" />
+        <IdResultItem>NPU17956_2</IdResultItem>
+        <RefAnalysedSubject>04607403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <!--end culture 2-->
+      <!--end cultures-->
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <!--Oslo Universitetssykehus HF-->
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avd. for mikrobiologi, Bakteriologi, Rikshospitale</Name>
+            <Id>M</Id>
+            <AdditionalId>Unilab</AdditionalId>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+     <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

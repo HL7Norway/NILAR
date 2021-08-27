@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-03-18T14:31:08" />
+  <MsgId>381B47BA-184B-51C9-A1C8-6146E8A51EBB</MsgId>
+  <!--MsgId_WithDLref:DL.SDS-DOCDBOUS-01.Patologi_Prod_Ous.1023371.117.131-->
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-03-18T14:31:08" />
+    <ApprDate V="2021-03-18T14:07:38" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CYTO" DN="Cytologi" />
+    <ServProvId>CG 21 xxxxx489</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>CG21xxxxx489_Page01_18.03.2021_14-31.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>CG21xxxxx489_Page01_18.03.2021_14-31.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2021-03-18T09:38:53" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOP" />
+      <Id>NULL</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-17T00:00:00" />
+        </CollectedSample>
+        <Type>FNA innsendt</Type>
+        <IdByServProvider>CG 21 xxxxx489</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny">
+        </ServType>
+        <Investigation>
+          <Id V="NOR25524" S="2.16.578.1.12.4.1.1.7280" DN="Ce-Cytologisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2021-03-18T14:07:38" />
+        <IdResultItem>131</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>CG 21 xxxxx489</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Helene Rask</Name>
+              <Id>HERA</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Intet diagnostisk materiale (p-cyt fra oppfylning i kinnet, høyre side).</TextResultValue>
+            <TextCode V="T 13100" S="2.16.578.1.12.4.1.1.7010" DN="hodemuskulatur UNS" />
+            <TextCode V="M 09000" S="2.16.578.1.12.4.1.1.7010" DN="for sparsomt materiale" />
+            <TextCode V="P 11440" S="2.16.578.1.12.4.1.1.7010" DN="punksjonscytologisk prøve" />
+          </TextResult>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Rikshospitalet</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-RH</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>Helene Rask</Name>
+            <Id>HERA</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

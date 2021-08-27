@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd" xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-02-24T16:00:03" />
+  <MsgId>0AED208D-6666-4C48-9E2F-2B8B5766CB6F</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-01-28T09:40:21" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="HIST" DN="Histologi" />
+    <ServProvId>H2102562</ServProvId>
+    <RefDoc>
+      <IssueDate V="2021-02-24T16:00:03" />
+      <MsgType V="A" DN="Vedlegg" />
+      <MimeType>application/pdf</MimeType>
+      <Description>H2102562</Description>
+      <Content>
+        <Base64Container xsi:schemaLocation="http://www.kith.no/xmlstds/base64container kith-base64.xsd" xmlns="http://www.kith.no/xmlstds/base64container">
+eHJlZgoyMDY5NwolJUVP</Base64Container>
+      </Content>
+    </RefDoc>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-01-28T09:40:21" />
+      <MsgDescr V="HIST" DN="Histologi" />
+      <Id>D3FF27AC-2D3A-4E32-A1C4-C0DB610874AE</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>71138176</IdByServProvider>
+      <ReasonAsText>
+        <Heading V="PROB" DN="Problemstilling" />
+        <TextResultValue>Fjerner 3 stk nevi pga uregelmessig form/struktur2 rygg, 1 stk ve brystvegg.Lokalantestesi Xyl m adr. Båtformet snitt.
+Anatomisk lokalisasjon: 
+1/3: Rygg HØ
+2/3: Rygg VE
+3/3: Thorax VE
+Kommentar til prøven: 
+1/3:
+2/3:
+3/3:
+</TextResultValue>
+      </ReasonAsText>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <DateOfBirth V="1971-11-08" />
+      <Name>Danser, Folke</Name>
+      <OffId>14019800513</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-01-26T13:53:00" />
+        </CollectedSample>
+        <Type>Hud</Type>
+        <AnatomicalOrigin>Eksisjon</AnatomicalOrigin>
+        <IdByServProvider>71138176</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="A" S="2.16.578.1.12.4.1.1.8219" DN="Histologisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2021-02-24T15:48:17" />
+        <IdResultItem>1093258</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>71138176</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="ALE" DN="Ansvarlig lege" />
+          <HCP>
+            <HCProf>
+              <Name>May Jones</Name>
+              <Id>9144919</Id>
+              <TypeId DN="Off. identifikator for helsepersonell (HPR-nummer)" V="HPR" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>1 og 3: Seboreisk keratose, hudeksisjon.
+2: Hud med benign nevuscelletumor.
+</TextResultValue>
+            <TextCode V="T02000" S="2.16.578.1.12.4.1.1.7010" />
+            <TextCode V="P11410" S="2.16.578.1.12.4.1.1.7010" />
+            <TextCode V="M72750" S="2.16.578.1.12.4.1.1.7010" />
+            <TextCode V="M87200" S="2.16.578.1.12.4.1.1.7010" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>
+Tre glass.
+1, rygg høyre: Båtformet hudbit, 15 x 9 mm. På overflaten en brun og velavgrenset tumor på 9 x 7 mm. Korteste avstand til reseksjonskanten er 1 mm. Endestykker i 1, to tverrsnitt i 2. Alt inn. 
+2, rygg venstre: Båtformet hudbit, 7 x 5 mm. Plassert på den ene halvdelen av overflaten en brun og velavgrenset flekk på 2 x 3 mm. Korteste avstand til reseksjonskanten er ca. 1 mm. Todeles, i 3. 
+3, thorax venstre: Båtformet hudbit, 9 x 4 mm. Plassert på den ene halvdelen av overflaten en diffust avgrenset brun flekk på 3 x 3 mm. Korteste avstand til reseksjonskanten er 1 mm. Todeles, i 4. </TextResultValue>
+          </TextResult>
+          <ServType V="N" DN="Ny" />
+          <Investigation>
+            <Id V="Makrobeskrivelse" DN="Makroskopi" S="2.16.578.1.12.4.1.1.7280" OT="Makroskopi" />
+            <Id V="MAKRO" DN="Makrobeskrivelse" S="2.16.578.1.12.4.1.1.8219" OT="Makrobeskrivelse" />
+          </Investigation>
+          <InvDate V="2021-01-26T14:04:01" />
+          <IdResultItem>MAKRO_1</IdResultItem>
+          <RefAnalysedSubject>71138176</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Stavanger Universitetssjukehus</Name>
+          <Id>983974678</Id>
+          <!--Stavanger Universitetssjukehus-->
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avdeling for Patologi (HST)</Name>
+            <Id>142612</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>8300</Id>
+              <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

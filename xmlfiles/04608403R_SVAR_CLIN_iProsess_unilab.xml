@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2018-11-27T14:54:24.0694" />
+  <MsgId>F28E8634-F24B-17E8-A73C-5056AF460000</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2018-11-27T14:54:24" />
+    <Status V="P" DN="Foreløpig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>04608403R</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2018-11-27T14:52:57" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>04608403</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>04608403</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1979-05-12" />
+      <Name>Testpasient Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Lungegaardsbakken 18 A</StreetAdr>
+        <PostalCode>1350</PostalCode>
+        <City>Lommedalen</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2018-11-26T12:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>0460840307</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>
+          </TextResultValue>
+          <Unit>kU/L</Unit>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;30</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR15022" S="2.16.578.1.12.4.1.1.7230" DN="MUC1" OT="P-MUC-1" />
+        </Investigation>
+        <IdResultItem>0460840307_005020</IdResultItem>
+        <StatusInvestigation V="15" DN="I prosess" />
+        <RefAnalysedSubject>0460840307</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummer i Enhetsregister" />
+          <Dept>
+            <Name>Avd. for medisinsk biokjemi, Radiumhospitalet</Name>
+            <Id>R</Id>
+            <TypeId V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            <AdditionalId>
+              <Id>Unilab</Id>
+              <Type V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

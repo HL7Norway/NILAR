@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-10-07T13:45:46" />
+  <MsgId>0BA68FF6-72E5-5B55-8AA6-15C5CDE1D29E</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2020-10-07T13:45:46" />
+    <ApprDate V="2020-10-07T13:27:47" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="HIST" DN="Histologi" />
+    <ServProvId>BU 20 141xx</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU20141xx_Page01_07.10.2020_13-45.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>BU20141xx_Page01_07.10.2020_13-45.tif</FileReference>
+    </RefDoc>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU20141xx_Page02_07.10.2020_13-45.tif</Id>
+      <Description>SnapshotPage2</Description>
+      <FileReference>BU20141xx_Page02_07.10.2020_13-45.tif</FileReference>
+    </RefDoc>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU20141xx_Page03_07.10.2020_13-45.tif</Id>
+      <Description>SnapshotPage3</Description>
+      <FileReference>BU20141xx_Page03_07.10.2020_13-45.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2020-09-23T14:15:32" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOI" />
+      <Id>NULL</Id>
+      <RequestedPrioReport V="Prioritert" DN="Prioritert" />
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Telokk, GRY</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <Type>Ikke angitt</Type>
+        <IdByServProvider>BU 20 141xx</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NOR25048" S="2.16.578.1.12.4.1.1.7280" DN="Ve-Histologi" />
+        </Investigation>
+        <InvDate V="2020-10-07T13:27:47" />
+        <IdResultItem>142</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>BU 20 141xx</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Lin, Rita</Name>
+              <Id>linra</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Blund, Jon</Name>
+              <Id>blujo</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Adenokarsinom UNS, høygradig (lavt differensiert) adenokarsinom, grad 2 ifølge WHO 2019, Colon ascendens, pT3 pN0 
+Preparat: Høyresidig hemikolektomi
+</TextResultValue>
+            <TextCode V="T 67000" S="2.16.578.1.12.4.1.1.7010" DN="colon UNS" />
+            <TextCode V="M 81403" S="2.16.578.1.12.4.1.1.7010" DN="adenokarsinom UNS" />
+            <TextCode V="T 08000" S="2.16.578.1.12.4.1.1.7010" DN="lymfeknute UNS" />
+            <TextCode V="M 99906" S="2.16.578.1.12.4.1.1.7010" DN="metastase ikke påvist" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Mottatt 1 bøtte merket personalia. Inneholder umerket tarmresektat.
+
+Neoadjuvant behandling: Nei 
+Biobanking: Ja
+Bilder fra makrobeskjæring: Ja
+Hovedpreparat: Høyresidig hemikolektomi 
+Preparatmål (cm): 23,5 cm
+Tarmperforasjon i tumoraffisert område: Nei
+Tumors lokalisasjon: Colon ascendens 
+Reseksjonsrender (mm):
+- Proksimal (oral):  55 mm
+- Distal (anal):  120 mm
+- Sirkumferent: Se mikroskopisk undersøkelse
+Tumors største diameter (mm): 60 mm (lengde), omfatter hele omkretsen i tarmlumen. Største tverrdiameter på 50 mm. Tumor deles i 11 skiver (se makrofoto). 
+Tumors vekstmåte: Polypøs, strikturerende og ulcererende
+Annet: Mesocolon adherent til tarmvegg på motsatt side av sirkumferent reseksjonsrand. Palpable lymfeknuter i mesenteriet. 
+Tumors dypeste infiltrasjon: Subserosa 
+
+Snittuttak:
+Brikett nr. 1: Tverrsnitt proksimale reseksjonsrand
+Brikett nr. 2: Tverrsnittt distale reseksjonsrand/normal slimhinne
+Brikett nr. 3: Tverrsnitt fra slimhinneforandring distale ileum
+Brikett nr. 4: Tumor med nærmeste avstand til sirkumferent reseksjonsrand
+Brikett nr. 5-6: Tumor med korteste avstand til serosa
+Brikett nr. 7: Tumor med innvekst mesocolon med lymfeknute
+Brikett nr. 8: Tumor med innvekst i mesocolon, samme lymfeknute som i 7
+Brikett nr. 9: Tumor med innvekst i mesenteriet
+Brikett nr. 10-15: Én todelt lymfeknute
+Brikett nr. 16: Tre udelte lymfeknuter
+Brikett nr. 17: En todelt lymfeknute
+Brikett nr. 18: Lang, femdelt lymfeknute
+
+Totalt 18 briketter. Rest. 
+</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="MA" S="2.16.578.1.12.4.1.1.8219" DN="Makroskopisk undersøkelse" />
+          </Investigation>
+          <InvDate V="2020-09-25T00:00:00" />
+          <RefAnalysedSubject>BU 20 141xx</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <Comment>Utfylt med mal</Comment>
+          <RefAnalysedSubject>BU 20 141xx</RefAnalysedSubject>
+          <StructuredInfo>
+            <Type V="1911.1" DN="Neoadjuvant behandling" />
+            <CodedInfo>
+              <Code V="2" DN="Nei" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.2" DN="Operasjonstype" />
+            <CodedInfo>
+              <Code V="1" DN="Høyresidig hemikolektomi" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.3" DN="Tumorperforasjon av tarm" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke påvist" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.5" DN="Antall karsinomer" />
+            <IntegerInfo>
+              <Integer>1</Integer>
+            </IntegerInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="2" DN="(Hoved)Tumors lokalisasjon" />
+            <CodedInfo>
+              <Code V="C18.1" DN="Colon ascendens" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="2.1" DN="SNOMED T-kode" />
+            <CodedInfo>
+              <Code V="T 67000" DN="colon UNS" />
+            </CodedInfo>
+            <CodedInfo>
+              <Code V="T 08000" DN="lymfeknute UNS" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.6" DN="(Hoved)Tumors histologiske type (WHO, 2010)" />
+            <CodedInfo>
+              <Code V="1" DN="Adenokarsinom UNS" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="5" DN="(Hoved)Tumors største diameter på overflaten (mm)" />
+            <PhysicalInfo>
+              <Quantity V="60" U="mm" />
+            </PhysicalInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="6" DN="(Hoved)Tumors dypeste infiltrasjon" />
+            <CodedInfo>
+              <Code V="4A" DN="Tumor infiltrerer perikolisk vev" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="8.1" DN="Avstand til nærmeste endereseksjonsrand (mm)" />
+            <PhysicalInfo>
+              <Quantity V="55" U="mm" />
+            </PhysicalInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="8.2" DN="Nærmeste endereseksjonsrand" />
+            <CodedInfo>
+              <Code V="1" DN="Proksimal (oral) endereseksjonsrand" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="9.1" DN="Avstand til fjerneste endereseksjonsrand (mm)" />
+            <PhysicalInfo>
+              <Quantity V="120" U="mm" />
+            </PhysicalInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="9.2" DN="Fjerneste endereseksjonsrand" />
+            <CodedInfo>
+              <Code V="2" DN="Distal (anal) endereseksjonsrand" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="7" DN="Minste avstand til sirkumferent reseksjonsrand (mm)" />
+            <PhysicalInfo>
+              <Quantity V="10" U="mm" />
+            </PhysicalInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.8" DN="Tumorinfiltrasjon i blod- og/eller lymfekar" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke påvist" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.10" DN="Perineural infiltrasjon" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke påvist" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="10" DN="Totalt antall regionale lymfeknuter" />
+            <IntegerInfo>
+              <Integer>18</Integer>
+            </IntegerInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="11" DN="Antall regionale lymfeknuter med metastaser" />
+            <IntegerInfo>
+              <Integer>0</Integer>
+            </IntegerInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.12" DN="Isolert(e) ekstramural(e) tumorknute(r)" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke påvist" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.13" DN="Immunhistokjemisk MMR proteinuttrykk-test" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke utført" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.15" DN="Mikrosatelitt instabilitet (MSI)-test" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke utført" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="1911.17" DN="Somatisk mutasjons-test (KRAS/BRAF/NRAS)" />
+            <CodedInfo>
+              <Code V="2" DN="Ikke utført" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="12.1" DN="pTNM-klassifikasjon - pT (AJCC, 2010)" />
+            <CodedInfo>
+              <Code V="pT3" DN="pT3" />
+            </CodedInfo>
+          </StructuredInfo>
+          <StructuredInfo>
+            <Type V="12.2" DN="pTNM-klassifikasjon - pN (AJCC, 2010)" />
+            <CodedInfo>
+              <Code V="pN0" DN="pN0" />
+            </CodedInfo>
+          </StructuredInfo>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Ullevål</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-UL</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>Lin, Rita</Name>
+            <Id>linra</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <HCPerson>
+            <Name>Blund, Jon</Name>
+            <Id>blujo</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+     <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN=" Svar" />
+        <ActComMethod V="PST" DN="Post" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+          <Id>974707160</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          <Dept>
+            <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+            <Id>974707160</Id>
+            <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          </Dept>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Postboks 5313 Majorstuen</StreetAdr>
+          <PostalCode>0304</PostalCode>
+          <City>OSLO</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>

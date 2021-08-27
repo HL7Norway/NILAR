@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-04-06T13:03:01" />
+  <MsgId>0DC2DB49-186B-4C43-B405-35FAEC86BBCA</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-04-06T13:03:01" />
+    <ApprDate V="2021-04-06T12:17:03" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="HIST" DN="Histologi" />
+    <ServProvId>BM 21 034xx</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BM21034xx_Page01_06.04.2021_13-02.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>BM21034xx_Page01_06.04.2021_13-02.tif</FileReference>
+    </RefDoc>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BM21034xx_Page02_06.04.2021_13-02.tif</Id>
+      <Description>SnapshotPage2</Description>
+      <FileReference>BM21034xx_Page02_06.04.2021_13-02.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2021-03-03T10:56:30" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOI" />
+      <Id>NULL</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <Name>Alive, Stein</Name>
+      <OffId>11064700342</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-02T00:00:00" />
+        </CollectedSample>
+        <Type>Ikke angitt</Type>
+        <IdByServProvider>BM 21 03437</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NOR25048" S="2.16.578.1.12.4.1.1.7280" DN="Ve-Histologi" />
+        </Investigation>
+        <InvDate V="2021-04-06T12:17:03" />
+        <IdResultItem>168</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>BM 21 03437</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Magnar Koman</Name>
+              <Id>kommag</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Reseksjon av isthmus thyreoidea med papillært mikrocarcinom, tall cell variant ( &gt; 50% av tumor)
+Diameter : 7 mm 
+Velavgrenset, delvis kapselkledt tumor
+Infiltrasjon gjennom tumorkapselen: ikke sikkert påvist
+Infiltrasjon gjennom " thyreoideakapselen ": ikke påvist
+Tumortromber i kar : ikke påvist
+Perinural tumorinfiltrasjon :ikke påvist
+Frie resekjosnrender: &lt; 1mm 
+Det  øvrige thyreoideavevet uten vesentlige patologiske forandringer
+
+BRAF600V(E/D) : påvist på cytologisk materiale (konf.MP21 768) 
+
+pT1a (UICC 8 utgave)</TextResultValue>
+            <TextCode V="T 96300" S="2.16.578.1.12.4.1.1.7010" DN="isthmus glandulae thyreoideae" />
+            <TextCode V="M 80503" S="2.16.578.1.12.4.1.1.7010" DN="papillært karsinom UNS" />
+            <TextCode V="P 11000" S="2.16.578.1.12.4.1.1.7010" DN="reseksjon UNS" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="VU" DN="Vurdering" />
+            <TextResultValue>Thyreoidea , isthmus område har ikke strukturer som oppfates som thyreoideakapselen.</TextResultValue>
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Mottatt et glass "Isthmus Thyreoidea" som inneholder en isthmus med trådmerking, lang tråd mot venstre og kort tråd kranialt.
+Vekt: 2 g.
+Isthmus har lengde 1,9 cm.
+Bredde: 2,8 cm.
+Tykkelse: 0,4 cm.
+Makroskopisk ses en facielignende hinne som er inntakt. 
+Tusjer ventralt mot høyre grønt, ventralt mot venstre blått og dorsal flate sort. 
+Lobus pyramidalis identifiseres ikke. 
+Ved gjennomskjæring viser snittflaten en brunlig knute med mål 0,6 x 0,5 x 0,7cm. Kortest avstand til tusjet reseksjonskant måler under 0,1cm. Knuten er fast elastisk. 
+Snittutak, se makrofoto:
+1-4: Snitt fra isthmus thyreoidea, kranialt mot kaudalt.
+Ingen rest.
+Totalt 4 briketter.</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="MA" S="2.16.578.1.12.4.1.1.8219" DN="Makroskopisk undersøkelse" />
+          </Investigation>
+          <InvDate V="2021-03-04T00:00:00" />
+          <RefAnalysedSubject>BM 21 03437</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Radiumhospitalet</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-RA</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>Magnar Koman</Name>
+            <Id>kommag</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN=" Svar" />
+        <ActComMethod V="PST" DN="Post" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+          <Id>974707160</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          <Dept>
+            <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+            <Id>974707160</Id>
+            <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          </Dept>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Postboks 5313 Majorstuen</StreetAdr>
+          <PostalCode>0304</PostalCode>
+          <City>OSLO</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>

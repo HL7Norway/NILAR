@@ -1,0 +1,499 @@
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-03-17T09:16:09.7422" />
+  <MsgId>8ED2EEB6-6827-11EA-B7DE-5056AF45FF03</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2020-03-17T09:14:11" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>20818369U</ServProvId>
+    <Comment>Av hensyn til valg av undersøkelser og tolkning av resultatene: Vennligst angi klinisk problemstilling, første sykdomsdag og evt. tilførsel av blodprodukter. Prøven oppbevares her.
+Ved registrering av prøver er vi heretter avhengig av rekvirentkode. Vær vennlig alltid å oppgi deres rekvirentkode ved utfylling av remissene. Deres kode finner dere på vår svarutskrift eller på intranett under organisasjonskart/kodeverk. Hvis rekvirentkode mangler, blir ikke analyse utført.
+Pasientens navn eller fødselsnummer som er oppgitt på rekvisisjonen er ikke i overensstemmelse med Oslo Universitetssykehus sin folkeregisterversjon.
+</Comment>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2020-03-17T09:07:03" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>20818369</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>20818369</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1979-05-12" />
+      <Name>Testpasient Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation DN="Rekvirent" V="REK" />
+        <HCP>
+          <Inst>
+            <Name>Sykehuspartner Testlegekontor-3 Winmed3</Name>
+            <HCPerson>
+              <Name>Sagen, Terje, Lege</Name>
+              <Id>2153661</Id>
+              <TypeId DN="HPR-nummer" V="HPR" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslovegen 1</StreetAdr>
+        <PostalCode>1406</PostalCode>
+        <City>Ski</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:54:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2081836907</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:54:00" />
+        </CollectedSample>
+        <Type>Urin</Type>
+        <IdByServProvider>2081836921</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:54:00" />
+        </CollectedSample>
+        <Type>Spinalvæske</Type>
+        <IdByServProvider>2081836923</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:54:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2081836903</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Titer &gt;1280 Positiv</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 20 Negativ</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU14530" S="2.16.578.1.12.4.1.1.7280" DN="ANCA IIF (PANCA CANCA)" OT="ANCA IIF (PANCA CANCA)" />
+          <Id V="ANCASV" S="2.16.578.1.12.4.1.1.8212" DN="ANCA IIF (PANCA CANCA)" OT="ANCA IIF (PANCA CANCA)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836907_100860</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <ArithmeticComp V="LT" DN="Mindre enn" />
+          <NumResultValue V="2" U="IU/mL" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;7</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28335" S="2.16.578.1.12.4.1.1.7280" DN="PR3-ANCA" OT="PR3-ANCA" />
+          <Id V="PR3C" S="2.16.578.1.12.4.1.1.8212" DN="PR3-ANCA" OT="PR3-ANCA" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <IdResultItem>2081836907_100931</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <ArithmeticComp V="GT" DN="Større enn" />
+          <NumResultValue V="200" U="IU/mL" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;7</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28334" S="2.16.578.1.12.4.1.1.7280" DN="MPO-ANCA" OT="MPO-ANCA" />
+          <Id V="MPOC" S="2.16.578.1.12.4.1.1.8212" DN="MPO-ANCA" OT="MPO-ANCA" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <Comment>Positiv.
+</Comment>
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836907_100921</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Se kommentar</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="OUS50067" S="2.16.578.1.12.4.1.1.8212" DN="Konklusjon ANCA" OT="Konklusjon ANCA" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <IdResultItem>2081836907_111210</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>&gt;1000 Positiv</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>Negativ</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28649" S="2.16.578.1.12.4.1.1.7280" DN="CSV-Anti-NMDA reseptor " OT="CSV-Anti-NMDA reseptor " />
+          <Id V="NMDA-CSV" S="2.16.578.1.12.4.1.1.8212" DN="CSV-Anti-NMDA reseptor " OT="CSV-Anti-NMDA reseptor " />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836923_111450</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836923</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>&lt;10 Negativ</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt;10 Negativ</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28654" S="2.16.578.1.12.4.1.1.7280" DN="Anti-NMDA reseptor" OT="Anti-NMDA reseptor" />
+          <Id V="NMDA" S="2.16.578.1.12.4.1.1.8212" DN="Anti-NMDA reseptor" OT="Anti-NMDA reseptor" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <IdResultItem>2081836907_111460</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="15.00" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0.70 - 2.00</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19740" S="2.16.578.1.12.4.1.1.7280" DN="C3" OT="C3" />
+          <Id V="C3" S="2.16.578.1.12.4.1.1.8212" DN="C3" OT="C3" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836903_101060</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836903</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="600" U="ng/mL" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 300</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28400" S="2.16.578.1.12.4.1.1.7280" DN="SC5b-9 (Komplementaktiveringsprodukt)" OT="SC5b-9 (Komplementaktiveringsprodukt)" />
+          <Id V="SC5B9" S="2.16.578.1.12.4.1.1.8212" DN="SC5b-9 (Komplementaktiveringsprodukt)" OT="SC5b-9 (Komplementaktiveringsprodukt)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <Comment>Positiv.
+Konsentrasjonen av aktiveringsprodukter av komplement i plasma er forhøyet. Under forutsetning av at prøven er forskriftsmessig behandlet, er dette uttrykk for en komplementaktivering in vivo. Det kan foreligge en klassisk komplementaktivering - oftest utløst av immunkomplekser i forbindelse med infeksjoner eller autoimmune sykdommer - eller en alternativ aktivering - oftest utløst av infeksjoner med Gram-negative bakterier.
+</Comment>
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836903_111010</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836903</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="90" U="%" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&gt; 40</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28308" S="2.16.578.1.12.4.1.1.7280" DN="Klassisk aktiveringsvei (CP)" OT="Klassisk aktiveringsvei (CP)" />
+          <Id V="CP" S="2.16.578.1.12.4.1.1.8212" DN="Klassisk aktiveringsvei (CP)" OT="Klassisk aktiveringsvei (CP)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <IdResultItem>2081836907_101000</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="5" U="%" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&gt; 10</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28341" S="2.16.578.1.12.4.1.1.7280" DN="Lektin aktiveringsvei (LP)" OT="Lektin aktiveringsvei (LP)" />
+          <Id V="LP" S="2.16.578.1.12.4.1.1.8212" DN="Lektin aktiveringsvei (LP)" OT="Lektin aktiveringsvei (LP)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2081836907_101010</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="2" U="%" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&gt; 10</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU28307" S="2.16.578.1.12.4.1.1.7280" DN="Alternativ aktiveringsvei (AP)" OT="Alternativ aktiveringsvei (AP)" />
+          <Id V="AP" S="2.16.578.1.12.4.1.1.8212" DN="Alternativ aktiveringsvei (AP)" OT="Alternativ aktiveringsvei (AP)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2081836907_101020</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Se kommentar</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="OUS00377" S="2.16.578.1.12.4.1.1.8212" DN="Konklusjon funksjonell komplementaktivitet" OT="Konklusjon funksjonell komplementaktivitet" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:08" />
+        <Comment>Konsentrasjonen av aktiveringsprodukter av komplement i plasma er forhøyet. Under forutsetning av at prøven er forskriftsmessig behandlet, er dette uttrykk for en komplementaktivering in vivo. Det kan foreligge en klassisk komplementaktivering - oftest utløst av immunkomplekser i forbindelse med infeksjoner eller autoimmune sykdommer - eller en alternativ aktivering - oftest utløst av infeksjoner med Gram-negative bakterier.
+Funksjonell komplementaktivitet viste patologisk funn. Prøven bør gjentas en gang for å bekrefte funnet. Serum bringes til laboratoriet innen 24 timer etter at det er tatt. Vennligst merk rekvisisjonen (felt for kliniske opplysninger) med: 2. prøve.
+</Comment>
+        <IdResultItem>2081836907_101030</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="60" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>40 - 52</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05015" S="2.16.578.1.12.4.1.1.7280" DN="P-Albumin (elektroforese)" OT="P-Albumin (elektroforese)" />
+          <Id V="SALBU" S="2.16.578.1.12.4.1.1.8212" DN="P-Albumin (elektroforese)" OT="P-Albumin (elektroforese)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836907_006860</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="10.0" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>2.1 - 3.5</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU04650" S="2.16.578.1.12.4.1.1.7280" DN="P-alfa1-globulin (elektroforese)" OT="P-alfa1-globulin (elektroforese)" />
+          <Id V="A1GL" S="2.16.578.1.12.4.1.1.8212" DN="P-alfa1-globulin (elektroforese)" OT="P-alfa1-globulin (elektroforese)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836907_006640</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="4.0" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>4.4 - 7.8</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU04651" S="2.16.578.1.12.4.1.1.7280" DN="P-alfa2-globulin (elektroforese)" OT="P-alfa2-globulin (elektroforese)" />
+          <Id V="A2GL" S="2.16.578.1.12.4.1.1.8212" DN="P-alfa2-globulin (elektroforese)" OT="P-alfa2-globulin (elektroforese)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2081836907_006650</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="5.0" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3.5 - 5.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU09262" S="2.16.578.1.12.4.1.1.7280" DN="P-beta1-globulin (elektroforese)" OT="P-beta1-globulin (elektroforese)" />
+          <Id V="B1GL" S="2.16.578.1.12.4.1.1.8212" DN="P-beta1-globulin (elektroforese)" OT="P-beta1-globulin (elektroforese)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <IdResultItem>2081836907_006670</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Se kommentar</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU03300" S="2.16.578.1.12.4.1.1.7280" DN="P-Proteinelektroforese" OT="P-Proteinelektroforese" />
+          <Id V="ELFO" S="2.16.578.1.12.4.1.1.8212" DN="P-Proteinelektroforese" OT="P-Proteinelektroforese" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:10:40" />
+        <Comment>En liten topp ses ved kapillærelektroforese, men gjenfinnes ikke ved immuntyping. Kan skyldes immunrespons eller forekomst av en liten M-komponent. Dersom klinisk indikasjon: kontrollprøve om 3-6 mnd.
+Den oppgitte øvre referansegrensen gjelder voksne. Hos barn er øvre referansegrense lavere. For diagnosen hyper-IgD-syndrom er det imidlertid vanlig å kreve verdier &gt;100 mg/L, uansett alder. Området 100-300 mg/L bør betraktes som grenseverdier, siden disse i enkelte tilfeller også kan sees hos friske og hos pasienter med andre tilstander enn hyper-IgD-syndrom.
+</Comment>
+        <IdResultItem>2081836907_090017</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="16.0" U="g/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>6.9 - 15.7</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19814" S="2.16.578.1.12.4.1.1.7280" DN="P-IGG" OT="P-IGG" />
+          <Id V="IGG" S="2.16.578.1.12.4.1.1.8212" DN="P-IGG" OT="P-IGG" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2081836907_002400</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T09:14:11" />
+        <MedicalValidationDate V="2020-03-17T09:14:11" />
+        <RefAnalysedSubject>2081836907</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Utført</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU28906" S="2.16.578.1.12.4.1.1.7280" DN="U-M-komponent (immunfiksering)" OT="U-M-komponent (immunfiksering)" />
+          <Id V="UIMFIX" S="2.16.578.1.12.4.1.1.8212" DN="U-M-komponent (immunfiksering)" OT="U-M-komponent (immunfiksering)" />
+        </Investigation>
+        <InvDate V="2020-03-17T09:13:05" />
+        <Comment>M-komponent er ikke påvist ved kapillærelektroforese. Immuntyping er derfor ikke utført. Ved symptomer og tegn på myelomatose, kan immunfiksering rekvireres pr. telefon innen 2 uker etter mottak av blodprøven.
+</Comment>
+        <IdResultItem>2081836921_006940</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2081836921</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Immunologi Ullevål</Name>
+            <Id>110058</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>U</Id>
+              <Type V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

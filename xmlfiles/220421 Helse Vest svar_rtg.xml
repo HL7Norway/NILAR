@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01">
+  <Type V="S" DN="Svar" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-02-09T07:52:40" />
+  <MsgId>cb7fe2f8-024e-47f6-9eed-bac89ecedbe7</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-02-09T07:52:40" />
+    <Status V="P" DN="Foreløpig rapport" />
+    <MsgDescr V="RTG" DN="Røntgen" />
+    <ServProvId>NOMMRG00130zipped</ServProvId>
+    <ServReq>
+      <IssueDate V="2021-02-08" />
+      <Id>39428720</Id>
+      <IdByServProvider>NORHST00120zipped</IdByServProvider>
+      <ReasonAsText>
+        <Heading V="PROB" DN="Aktuell problemstilling" />
+      </ReasonAsText>
+    </ServReq>
+    <Patient>
+      <Name>Gundersen, Ronald</Name>
+      <OffId>15076500565</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslovegen 1</StreetAdr>
+        <PostalCode>7032</PostalCode>
+        <City>Trondheim</City>
+      </Address>
+      <InfItem>
+        <Observation>
+          <Description xsi:type="xsd:string">zipped</Description>
+        </Observation>
+        <Type V="ANAM" DN="Sykehistorie" />
+      </InfItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+          <TextResultValue xsi:type="xsd:string">08.02.2021, 20:20, MR Lumbosakralkolumna IV  zipped  </TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="SNA0GG" S="2.16.578.1.12.4.1.1.7270" DN="MR Lumbosakralkolumna" OT="MR Lumbosakralkolumna" />
+          <Spec V="ZTX0EA" S="2.16.578.1.12.4.1.1.7270" DN="Intravenøs kontrast" OT="Intravenøs kontrast" />
+        </Investigation>
+        <InvDate V="2021-02-08T20:58:25" />
+        <IdResultItem>NORHST0015916682</IdResultItem>
+        <StatusInvestigation V="2" DN="Foreløpig" />
+        <StatusChangeDate V="2021-02-09T07:52:40" />
+        <DescrDate V="2021-02-09T07:52:40" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <Inst>
+          <Name>Helse Stavanger HF</Name>
+          <Id>44</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Helse Stavanger HF, HST Bildediagnostikk (hovedrtg.)</Name>
+            <Id>89903</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>110598</Id>
+              <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+            </AdditionalId>
+            <AdditionalId>
+              <Id>RAD-HST</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <AdditionalId>
+            <Id>100083</Id>
+            <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+          </AdditionalId>
+          <AdditionalId>
+            <Id>983974678</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <ComMethod V="EDI" DN="EDI" />
+      <HCP>
+        <Inst>
+          <Name>Helse Stavanger HF</Name>
+          <Id>44</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>HST Akuttmottak MO</Name>
+            <Id>701741</Id>
+            <TypeId V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+            <AdditionalId>
+              <Id>MO</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>MUHAMMAD ALI</Name>
+            <Id>10067479</Id>
+            <TypeId V="HPR" DN="HPR-nummer" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>100083</Id>
+            <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+          </AdditionalId>
+          <AdditionalId>
+            <Id>983974678</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </Requester>
+	<CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svarrapport" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS </Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+           </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummer i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </CopyDest>
+    <RelServProv>
+      <Relation V="ALE" DN="Ansvarlig Lege" />
+      <HCP>
+        <HCProf>
+          <Type V="LE" DN="Lege" />
+          <Name>May Jones</Name>
+			<Id>9144919</Id>
+          <TypeId V="HPR" DN="HPR-nummer" />
+        </HCProf>
+        <Address>
+          <Type V="WP" DN="Arbeidsadresse" />
+          <TeleAddress V="tel:51518000" />
+        </Address>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

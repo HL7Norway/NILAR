@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<!-- Dette er en testmelding med fiktive personer -->
+<!-- -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2017-10-05T12:16:23"/>
+	<MsgId>3c0a7e3b-b527-4ecd-8086-b77ecea2d280</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2017-10-05T12:16:18"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="CYTO" DN="Cytologi"/>
+		<ServProvId>0d49a0fb-b5d4-4462-8ee1-a72240147a2e</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2017-10-01T12:16:23"/>
+			<MsgDescr V="CYTO" DN="Cytologi"/>
+			<Id>4c7c79b8-eeb1-11db-8314-0800200c9a66</Id>
+			<ReceiptDate V="2017-10-01T12:20:00"/>
+		</ServReq>
+		<Patient>
+			<Sex V="2" DN="Kvinne"/>
+			<DateOfBirth V="1969-11-13"/>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Kattskinnet legesenter</Name>
+						<HCPerson>
+							<Name>Magnar Koman, LIS1</Name>
+							<Id>9144889</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+				</HCP>
+			</ResponsibleHcp>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Numedalsveien 52</StreetAdr>
+				<PostalCode>3602</PostalCode>
+				<City>Kongsberg</City>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2017-10-01T11:20:00"/>
+					<CollectorComment>Børste og spatel</CollectorComment>
+				</CollectedSample>
+				<TypeCoded V="CVX" S="2.16.578.1.12.4.1.1.8216" DN="Cervix"/>
+				<IdByServProvider>6aaf5be7-a45a-4713-880d-e711832b102a</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NOR25524" S="2.16.578.1.12.4.1.1.7280" DN="Ce-Cytologisk undersøkelse"/>
+				</Investigation>
+				<InvDate V="2017-10-05"/>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RelServProv>
+					<Relation V="AHP" DN="Ansvarlig helsepersonell"/>
+					<HCP>
+						<HCProf>
+							<Name>August September</Name>
+							<Id>9144897</Id>
+							<TypeId DN="HPR-nummer" V="HPR"/>
+						</HCProf>
+						<Address>
+							<Type V="WP" DN="Arbeidsadresse"/>
+							<TeleAddress V="tel:72431796"/>
+						</Address>
+					</HCP>
+				</RelServProv>
+				<ResultItem>
+					<TextResult>
+						<Heading V="FU" DN="Funn og undersøkelsesresultater"/>
+						<TextResultValue>Benignt cellebilde</TextResultValue>
+						<TextCode V="T83000" S="2.16.578.1.12.4.1.1.7010" DN="Spatel el. ukjent"/>
+						<TextCode V="M00100" S="2.16.578.1.12.4.1.1.7010" DN="Normal morfologi UNS"/>
+					</TextResult>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="VU" DN="Vurdering"/>
+						<TextResultValue>Det sees benigne plate- og sylinderepitelceller. Betennelsespreg. Noe keratinisering.</TextResultValue>
+					</TextResult>
+				</ResultItem>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>ST OLAVS HOSPITAL HF</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Patologi</Name>
+						<Id>91818</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>56704</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>258521</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="ARP" DN="Ansvarlig for rapport"/>
+			<HCP>
+				<Inst>
+					<Name>Avdeling for patologi</Name>
+				</Inst>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:06800"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

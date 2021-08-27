@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-04-06T14:58:02.3433" />
+  <MsgId>B88ECCB8-96D7-66EB-A7EC-5056AF45FF00</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-04-06T14:57:30" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+    <ServProvId>21010xxxT</ServProvId>
+    <RefDoc>
+      <IssueDate V="2021-04-06T14:58:02" />
+      <MsgType V="A" DN="Vedlegg" />
+      <MimeType>application/pdf</MimeType>
+      <Description>21010xxx</Description>
+      <Content>Vedlegget er fjernet fra melding til Klinisk Datavarehus</Content>
+    </RefDoc>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-03-05T09:17:57" />
+      <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+      <Id>21010xxx</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>21010xxx</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+		<DateOfBirth V="19xx-xx-xx" />
+		<Name>Danse. Folke</Name>
+		<OffId>14019800513</OffId>
+		<TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation DN="Rekvirent" V="REK" />
+        <HCP>
+          <Inst>
+            <Name>Akershus universitetssykehus HF</Name>
+            <HCPerson>
+              <Name>Jones, May, Lege</Name>
+              <Id>9144919</Id>
+              <TypeId DN="HPR-nummer" V="HPR" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslovegen 1</StreetAdr>
+        <PostalCode>2150</PostalCode>
+        <City>Årnes</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-04T09:16:00" />
+        </CollectedSample>
+        <Type>Administrativt</Type>
+        <IdByServProvider>21010xxx97</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Se bemerkning</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="OUS00488" S="2.16.578.1.12.4.1.1.7230" DN="KARYOKOMM" OT="Vurdering av karyotype:" />
+        </Investigation>
+        <InvDate V="2021-03-05T09:17:57" />
+        <Comment>Den cytogenetiske analysen av korttidsdyrket benmarg viste den for kroniske myelogen leukemi typiske t(9;22)((q34;q11) i samtlige av de 20 undersøkte metafasene.
+</Comment>
+        <IdResultItem>21010xxx97_700680</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2021-04-06T14:57:30" />
+        <MedicalValidationDate V="2021-04-06T14:57:30" />
+        <RefAnalysedSubject>21010xxx97</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Kreftcytogenetikk, Radiumhospitalet</Name>
+            <Id>T</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+            <AdditionalId>
+              <Id>Unilab</Id>
+              <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

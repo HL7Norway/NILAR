@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<!-- Dette er en testmelding med fiktive personer -->
+<!-- -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2017-09-02T13:59:04"/>
+	<MsgId>47428837-846C-4ADE-8141-A86AB530BC8D</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2017-09-02T13:58:49"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>c961b48f-dfbf-41d5-b85c-8da47f14d617</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2017-09-02T13:46:22"/>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id>D24BCD22-6794-49A3-8E1E-E8C3D24A21A3</Id>
+			<RequestedPrioReport V="NORM" DN="Normal"/>
+			<IdByServProvider>89e4e968-9583-480a-9bb5-fee5432669d7</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>Telokk, Gry</Name>
+			<OffId>12057900499</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Nidarvoll helsehus</Name>
+						<Id>976677544</Id>
+						<TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister"/>
+						<HCPerson>
+							<Name>Lege August September</Name>
+							<Id>9144897</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+					<MedSpeciality DN="Allmennmedisin" V="1" S="2.16.578.1.12.4.1.1.7426"/>
+					<Address>
+						<Type V="PST" DN="Postadresse"/>
+						<StreetAdr>Trondheim kommune, Nidarvoll helsehus, Postboks 2300 Sluppen</StreetAdr>
+						<PostalCode>7004</PostalCode>
+						<City>Trondheim</City>
+						<TeleAddress V="tel:72548355"/>
+					</Address>
+				</HCP>
+			</ResponsibleHcp>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Lungegaardsbakken 13</StreetAdr>
+				<PostalCode>5020</PostalCode>
+				<City>Bergen</City>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2017-09-02T13:47:41"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByServProvider>VIR2701269201</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Ikke påvist</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU03952" S="2.16.578.1.12.4.1.1.7280" DN="P-Kusmavirus (parotittvirus) IgG"/>
+				</Investigation>
+				<InvDate V="2017-09-02T13:57:35"/>
+				<Comment>Påvist IgM, men ikke IgG. Kan være forenlig med aktuell infeksjon, men pga mulighet for uspesifikk reaktivitet anbefales imidlertid kontrollprøve mhp tilkomst av IgG.</Comment>
+				<IdResultItem>2701269201_400320</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2017-09-02T13:58:49"/>
+				<MedicalValidationDate V="2017-09-02T13:58:49"/>
+				<RefAnalysedSubject>VIR2701269201</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Påvist</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU03953" S="2.16.578.1.12.4.1.1.7280" DN="P-Kusmavirus (parotittvirus) IgM"/>
+				</Investigation>
+				<InvDate V="2017-09-02T13:57:35"/>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>2701269201_400330</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2017-09-02T13:58:49"/>
+				<MedicalValidationDate V="2017-09-02T13:58:49"/>
+				<RefAnalysedSubject>VIR2701269201</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>St. Olavs Hospital</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91126</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Trondheim kommune</Name>
+					<Id>2342</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Legetjeneste ved sykehjem mv.</Name>
+						<Id>88218</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="AHP" DN="Ansvarlig helsepersonell"/>
+			<HCP>
+				<HCProf>
+					<Type V="BI" DN="Bioingeniør"/>
+					<Name>Mykke Plasme</Name>
+					<Id>9876511</Id>
+					<TypeId V="HPR" DN="HPR-nummer"/>
+				</HCProf>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:73112233"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

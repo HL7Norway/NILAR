@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-03-26T15:31:32" />
+  <MsgId>79C79353-EC35-459B-AAFA-DD5DAB88C185</MsgId>
+  <!--MsgId_WithDLref:DL.SDS-DOCDBOUS-01.Patologi_Prod_Ous.865889.76.90-->
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-03-26T15:31:32" />
+    <ApprDate V="2021-03-26T14:32:39" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CYTO" DN="Cytologi" />
+    <ServProvId>CG 21 xxxxxx535</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>CG21xxxxxx535_Page01_26.03.2021_15-31.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>CG21xxxxxx535_Page01_26.03.2021_15-31.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2021-03-26T11:55:27" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOI" />
+      <Id>NULL</Id>
+      <RequestedPrioReport V="OHJELP" DN="Øyeblikkelig hjelp" />
+      <Comment>
+        <Heading V="TEL" DN="Telefonnummer" />
+        <TextResultValue>Telefonsvar CITO: 26207</TextResultValue>
+      </Comment>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <Name>Danser FOLKE</Name>
+      <OffId>14019800513</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-26T00:00:00" />
+        </CollectedSample>
+        <Type>FNA innsendt</Type>
+        <IdByServProvider>CG 21 xxxxxx535</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny">
+        </ServType>
+        <Investigation>
+          <Id V="NOR25524" S="2.16.578.1.12.4.1.1.7280" DN="Ce-Cytologisk undersøkelse" />
+        </Investigation>
+        <InvDate V="2021-03-26T14:32:39" />
+        <IdResultItem>90</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>CG 21 xxxxxx535</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>May Jones</Name>
+              <Id>MJ</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Maligne celler fra lavt differensiert plateepitelkarsinom forenlig med metastase (FNAC regio 2 høyre side hals).</TextResultValue>
+            <TextCode V="T 08000" S="2.16.578.1.12.4.1.1.7010" DN="lymfeknute UNS" />
+            <TextCode V="M 80706" S="2.16.578.1.12.4.1.1.7010" DN="metastase fra plateepitelkarsinom UNS" />
+            <TextCode V="P 11440" S="2.16.578.1.12.4.1.1.7010" DN="punksjonscytologisk prøve" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="VU" DN="Vurdering" />
+            <TextResultValue>Et suspensjonsrør og åtte utstryksglass. Inneholder et delvis nekrotisk materiale som inneholder klart atypiske plateepitelceller med keratinisering og tildels flak av nærmest udifferensiert karsinom. </TextResultValue>
+          </TextResult>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Rikshospitalet</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-RH</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>May Jones</Name>
+            <Id>MJ</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+       <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN=" Svar">
+        </MsgType>
+        <ActComMethod V="PST" DN="Post">
+        </ActComMethod>
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+          <Id>974707160</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          <Dept>
+            <Name>OSLO UNIVERSITETSSYKEHUS HF KREFTREGISTERET</Name>
+            <Id>974707160</Id>
+            <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)" />
+          </Dept>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Postboks 5313 Majorstuen</StreetAdr>
+          <PostalCode>0304</PostalCode>
+          <City>OSLO</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>

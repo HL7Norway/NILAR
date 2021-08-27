@@ -1,0 +1,536 @@
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-03-17T10:22:09.7165" />
+  <MsgId>C7270EF6-6830-11EA-901E-5056AF45FF44</MsgId>
+  <ServReport>
+    <ServType V="M" DN="Endring" />
+    <IssueDate V="2020-03-17T10:05:47" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>20152714B</ServProvId>
+    <Comment>Ved registrering av prøver er vi heretter avhengig av rekvirentkode. Vær vennlig alltid å oppgi deres rekvirentkode ved utfylling av remissene. Deres kode finner dere på vår svarutskrift eller på intranett under organisasjonskart/kodeverk. Hvis rekvirentkode mangler, blir ikke analyse utført.
+</Comment>
+    <ServReq>
+      <ServType V="M" DN="Endring" />
+      <IssueDate V="2020-03-17T09:57:43" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>20152714</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>20152714</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <DateOfBirth V="1965-07-15" />
+      <Name>Testpasient Gundersen, Roland</Name>
+      <OffId>15076500565</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation DN="Rekvirent" V="REK" />
+        <HCP>
+          <Inst>
+            <Name>Sykehuspartner Testlegekontor-3 Winmed3</Name>
+            <HCPerson>
+              <Name>Sagen, Terje, Lege</Name>
+              <Id>2153661</Id>
+              <TypeId DN="HPR-nummer" V="HPR" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Flåklypa 31</StreetAdr>
+        <PostalCode>2560</PostalCode>
+        <City>Alvdal</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2015271403</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2015271401</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2015271404</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>20152714D3</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2015271411</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2015271407</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:00:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>20152714C3</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="11.0" U="g/dL" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>13.4 - 17.0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin" OT="B-Hemoglobin" />
+          <Id V="HB" S="2.16.578.1.12.4.1.1.8212" DN="B-Hemoglobin" OT="B-Hemoglobin" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2015271403_000360</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.33" U="" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0.40 - 0.50</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01961" S="2.16.578.1.12.4.1.1.7280" DN="B-EVF" OT="B-EVF" />
+          <Id V="EVF" S="2.16.578.1.12.4.1.1.8212" DN="B-EVF" OT="B-EVF" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2015271403_000390</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Hematologiinstrumentet varsler mulig umodne celler, usikker differensialtelling.</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU18156" S="2.16.578.1.12.4.1.1.7280" DN="B-Differensialtelling" OT="B-Differensialtelling" />
+          <Id V="DIFF" S="2.16.578.1.12.4.1.1.8212" DN="B-Differensialtelling" OT="B-Differensialtelling" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271403_000230</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="2.5" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>3.5 - 10.0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02593" S="2.16.578.1.12.4.1.1.7280" DN="B-Leukocytter" OT="B-Leukocytter" />
+          <Id V="LEUK" S="2.16.578.1.12.4.1.1.8212" DN="B-Leukocytter" OT="B-Leukocytter" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2015271403_000460</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="1.5" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>1.5 - 7.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02902" S="2.16.578.1.12.4.1.1.7280" DN="B-Neutrofile granulocytter" OT="B-Neutrofile granulocytter" />
+          <Id V="NEUT" S="2.16.578.1.12.4.1.1.8212" DN="B-Neutrofile granulocytter" OT="B-Neutrofile granulocytter" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271403_000660</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="1.1" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>1.1 - 3.3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02636" S="2.16.578.1.12.4.1.1.7280" DN="B-Lymfocytter" OT="B-Lymfocytter" />
+          <Id V="LYMF" S="2.16.578.1.12.4.1.1.8212" DN="B-Lymfocytter" OT="B-Lymfocytter" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271403_000480</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.1" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0.2 - 0.8</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02840" S="2.16.578.1.12.4.1.1.7280" DN="B-Monocytter" OT="B-Monocytter" />
+          <Id V="MONO" S="2.16.578.1.12.4.1.1.8212" DN="B-Monocytter" OT="B-Monocytter" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2015271403_000600</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.0" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&lt; 0.4</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01933" S="2.16.578.1.12.4.1.1.7280" DN="B-Eosinofile granulocytter" OT="B-Eosinofile granulocytter" />
+          <Id V="EOS" S="2.16.578.1.12.4.1.1.8212" DN="B-Eosinofile granulocytter" OT="B-Eosinofile granulocytter" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271403_000270</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.0" U="10#9/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&lt; 0.1</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01349" S="2.16.578.1.12.4.1.1.7280" DN="B-Basofile granulocytter" OT="B-Basofile granulocytter" />
+          <Id V="BASO" S="2.16.578.1.12.4.1.1.8212" DN="B-Basofile granulocytter" OT="B-Basofile granulocytter" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271403_000070</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <StatusChangeDate V="2020-03-17T10:05:22" />
+        <MedicalValidationDate V="2020-03-17T10:05:22" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Utført, ingen bemerkning.</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU58811" S="2.16.578.1.12.4.1.1.7280" DN="B-Utstryk" OT="B-Utstryk" />
+          <Id V="UTS" S="2.16.578.1.12.4.1.1.8212" DN="B-Utstryk" OT="B-Utstryk" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271403_000990</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271403</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="500" U="pmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>150 - 650</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01700" S="2.16.578.1.12.4.1.1.7280" DN="P-Vit. B12 (Kobalamin)" OT="P-Vit. B12 (Kobalamin)" />
+          <Id V="B12" S="2.16.578.1.12.4.1.1.8212" DN="P-Vit. B12 (Kobalamin)" OT="P-Vit. B12 (Kobalamin)" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:20:28" />
+        <Comment>Har endret svar etter reanalysering av prøve.
+</Comment>
+        <IdResultItem>2015271401_005481</IdResultItem>
+        <StatusInvestigation V="1" DN="Revidert" />
+        <RefAnalysedSubject>2015271401</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="90" U="IU/dL" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&gt;83</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR25853" S="2.16.578.1.12.4.1.1.7280" DN="P-Antitrombin aktivitet (FXa-basert reagens)" OT="P-Antitrombin aktivitet (FXa-basert reagens)" />
+          <Id V="ATKO" S="2.16.578.1.12.4.1.1.8212" DN="P-Antitrombin aktivitet (FXa-basert reagens)" OT="P-Antitrombin aktivitet (FXa-basert reagens)" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271411_001030</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271411</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <ArithmeticComp V="LT" DN="Mindre enn" />
+          <NumResultValue V="0.27" U="mg/L FEU" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU28289" S="2.16.578.1.12.4.1.1.7280" DN="P-D-Dimer" OT="P-D-Dimer" />
+          <Id V="DDIM" S="2.16.578.1.12.4.1.1.8212" DN="P-D-Dimer" OT="P-D-Dimer" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:52" />
+        <Comment>Ved bruk av Wells skår ved utredning for DVT/LE betraktes D-dimer som normal når resultatet er &lt;0,50 mg/L FEU.
+</Comment>
+        <IdResultItem>2015271411_000210</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271411</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <ArithmeticComp V="LT" DN="Mindre enn" />
+          <NumResultValue V="5" U="ng/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0 - 14</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU27501" S="2.16.578.1.12.4.1.1.7280" DN="P-Troponin T" OT="P-Troponin T" />
+          <Id V="TNT" S="2.16.578.1.12.4.1.1.8212" DN="P-Troponin T" OT="P-Troponin T" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:52" />
+        <IdResultItem>2015271401_003161</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271401</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="125" U="µmol/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>60 - 105</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU04998" S="2.16.578.1.12.4.1.1.7280" DN="P-Kreatinin" OT="P-Kreatinin" />
+          <Id V="KREA" S="2.16.578.1.12.4.1.1.8212" DN="P-Kreatinin" OT="P-Kreatinin" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>2015271401_002570</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271401</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="56" U="mL/min/1.73m2" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>&gt;60</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR25909" S="2.16.578.1.12.4.1.1.7280" DN="Nyre-eGFR CKD-EPI Kreatinin" OT="Nyre-eGFR CKD-EPI Kreatinin" />
+          <Id V="GFREST1" S="2.16.578.1.12.4.1.1.8212" DN="Nyre-eGFR CKD-EPI Kreatinin" OT="Nyre-eGFR CKD-EPI Kreatinin" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:52" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2015271401_008920</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271401</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="65" U="mL/min/1.73m2" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NOR25897" S="2.16.578.1.12.4.1.1.7280" DN="Nyre-mGFR Joheksol" OT="Nyre-mGFR Joheksol" />
+          <Id V="GFR" S="2.16.578.1.12.4.1.1.8212" DN="Nyre-mGFR Joheksol" OT="Nyre-mGFR Joheksol" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <IdResultItem>2015271404_005990</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271404</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.025" U="g/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <RefInterval>
+          <Descr>0.030 - 2.010</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19820" S="2.16.578.1.12.4.1.1.7280" DN="P-IgG4-subklasse" OT="P-IgG4-subklasse" />
+          <Id V="IGG4" S="2.16.578.1.12.4.1.1.8212" DN="P-IgG4-subklasse" OT="P-IgG4-subklasse" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <DevResultInd V="2" DN="Under nedre referansegrense" />
+        <IdResultItem>2015271407_006770</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015271407</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <ArithmeticComp V="LT" DN="Mindre enn" />
+          <NumResultValue V="0.70" U="µg/L" />
+        </NumResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU19912" S="2.16.578.1.12.4.1.1.7280" DN="B-Takrolimus" OT="B-Takrolimus" />
+          <Id V="TAKRO" S="2.16.578.1.12.4.1.1.8212" DN="B-Takrolimus" OT="B-Takrolimus" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:52" />
+        <Comment>Akkreditert iht. NS-EN ISO-standard 15189 testnummer 271 (Avdeling for farmakologi).
+</Comment>
+        <IdResultItem>20152714C3_005741</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>20152714C3</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>*1/*3B</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU27623" S="2.16.578.1.12.4.1.1.7280" DN="B-TPMT-genotype" OT="B-TPMT-genotype" />
+          <Id V="TPMT" S="2.16.578.1.12.4.1.1.8212" DN="B-TPMT-genotype" OT="B-TPMT-genotype" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <Comment>Genotypen tilsier intermediær (noe nedsatt) legemiddelomdannelse via TPMT. Mer info på anx.no/TPMT.
+</Comment>
+        <IdResultItem>20152714D3_006910</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>20152714D3</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Pasienten er heterozygot (G/A) for C282Y-varianten (c.845G&gt;A) i HFE-genet, men har ikke variantene H63D (c.187C&gt;G) eller S65C (c.193A&gt;T). Denne genotypen gir ingen sikker økt risiko for utvikling av hemokromatose.</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU19111" S="2.16.578.1.12.4.1.1.7280" DN="B-HFE-genotype" OT="B-HFE-genotype" />
+          <Id V="HFE" S="2.16.578.1.12.4.1.1.8212" DN="B-HFE-genotype" OT="B-HFE-genotype" />
+        </Investigation>
+        <InvDate V="2020-03-17T10:04:51" />
+        <Comment>Det er analysert for C282Y, H63D og S65C varianter i HFE-genet.
+Se "Informasjonsskriv til rekvirerende lege, vedrørende HFE-genotyping" på www.oslo-universitetssykehus.no/mbk-genanalyser
+</Comment>
+        <IdResultItem>20152714D3_006560</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>20152714D3</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Avdeling for medisinsk biokjemi Gaustad</Name>
+            <Id>110058</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>B</Id>
+              <Type V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

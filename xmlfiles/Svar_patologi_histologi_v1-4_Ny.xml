@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<!-- Dette er en testmelding med fiktive personer -->
+<!-- -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2017-09-30T13:46:18"/>
+	<MsgId>d3b7ed2a-9e07-11e7-abc4-cec278b6b50a</MsgId>
+	<ServReport>
+		<!-- Dette er første svar som sendes ut på denne prøven -->
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2017-09-30"/>
+		<ApprDate V="2017-09-30"/>
+		<Status V="P" DN="Foreløpig rapport"/>
+		<MsgDescr V="HIST" DN="Histologi"/>
+		<ServProvId>1fe2348a-9e08-11e7-abc4-cec278b6b50a</ServProvId>
+		<!-- Opplysninger om rekvisisjonen -->
+		<ServReq>
+			<IssueDate V="2017-09-21"/>
+			<PaymentCat V="1" DN="Ordinær pasient. Opphold finansiert gjennom ISF, HELFO, og ordinær finansiering innen psykisk helse og TSB"/>
+			<MsgDescr V="HIST" DN="Histologi"/>
+			<Id>57eb4d4e-9e08-11e7-abc4-cec278b6b50a</Id>
+			<ReceiptDate V="2017-09-22T09:00:00"/>
+			<!-- Klinisk opplysning fra rekvisisjonen -->
+			<ReasonAsText>
+				<Heading V="PROB" DN="Aktuell problemstilling"/>
+				<TextResultValue>Erythema multiforme OBS &#13;&#10;Har siden juni 16 vært plaget med utslett, mest på hender, men også på knær, bedre etter opphold i syden. Dette har vært oppfattet som impetigo. Ikke eksem eller allergi tidligere. Har ikke husdyr. Andre i familien ikke utslett i samme periode. Klør. Hatt herpes på leppen. Dyrkning i mars viste staf aureus. Ikke andre sykdommer. Vaskulitt er vurdert. Det sees et litt eiendommelig utslett med inflammerte papler ve underam.</TextResultValue>
+			</ReasonAsText>
+		</ServReq>
+		<Patient>
+			<Name>Gundersen, Roland</Name>
+			<OffId>15076500565</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Kattskinnet legesenter</Name>
+						<HCPerson>
+							<Name>Rita Lin</Name>
+							<Id>9144900</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+				</HCP>
+			</ResponsibleHcp>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Flåklypa 31</StreetAdr>
+				<PostalCode>2560</PostalCode>
+				<City>Alvdal</City>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2017-09-21"/>
+				</CollectedSample>
+				<IdByServProvider>8fa3d0bc-9e08-11e7-abc4-cec278b6b50a</IdByServProvider>
+			</AnalysedSubject>
+			<!-- Opplysninger om gjeldende resultat -->
+			<ResultItem>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="A" S="2.16.578.1.12.4.1.1.8219" DN="Histologisk undersøkelse"/>
+				</Investigation>
+				<InvDate V="2017-09-30"/>
+				<StatusInvestigation V="2" DN="Foreløpig"/>
+				<RelServProv>
+					<Relation V="AHP" DN="Ansvarlig helsepersonell"/>
+					<HCP>
+						<HCProf>
+							<Type V="LE" DN="Lege"/>
+							<Name>August September</Name>
+							<Id>9144897</Id>
+							<TypeId DN="HPR-nummer" V="HPR"/>
+						</HCProf>
+						<Address>
+							<Type V="WP" DN="Arbeidsadresse"/>
+							<TeleAddress V="tel:06800"/>
+						</Address>
+					</HCP>
+				</RelServProv>
+				<!-- Her kommer de aktuelle delsvarene -->
+				<ResultItem>
+					<TextResult>
+						<Heading V="FU" DN="Funn og undersøkelsesresultater"/>
+						<TextResultValue>Hud med sekundærinfisert, eksoriert ulcerasjon, noe nekrose av epidermis i randen av ulcerasjonen, akutt, subepidermal betennelse og lymfohistocytær betennelse, konf. vurdering. &#13;&#10;Avventer endelig svar etter immunus.</TextResultValue>
+					</TextResult>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="VU" DN="Vurdering"/>
+						<TextResultValue>Det er uavklart hva som foreligger og hva som er primær- og sekundærforandringer. Det påvises noen mulige Gram+ og Gram-kokker i hornlaget og i relasjon til ulcerasjonen, men om det er primært el. sek. er ikke godt å si. Infeksjon bør utelukkes. Er det tatt materiale til dyrkning? Det er ikke holdepunkt for eyrthema multiforme. &#13;&#10;Det gjøres immunus, avvent svar på denne. &#13;&#10;Ny biopsi fra fersk lesjon anbefales.</TextResultValue>
+					</TextResult>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<TextResultValue>4 mm lys brun stanse. Todeles i A.</TextResultValue>
+					</TextResult>
+					<Investigation>
+						<Id V="MA" S="2.16.578.1.12.4.1.1.8219" DN="Makroskopisk undersøkelse"/>
+					</Investigation>
+					<InvDate V="2017-09-25"/>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<TextResultValue>Snitt fra hud viser noe fortykket epidermis som ut til den ene siden går over i en kruste som ligger over et felt med akutt betennelse, nesten som subepidermale veskiler/bulla/spaltedannelser. Ett sted sees en liten subcorneal vesikkel med nøytrofile og noe blod, som buker ned i epidermis. Her påvises gram pos. kokker mot overflaten. I dermis sees lymfohistiocytær betennelsesreaksjon, samt en mer perivaskulær kronisk betennelse med lymfocytter nedover i dermis. Enkeltcellenekroser er ikke sett, ei heller virusliknende forandringer. Ingen basallagsaffeksjon i form av hydrope forandringer eller nekrotiske celler.</TextResultValue>
+					</TextResult>
+					<Investigation>
+						<Id V="MI" S="2.16.578.1.12.4.1.1.8219" DN="Mikroskopisk undersøkelse"/>
+					</Investigation>
+				</ResultItem>
+			</ResultItem>
+		</Patient>
+		<!-- Opplysninger om avsender -->
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>ST OLAVS HOSPITAL HF</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Patologi</Name>
+						<Id>91818</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<!-- Opplysninger om mottaker -->
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>56704</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>258521</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="ARP" DN="Ansvarlig for rapport"/>
+			<HCP>
+				<Inst>
+					<Name>Avdeling for patologi</Name>
+				</Inst>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:06800"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

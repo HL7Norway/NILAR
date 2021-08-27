@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-10-07T13:45:39" />
+  <MsgId>A1AA2E1F-BABE-5067-87E9-95B44CF19E8A</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2020-10-07T13:45:39" />
+    <ApprDate V="2020-10-07T12:45:55" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="HIST" DN="Histologi" />
+    <ServProvId>BU 20 138xx</ServProvId>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU20138xx_Page01_07.10.2020_13-45.tif</Id>
+      <Description>SnapshotPage1</Description>
+      <FileReference>BU20138xx_Page01_07.10.2020_13-45.tif</FileReference>
+    </RefDoc>
+    <RefDoc>
+      <MsgType V="A" DN="Vedlegg" />
+      <Id>BU20138xx_Page02_07.10.2020_13-45.tif</Id>
+      <Description>SnapshotPage2</Description>
+      <FileReference>BU20138xx_Page02_07.10.2020_13-45.tif</FileReference>
+    </RefDoc>
+    <ServReq>
+      <IssueDate V="2020-09-21T08:28:39" />
+      <PaymentCat V="99" DN="Error: Ukjent kodeOI" />
+      <Id>NULL</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-09-18T00:00:00" />
+        </CollectedSample>
+        <Type>Ikke angitt</Type>
+        <IdByServProvider>BU 20 138xx</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NOR25048" S="2.16.578.1.12.4.1.1.7280" DN="Ve-Histologi" />
+        </Investigation>
+        <InvDate V="2020-10-07T12:45:55" />
+        <IdResultItem>28</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>BU 20 138xx</RefAnalysedSubject>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>May Jones</Name>
+              <Id>jonmay</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <RelServProv>
+          <Role V="RSP" DN="Tilknyttet tjenesteyter" />
+          <Relation V="AUT" DN="Dokumentgodkjenner" />
+          <HCP>
+            <HCProf>
+              <Name>Rita Lin</Name>
+              <Id>linri</Id>
+              <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+            </HCProf>
+          </HCP>
+        </RelServProv>
+        <ResultItem>
+          <TextResult>
+            <Heading V="FU" DN="Funn og undersøkelsesresultater" />
+            <TextResultValue>DIAGNOSE: Placenta med modningsforstyrrelse (perifer villøs immaturitet).</TextResultValue>
+            <TextCode V="T 88000" S="2.16.578.1.12.4.1.1.7010" DN="placenta med navlesnor og hinner UNS" />
+            <TextCode V="E P7600" S="2.16.578.1.12.4.1.1.7010" DN="Modningsforstyrrelser" />
+            <TextCode V="M 75000" S="2.16.578.1.12.4.1.1.7010" DN="modningsforstyrrelse UNS" />
+            <TextCode V="M 37001" S="2.16.578.1.12.4.1.1.7010" DN="akutt blødning" />
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="VU" DN="Vurdering" />
+            <TextResultValue>I navlesnoren barnenært ses rikelig blødning i Whartons' Jelly som tegn til karruptur, tilkommet like før eller under fødselen.
+Også i parenchymsnitt ses tegn til villøs ruptur med påviste føtale erytrocytter i intervillosum (føto-maternell transfusjon), sannsynligvis intruffet peri-partum.
+</TextResultValue>
+          </TextResult>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Bruttovekt i g: 508 
+Nettovekt i g: 433 
+Disk i cm: 17 x 17
+Navlesnorsfestet: lett ekksentrisk 
+Navlesnorlengde i cm: 30
+Navlesnor i diameter: 1, og et prominerende kar med blod, trombe? sentralt i navlesnor
+Tre kar
+Navlesnortvinninger: 2,5 pr 10 cm 
+Hinnene: noe brunlig matte, ikke slim 
+Føtal flate: upåfallende 
+Maternell flate: ingen opprevne områder eller fastsittende koagler 
+Snittflate, tykkelse i cm: ca 2 cm 
+Annet (formvariant, infarkt, blødning, trombe, etc.): sentralt område på ca 1 cm med noe løst hullete utseende/blødning io parenchym, &lt;5% av volum 
+
+Snittuttak:
+1: Barnenær navlesnor med hinnerull. 
+2: Placentanær navlesnor  og feste
+3, 4: Gjennomgående snitt, 3 med noe løst/blødning i parenchym
+5: Tangential snitt fra decidua. og snitt navlesnor med prominerende kar </TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="MA" S="2.16.578.1.12.4.1.1.8219" DN="Makroskopisk undersøkelse" />
+          </Investigation>
+          <InvDate V="2020-09-24T00:00:00" />
+          <RefAnalysedSubject>BU 20 138xx</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Hinnerull uten betennelse. Navlesnorkar med betydelig ektasi, en arterie med blødning i veggen rundt karet, med rikelig ekstravasjon av føtale erytrocytter, venen er kveilet sammen og vanskelig å vurdere. I snitt fra parenkym sees påfallende få endetotter og få vasculosyncytiale membraner. Villi med kollaberte sentral og subepitelial plasserte føtale kar, retikulært stroma fokalt. Intervillosum med fibrin og kalk. I flere snitt rikelig med føtale (HbF+) erytrocytter i intervillosum subchorionalt. </TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="MI" S="2.16.578.1.12.4.1.1.8219" DN="Mikroskopisk undersøkelse" />
+          </Investigation>
+          <RefAnalysedSubject>BU 20 138xx</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+          <Dept>
+            <Name>Avdeling for patologi, Ullevål</Name>
+            <Id>110166</Id>
+            <TypeId V="HER" DN="Identifikator fra Helsetjenesteenhetsregisteret" />
+            <AdditionalId>
+              <Id>PAT-UL</Id>
+              <Type V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>May Jones</Name>
+            <Id>jonmay</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <HCPerson>
+            <Name>Rita Lin</Name>
+            <Id>Linri</Id>
+            <TypeId V="LOP" DN="Lokal identifikator for helsepersonell" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>993467049</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregisteret" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

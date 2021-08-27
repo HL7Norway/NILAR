@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2017-09-13T15:04:01"/>
+	<MsgId>0ba85678-3d70-4599-91bc-3fc2d9cb4ad3</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2017-09-13T15:04:01"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>cf548a1e-2406-47db-96cd-ea21e03fb557</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2017-09-13T12:24:04"/>
+			<PaymentCat V="1" DN="Ordinær pasient. Opphold finansiert gjennom ISF, HELFO, og ordinær finansiering innen psykisk helse og TSB"/>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id>5ebc375a-40fd-4824-a3e6-3eae57fc8bca</Id>
+			<IdByServProvider>e5e04e41-0cc3-479f-8ebe-d95fbbec3ca5</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<Inst>
+						<Name>Kattskinnet legesenter</Name>
+						<HCPerson>
+							<Name>Magnar Koman, LIS1</Name>
+							<Id>9144889</Id>
+							<TypeId V="HPR" DN="HPR-nummer"/>
+						</HCPerson>
+					</Inst>
+				</HCP>
+			</ResponsibleHcp>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2017-09-13T12:25:57"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="U" DN="Urin" />
+				<IdByServProvider>80041141BSC</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Escherichia coli</TextResultValue>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06073" S="2.16.578.1.12.4.1.1.7280" DN="U-Bakterier dyrkning"/>
+				</Investigation>
+				<IdResultItem>1</IdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+				<ResultItem>
+					<TextResult>
+						<TextResultValue> >100.000 pr.ml.</TextResultValue>
+					</TextResult>
+					<Investigation>
+						<Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde"/>
+					</Investigation>
+				</ResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Klebsiella pneumoniae</TextResultValue>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06073" S="2.16.578.1.12.4.1.1.7280" DN="U-Bakterier dyrkning"/>
+				</Investigation>
+				<IdResultItem>2</IdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+				<ResultItem>
+					<TextResult>
+						<TextResultValue> >1000 CFU/1000 ml.</TextResultValue>
+					</TextResult>
+					<Investigation>
+						<Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde"/>
+					</Investigation>
+				</ResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06045" S="2.16.578.1.12.4.1.1.7280" DN="Us-Ampicillin"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0,25</TextResultValue>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv, standarddose"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06044" S="2.16.578.1.12.4.1.1.7280" DN="Us-Mecillinam"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv, standarddose"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06047" S="2.16.578.1.12.4.1.1.7280" DN="Us-Trimetoprim"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Sensitiv, økt eksponering"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU57715" S="2.16.578.1.12.4.1.1.7280" DN="Us-Trimetoprim+Sulfametoksazol"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06048" S="2.16.578.1.12.4.1.1.7280" DN="Us-Nitrofurantoin"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU06045" S="2.16.578.1.12.4.1.1.7280" DN="Us-Ampicillin"/>
+				</Investigation>
+				<RefIdResultItem>2</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Sensitiv, økt eksponering"/>
+				</TextResult>
+				<Investigation>
+					<Id V="NPU57715" S="2.16.578.1.12.4.1.1.7280" DN="Us-Trimetoprim+Sulfametoksazol"/>
+				</Investigation>
+				<RefIdResultItem>2</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name> 
+					<Id>56704</Id> 
+					<TypeId V="HER" DN="HER-id"/> 
+					<HCPerson>
+						<Name>Rita Lin</Name> 
+						<Id>258521</Id> 
+						<TypeId V="HER" DN="HER-id"/> 
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="AHP" DN="Ansvarlig helsepersonell"/>
+			<HCP>
+				<HCProf>
+					<Type V="BI" DN="Bioingeniør"/>
+					<Name>Mykke Plasme</Name>
+					<Id>9876511</Id>
+					<TypeId V="HPR" DN="HPR-nummer"/>
+				</HCProf>
+				<Address>
+					<Type V="WP" DN="Arbeidsadresse"/>
+					<TeleAddress V="tel:12345678"/>
+				</Address>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

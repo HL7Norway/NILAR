@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-04-06T14:44:13.8508" />
+  <MsgId>CABCE2C8-96D5-11EB-BA6D-5056AF45FF88</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-04-06T14:42:57" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+    <ServProvId>211689xxB</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-03-30T12:24:28" />
+      <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+      <Id>211689xx</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>211689xx</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+		<DateOfBirth V="19xx-xx-xx" />
+		<Name>Telokk, Gry</Name>
+		<OffId>12057900499</OffId>
+		<TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation DN="Rekvirent" V="REK" />
+        <HCP>
+          <Inst>
+            <Name>Akershus universitetssykehus HF</Name>
+            <HCPerson>
+              <Name>And, Andine, Lege</Name>
+              <Id>50032</Id>
+              <TypeId DN="HPR-nummer" V="HPR" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslovegen 1</StreetAdr>
+        <PostalCode>2220</PostalCode>
+        <City>ÅBOGEN</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-03-29T10:32:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>211689xxD3</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Resultatet er genotype DPYD*1/*1. </TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU19060" S="2.16.578.1.12.4.1.1.7280" DN="B-DPYD-genotype" OT="B-DPYD-genotype" />
+          <Id V="DPYD" S="2.16.578.1.12.4.1.1.8212" DN="B-DPYD-genotype" OT="B-DPYD-genotype" />
+        </Investigation>
+        <InvDate V="2021-04-06T14:42:57" />
+        <Comment>Den undersøkte sekvensvarianten er ikke påvist. Dette tyder på normal dihydropyrimidin dehydrogenase enzymaktivitet. Andre sjeldne sekvensvarianter, som kan medføre endret enzymaktivitet, kan imidlertid ikke utelukkes.
+--For informasjon om analyse og tolkning i forhold til cytostatikabehandling (fluorouracil, kapecitabin, tegafur), se www.anx.no/dpyd
+</Comment>
+        <IdResultItem>211689xxD3_008660</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>211689xxD3</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avd. for medisinsk biokjemi, Rikshospitalet</Name>
+            <Id>B</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <RelServProv>
+      <Relation V="ARP" DN="Ansvarlig for rapport" />
+      <HCP>
+        <Inst>
+          <Name>Avd. for medisinsk biokjemi, Rikshospitalet</Name>
+        </Inst>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

@@ -1,0 +1,98 @@
+<!-- DETTE ER EN TESTMELDING MED FIKTIVE PERSONDATA -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2021-05-25T07:45:56.7560644Z" />
+  <MsgId>2bdf9943-79d0-4029-80a6-7dea84bc4714</MsgId>
+  <Status V="TEST" DN="Melding til testformål" />
+  <ServReport>
+    <ServType V="C" DN="Kansellering" />
+    <IssueDate V="2017-09-20T09:04:10" />
+    <Status V="F" DN="Endelig rapport" />
+    <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+    <ServProvId>d7b12deb-631f-43e3-a99f-fb470b127e93</ServProvId>
+    <Comment>Hele svarrapporten er kansellert pga feil. Historikk forefinnes på laboratoriet.</Comment>
+    <ServReq>
+      <IssueDate V="2017-09-20" />
+      <Id>f249db36-74cf-417c-b326-7a9a5e427714</Id>
+    </ServReq>
+    <Patient>
+      <Name>Danser, Line</Name>
+      <IdByServProvider>10682608</IdByServProvider>
+      <OffId>13116900216</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation V="REK" DN="Rekvirent" />
+        <HCP>
+          <Inst>
+            <Name>Kattskinnet legesenter</Name>
+            <HCPerson>
+              <Name>Magnar Koman, LIS1</Name>
+              <Id>9144889</Id>
+              <TypeId V="HPR" DN="HPR-nummer" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Numedalslågen 1</StreetAdr>
+        <PostalCode>3602</PostalCode>
+        <City>Kongsberg</City>
+      </Address>
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <Inst>
+          <Name>NORSK HELSENETT SF</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Meldingsvalidering</Name>
+            <Id>8094866</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+     <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <RelServProv>
+      <Relation V="AHP" DN="Ansvarlig helsepersonell" />
+      <HCP>
+        <HCProf>
+          <Type V="BI" DN="Bioingeniør" />
+          <Name>Mykke Plasme</Name>
+          <Id>9876511</Id>
+          <TypeId V="HPR" DN="HPR-nummer" />
+        </HCProf>
+        <Address>
+          <Type V="WP" DN="Arbeidsadresse" />
+          <TeleAddress V="tel:73112233" />
+        </Address>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

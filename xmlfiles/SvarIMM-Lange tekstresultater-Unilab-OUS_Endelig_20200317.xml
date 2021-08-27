@@ -1,0 +1,148 @@
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-03-17T08:52:09.4095" />
+  <MsgId>345198BE-6824-11EA-8C05-5056AF45FF04</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2020-03-17T08:51:19" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+    <ServProvId>20152650I</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2020-03-17T08:49:45" />
+      <MsgDescr V="CLIN" DN="Klinisk kjemi" />
+      <Id>20152650</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>20152650</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1979-05-12" />
+      <Name>Testpasient Telokk, Gry</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation DN="Rekvirent" V="REK" />
+        <HCP>
+          <Inst>
+            <Name>Sykehuspartner Testlegekontor-2 WinMed2</Name>
+            <HCPerson>
+              <Name>Sagen, Terje, Lege</Name>
+              <Id>2153661</Id>
+              <TypeId DN="HPR-nummer" V="HPR" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Oslovegen 1</StreetAdr>
+        <PostalCode>1406</PostalCode>
+        <City>Ski</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-03-17T08:48:00" />
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>2015265003</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>[2+/5+] Pasienten har vevstypen HLA-DQ2.5 i form av HLA-DQB1*02 og HLA-DQA1*05. Denne vevstypen er svært vanlig hos cøliakipasienter. Vevstypen forekommer også hyppig i befolkningen forøvrig. Cøliaki kan ikke utelukkes.</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU54286" S="2.16.578.1.12.4.1.1.7280" DN="DQ2" OT="DQ2" />
+          <Id V="DQ2" S="2.16.578.1.12.4.1.1.8212" DN="DQ2" OT="DQ2" />
+        </Investigation>
+        <InvDate V="2020-03-17T08:51:19" />
+        <Comment>DQ2 er utført i dag, se resultat ovenfor. Samme resultat ble også funnet ved typing utført??.. På samme måte som vanlige blodtyper endrer ikke HLA-typen seg over tid. Gjentatt testing er derfor ikke nødvendig, med mindre man mistenker uriktig resultat. Dette bør det i så fall opplyses om på rekvisisjonen.
+</Comment>
+        <IdResultItem>2015265003_101200</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015265003</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Avvikende resultat fra analyse av tidligere prøve</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU53049" S="2.16.578.1.12.4.1.1.7280" DN="DQ6" OT="DQ6" />
+          <Id V="DQ6" S="2.16.578.1.12.4.1.1.8212" DN="DQ6" OT="DQ6" />
+        </Investigation>
+        <InvDate V="2020-03-17T08:51:19" />
+        <IdResultItem>2015265003_101210</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015265003</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>B27b variant</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU29745" S="2.16.578.1.12.4.1.1.7280" DN="HLAB27" OT="HLAB27" />
+          <Id V="HLAB27" S="2.16.578.1.12.4.1.1.8212" DN="HLAB27" OT="HLAB27" />
+        </Investigation>
+        <InvDate V="2020-03-17T08:51:19" />
+        <Comment>[B*2706/07/09/11/14/19/20/21/24/27/30/32/33/34/35/41/43]. Pasienten har en undergruppe av B27. Denne undergruppen er uvanlig i etnisk norsk befolkning. De vanligste variantene (b-variant) av denne undergruppen har en viss beskyttende effekt mot utviklingen av Bechterews sykdom og andre B27-assosierte tilstander (i hvertfall i enkelte folkegrupper, bl.a. sør-europere og folkeslag i deler av Asia). Det er uavklart om undergruppen er disponerende eller beskyttende hos pasienten.
+</Comment>
+        <IdResultItem>2015265003_101220</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2015265003</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Immunologisk institutt</Name>
+            <Id>110058</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>I</Id>
+              <Type V="LAV" DN="Lokal Identifikator for Avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Norsk Helsenett AS</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>994598759</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Abels gate 9</StreetAdr>
+          <PostalCode>7030</PostalCode>
+          <City>Trondheim</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>
