@@ -184,6 +184,11 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Nei |
 | ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Nei |
 
+## RefDoc
+Dokumenter (og bilder) som er embedded i xml, kan inneholde sensitiv informasjon. Disse skal ikke mappes. Det skal markere i DisgnosticReport at det finnes dokumenter som er utelatt.
+
+Kan dokumenteres som Comment/Note, men dette finnes ikke i DiagnosticReport. Kan vi eventuelt lage extension for Comment som også kan brukes til dette?
+
 ## Avklaringspunkter
 ### Kodeverk
 Må avklare hvordan vi bruker System og Code. Svært varierende hva som ligger i innkommende meldinger.
