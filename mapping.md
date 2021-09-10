@@ -94,10 +94,11 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## Patient (Patient)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.Patient.Name | Hansen, Mats |  |  |  |  |  |   
-| ServReport.Patient.IdByServProvider | 10682609 |  |  |  |  |  |  |
-| ServReport.Patient.OffId | 2412790228 |  |  |  |  |  |  |
-| ServReport.Patient.TypeOffId |  | V=FNR | DN=Fødselsnummer |  |  |  |  |
+| ServReport.Patient.Name | Hansen, Mats |  |  |  |  | Patient.Name | | Ja
+| ServReport.Patient.IdByServProvider | 10682609 |  |  |  |  |  | NA ||
+| ServReport.Patient.OffId | 2412790228 |  |  |  |  | Patient.Identifier |  | Ja |
+| ServReport.Patient.TypeOffId |  | V=FNR | DN=Fødselsnummer |  |  |  | NA ||
+| ServReport.Patient.Address |||||||Mappes ikke||
 
 ## ResponsibleHcp (Practitioner, Rolle = 'Rekvirent')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
