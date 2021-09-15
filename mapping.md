@@ -79,17 +79,17 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 |-|-|-|-|-|-|-|-|-|
 | ServReport.ServReq.IssueDate |  | V=2017-09-20 |  |  |  | ServiceRequest.authoredOn |  | Ja |
 | ServReport.ServReq.Id | e312fde3-66aa-40da-bec7-26abf4d29e82 |  |  |  |  | DiagnosticReport.basedon, link til servicerequest, ServiceRequest.requisition |  | Ja |
-| ServReport.ServReq.ReasonAsText.Heading |  | V="PROB" | DN="Aktuell problemstilling" |  |  | Volven=8231, ServiceRequest.reasonCode -> code |  | Nei |
-| ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text |  | Nei |
+| ServReport.ServReq.ReasonAsText.Heading |  | V="PROB" | DN="Aktuell problemstilling" |  |  | Volven=8231, ServiceRequest.reasonCode -> code |  | Ja |
+| ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text |  | Ja |
 | ServReport.ServReq.PaymentCat |  |  |  |  |  | | Skal ikke mappes |  |
-| ServReport.ServReq.ReqComment |  |  |  |  |  | ServiceRequest.Note |  | Nei |
+| ServReport.ServReq.ReqComment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
 | ServReport.ServReq.Ack |  |  |  |  |  | | NA |  |
 | ServReport.ServReq.MsgDescr |  |  |  |  |  | | NA, samme som i ServReport |  |
 | ServReport.ServReq.RequestedPrioReport |  |  |  |  |  | | NA |  |
 | ServReport.ServReq.ReceiptDate |  |  |  |  |  | | NA |  |
 | ServReport.ServReq.IdByServProvider |  |  ||  |  | Identifier | | Nei |
-| ServReport.ServReq.Reservation |  |  |  |  |  | ServiceRequest.Note | | Nei |
-| ServReport.ServReq.Comment |  |  |  |  |  | ServiceRequest.Note |  | Nei |
+| ServReport.ServReq.Reservation |  |  |  |  |  | ServiceRequest.Note | | Ja |
+| ServReport.ServReq.Comment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
 
 ## Patient (Patient)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -153,11 +153,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.TextResult.TextResultValue | Enkelte kolonier | | | | | Observation.Value | CodeableConcept.Text, muligens kompleks verdi, leses inn som XmlNode | Ja |
 | ServReport.Patient.ResultItem.TextResult.TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | CodeableConcept.Value | CodeableValue.Code | Ja |
 | ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
-| ServReport.Patient.ResultItem.StructuredInfo.Type | | V=1911.2 | DN=Operasjonstype | | | Observation.Note |  | Nei |
-| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | | V=1 | DN=Høyresidig hemikolektomi | | | Observation.Note | Gjelder alle innholdtypene | Nei |
+| ServReport.Patient.ResultItem.StructuredInfo.Type | | V=1911.2 | DN=Operasjonstype | | | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | | V=1 | DN=Høyresidig hemikolektomi | | | Observation.Note | Gjelder alle innholdtypene | Ja |
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  | Observation.Status | Volven | Ja, delvis |
-| ServReport.Patient.ResultItem.RefInterval |  |  |  |  |  |  |  |
-| ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.RefRange.Text |  | Nei |
+| ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id |  | V=NOR05863 | S=2.16.578.1.12.4.1.1.7280 | DN=Us-FT4 |  | Observation.Code | Sprikende bruk av DN og OT | Ja *) |
 | ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  |  |  | Nei |
 | ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  |  |  | Nei |
