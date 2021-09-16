@@ -60,7 +60,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## ServReport (Diagnostic Report)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.ServType |  | V=N | DN=Ny | Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ... |  | DiagnosticReport.status |  | Ja |
+| ServReport.ServType |  | V=N | DN=Ny | Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ... |  | Styrer flyt ved mapping, mappes ikke |  |  |
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Ja |
 | ServReport.ApprDate |  |  |  |  |  |  | | Nei |
 | ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status | I kombinasjon med ServType | Nei |
@@ -155,25 +155,25 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo.Type | | V=1911.2 | DN=Operasjonstype | | | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | | V=1 | DN=Høyresidig hemikolektomi | | | Observation.Note | Gjelder alle innholdtypene | Ja |
-| ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  | Observation.Status | Volven | Ja, delvis |
+| ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id |  | V=NOR05863 | S=2.16.578.1.12.4.1.1.7280 | DN=Us-FT4 |  | Observation.Code | Sprikende bruk av DN og OT | Ja *) |
-| ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  |  |  | Nei |
-| ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  |  |  | Nei |
-| ServReport.Patient.ResultItem.InvDate |||||||| Nei |
-| ServReport.Patient.ResultItem.DevResultInd |||||||| Nei |
+| ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  | Observation.Code |  | Ja |
+| ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  |  |  | Ja |
+| ServReport.Patient.ResultItem.InvDate |||||| Observation.Note || Ja |
+| ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Note || Ja |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.RefIdResultItem |  |  |  |  |  | Observation.hasMember |  | Ja |
-| ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  |  | Usikker på denne. Mulig den må kombineres med andre statusverdier. | Nei |
-| ServReport.Patient.ResultItem.StatusChangeDate | ||||||| Nei |
-| ServReport.Patient.ResultItem.DescrDate | ||||||| Nei |
-| ServReport.Patient.ResultItem.CounterSignDate | ||||||| Nei |
-| ServReport.Patient.ResultItem.MedicalValidationDate | ||||||| Nei |
+| ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status |  | Ja |
+| ServReport.Patient.ResultItem.StatusChangeDate | ||||| Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.DescrDate | ||||| Observation.Note || Ja |
+| ServReport.Patient.ResultItem.CounterSignDate | ||||| Observation.Note || Ja |
+| ServReport.Patient.ResultItem.MedicalValidationDate | ||||| Observation.Note || Ja |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | 1 |  |  |  |  | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til et AnalysedSubject.  | Ja, delvis |
 | ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
 | ServReport.Patient.ResultItem.ResultItem |  |  |  |  |  | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv |||||||| Nei |
-| ServReport.Patient.ResultItem.DiagComment |||||||| Nei |
+| ServReport.Patient.ResultItem.DiagComment |||||||| Ja |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
