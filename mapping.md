@@ -66,7 +66,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status | I kombinasjon med ServType | Nei |
 | ServReport.CancellationCode |  |  |  |  |  | DiagnosticReport.Status? | | Nei |
 | ServReport.Ack |  |  |  |  |  | NA | |  |
-| ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category, Observation.category | Volven=8202 | Ja, delvis |
+| ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
 | ServReport.ServProvId | 55b6344fc-a61d-4a67-95fe-7276613785ab |  |  |  |  | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id | ? (AA) | Nei |
 | ServReport.Comment | Kontroll |  |  |  |  | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
 | ServReport.CodedComment |  |  |  |  |  | Samme som Comment | Denne venter vi med | Nei (extention?) |
@@ -115,32 +115,28 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## AnalysedSubject (Specimen)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.Patient.AnalysedSubject.CollectedSample |  |  |  |  |  |  |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate |  |  |  |  |  | Specimen.Collection.collectedDateTime |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment |  |  |  |  |  | Specimen.Note |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded |  |  |  |  |  |  |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics |  |  |  |  |  |  |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct |  |  |  |  |  |  |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type |  |  |  |  |  | Specimen.Type |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate |  |  |  |  |  | Specimen.Collection.collectedDateTime |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd |  |  |  |  |  | ??? |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate |  | V=2017-09-20T07:57:00 |  |  |  | DiagnostigReport.Effective.Period? | Må se påp hvordan dette oppgis. Viktig søkeparameter | Nei |
-| ServReport.Patient.AnalysedSubject.Type | Biopsi |  |  |  |  | Specimen.Type | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate |  | V=2017-09-20T07:57:00 |  |  |  | Specimen.Collection.collectedDateTime |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded |  |  |  |  | Specimen.Note |  |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate |  |  |  |  |  | Specimen.Collection.collectedDateTime |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.Type | Biopsi |  |  |  |  | Specimen.Type | | Ja |
 | ServReport.Patient.AnalysedSubject.TypeCoded |  | S=2.16.578.1.12.4.1.1.8351 | V=P | DN=Plasma |  | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
-| ServReport.Patient.AnalysedSubject.Number | 1 |  |  |  |  | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre sstrukturert, eller legges i note når info ligger i meldingen | Ja |
-| ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Aorta |  |  |  |  | Specimen.Collection.BodySite |  | Nei |
-| ServReport.Patient.AnalysedSubject.IdByRequester |  |  |  |  |  | Brukes ikke |  | Nei
-| ServReport.Patient.AnalysedSubject.IdByServProvider | 1 |  |  |  |  | Identifier | Ja, delvis |
-| ServReport.Patient.AnalysedSubject.Comment | Ett av funnene... |  |  |  |  | Specimen.Note |  | Nei |
-| ServReport.Patient.AnalysedSubject.PreservMaterial |  |  |  |  |  | Specimen.Processing.Additive? |  | Nei |
-| ServReport.Patient.AnalysedSubject.AnatomicalOrigin |  |  |  |  |  | Specimen.Collection.BodySite |  | Nei |
-| ServReport.Patient.AnalysedSubject.SampleCollInd |  |  |  |  |  | Brukes ikke |  | Nei |
-| ServReport.Patient.AnalysedSubject.SampleCollProc |  |  |  |  |  | Specimen.Collection.Method |  | Nei |
-| ServReport.Patient.AnalysedSubject.SampleHandling |  |  |  |  |  | Specimen.Processing.Description |  | Nei |
-| ServReport.Patient.AnalysedSubject.Accredited |  |  |  |  |  | Specimen.Note |  | Nei |
-| ServReport.Patient.AnalysedSubject.AnalysedSubject |  |  |  |  |  | Ikke i bruk? |  | Nei |
-| ServReport.Patient.AnalysedSubject.Pretreatment |  |  |  |  |  | Specimen.Processing.Description? |  | Nei |
-| ServReport.Patient.AnalysedSubject.RelServProv |  |  |  |  |  | Specimen.Collection.Collector |  | Nei |
+| ServReport.Patient.AnalysedSubject.Number | 1 |  |  |  |  | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre sstrukturert, eller legges i note når info ligger i meldingen | Ja, forløpig |
+| ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Aorta |  |  |  |  | Specimen.Collection.BodySite |  | Ja |
+| ServReport.Patient.AnalysedSubject.IdByRequester |  |  |  |  |  | Specimen.Identifier |  | Ja, ufullstendig |
+| ServReport.Patient.AnalysedSubject.IdByServProvider | 1 |  |  |  |  | Specimen.AccessionIdentifier | | Ja, ufullstendig |
+| ServReport.Patient.AnalysedSubject.Comment | Ett av funnene... |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.PreservMaterial |  |  |  |  |  | Specimen.Container.Additive |  | Ja |
+| ServReport.Patient.AnalysedSubject.SampleCollInd |  |  |  |  |  | NA |  |  |
+| ServReport.Patient.AnalysedSubject.SampleCollProc |  |  |  |  |  | Specimen.Collection.Method |  | Ja |
+| ServReport.Patient.AnalysedSubject.SampleHandling |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.Accredited |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.AnalysedSubject |  |  |  |  |  | Nøstede prøver, ikke i bruk? |  |  |
+| ServReport.Patient.AnalysedSubject.Pretreatment |  |  |  |  |  | Specimen.Collection.FastingStatus | Inneholder bla. faste/diett | Ja |
+| ServReport.Patient.AnalysedSubject.RelServProv |  |  |  |  |  | Specimen.Collection.Collector? |  | Nei |
 
 ## ResultItem (Observation)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
