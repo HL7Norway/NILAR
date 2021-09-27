@@ -7,6 +7,9 @@ Practitioner og Organization er entiteter med primærkilde i andre registre enn 
 
 Det som kommer av informasjon i svarmeldingene har varienrende innhold, men har i en del tilfeller informasjon som er nyttig for de systemene som skal bruke Nilar. Dette skaper spørsmål vedrørende hvordan disse systemene skal få tak i informasjonen de trenger og Nilars rolle i å legge til rette.
 
+### Begrensning
+Det datagrunnlag vi får inn pr i dag, basert på innhold i et utvalg testmeldinger, gir ikke fullstendig grunnlag for noen av de foreliggende alternativene. De to første alternativene kan implementeres på en rudimentær måte med mangelfull/upresis informasjon.
+
 ## Ansett som alternativer
 - Ikke mappe disse ressursene, bare bruk info til å lage Identifier i Reference.
 - Lage nye ressurser for hver svarrapport - mange duplikater av samme ressurs.
