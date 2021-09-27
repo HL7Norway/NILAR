@@ -25,11 +25,6 @@ Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 ti
 | StructuredInfo.Type | CS -> CV | CV har noen flere properties, ekstra nullsjekk? |
 | CodedInfo.Code | CS -> CV | CV har noen flere properties, ekstra nullsjekk? Foreløpig ikke i bruk |
 
-
-### Diskusjoner
-#### Presented form
-Vi må vurdere om vi skal legge med hele XML dokumentet for å gjøre felter som ikke blir mappet tilgjengelig. Dette kan ha konsekvenser for Personvernkomponent.
-
 ### Testing
 Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i test-server. Denne er tilgjengelig og kan testes.
 
@@ -71,8 +66,9 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Comment | Kontroll |  |  |  |  | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
 | ServReport.CodedComment |  |  |  |  |  | Samme som Comment | Denne venter vi med | Nei (extention?) |
 | ServReport.RefDoc |  |  |  |  |  |  | Kan inneholde identifiserende informasjon |  |
-| ServReport.Animal |  |  |  |  |  | NA | | Nei |
-| ServReport.Material |  |  |  |  |  | NA | | Nei |
+| ServReport.Animal |  |  |  |  |  |  | NA |  |
+| ServReport.Material |  |  |  |  |  |  | NA |  |
+| ServReport.PaymentResponsible |  |  |  |  |  |  | NA |  |
 
 ## ServReq (ServiceRequest)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -229,52 +225,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Nei |
 | ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Nei |
 
-## PaymentResponsible
-Brukes ikke.
+## Extensions
+Det arbeides ut fra et ønske om å holde bruken av Fhir extensiosn på et minimum. Det er likevel avdekket noen tilfeller der det ikke er plass i relevant Fhir ressurs for informasjon som anses viktig i fagmeldingen (xml). I tillegg er det en del strukturert informasjon i xml, der det ikke finnes noen passende Fhir-element, som har fått en foreløpig/tentativ mapping inn i diverse note-elementer i Fhir. For (noen av) disse er det rimelig å anta at det vil komme behov for extensions i stedet.
 
-## RefDoc
-Dokumenter (og bilder) som er embedded i xml, kan inneholde sensitiv informasjon. Disse skal ikke mappes. Det skal markere i DisgnosticReport at det finnes dokumenter som er utelatt.
-
-Kan dokumenteres som Comment/Note, men dette finnes ikke i DiagnosticReport. Kan vi eventuelt lage extension for Comment som også kan brukes til dette?
-
-## Avklaringspunkter
-### Kodeverk
-Må avklare hvordan vi bruker System og Code. Svært varierende hva som ligger i innkommende meldinger.
-
-### Endring og kansellering
-Meldingene inneholder statusinformasjom som indikerer om det er ny, endring eller kansellering av tidligere sendt melding. Vi har ikke aktivt forhold til dette, men håndterer enhver melding med kjent meldingsid som oppdatering. Kansellering er ikke håndtert.
-
-### TextResult
-Svært varierende i innkommende meldinger, fra ren tekstverdi uten koder til bare heading uten textsverdi.
-
-### Nøstede resultitem
-Både svarmelding og FHIR har mekansismer for å nøste observasjoner/verdier. Det er ikke angitt noen semantikk for dette i svarmelding, mens FHIR har flere måter å gruppere data.
-
-#### ResultItem
-- Kan inneholde en liste med ResultItem
-- Ingen indikasjon på semantikk
-- Innkommende meldinger viser variasjon i semantikk
-
-#### FHIR Observation
-To (tre) nøstingsmodeller med ulik semantikk
-- hasMember
-  - Ren gruppering av observasjoner, uten spesifikk semantikk
-- derivedFrom
-  - Viser til andre (selvstendige) observasjoner som danner grunnlaget for denne observasjonen
-- Component
-  - Verdier som til sammen utgjør én måling, f.eks. blodtrykk
-  - Ikke egentlig nøsting
-
-#### Hypotese for mapping
-Nøstede ResultItem mappes som hasMember, altså generisk gruppering uten spesifikk semantikk
-- Ingen info i xml som tilsier spesifikk semantikk.
-- ResultItem kan også være "nøstet" ved referense til andre ResultItem, uten at de er strukturelt nøstet i Xml. Disse mappes som om de er nøstet, altså i hasMember.
-
-### ResultItem.StructuredInfo
-StructuredInfo har mange ulike varienter og finner ingen felles plass i Observation. Det er to muligheter:
-- Extension
-- Legges i Observation.note
-
-Hypoteste: Legges inn som note.
-
-
+### DiagnosticReport.Note
+- ServReport.Comment
+- ServReport.CodedComment
+- ServReport.RefDoc (note om utelatt dokument)
