@@ -58,11 +58,11 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServType |  | V=N | DN=Ny | Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ... |  | Styrer flyt ved mapping, mappes ikke |  |  |
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Ja |
 | ServReport.ApprDate |  |  |  |  |  |  | | Nei |
-| ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status | I kombinasjon med ServType | Nei |
+| ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status |  | Ja |
 | ServReport.CancellationCode |  |  |  |  |  | DiagnosticReport.Status? | | Nei |
 | ServReport.Ack |  |  |  |  |  | NA | |  |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
-| ServReport.ServProvId | 55b6344fc-a61d-4a67-95fe-7276613785ab |  |  |  |  | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id | ? (AA) | Nei |
+| ServReport.ServProvId | 55b6344fc-a61d-4a67-95fe-7276613785ab |  |  |  |  | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id | ? (AA) | Ja, ufullstendig |
 | ServReport.Comment | Kontroll |  |  |  |  | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
 | ServReport.CodedComment |  |  |  |  |  | Samme som Comment | Denne venter vi med | Nei (extention?) |
 | ServReport.RefDoc |  |  |  |  |  |  | Kan inneholde identifiserende informasjon |  |
@@ -79,10 +79,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text |  | Ja |
 | ServReport.ServReq.PaymentCat |  |  |  |  |  | | Skal ikke mappes |  |
 | ServReport.ServReq.ReqComment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
-| ServReport.ServReq.Ack |  |  |  |  |  | | NA |  |
-| ServReport.ServReq.MsgDescr |  |  |  |  |  | | NA, samme som i ServReport |  |
-| ServReport.ServReq.RequestedPrioReport |  |  |  |  |  | | NA |  |
-| ServReport.ServReq.ReceiptDate |  |  |  |  |  | | NA |  |
+| ServReport.ServReq.Ack |  |  |  |  |  | NA |  | |
+| ServReport.ServReq.MsgDescr |  |  |  |  |  | NA | Samme som i ServReport |  |
+| ServReport.ServReq.RequestedPrioReport |  |  |  |  |  | NA |  |  |
+| ServReport.ServReq.ReceiptDate |  |  |  |  |  | NA |  | |
 | ServReport.ServReq.IdByServProvider |  |  ||  |  | Identifier | | Nei |
 | ServReport.ServReq.Reservation |  |  |  |  |  | ServiceRequest.Note | | Ja |
 | ServReport.ServReq.Comment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
@@ -100,7 +100,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.ResponsibleHcp |  |  |  |  |  | ServiceRequest.requester |  | Ja |
-| ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  | ServiceRequest.Identifier.Type |  | Nei |
+| ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  | ServiceRequest.Identifier.Type | Relasjon framgår av mappingen | Ja |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst |  |  |  |  |  |  |  |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | Practitioner.Identifier.Display |  | Ja |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson |  |  |  |  |  |  |  |
@@ -165,7 +165,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
 | ServReport.Patient.ResultItem.ResultItem |  |  |  |  |  | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv |||||||| Nei |
-| ServReport.Patient.ResultItem.DiagComment |||||||| Ja |
+| ServReport.Patient.ResultItem.DiagComment |||||| Observation.Note|| Ja |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
@@ -232,3 +232,10 @@ Det arbeides ut fra et ønske om å holde bruken av Fhir extensiosn på et minim
 - ServReport.Comment
 - ServReport.CodedComment
 - ServReport.RefDoc (note om utelatt dokument)
+
+## Fagområde - tillegg til utvalgte koder
+- NLK: hente fagområde fra kodeverksdefinisjon
+  - https://www.ehelse.no/kodeverk/laboratoriekodeverket
+- NCRP: hente fagområde fra posisjon i kode
+  - Sjette tegn angir modalitet, alle nukleærmedisinske har T i første tegn
+  - https://www.ehelse.no/kodeverk/regler-og-veiledning-for-kliniske-kodeverk-i-spesialisthelsetjenesten-icd-10-ncsp-ncmp-og-ncrp/_/attachment/download/d876a76e-1f67-4211-8f68-e3c05a37fc0e:6ee71e82b4ce8f542d583fca6ee7d002ec39a1e6/Kodeveiledning%202021.18.12.2020.pdf
