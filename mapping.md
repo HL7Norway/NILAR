@@ -48,7 +48,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | Type |  | V=SVAR_LAB | DN=Svarrapport-Laboratoriemedisin |  |  | DN=DiagnosticReport.category, V=DiagnosticReport.code | Volven=8279, Begynner med SVAR_... | Nei |
-| MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  | Nei |
+| MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  |  |
 | GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention).  | Nei |
 | MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  |  |  |
 
@@ -59,7 +59,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Ja |
 | ServReport.ApprDate |  |  |  |  |  |  | | Nei |
 | ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status |  | Ja |
-| ServReport.CancellationCode |  |  |  |  |  | DiagnosticReport.Status? | | Nei |
+| ServReport.CancellationCode |  |  |  |  |  | Brukes ikke | |  |
 | ServReport.Ack |  |  |  |  |  | NA | |  |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
 | ServReport.ServProvId | 55b6344fc-a61d-4a67-95fe-7276613785ab |  |  |  |  | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id | ? (AA) | Ja, ufullstendig |
