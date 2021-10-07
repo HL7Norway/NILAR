@@ -60,7 +60,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServType |  | V=N | DN=Ny | Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ... |  | Styrer flyt ved mapping, mappes ikke |  |  |
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Ja |
 | ServReport.ApprDate |  |  |  |  |  |  | | Nei |
-| ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status |  | Ja |
+| ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status [(detaljer her)](#headReportStatus) |  | Ja |
 | ServReport.CancellationCode |  |  |  |  |  | Brukes ikke | |  |
 | ServReport.Ack |  |  |  |  |  | NA | |  |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
@@ -163,7 +163,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Note || Ja |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.RefIdResultItem |  |  |  |  |  | Observation.hasMember |  | Ja |
-| ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status [(detaljer her)](#headStatus)  |  | Ja |
+| ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
 | ServReport.Patient.ResultItem.StatusChangeDate | ||||| Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.DescrDate | ||||| Observation.Note || Ja |
 | ServReport.Patient.ResultItem.CounterSignDate | ||||| Observation.Note || Ja |
@@ -232,20 +232,31 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Nei |
 | ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Nei |
 
-## <a name="headStatus"></a>Observation.Status
+## <a name="headReportStatus"></a>DiagnosticReport.Status
+DiagnosticReport.Status skal være en standard Fhir kode. Denne matcher godt med kodeverk 7306 "Status for rapport-S1".
+
+| Volven 7306 |  | Fhir |
+|-|-|-|
+| F | Endelig rapport | Final |
+| S | Planlagt | Registered |
+| P | Foreløpig rapport | Preliminary |
+| A | Tillegg til rapport | Appended |
+| Andre |  | Unknown |
+
+## <a name="headObservationStatus"></a>Observation.Status
 Observation.Status skal være en standard Fhir kode. Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
 av medisinske tjenester". Noen koder kombineres og noen blir unknown:
-| 8245 |  | Fhir |
+| Volven 8245 |  | Fhir |
 |-|-|- 
-| 1 | Revidert | ObservationStatus.Corrected |
-| 2 | Foreløpig | ObservationStatus.Preliminary |
-| 3 | Endelig | ObservationStatus.Final |
-| 4 | Tillegg | ObservationStatus.Amended |
-| 5 | Henvisning registrert | ObservationStatus.Registered |
-| 6 | Prosedyrer registrert/planlagt | ObservationStatus.Registered |
-| 12 | Korrigert | ObservationStatus.Corrected |
-| 14 | Undersøkelse slettet | ObservationStatus.Cancelled |
-| Andre |  | ObservationStatus.Unknown |
+| 1 | Revidert | Corrected |
+| 2 | Foreløpig | Preliminary |
+| 3 | Endelig | Final |
+| 4 | Tillegg | Amended |
+| 5 | Henvisning registrert | Registered |
+| 6 | Prosedyrer registrert/planlagt | Registered |
+| 12 | Korrigert | Corrected |
+| 14 | Undersøkelse slettet | Cancelled |
+| Andre |  | Unknown |
 
 
 ## Extensions
