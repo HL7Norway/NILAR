@@ -49,8 +49,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 |-|-|-|-|-|-|-|-|-|
 | Type |  | V=SVAR_LAB | DN=Svarrapport-Laboratoriemedisin |  |  | DN=DiagnosticReport.category, V=DiagnosticReport.code | Volven=8279, Begynner med SVAR_... | Nei |
 | MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  |  |
-| GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention).  | Nei |
+| GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention). *)  | Nei |
 | MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  |  |  |
+
+*) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men ved endring kan det være at IssueDate har opprinnelig dato; da vil GenDate gi mer info om når endringsmeldingen ble sendt.
 
 ## ServReport (Diagnostic Report)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -143,7 +145,12 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.TextResultResult |  |  |  |  |  | Observation.Value | CodeableConcept | Ja |
 | ServReport.Patient.ResultItem.TextResult.Heading | | V=VU | | | | Observation.Value | CodeableConcept.Code | Ja |
 | ServReport.Patient.ResultItem.TextResult.TextResultValue | Enkelte kolonier | | | | | Observation.Value | CodeableConcept.Text, muligens kompleks verdi, leses inn som XmlNode | Ja |
-| ServReport.Patient.ResultItem.TextResult.TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | CodeableConcept.Value | CodeableValue.Code | Ja |
+| ServReport.Patient.ResultItem.TextResult.TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | Observation.Value | CodeableValue.Code | Ja |
+| ServReport.Patient.ResultItem.Interval | | | | | | Observation.Value | Range | Ja |
+| ServReport.Patient.ResultItem.DateResult |  | | | | | Observation.Value | dateTime | Ja |
+| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
+| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
+| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
 | ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo.Type | | V=1911.2 | DN=Operasjonstype | | | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | | V=1 | DN=Høyresidig hemikolektomi | | | Observation.Note | Gjelder alle innholdtypene | Ja |
@@ -156,7 +163,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Note || Ja |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.RefIdResultItem |  |  |  |  |  | Observation.hasMember |  | Ja |
-| ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status |  | Ja |
+| ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status [(detaljer her)](#headStatus)  |  | Ja |
 | ServReport.Patient.ResultItem.StatusChangeDate | ||||| Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.DescrDate | ||||| Observation.Note || Ja |
 | ServReport.Patient.ResultItem.CounterSignDate | ||||| Observation.Note || Ja |
@@ -224,6 +231,22 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServProvider.HCP.Inst.Dept.Name | Medisinsk mikrobiologi |  |  |  |  | Organization.name | Sammen med Inst.Name | Nei |
 | ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Nei |
 | ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Nei |
+
+## <a name="headStatus"></a>Observation.Status
+Observation.Status skal være en standard Fhir kode. Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
+av medisinske tjenester". Noen koder kombineres og noen blir unknown:
+| 8245 |  | Fhir |
+|-|-|- 
+| 1 | Revidert | ObservationStatus.Corrected |
+| 2 | Foreløpig | ObservationStatus.Preliminary |
+| 3 | Endelig | ObservationStatus.Final |
+| 4 | Tillegg | ObservationStatus.Amended |
+| 5 | Henvisning registrert | ObservationStatus.Registered |
+| 6 | Prosedyrer registrert/planlagt | ObservationStatus.Registered |
+| 12 | Korrigert | ObservationStatus.Corrected |
+| 14 | Undersøkelse slettet | ObservationStatus.Cancelled |
+| Andre |  | ObservationStatus.Unknown |
+
 
 ## Extensions
 Det arbeides ut fra et ønske om å holde bruken av Fhir extensiosn på et minimum. Det er likevel avdekket noen tilfeller der det ikke er plass i relevant Fhir ressurs for informasjon som anses viktig i fagmeldingen (xml). I tillegg er det en del strukturert informasjon i xml, der det ikke finnes noen passende Fhir-element, som har fått en foreløpig/tentativ mapping inn i diverse note-elementer i Fhir. For (noen av) disse er det rimelig å anta at det vil komme behov for extensions i stedet.
