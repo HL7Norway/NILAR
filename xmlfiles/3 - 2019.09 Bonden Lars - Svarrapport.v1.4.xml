@@ -1,0 +1,257 @@
+<!-- DETTE ER EN TESTMELDING MED FIKTIVE PERSONDATA -->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2019-09-21T08:29:18.4213555Z" />
+  <MsgId>a46a2af1-458d-45a6-b229-49041a849a76</MsgId>
+  <Status V="TEST" DN="Melding til testformål" />
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2019-09-20T09:04:10" />
+    <Status V="F" DN="Endelig rapport" />
+    <MsgDescr V="CLIN" DN="Medisinsk biokjemi" />
+    <ServProvId>7e54e732-2bbb-4788-8563-1f4dea9d7252</ServProvId>
+    <Comment>Kontroll</Comment>
+    <ServReq>
+      <IssueDate V="2019-09-15" />
+      <Id>a3eb1319-b8bf-47a8-ae0e-b6dad54051af</Id>
+    </ServReq>
+    <Patient>
+      <Name>Nett, Else</Name>
+      <IdByServProvider>111222333</IdByServProvider>
+      <OffId>23077200290</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation V="REK" DN="Rekvirent" />
+        <HCP>
+          <Inst>
+            <Name>NHN Journallab – SystemX Test Legekontor</Name>
+            <HCPerson>
+              <Name>BORG THALE</Name>
+              <Id>9999969</Id>
+              <TypeId V="HPR" DN="HPR-nummer" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Kakeveien 29</StreetAdr>
+        <PostalCode>0603</PostalCode>
+        <City>Oslo</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2019-09-20T07:57:00" />
+        </CollectedSample>
+        <TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum" />
+        <Number>1</Number>
+        <IdByServProvider>1</IdByServProvider>
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2019-09-20T07:57:00" />
+        </CollectedSample>
+        <TypeCoded S="2.16.578.1.12.4.1.1.8351" V="P" DN="Plasma" />
+        <Number>1</Number>
+        <IdByServProvider>2</IdByServProvider>
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2019-09-20T07:57:00" />
+        </CollectedSample>
+        <TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod" />
+        <Number>1</Number>
+        <IdByServProvider>3</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="13" U="pmol/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>10 - 22</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05863" S="2.16.578.1.12.4.1.1.7280" DN="Us-FT4" />
+        </Investigation>
+        <IdResultItem>333391130</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>1</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="0.4" U="mg/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 0,5</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU19767" S="2.16.578.1.12.4.1.1.7280" DN="P-D-dimer" />
+        </Investigation>
+        <IdResultItem>333391126</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="12" U="IU/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 12</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05857" S="2.16.578.1.12.4.1.1.7280" DN="Us-LH" />
+        </Investigation>
+        <DevResultInd V="1" DN="Over øvre referansegrense" />
+        <IdResultItem>333391125</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>1</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="10.0" U="10E9/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>3,5 - 11,0</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU02593" S="2.16.578.1.12.4.1.1.7280" DN="B-Leukocytter" />
+        </Investigation>
+        <IdResultItem>333391128</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>3</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="13.0" U="g/dL" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>11,7 - 15,3</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin" />
+        </Investigation>
+        <IdResultItem>333391129</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>3</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="4.2" U="10E-3/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>0,3 - 4,5</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05865" S="2.16.578.1.12.4.1.1.7280" DN="Us-TSH" />
+        </Investigation>
+        <IdResultItem>333391131</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>1</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="1.1" U="0" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 1,2</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NPU01685" S="2.16.578.1.12.4.1.1.7280" DN="P-INR" />
+        </Investigation>
+        <IdResultItem>333391127</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>2</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <NumResult>
+          <NumResultValue V="10" U="U/L" />
+        </NumResult>
+        <ServType V="N" DN="Ny" />
+        <RefInterval>
+          <Descr>&lt; 12</Descr>
+        </RefInterval>
+        <Investigation>
+          <Id V="NOR05859" S="2.16.578.1.12.4.1.1.7280" DN="Us-FSH" />
+        </Investigation>
+        <IdResultItem>333391124</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>1</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <Inst>
+          <Name>PRIVAT NHN LABORATORIUM</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <!-- 9051 -->
+          <Dept>
+            <Name>Avdeling for medisinsk biokjemi</Name>
+            <Id>8094866</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <ComMethod V="EDI" DN="EDI" />
+      <HCP>
+        <Inst>
+          <Name>NHN Journallab – SystemX Test Legekontor</Name>
+          <Id>8129870</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <HCPerson>
+            <Name>BONDEN LARS</Name>
+            <Id>8129872</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </HCPerson>
+        </Inst>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <HCP>
+        <Inst>
+          <Name>NORSK HELSENETT SF</Name>
+          <Id>112374</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>NILAR</Name>
+            <Id>8139764</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </CopyDest>
+    <RelServProv>
+      <Relation V="AHP" DN="Ansvarlig helsepersonell" />
+      <HCP>
+        <HCProf>
+          <Type V="BI" DN="Bioingeniør" />
+          <Name>Mykke Plasme</Name>
+          <Id>9876511</Id>
+          <TypeId V="HPR" DN="HPR-nummer" />
+        </HCProf>
+        <Address>
+          <Type V="WP" DN="Arbeidsadresse" />
+          <TeleAddress V="tel:73112233" />
+        </Address>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>
