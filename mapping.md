@@ -160,7 +160,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  | Observation.Code |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  |  |  | Ja |
 | ServReport.Patient.ResultItem.InvDate |||||| Observation.Note || Ja |
-| ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Note || Ja |
+| ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Interpretation || Nei |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.RefIdResultItem |  |  |  |  |  | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
