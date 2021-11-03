@@ -47,10 +47,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## Message
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| Type |  | V=SVAR_LAB | DN=Svarrapport-Laboratoriemedisin |  |  | DN=DiagnosticReport.category, V=DiagnosticReport.code | Volven=8279, Begynner med SVAR_... | Nei |
+| Type |  | V=SVAR_LAB | DN=Svarrapport-Laboratoriemedisin |  |  |  | Dekkes av ServReport.MsgDescr |  |
 | MIGversion | v1.4 2012-02-15 |  |  |  |  |  | Denne mappes ikke i FHIR  |  |
 | GenDate |  | V=2017-09-20T09:05:11 |  |  |  |  | Denne legges inn i ServReport.Comment (extention). *)  | Nei |
-| MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  |  |  |
+| MsgId | 01c59bd0-c6a5-11e6-9598-0800200c9a66 |  |  |  |  | ? | Må med for å kunne brukes til sporing | Nei |
 
 *) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men ved endring kan det være at IssueDate har opprinnelig dato; da vil GenDate gi mer info om når endringsmeldingen ble sendt.
 
@@ -59,10 +59,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 |-|-|-|-|-|-|-|-|-|
 | ServReport.ServType |  | V=N | DN=Ny | Ny+Endelig rapport=Final, Ny+Foreløpig=Prelimenary, ... |  | Styrer flyt ved mapping, mappes ikke |  |  |
 | ServReport.IssueDate |  | V=2017-09-20T09:04:10 |  |  |  | DiagnosticReport.issued | | Ja |
-| ServReport.ApprDate |  |  |  |  |  |  | | Nei |
+| ServReport.ApprDate |  |  |  |  |  |  | Ikke relevant |  |
 | ServReport.Status |  | V=F | DN=Endelig rapport |  |  | DiagnosticReport.status [(detaljer her)](#headReportStatus) |  | Ja |
-| ServReport.CancellationCode |  |  |  |  |  | Brukes ikke | |  |
-| ServReport.Ack |  |  |  |  |  | NA | |  |
+| ServReport.CancellationCode |  |  |  |  |  |  | Brukes ikke | |
+| ServReport.Ack |  |  |  |  |  |  | NA | |
 | ServReport.MsgDescr |  | V=CLIN | DN=Medisinsk biokjemi |  |  | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
 | ServReport.ServProvId | 55b6344fc-a61d-4a67-95fe-7276613785ab |  |  |  |  | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id | ? (AA) | Ja, ufullstendig |
 | ServReport.Comment | Kontroll |  |  |  |  | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
@@ -81,11 +81,11 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text | (Lagt i Note) | Nei |
 | ServReport.ServReq.PaymentCat |  |  |  |  |  | | Skal ikke mappes |  |
 | ServReport.ServReq.ReqComment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
-| ServReport.ServReq.Ack |  |  |  |  |  | NA |  | |
-| ServReport.ServReq.MsgDescr |  |  |  |  |  | NA | Samme som i ServReport |  |
-| ServReport.ServReq.RequestedPrioReport |  |  |  |  |  | NA |  |  |
-| ServReport.ServReq.ReceiptDate |  |  |  |  |  | NA |  | |
-| ServReport.ServReq.IdByServProvider |  |  ||  |  | Identifier | | Nei |
+| ServReport.ServReq.Ack |  |  |  |  |  |  | NA |  |
+| ServReport.ServReq.MsgDescr |  |  |  |  |  |  | NA, samme som i ServReport |  |
+| ServReport.ServReq.RequestedPrioReport |  |  |  |  |  |  | NA |  |
+| ServReport.ServReq.ReceiptDate |  |  |  |  |  |  | NA |  |
+| ServReport.ServReq.IdByServProvider |  |  ||  |  |  | Ikke relevant |  |
 | ServReport.ServReq.Reservation |  |  |  |  |  | ServiceRequest.Note | | Ja |
 | ServReport.ServReq.Comment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
 
@@ -95,17 +95,17 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.Name | Hansen, Mats |  |  |  |  | Patient.Name | | Ja
 | ServReport.Patient.IdByServProvider | 10682609 |  |  |  |  |  | NA ||
 | ServReport.Patient.OffId | 2412790228 |  |  |  |  | Patient.Identifier |  | Ja |
-| ServReport.Patient.TypeOffId |  | V=FNR | DN=Fødselsnummer |  |  |  | NA ||
+| ServReport.Patient.TypeOffId |  | V=FNR | DN=Fødselsnummer |  |  | Patient.Identifier | Kombineres med OffId | Ja |
 | ServReport.Patient.Address |||||||Mappes ikke||
 
 ## ResponsibleHcp (Practitioner, Rolle = 'Rekvirent')
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.ResponsibleHcp |  |  |  |  |  | ServiceRequest.requester |  | Ja |
-| ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  | ServiceRequest.Identifier.Type | Relasjon framgår av mappingen | Ja |
+| ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  |  | Relasjon framgår av mappingen |  |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst |  |  |  |  |  |  |  |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | Practitioner.Identifier.Display |  | Ja |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson |  |  |  |  |  |  |  |
+| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson |  |  |  |  |  |  | Ja |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Name | Magnar Koman, LIS1 |  |  |  |  | Practitioner.Identifier.Display |  | Ja |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Id | 9144889 |  |  |  |  | Practitioner.identifier.value |  | Ja |
 | ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.TypeId |  | V=HPR | DN=HPR-nummer |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
@@ -134,7 +134,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.Accredited |  |  |  |  |  | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject |  |  |  |  |  | Nøstede prøver, ikke i bruk? |  |  |
 | ServReport.Patient.AnalysedSubject.Pretreatment |  |  |  |  |  | Specimen.Collection.FastingStatus | Inneholder bla. faste/diett | Ja |
-| ServReport.Patient.AnalysedSubject.RelServProv |  |  |  |  |  | Specimen.Collection.Collector? |  | Nei |
+| ServReport.Patient.AnalysedSubject.RelServProv |  |  |  |  |  | Specimen.Collection.Collector? |  | Ja |
 
 ## ResultItem (Observation)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
@@ -157,10 +157,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id |  | V=NOR05863 | S=2.16.578.1.12.4.1.1.7280 | DN=Us-FT4 |  | Observation.Code | Sprikende bruk av DN og OT | Ja *) |
-| ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  | Observation.Code |  | Ja |
+| ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  | Observation.Code | Skal denne til method? | Ja, men må avklares |
 | ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  |  |  | Ja |
 | ServReport.Patient.ResultItem.InvDate |||||| Observation.Note || Ja |
-| ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Interpretation || Nei |
+| ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Interpretation || Ja |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.RefIdResultItem |  |  |  |  |  | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation |  | V=3 | DN=Endelig |  |  | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
@@ -171,7 +171,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.RefAnalysedSubject | 1 |  |  |  |  | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til et AnalysedSubject.  | Ja, delvis |
 | ServReport.Patient.ResultItem.Accredited |  | V=false |  |  |  | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
 | ServReport.Patient.ResultItem.ResultItem |  |  |  |  |  | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
-| ServReport.Patient.ResultItem.RelServProv |||||||| Nei |
+| ServReport.Patient.ResultItem.RelServProv |||||||| Ja |
 | ServReport.Patient.ResultItem.DiagComment |||||| Observation.Note|| Ja |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
