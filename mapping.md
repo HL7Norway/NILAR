@@ -85,7 +85,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.ServReq.MsgDescr |  |  |  |  |  |  | NA, samme som i ServReport |  |
 | ServReport.ServReq.RequestedPrioReport |  |  |  |  |  |  | NA |  |
 | ServReport.ServReq.ReceiptDate |  |  |  |  |  |  | NA |  |
-| ServReport.ServReq.IdByServProvider |  |  ||  |  |  | Ikke relevant |  |
+| ServReport.ServReq.IdByServProvider |  |  |  |  |  |  | Ikke relevant |  |
 | ServReport.ServReq.Reservation |  |  |  |  |  | ServiceRequest.Note | | Ja |
 | ServReport.ServReq.Comment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
 
@@ -98,24 +98,12 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.TypeOffId |  | V=FNR | DN=Fødselsnummer |  |  | Patient.Identifier | Kombineres med OffId | Ja |
 | ServReport.Patient.Address |||||||Mappes ikke||
 
-## ResponsibleHcp (Practitioner, Rolle = 'Rekvirent')
-| Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
-|-|-|-|-|-|-|-|-|-|
-| ServReport.Patient.ResponsibleHcp |  |  |  |  |  | ServiceRequest.requester |  | Ja |
-| ServReport.Patient.ResponsibleHcp.Relation |  | V=REK | DN=Rekvirent |  |  |  | Relasjon framgår av mappingen |  |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | Practitioner.Identifier.Display |  | Ja |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson |  |  |  |  |  |  | Ja |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Name | Magnar Koman, LIS1 |  |  |  |  | Practitioner.Identifier.Display |  | Ja |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.Id | 9144889 |  |  |  |  | Practitioner.identifier.value |  | Ja |
-| ServReport.Patient.ResponsibleHcp.HCP.Inst.HCPerson.TypeId |  | V=HPR | DN=HPR-nummer |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
-
 ## AnalysedSubject (Specimen)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate |  | V=2017-09-20T07:57:00 |  |  |  | Specimen.Collection.collectedDateTime |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment |  |  |  |  |  | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded |  |  |  |  | Specimen.Note |  |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded |  |  |  |  |  | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.Logistics |  |  |  |  |  | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type |  |  |  |  |  | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate |  |  |  |  |  | Specimen.Collection.collectedDateTime |  | Ja |
@@ -131,9 +119,9 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.SampleCollInd |  |  |  |  |  | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc |  |  |  |  |  | Specimen.Collection.Method |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleHandling |  |  |  |  |  | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.Accredited |  |  |  |  |  | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.Accredited |  |  |  |  |  | extension |  | Nei |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject |  |  |  |  |  | Nøstede prøver, ikke i bruk? |  |  |
-| ServReport.Patient.AnalysedSubject.Pretreatment |  |  |  |  |  | Specimen.Collection.FastingStatus | Inneholder bla. faste/diett | Ja |
+| ServReport.Patient.AnalysedSubject.Pretreatment |  |  |  |  |  | Specimen.Note | Inneholder bla. faste/diett | Nei |
 | ServReport.Patient.AnalysedSubject.RelServProv |  |  |  |  |  | Specimen.Collection.Collector? |  | Ja |
 
 ## ResultItem (Observation)
@@ -148,18 +136,14 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.TextResult.TextCode | | V=T 80100 | S=2.16.578.1.12.4.1.1.7010 | DN=vulva UNS | | Observation.Value | CodeableValue.Code | Ja |
 | ServReport.Patient.ResultItem.Interval | | | | | | Observation.Value | Range | Ja |
 | ServReport.Patient.ResultItem.DateResult |  | | | | | Observation.Value | dateTime | Ja |
-| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
-| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
-| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
-| ServReport.Patient.ResultItem.TextResult.Unit | 10#9/L | | | | | Observation.Value | CodeableConcept.Code | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo.Type | | V=1911.2 | DN=Operasjonstype | | | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | | V=1 | DN=Høyresidig hemikolektomi | | | Observation.Note | Gjelder alle innholdtypene | Ja |
 | ServReport.Patient.ResultItem.ServType |  | V=N | DN=Ny |  |  |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | 10 - 22 |  |  |  |  | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id |  | V=NOR05863 | S=2.16.578.1.12.4.1.1.7280 | DN=Us-FT4 |  | Observation.Code | Sprikende bruk av DN og OT | Ja *) |
 | ServReport.Patient.ResultItem.Investigation.Spec |  |  |  |  |  | Observation.Code | Skal denne til method? | Ja, men må avklares |
-| ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  |  |  | Ja |
-| ServReport.Patient.ResultItem.InvDate |||||| Observation.Note || Ja |
+| ServReport.Patient.ResultItem.Investigation.Comment |  |  |  |  |  | Observation.Note? |  | Ja |
+| ServReport.Patient.ResultItem.InvDate |||||| Observation.Note, Observation.Effective ved radiologi || Ja, men mangelfull |
 | ServReport.Patient.ResultItem.DevResultInd |||||| Observation.Interpretation || Ja |
 | ServReport.Patient.ResultItem.IdResultItem | 118891130 |  |  |  |  | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
 | ServReport.Patient.ResultItem.RefIdResultItem |  |  |  |  |  | Observation.hasMember |  | Ja |
@@ -176,61 +160,42 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
-## ServProvider (Organization, Rolle = 'Avsender')
-| Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
-|-|-|-|-|-|-|-|-|-|
-| ServReport.ServProvider.HCP |  |  |  |  |  | Observation.performer -> practitioner? |  | Nei |
-| ServReport.ServProvider.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Name | ST OLAVS HOSPITAL HF |  |  |  |  | Organization.name | Sammen med Dept.Name | Ja |
-| ServReport.ServProvider.HCP.Inst.Id | 59 |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept |  |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept.Name | Medisinsk mikrobiologi |  |  |  |  | Organization.name | Sammen med Inst.Name | Ja |
-| ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Ja |
-| ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Ja, foreløpig |
+## Aktører knyttet til en melding
+Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressurser, men trekkes ut og brukes til å lage ResourceReference's, som brukes relevante steder.
 
-## Requester (Organization og Practitioner, rolle = 'Mottaker')
-| Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
-|-|-|-|-|-|-|-|-|-|
-| ServReport.Requester |  |  |  |  |  | DiagnosticReport.resultsInterpreter? | ??? | Nei |
-| ServReport.Requester.ComMethod |  | V=EDI | DN=EDI |  |  |  |  |
-| ServReport.Requester.HCP |  |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | Organization.name |  | Ja |
-| ServReport.Requester.HCP.Inst.Id | 56704 |  |  |  |  | Organization.identifier.value |  | Ja |
-| ServReport.Requester.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Ja, foreløpig |
-| ServReport.Requester.HCP.Inst.HCPerson |  |  |  |  |  |  |  |
-| ServReport.Requester.HCP.Inst.HCPerson.Name | Rita Lin |  |  |  |  | Practitioner.name |  | Ja |
-| ServReport.Requester.HCP.Inst.HCPerson.Id | 258521 |  |  |  |  | Practitioner.identifier.value |  | Ja |
-| ServReport.Requester.HCP.Inst.HCPerson.TypeId |  | V=HER | DN=HER-id |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
+### Roller
+| Rolle | Bruk i Fhir | Kommantar | Implementert |
+|-|-|-|-|
+| ResponsibleHcp ("Rekvirent") | ServiceRequest.Requester |  | Ja |
+| ServProvider ("Avsender") | NA |  |  |
+| Requester ("Mottaker") | ServiceRequest.Requester | Dersom ResponsibleHcp mangler | Nei |
+| RelServProv ("Utfører/Ansvarlig") | DiagnosticReport.Performer, Observation.Performer |  | Ja |
+| CopyDest ("Kopimottaker") | NA |  |  |
 
-## RelServProv (Practitioner, rolle = 'Utfører/Ansvarlig')
+### Mapping
+Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Organization. I noen tilfeller blir det en av hver da xml gjerne oppgir person knyttet til virksomhet.
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
-| ServReport.RelServProv |  |  |  |  |  | Observation.performer |  | Nei |
-| ServReport.RelServProv.Relation |  | V=AHP | DN=Ansvarlig helsepersonell |  |  | Identifier.Type |  | Nei |
-| ServReport.RelServProv.HCP |  |  |  |  |  |  |  |
-| ServReport.RelServProv.HCP.HCProf |  |  |  |  |  | Practitioner |  | Ja |
-| ServReport.RelServProv.HCP.HCProf.Type |  | V=BI | DN=Bioingeniør |  |  | Practitioner.qualification |  | Ja |
-| ServReport.RelServProv.HCP.HCProf.Name | Mykke Plasme |  |  |  |  | Identifier.display |  | Ja |
-| ServReport.RelServProv.HCP.HCProf.Id | 9876511 |  |  |  |  | Practitioner.identifier.value |  | Ja |
-| ServReport.RelServProv.HCP.HCProf.TypeId |  | V=HPR | DN=HPR-nummer |  |  | Practitioner.identifier.system |  | Ja, foreløpig |
-| ServReport.RelServProv.HCP.Address |  |  |  |  |  |  |  | Nei |
-| ServReport.RelServProv.HCP.Address.Type |  | V=WP | DN=Arbeidsadresse |  |  |  |  | Nei |
-| ServReport.RelServProv.HCP.Address.TeleAddress |  | V=tel:73112233 |  |  |  |  |  | Nei |
+| HCP.Inst |  |  |  |  |  | ResourceReference(**Organization**) |  | Ja |
+| HCP.Inst.Name | Kattskinnet legesenter |  |  |  |  | ResourceReference(Organization).Identifier.Display |  | Ja |
+| HCP.Inst.Id | 59 |  |  |  |  | ResourceReference(Organization).Identifier.Value |  | Ja |
+| HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  | ResourceReference(Organization).Identifier.System |  | Ja, foreløpig |
+|  |  |  |  |  |  |  |  |  |
+| HCP.Inst.HCPerson |  |  |  |  |  | ResourceReference(**Practitioner**) |  | Ja |
+| HCP.Inst.HCPerson.Name | Magnar Koman, LIS1 |  |  |  |  | ResourceReference(Practitioner).Identifier.Display |  | Ja |
+| HCP.Inst.HCPerson.Id | 9144889 |  |  |  |  | ResourceReference(Practitioner).identifier.value |  | Ja |
+| HCP.Inst.HCPerson.TypeId |  | V=HPR | DN=HPR-nummer |  |  | ResourceReference(Practitioner).identifier.system |  | Ja, foreløpig |
+|  |  |  |  |  |  |  |  |  |
+| HCP.HCProf |  |  |  |  |  | ResourceReference(**Practitioner**) |  | Ja |
+| HCP.HCProf.Type |  | V=BI | DN=Bioingeniør |  |  | ResourceReference(Practitioner).Identifier.Display |  | Nei |
+| HCP.HCProf.Name | Mykke Plasme |  |  |  |  | ResourceReference(Practitioner).Identifier.Display |  | Ja |
+| HCP.HCProf.Id | 9876511 |  |  |  |  | ResourceReference(Practitioner).Identifier.identifier.Value |  | Ja |
+| HCP.HCProf.TypeId |  | V=HPR | DN=HPR-nummer |  |  | ResourceReference(Practitioner).Identifier.System |  | Ja, foreløpig |
+|  |  |  |  |  |  |  |  |  |
+| HCP.Address |  |  |  |  |  |  | NA |  |
+| HCP.Address.Type |  | V=WP | DN=Arbeidsadresse |  |  |  | NA |  |
+| HCP.Address.TeleAddress |  | V=tel:73112233 |  |  |  |  | NA |  |
 
-## CopyDest (Organization, Rolle = 'Kopimottaker')
-| Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
-|-|-|-|-|-|-|-|-|-|
-| ServReport.ServProvider.HCP |  |  |  |  |  | Observation.performer -> practitioner? |  | Nei |
-| ServReport.ServProvider.HCP.Inst |  |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Name | ST OLAVS HOSPITAL HF |  |  |  |  | Organization.name | Sammen med Dept.Name | Nei |
-| ServReport.ServProvider.HCP.Inst.Id | 59 |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.TypeId |  | V=HER | DN=HER-id |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept |  |  |  |  |  |  |  |
-| ServReport.ServProvider.HCP.Inst.Dept.Name | Medisinsk mikrobiologi |  |  |  |  | Organization.name | Sammen med Inst.Name | Nei |
-| ServReport.ServProvider.HCP.Inst.Dept.Id | 91126 |  |  |  |  | Organization.identifier.value |  | Nei |
-| ServReport.ServProvider.HCP.Inst.Dept.TypeId |  | V=HER | DN=HER-id |  |  | Organization.identifier.system |  | Nei |
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
 DiagnosticReport.Status skal være en standard Fhir kode. Denne matcher godt med kodeverk 7306 "Status for rapport-S1".
@@ -266,6 +231,11 @@ Det arbeides ut fra et ønske om å holde bruken av Fhir extensiosn på et minim
 - ServReport.Comment
 - ServReport.CodedComment
 - ServReport.RefDoc (note om utelatt dokument)
+
+### XXX.Accredited
+- ServReport.Accredited
+- AnalysedSubject.Accredited
+- ...
 
 ## Fagområde - tillegg til utvalgte koder
 - NLK: hente fagområde fra kodeverksdefinisjon
