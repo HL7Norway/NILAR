@@ -71,14 +71,16 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Animal |  |  |  |  |  |  | NA |  |
 | ServReport.Material |  |  |  |  |  |  | NA |  |
 | ServReport.PaymentResponsible |  |  |  |  |  |  | NA |  |
+|  |  |  |  |  |  | DiagnosticReport.Effective | Tidligste Observation.Effective | Nei |
 
 ## ServReq (ServiceRequest)
 | Path | Value | Attributes |  |  |  | Mapping | Kommentar | Implementert |
 |-|-|-|-|-|-|-|-|-|
 | ServReport.ServReq.IssueDate |  | V=2017-09-20 |  |  |  | ServiceRequest.authoredOn |  | Ja |
 | ServReport.ServReq.Id | e312fde3-66aa-40da-bec7-26abf4d29e82 |  |  |  |  | DiagnosticReport.basedon, link til servicerequest, ServiceRequest.requisition |  | Ja |
-| ServReport.ServReq.ReasonAsText.Heading |  | V="PROB" | DN="Aktuell problemstilling" |  |  | Volven=8231, ServiceRequest.reasonCode -> code | (Lagt i Note) | Nei |
-| ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text | (Lagt i Note) | Nei |
+| ServReport.ServReq.ReasonAsText.Heading |  | V="PROB" | DN="Aktuell problemstilling" |  |  | Volven=8231, ServiceRequest.reasonCode -> code |  | Ja |
+| ServReport.ServReq.ReasonAsText.TextResultValue |  |  |  |  |  | ServiceRequest.reasonCode -> text |  | Ja |
+| ServReport.ServReq.ReasonAsText.TextCode |  |  |  |  |  |  | Ikke i bruk |  | 
 | ServReport.ServReq.PaymentCat |  |  |  |  |  | | Skal ikke mappes |  |
 | ServReport.ServReq.ReqComment |  |  |  |  |  | ServiceRequest.Note |  | Ja |
 | ServReport.ServReq.Ack |  |  |  |  |  |  | NA |  |
@@ -157,6 +159,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.ResultItem |  |  |  |  |  | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv |||||||| Ja |
 | ServReport.Patient.ResultItem.DiagComment |||||| Observation.Note|| Ja |
+|  |  |  |  |  |  | Observation.Note| Specimen.CollectedDate -> ResultItem.InvDate for radiologi | Nei |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
