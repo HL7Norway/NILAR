@@ -42,7 +42,13 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 - Søk etter pasient: http://51.13.121.9:8080/Patient?identifier=13116900216
 - Finmasket søk etter hemoglobinmålinger: http://51.13.121.9:8080/Observation?patient=Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6&code:text=B-Hemoglobin
 
+## Oversikt over ressurser som brukes i NILAR
 
+![Diagnostics oversikt](diagnostics.png)
+
+### Sammenheng mellom XML dokument og FHIR ressurser
+
+![Relation mellom ressurser](Visual%20mapping.svg)
 
 ## Message
 | XML | FHIR | Kommentar | Implementert |
