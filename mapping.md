@@ -31,6 +31,8 @@ Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i t
 #### Endepunkt
 http://51.13.121.9:8080
 
+For endepunkt med støtte for helseID, bruk port 4141 (http://51.13.121.9:4141).
+
 Ved bruk av Postman eller andre generiske verktøy må man spesifisere at man etterspør FHIR v4 objekter, ellers får man ingen treff. Dett kan gjøres ved å legge en Accept inn i headeren:
 
 Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
