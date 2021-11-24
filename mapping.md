@@ -57,7 +57,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 |-|-|-|-|
 | Type |  | Dekkes av ServReport.MsgDescr |  |
 | MIGversion |  | Denne mappes ikke i FHIR  |  |
-| GenDate |  | Denne legges inn i ServReport.Comment (extention). *)  | Nei |
+| GenDate |  | Brukes som "IssueDate" på endringsmeldinger | Nei |
 | MsgId | ? | Må med for å kunne brukes til sporing | Nei |
 
 *) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men ved endring kan det være at IssueDate har opprinnelig dato; da vil GenDate gi mer info om når endringsmeldingen ble sendt.
@@ -66,20 +66,19 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.ServType | Styrer flyt ved mapping, mappes ikke |  |  |
-| ServReport.IssueDate | DiagnosticReport.issued | | Ja |
+| ServReport.IssueDate | DiagnosticReport.issued | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Må bruke Message.GenDate for å få dato på endringer. | Nei |
 | ServReport.ApprDate |  | Ikke relevant |  |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
 | ServReport.MsgDescr | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
-| ServReport.ServProvId | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id | ? (AA) | Ja, ufullstendig |
+| ServReport.ServProvId | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id |  | Ja |
 | ServReport.Comment | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
 | ServReport.CodedComment | Samme som Comment | Denne venter vi med | Nei (extention?) |
 | ServReport.RefDoc |  | Kan inneholde identifiserende informasjon |  |
 | ServReport.Animal |  | NA |  |
 | ServReport.Material |  | NA |  |
 | ServReport.PaymentResponsible |  | NA |  |
-|  | DiagnosticReport.Effective | Tidligste Observation.Effective | Nei |
 
 ## ServReq (ServiceRequest)
 | XML | FHIR | Kommentar | Implementert |
@@ -111,7 +110,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## AnalysedSubject (Specimen)
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. Blir også Observation.Effective |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Note |  | Ja |
@@ -122,16 +121,16 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.TypeCoded | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
 | ServReport.Patient.AnalysedSubject.Number | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Ja, forløpig |
 | ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Specimen.Collection.BodySite |  | Ja |
-| ServReport.Patient.AnalysedSubject.IdByRequester | Specimen.Identifier |  | Ja, ufullstendig |
-| ServReport.Patient.AnalysedSubject.IdByServProvider | Specimen.AccessionIdentifier | | Ja, ufullstendig |
+| ServReport.Patient.AnalysedSubject.IdByRequester | Specimen.Identifier |  | Ja |
+| ServReport.Patient.AnalysedSubject.IdByServProvider | Specimen.AccessionIdentifier | | Ja |
 | ServReport.Patient.AnalysedSubject.Comment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.PreservMaterial | Specimen.Container.Additive |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleCollInd | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc | Specimen.Collection.Method |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.Accredited | extension |  | Nei |
+| ServReport.Patient.AnalysedSubject.Accredited | extension. Foreløpig til Specimen.Note |  | Nei, extension |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject | Nøstede prøver, ikke i bruk? |  |  |
-| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Note | Inneholder bla. faste/diett | Nei |
+| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Note | Inneholder bla. faste/diett | Ja |
 | ServReport.Patient.AnalysedSubject.RelServProv | Specimen.Collection.Collector? |  | Ja |
 
 ## ResultItem (Observation)
@@ -150,24 +149,23 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | Observation.Note | Gjelder alle innholdtypene | Ja |
 | ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
-| ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja *) |
-| ServReport.Patient.ResultItem.Investigation.Spec | Observation.Code | Skal denne til method? | Ja, men må avklares |
+| ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
+| ServReport.Patient.ResultItem.Investigation.Spec | Observation.Code | Kunne passet i Observation.Method, men passer ikke med kardinalitet og kontekst | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note? |  | Ja |
-| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi | Ja, men mangelfull |
+| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi | Nei |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation | Ja |
-| ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja, delvis |
+| ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
 | ServReport.Patient.ResultItem.StatusChangeDate | Observation.Note |  | Ja |
-| ServReport.Patient.ResultItem.DescrDate | Observation.Note | Ja |
-| ServReport.Patient.ResultItem.CounterSignDate | Observation.Note | Ja |
-| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Note | Ja |
-| ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til et AnalysedSubject.  | Ja, delvis |
+| ServReport.Patient.ResultItem.DescrDate | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.CounterSignDate | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til ett AnalysedSubject.  | Ja |
 | ServReport.Patient.ResultItem.Accredited | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
-| ServReport.Patient.ResultItem.RelServProv || Ja |
-| ServReport.Patient.ResultItem.DiagComment | Observation.Note| Ja |
-|  | Observation.Note| Specimen.CollectedDate -> ResultItem.InvDate for radiologi | Nei |
+| ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
+| ServReport.Patient.ResultItem.DiagComment | Observation.Note |  | Ja |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
@@ -178,7 +176,7 @@ Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressu
 | Rolle | Bruk i Fhir | Kommantar | Implementert |
 |-|-|-|-|
 | ResponsibleHcp ("Rekvirent") | ServiceRequest.Requester |  | Ja |
-| ServProvider ("Avsender") | NA |  |  |
+| ServProvider ("Avsender") | Brukes som Performer om RelServProv mangler |  | Ja |
 | Requester ("Mottaker") | ServiceRequest.Requester | Dersom ResponsibleHcp mangler | Nei |
 | RelServProv ("Utfører/Ansvarlig") | DiagnosticReport.Performer, Observation.Performer |  | Ja |
 | CopyDest ("Kopimottaker") | NA |  |  |
@@ -190,16 +188,16 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 | HCP.Inst | ResourceReference(**Organization**) |  | Ja |
 | HCP.Inst.Name | ResourceReference(Organization).Identifier.Display |  | Ja |
 | HCP.Inst.Id | ResourceReference(Organization).Identifier.Value |  | Ja |
-| HCP.Inst.TypeId | ResourceReference(Organization).Identifier.System |  | Ja, foreløpig |
+| HCP.Inst.TypeId | ResourceReference(Organization).Identifier.System |  | Ja |
 | HCP.Inst.HCPerson | ResourceReference(**Practitioner**) |  | Ja |
 | HCP.Inst.HCPerson.Name | ResourceReference(Practitioner).Identifier.Display |  | Ja |
 | HCP.Inst.HCPerson.Id | ResourceReference(Practitioner).identifier.value |  | Ja |
-| HCP.Inst.HCPerson.TypeId| ResourceReference(Practitioner).identifier.system |  | Ja, foreløpig |
+| HCP.Inst.HCPerson.TypeId| ResourceReference(Practitioner).identifier.system |  | Ja |
 | HCP.HCProf | ResourceReference(**Practitioner**) |  | Ja |
-| HCP.HCProf.Type | ResourceReference(Practitioner).Identifier.Display |  | Nei |
+| HCP.HCProf.Type | Practitioner.Qualification) + ResourceReference(Practitioner).Identifier.Display |  | Ja |
 | HCP.HCProf.Name | ResourceReference(Practitioner).Identifier.Display |  | Ja |
 | HCP.HCProf.Id | ResourceReference(Practitioner).Identifier.identifier.Value |  | Ja |
-| HCP.HCProf.TypeId | ResourceReference(Practitioner).Identifier.System |  | Ja, foreløpig |
+| HCP.HCProf.TypeId | ResourceReference(Practitioner).Identifier.System |  | Ja |
 | HCP.Address |  | NA |  |
 | HCP.Address.Type |  | NA |  |
 | HCP.Address.TeleAddress |  | NA |  |
