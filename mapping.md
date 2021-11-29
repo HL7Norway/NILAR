@@ -57,8 +57,8 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 |-|-|-|-|
 | Type |  | Dekkes av ServReport.MsgDescr |  |
 | MIGversion |  | Denne mappes ikke i FHIR  |  |
-| GenDate |  | Brukes som "IssueDate" på endringsmeldinger | Nei |
-| MsgId | ? | Må med for å kunne brukes til sporing | Nei |
+| GenDate | DiagnosticReport.Issued |  | Ja |
+| MsgId | DiagnosticReport.Identifier (Use = Secondary) | Må med for å kunne brukes til sporing | Ja |
 
 *) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men ved endring kan det være at IssueDate har opprinnelig dato; da vil GenDate gi mer info om når endringsmeldingen ble sendt.
 
@@ -66,12 +66,12 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.ServType | Styrer flyt ved mapping, mappes ikke |  |  |
-| ServReport.IssueDate | DiagnosticReport.issued | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Må bruke Message.GenDate for å få dato på endringer. | Nei |
+| ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
 | ServReport.ApprDate |  | Ikke relevant |  |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
-| ServReport.MsgDescr | DiagnosticReport.category, Observation.category | Volven=8202 | Ja |
+| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" | Ja |
 | ServReport.ServProvId | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id |  | Ja |
 | ServReport.Comment | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
 | ServReport.CodedComment | Samme som Comment | Denne venter vi med | Nei (extention?) |
@@ -119,7 +119,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.Type | Specimen.Type | | Ja |
 | ServReport.Patient.AnalysedSubject.TypeCoded | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
-| ServReport.Patient.AnalysedSubject.Number | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Ja, forløpig |
+| ServReport.Patient.AnalysedSubject.Number | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Ja |
 | ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Specimen.Collection.BodySite |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByRequester | Specimen.Identifier |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByServProvider | Specimen.AccessionIdentifier | | Ja |
@@ -128,7 +128,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.SampleCollInd | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc | Specimen.Collection.Method |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.Accredited | extension. Foreløpig til Specimen.Note |  | Nei, extension |
+| ServReport.Patient.AnalysedSubject.Accredited | extension. Foreløpig til Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject | Nøstede prøver, ikke i bruk? |  |  |
 | ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Note | Inneholder bla. faste/diett | Ja |
 | ServReport.Patient.AnalysedSubject.RelServProv | Specimen.Collection.Collector? |  | Ja |
@@ -150,9 +150,10 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
+| ----------"---------"-----------"---------- | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Code | Kunne passet i Observation.Method, men passer ikke med kardinalitet og kontekst | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note? |  | Ja |
-| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi | Nei |
+| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi | Ja |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
@@ -162,7 +163,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.CounterSignDate | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til ett AnalysedSubject.  | Ja |
-| ServReport.Patient.ResultItem.Accredited | Observation.note | Legger denne inn med ledetekst. Denne brukes som en godkjennelse. Viktig for lab. | Ja |
+| ServReport.Patient.ResultItem.Accredited | Observation.note | Extension. Foreløpig i Note | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
 | ServReport.Patient.ResultItem.DiagComment | Observation.Note |  | Ja |
@@ -177,7 +178,7 @@ Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressu
 |-|-|-|-|
 | ResponsibleHcp ("Rekvirent") | ServiceRequest.Requester |  | Ja |
 | ServProvider ("Avsender") | Brukes som Performer om RelServProv mangler |  | Ja |
-| Requester ("Mottaker") | ServiceRequest.Requester | Dersom ResponsibleHcp mangler | Nei |
+| Requester ("Mottaker") | ServiceRequest.Requester | Dersom ResponsibleHcp mangler | Ja |
 | RelServProv ("Utfører/Ansvarlig") | DiagnosticReport.Performer, Observation.Performer |  | Ja |
 | CopyDest ("Kopimottaker") | NA |  |  |
 
@@ -200,7 +201,7 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 | HCP.HCProf.TypeId | ResourceReference(Practitioner).Identifier.System |  | Ja |
 | HCP.Address |  | NA |  |
 | HCP.Address.Type |  | NA |  |
-| HCP.Address.TeleAddress |  | NA |  |
+| HCP.Address.TeleAddress | Practitioner.Telecom, Organization.TeleCom |  | Ja |
 
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
