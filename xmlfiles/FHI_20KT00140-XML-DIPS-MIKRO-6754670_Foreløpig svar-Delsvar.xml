@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Answer report for microbiology and clinical chemistry KiTH ver 1.4 created by Labvantage Medical Suite, SoftwarePoint AB
+Source: samplereport_xml_kith14
+-->
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd" xmlns:ns4="http://www.kith.no/xmlstds/base64container">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <!-- GenDate: reportdatetime -->
+  <GenDate V="2020-12-17T13:05:00"/>
+  <MsgId>04446919-ed11-41c4-9e87-13cdc5a83c5b</MsgId>
+  <ServReport>
+    <!-- ServType_modified: M - Modified report -->
+    <ServType V="M" DN="Endring"/>
+    <!-- IssueDate: sample.createdt -->
+    <IssueDate V="2020-12-17T12:50:00"/>
+    <Status V="P" DN="Foreløpig rapport"/>
+    <Ack V="J" DN="Avsenderen ønsker bekreftelse"/>
+    <MsgDescr V="MBIO" DN="Mikrobiologi"/>
+    <!-- ServProvId: The same ID for all reports for a single request. SampleId (sample.s_sampleid) -->
+    <ServProvId>20KT00140</ServProvId>
+    <RefDoc>
+      <MsgType V="REF" DN="Referanse"/>
+      <FileReference>20KT00140-XML-DIPS-MIKRO-6754670-CHILD.pdf</FileReference>
+    </RefDoc>
+    <ServReq>
+      <!-- IssueDate: request.createdt The time the request was created -->
+      <IssueDate V="2020-12-17T12:50:00"/>
+      <MsgDescr V="MBIO" DN="Mikrobiologi"/>
+      <Id>NULL</Id>
+      <!-- ReceiptDate: sample.receiveddt - The date and time the sample was received -->
+      <ReceiptDate V="2020-12-17T12:50:00" />
+      <!-- IdByServProvider: sample.s_sampleid - The lab's ID -->
+      <IdByServProvider>20KT00140</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann"/>
+      <!-- Name: samplepoint.w_lastname Patient name formatted as lastname, firstname -->
+      <Name>Asil, Bent</Name>
+      <!-- OffId: samplepoint.w_code -->
+      <OffId>07070750710</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer"/>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <!-- StreetAdr: samplepoint.w_address1 -->
+        <StreetAdr>Postboks 6300 Etterstad</StreetAdr>
+        <!-- PostalCode: samplepoint.w_postalcode -->
+        <PostalCode>0603</PostalCode>
+        <!-- City: samplepoint.w_city -->
+        <City>OSLO</City>
+      </Address>
+      <AnalysedSubject>
+        <CollectedSample>
+          <!-- CollectedDate: sampleitems.collectiondt -->
+          <CollectedDate V="2020-12-17T12:50:00"/>
+        </CollectedSample>
+        <!-- Type: sampleitems.materialdesc Material description. -->
+        <Type>Blod</Type>
+        <!-- TypeCoded: material.s_materialid and material.materialdesc. Material id and description (or id repeated if desc empty). -->
+        <TypeCoded V="B" S="2.16.578.1.12.4.1.1.8351" DN="Blod" />
+        <!-- IdByRequester: sampleitems.pid Requesters id for the sampleitem/analysed subject -->
+        <IdByRequester>20KT00140AE</IdByRequester>
+        <!-- Number: Always 1. Number of sample tubes for this sampleitem/analysed subject. -->
+        <Number>1</Number>
+        <!-- IdByServProvider: sampleitems.w_sampleitemid Laboratory unique id for the sampleitem/analysed subject -->
+        <IdByServProvider>20KT00140-001</IdByServProvider>
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <!-- CollectedDate: sampleitems.collectiondt -->
+          <CollectedDate V="2020-12-17T12:50:00"/>
+        </CollectedSample>
+        <!-- Type: sampleitems.materialdesc Material description. -->
+        <Type>Blod</Type>
+        <!-- TypeCoded: material.s_materialid and material.materialdesc. Material id and description (or id repeated if desc empty). -->
+        <TypeCoded V="B" S="2.16.578.1.12.4.1.1.8351" DN="Blod" />
+        <!-- IdByRequester: sampleitems.pid Requesters id for the sampleitem/analysed subject -->
+        <IdByRequester>20KT00140AN</IdByRequester>
+        <!-- Number: Always 1. Number of sample tubes for this sampleitem/analysed subject. -->
+        <Number>1</Number>
+        <!-- IdByServProvider: sampleitems.w_sampleitemid Laboratory unique id for the sampleitem/analysed subject -->
+        <IdByServProvider>20KT00140-002</IdByServProvider>
+      </AnalysedSubject>
+      <!--
+        Reportgroup_start: Blodkultur
+        Reportgroups are always used like in KiTH mikro 1.3 case 7 since every defined test in Medical Suite belongs to a reportgroup.
+        It is the reportgroup that will be medical validated and part answering always goes within a reportgroup.
+        There may be one or more tests (including investigations) belonging to the same reportgroup.
+        There may be one or more reportgroups in an answer report.
+        Antibiotics will be reported outside reportgroups with references to the identification resultitem.
+        Reportgroups are the only ResultItem element that doesn't have the element Investigation.
+      -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="GR" DN="Gruppe"/>
+          <!-- TextResultValue: reportgroup.reportgroupdesc Report group header text -->
+          <TextResultValue>Blodkultur</TextResultValue>
+        </TextResult>
+        <!-- Comment: Comments for all tests in the reportgroup, probably medical validation text -->
+        <Comment>Godkjent av: xarbjo - Marthe H Bjørland</Comment>
+        <!-- MedicalValidationDate: conclusions.approveddt - The date when medical validation was performed on the report group -->
+        <MedicalValidationDate V="2020-12-17"/>
+        <!--
+          Screening_start: FLAE
+        -->
+        <ResultItem>
+          <!-- screening_noreport: 01 Aerob blodkultur -->
+          <TextResult>
+            <Heading V="LR" DN="Laboratorieresultat" />
+          </TextResult>
+          <!-- ServType: Result is unchanged since first report -->
+          <ServType V="N" DN="Ny"/>
+          <Investigation>
+            <!-- Id: 7280 : External code defined for the screening -->
+            <Id V="NPU58580" S="2.16.578.1.12.4.1.1.7280" DN="Aerob blodkultur "/>
+            <!-- Id: Local id and name -->
+            <Id V="FLAE" S="2.16.578.1.12.4.1.1.8212" OT="Aerob blodkultur "/>
+          </Investigation>
+          <InvDate V="2020-12-17T12:51:00"/>         
+          <!-- IdResultItem: rpt.idresultitem - equals to tests.w_sdidataid, the unique id for the screening -->
+          <IdResultItem>20KT00140-02</IdResultItem>
+          <!-- StatusInvestigation: Result -->
+          <StatusInvestigation V="3" DN="Endelig"/>
+          <!-- refAnalysedSubject: sampleitems.w_sampleitemid A reference to the analysed subject -->
+          <RefAnalysedSubject>20KT00140-001</RefAnalysedSubject>
+        <!-- Screening_end: FLAE -->
+        </ResultItem>
+        <!--
+          Component_start: ESCOLI
+        -->
+        <ResultItem>
+          <TextResult>
+            <Heading V="LR" DN="Laboratorieresultat" />
+            <!-- comp identity: ESCOLI - Escherichia coli -->
+            <TextResultValue>Escherichia coli</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <!-- Id: 7280 : Comp externalcode and fixed OT -->
+            <Id V="ESCOLI" S="2.16.578.1.12.4.1.1.7280" DN="Identifikasjon" OT="Identifikasjon"/>
+            <!-- Id: Local id and fixed OT -->
+            <Id V="ESCOLI" S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon"/>
+          </Investigation>
+          <InvDate V="2020-12-17T12:51:00"/>                   
+          <!-- Comment: compdata.comptext -->
+          <Comment>Delsvar.</Comment>
+          <!-- IdResultItem: rpt.idresultitem - Component id, equals to the unique enumeration of components on a report -->
+          <IdResultItem>1</IdResultItem>
+          <!-- RefIdResultItem: rpt.refidresultitem - a reference to the screening result item -->
+          <RefIdResultItem>20KT00140-02</RefIdResultItem>
+          <!-- StatusInvestigation: Final -->
+          <StatusInvestigation V="3" DN="Endelig"/>
+          <!-- refAnalysedSubject: sampleitems.w_sampleitemid A reference to the analysed subject -->
+          <RefAnalysedSubject>20KT00140-001</RefAnalysedSubject>
+          <!-- ResultItem: compdata.compamount -->
+          <ResultItem>
+            <TextResult>
+              <TextResultValue>Vekst</TextResultValue>
+            </TextResult>
+            <Investigation>
+              <!-- Id: Fixed values -->
+              <Id V="KVANT" S="2.16.578.1.12.4.1.1.7280" DN="Mengde" OT="Mengde"/>
+            </Investigation>
+          </ResultItem>          
+        <!-- Component_end ESCOLI -->
+        </ResultItem>
+        <!--
+          Screening_start: BAND
+        -->
+        <ResultItem>
+          <!-- screening_noresult: TextResult is not included for the pending result -->
+          <!-- ServType: Result is unchanged since first report -->
+          <ServType V="N" DN="Ny"/>
+          <Investigation>
+            <!-- Id: 7280 : External code defined for the screening -->
+            <Id V="NPU58581" S="2.16.578.1.12.4.1.1.7280" DN="Anaerob blodkultur "/>
+            <!-- Id: Local id and name -->
+            <Id V="BAND" S="2.16.578.1.12.4.1.1.8212" OT="Anaerob blodkultur "/>
+          </Investigation>
+          <!-- StatusInvestigation: Pending -->
+          <StatusInvestigation V="15" DN="I prosess"/>
+          <!-- refAnalysedSubject: sampleitems.w_sampleitemid A reference to the analysed subject -->
+          <RefAnalysedSubject>20KT00140-002</RefAnalysedSubject>
+        <!-- Screening_end: BAND -->
+        </ResultItem>
+      <!-- Reportgroup_end: Blodkultur -->
+      </ResultItem>
+      <!--
+        abiotable_start: Antibiotics are reported last after all reportgroups
+      -->
+      <!-- abio: AM-D / Ampicillin / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_S -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06045" S="2.16.578.1.12.4.1.1.7280" DN="Ampicillin "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="AM-D" S="2.16.578.1.12.4.1.1.8212" OT="Ampicillin "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: AT-D / Aztreonam / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_I -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediært følsom" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06006" S="2.16.578.1.12.4.1.1.7280" DN="Aztreonam "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="AT-D" S="2.16.578.1.12.4.1.1.8212" OT="Aztreonam "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: CT-D / Cefotaksim / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_R -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06015" S="2.16.578.1.12.4.1.1.7280" DN="Cefotaksim "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="CT-D" S="2.16.578.1.12.4.1.1.8212" OT="Cefotaksim "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: TZ-D / Ceftazidim / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_S -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06019" S="2.16.578.1.12.4.1.1.7280" DN="Ceftazidim "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="TZ-D" S="2.16.578.1.12.4.1.1.8212" OT="Ceftazidim "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: XM-D / Cefuroksim / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_S -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06021" S="2.16.578.1.12.4.1.1.7280" DN="Cefuroksim "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="XM-D" S="2.16.578.1.12.4.1.1.8212" OT="Cefuroksim "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: CI-D / Ciprofloksacin / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_R -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06049" S="2.16.578.1.12.4.1.1.7280" DN="Ciprofloksacin "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="CI-D" S="2.16.578.1.12.4.1.1.8212" OT="Ciprofloksacin "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: GM-D / Gentamicin / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_R -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06046" S="2.16.578.1.12.4.1.1.7280" DN="Gentamicin "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="GM-D" S="2.16.578.1.12.4.1.1.8212" OT="Gentamicin "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: MP-A / Meropenem / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_S -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU06037" S="2.16.578.1.12.4.1.1.7280" DN="Meropenem "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="MP-A" S="2.16.578.1.12.4.1.1.8212" OT="Meropenem "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: PG-G / Penicillin G (MIC) / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result - flushed for not coded sir result or for mic tests -->
+          <TextResultValue>0.125</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU53160" S="2.16.578.1.12.4.1.1.7280" DN="Penicillin G (MIC) "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="PG-G" S="2.16.578.1.12.4.1.1.8212" OT="Penicillin G (MIC) "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:03:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: PTC-D / Piperacillin/tazobactam / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_R -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU07424" S="2.16.578.1.12.4.1.1.7280" DN="Piperacillin/tazobactam "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="PTC-D" S="2.16.578.1.12.4.1.1.8212" OT="Piperacillin/tazobactam "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:02:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: TS-D / Trimetoprim-Sulfa / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result_S -->
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU07436" S="2.16.578.1.12.4.1.1.7280" DN="Trimetoprim-Sulfa "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="TS-D" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim-Sulfa "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:03:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abio: ESBL / ESBL / component 1 -->
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <!-- abio_result - flushed for not coded sir result or for mic tests -->
+          <TextResultValue>IP</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <!-- Id: 7280 : External code defined for the abio -->
+          <Id V="NPU56045" S="2.16.578.1.12.4.1.1.7280" DN="ESBL "/>
+          <!-- Id: Local abio id and name -->
+          <Id V="ESBL" S="2.16.578.1.12.4.1.1.8212" OT="ESBL "/>
+        </Investigation>
+        <InvDate V="2020-12-17T13:03:00"/>         
+        <!-- RefIdResultItem: rpt.refidresultitem - a reference to the component -->
+        <RefIdResultItem>1</RefIdResultItem>      
+      </ResultItem>
+      <!-- abiotable_end: End of antibiotics -->
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <!-- Inst:
+          Department (Dept) is the answerto for Requester element, the laboratory for ServProvider element.
+          Institution (Inst) is given by the field w_ediorganizationid for the answerto or laboratory in customer table.
+          If the department (answerto) points to itself in customer table (w_ediorganizationid = w_customerid), then the department element (Dept) is left out.
+        -->
+        <Inst>
+          <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+          <Name>Sykehuset Østfold HF</Name>
+          <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+          <Id>33</Id>
+          <TypeId V="HER" DN="HER-id"/>
+          <!-- Dept: The answerto or laboratory -->
+          <Dept>
+            <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+            <Name>Medisinsk mikrobiologi</Name>
+            <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+            <Id>151006</Id>
+            <TypeId V="HER" DN="HER-id"/>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent" />
+      <ComMethod V="EDI" DN="EDI" />
+      <HCP>
+        <!-- Inst:
+          Department (Dept) is the answerto for Requester element, the laboratory for ServProvider element.
+          Institution (Inst) is given by the field w_ediorganizationid for the answerto or laboratory in customer table.
+          If the department (answerto) points to itself in customer table (w_ediorganizationid = w_customerid), then the department element (Dept) is left out.
+        -->
+        <Inst>
+          <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+          <Name>Sykehuset Østfold HF</Name>
+          <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+          <Id>983971768</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)"/>
+          <!-- Dept: The answerto or laboratory -->
+          <Dept>
+            <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+            <Name>TP Testpost</Name>
+            <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+            <Id>4209659</Id>
+            <TypeId V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)"/>
+          </Dept>
+          <HCPerson>
+            <!-- Name: doctordesc -->
+            <Name>August September</Name>
+            <!-- Id: w_doctorid - The HPR number from w_doctor table -->
+            <Id>9144897</Id>
+            <TypeId V="HPR" DN="HPR-nummer"/>
+          </HCPerson>
+        </Inst>
+      </HCP>
+    </Requester>
+    <PaymentResponsible>
+      <TypeGuarantor>Betalingsansvarlig</TypeGuarantor>
+      <HCP>
+        <!-- Inst:
+          Department (Dept) is the answerto for Requester element, the laboratory for ServProvider element.
+          Institution (Inst) is given by the field w_ediorganizationid for the answerto or laboratory in customer table.
+          If the department (answerto) points to itself in customer table (w_ediorganizationid = w_customerid), then the department element (Dept) is left out.
+        -->
+        <Inst>
+          <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+          <Name>Sykehuset Østfold HF</Name>
+          <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+          <Id>983971768</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister (Brønnøysund)"/>
+          <!-- Dept: The answerto or laboratory -->
+          <Dept>
+            <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+            <Name>TP Testpost</Name>
+            <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+            <Id>4209659</Id>
+            <TypeId V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)"/>
+          </Dept>
+        </Inst>
+      </HCP>
+    </PaymentResponsible>    
+    <CopyDest>
+      <Role V="COP" DN="Kopimottager" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svar" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <!-- Inst:
+          Department (Dept) is the answerto for Requester element, the laboratory for ServProvider element.
+          Institution (Inst) is given by the field w_ediorganizationid for the answerto or laboratory in customer table.
+          If the department (answerto) points to itself in customer table (w_ediorganizationid = w_customerid), then the department element (Dept) is left out.
+        -->
+        <Inst>
+          <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+          <Name>FHI</Name>
+          <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+          <Id>85217</Id>
+          <TypeId V="HER" DN="HER-id"/>
+          <!-- Dept: The answerto or laboratory -->
+          <Dept>
+            <!-- Name: rpt_name - reportname, if empty the name, if empty w_customerid -->
+            <Name>FHI MSIS</Name>
+            <!-- Id: rpt_edicode - edicode or if empty, w_customerid -->
+            <Id>103979</Id>
+            <TypeId V="HER" DN="HER-id"/>
+          </Dept>
+        </Inst>
+      </HCP>
+    </CopyDest>
+    <RelServProv>
+        <Role V="RSP" DN="Tilknyttet tjenesteyter"/>
+        <Relation V="AHP" DN="Ansvarlig helsepersonell"/>
+        <HCP>
+            <HCProf>
+                <Type V="LE" DN="Lege"/>
+                <Name>Andreas Emmert</Name>
+            </HCProf>
+			<Address>
+                <Type V="WP" DN="Arbeidsadresse"/>
+                <TeleAddress V="tel:69860000"/>
+            </Address>
+        </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

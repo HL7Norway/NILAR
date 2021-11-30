@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01">
+  <Type V="S" DN="Svarsrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-01-07T16:22:14" />
+  <MsgId>857255cb-467f-496e-98b4-5d832d53cc28</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-01-07T16:22:14" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>001_3707d425-5cbc-4763-b145-9cb26db7</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-01-07T14:39:00" />
+      <PaymentCat V="1" DN="Ordinær pasient" />
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>SOL2 41319235 001_3707d425-5cbc-4763-b145-9cb26db770ab</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>DANSER, LINE</Name>
+      <OffId>13116900216</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-01-06T00:00:00" />
+        </CollectedSample>
+        <Type>Sårsekret 2</Type>
+        <Comment>Test dyrkning med resistens</Comment>
+        <AnatomicalOrigin> Legg</AnatomicalOrigin>
+        <IdByServProvider>413192353A</IdByServProvider>
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-01-06T00:00:00" />
+        </CollectedSample>
+        <Type>Sårsekret</Type>
+        <Comment>Test dyrkning med resistens</Comment>
+        <AnatomicalOrigin> = Ankel</AnatomicalOrigin>
+        <IdByServProvider>413192356J</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU06061" S="2.16.578.1.12.4.1.1.7280" DN="Aerob dyrkning" OT="Aerob dyrkning" />
+          <Id V="SÅR2BA" S="2.16.578.1.12.4.1.1.8212" DN="Aerob dyrkning" />
+        </Investigation>
+        <IdResultItem>SÅR2BA</IdResultItem>
+        <RefAnalysedSubject>413192353A</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>STAPHYLOCOCCUS  AUREUS</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>1</IdResultItem>
+        <RefIdResultItem>SÅR2BA</RefIdResultItem>
+        <RefAnalysedSubject>413192353A</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Rikelig vekst</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU06061" S="2.16.578.1.12.4.1.1.7280" DN="Aerob dyrkning" OT="Aerob dyrkning" />
+          <Id V="SÅRBA" S="2.16.578.1.12.4.1.1.8212" DN="Aerob dyrkning" />
+        </Investigation>
+        <IdResultItem>SÅRBA</IdResultItem>
+        <RefAnalysedSubject>413192356J</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>ESCHERICHIA COLI</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>2</IdResultItem>
+        <RefIdResultItem>SÅRBA</RefIdResultItem>
+        <RefAnalysedSubject>413192356J</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Moderat vekst</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06059" S="2.16.578.1.12.4.1.1.7280" DN="Dikloksacillin" />
+          <Id V="DI" S="2.16.578.1.12.4.1.1.8212" OT="Dikloksacillin" />
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192353A</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06030" S="2.16.578.1.12.4.1.1.7280" DN="Fusidinsyre" />
+          <Id V="FD10" S="2.16.578.1.12.4.1.1.8212" OT="Fusidinsyre" />
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192353A</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU07422" S="2.16.578.1.12.4.1.1.7280" DN="Oksacillin" />
+          <Id V="OX1" S="2.16.578.1.12.4.1.1.8212" OT="Oksacillin" />
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192353A</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextResultValue>1</TextResultValue>
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU53162" S="2.16.578.1.12.4.1.1.7280" DN="Vankomycin." />
+          <Id V="VA" S="2.16.578.1.12.4.1.1.8212" OT="Vankomycin." />
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192353A</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU07436" S="2.16.578.1.12.4.1.1.7280" DN="Trimetoprim+Sulfametoksazol" />
+          <Id V="SXT25" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim+Sulfametoksazol" />
+        </Investigation>
+        <RefIdResultItem>2</RefIdResultItem>
+        <RefAnalysedSubject>413192356J</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjensteyter" />
+      <HCP>
+        <Inst>
+          <Name>Sykehuset Innlandet HF</Name>
+          <Id>32</Id>
+          <TypeId V="HER" DN="Her-id" />
+          <Dept>
+            <Name>
+            </Name>
+            <Id>122843</Id>
+            <TypeId V="HER" DN="Her-id" />
+            <AdditionalId>
+              <Id>Medisinsk Mikrobiologi</Id>
+              <Type DN="Lokal identifikator for avdelinger" V="LAV" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent" />
+      <HCP>
+        <Inst>
+          <Name>Ottestad Legesenter</Name>
+          <Id>1983</Id>
+          <TypeId V="HER" DN="Her-id" />
+          <HCPerson>
+            <Id>76611</Id>
+            <TypeId V="HER" DN="Her-id" />
+          </HCPerson>
+        </Inst>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

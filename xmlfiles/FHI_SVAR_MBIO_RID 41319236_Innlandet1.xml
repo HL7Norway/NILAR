@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01">
+  <Type V="S" DN="Svarsrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-01-07T16:45:41" />
+  <MsgId>baf9672f-2a98-4875-8fba-8fd11e98c7e3</MsgId>
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-01-07T16:45:41" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>001_76f80179-24e8-408c-9c36-a6009267</ServProvId>
+    <ServReq>
+      <ServType V="N" DN="Ny" />
+      <IssueDate V="2021-01-07T16:29:00" />
+      <PaymentCat V="1" DN="Ordinær pasient" />
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>SOL2 41319236 001_76f80179-24e8-408c-9c36-a6009267db31</Id>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>DANSER, LINE</Name>
+      <OffId>13116900216</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-01-05T00:00:00" />
+        </CollectedSample>
+        <Type>Midtstråleurin</Type>
+        <Comment>Test dyrkning med resistens</Comment>
+        <IdByServProvider>413192362K</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU06061" S="2.16.578.1.12.4.1.1.7280" DN="Aerob dyrkning" OT="Aerob dyrkning" />
+          <Id V="URBA" S="2.16.578.1.12.4.1.1.8212" DN="Aerob dyrkning" />
+        </Investigation>
+        <IdResultItem>URBA</IdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+        <Accredited V="false" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>KLEBSIELLA OXYTOCA</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>1</IdResultItem>
+        <RefIdResultItem>URBA</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Over 100.000 kolonidannende enheter/ml</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>KLEBSIELLA OXYTOCA</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>2</IdResultItem>
+        <RefIdResultItem>URBA</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>10.000-100.000 kolonidannende enheter/ml</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06001" S="2.16.578.1.12.4.1.1.7280" DN="Amoksicillin" />
+          <Id V="AML_" S="2.16.578.1.12.4.1.1.8212" OT="Amoksicillin" />
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06044" S="2.16.578.1.12.4.1.1.7280" DN="Mecillinam p.o." />
+          <Id V="MEL10" S="2.16.578.1.12.4.1.1.8212" OT="Mecillinam p.o." />
+          <Comment>De kliniske brytningspkt. gjelder for ukompliserte nedre UVI. Det er teoretiske holdepunkter for at mecillinam kan være effektivt i behandling av ukomplisert pyelonefritt forårsaket av E.coli med MIC &lt; 1 mg/L, men foreløpig mangler klinisk dokumentasjon.</Comment>
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06047" S="2.16.578.1.12.4.1.1.7280" DN="Trimetoprim" />
+          <Id V="W5" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim" />
+          <Comment>Resistensbestemmelsen for trimetoprim gjelder kun ved ukomplisert nedre urinveisinfeksjon</Comment>
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU07436" S="2.16.578.1.12.4.1.1.7280" DN="Trimetoprim+Sulfametoksazol" />
+          <Id V="SXT25" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim+Sulfametoksazol" />
+        </Investigation>
+        <RefIdResultItem>1</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06001" S="2.16.578.1.12.4.1.1.7280" DN="Amoksicillin" />
+          <Id V="AML_" S="2.16.578.1.12.4.1.1.8212" OT="Amoksicillin" />
+        </Investigation>
+        <RefIdResultItem>2</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06044" S="2.16.578.1.12.4.1.1.7280" DN="Mecillinam p.o." />
+          <Id V="MEL10" S="2.16.578.1.12.4.1.1.8212" OT="Mecillinam p.o." />
+          <Comment>De kliniske brytningspkt. gjelder for ukompliserte nedre UVI. Det er teoretiske holdepunkter for at mecillinam kan være effektivt i behandling av ukomplisert pyelonefritt forårsaket av E.coli med MIC &lt; 1 mg/L, men foreløpig mangler klinisk dokumentasjon.</Comment>
+        </Investigation>
+        <RefIdResultItem>2</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU06047" S="2.16.578.1.12.4.1.1.7280" DN="Trimetoprim" />
+          <Id V="W5" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim" />
+        </Investigation>
+        <RefIdResultItem>2</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediær følsom" />
+        </TextResult>
+        <Investigation>
+          <Id V="NPU07436" S="2.16.578.1.12.4.1.1.7280" DN="Trimetoprim+Sulfametoksazol" />
+          <Id V="SXT25" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim+Sulfametoksazol" />
+        </Investigation>
+        <RefIdResultItem>2</RefIdResultItem>
+        <RefAnalysedSubject>413192362K</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjensteyter" />
+      <HCP>
+        <Inst>
+          <Name>Sykehuset Innlandet HF</Name>
+          <Id>32</Id>
+          <TypeId V="HER" DN="Her-id" />
+          <Dept>
+            <Name>
+            </Name>
+            <Id>122843</Id>
+            <TypeId V="HER" DN="Her-id" />
+            <AdditionalId>
+              <Id>Medisinsk Mikrobiologi</Id>
+              <Type DN="Lokal identifikator for avdelinger" V="LAV" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent" />
+      <HCP>
+        <Inst>
+          <Name>Ottestad Legesenter</Name>
+          <Id>1983</Id>
+          <TypeId V="HER" DN="Her-id" />
+          <HCPerson>
+            <Id>76611</Id>
+            <TypeId V="HER" DN="Her-id" />
+          </HCPerson>
+        </Inst>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

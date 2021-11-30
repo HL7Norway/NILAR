@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd">
+  <Type V="S" DN="Svarrapport"/>
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2020-12-02T13:23:58"/>
+  <MsgId>D5BDD3F1-BEEA-4D4F-9BFD-900D017D5BAE</MsgId>
+  <ServReport>
+    <ServType V="C" DN="Kansellering"/>
+    <IssueDate V="2020-12-02T11:14:06"/>
+    <Status V="P" DN="Foreløpig rapport"/>
+    <Ack V="N" DN="Nei"/>
+    <MsgDescr V="MBIO" DN="Mikrobiologi"/>
+    <ServProvId>31945250</ServProvId>
+    <Comment>Avbestilt av rekvirent </Comment>
+    <ServReq>
+      <ServType V="C" DN="Kansellering"/>
+      <MsgDescr V="MBIO" DN="Mikrobiologi"/>
+      <Id>31945250</Id>
+      <RequestedPrioReport V="NORM" DN="Normal"/>
+      <IdByServProvider>31945250</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne"/>
+      <DateOfBirth V="2000-05-12"/>
+      <Name>Faktor, Trine</Name>
+      <OffId>12050050295</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer"/>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-12-02T11:00:00"/>
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>3194525000</IdByServProvider>
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-12-02T11:00:00"/>
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>3194525011</IdByServProvider>
+      </AnalysedSubject>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-12-02T11:00:00"/>
+        </CollectedSample>
+        <Type>Blod</Type>
+        <IdByServProvider>3194525012</IdByServProvider>
+      </AnalysedSubject>
+      <!--start examinations-->
+      <!--end examinations-->
+      <!--start cultures-->
+      <!--start culture 0-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat"/>
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="C" DN="Kansellering"/>
+        <Investigation>
+          <Id V="NPU17191" DN="B-Aerob blodkultur" S="2.16.578.1.12.4.1.1.7280" OT="B-Aerob blodkultur"/>
+          <Id V="DYAER" DN="Dyrkning aerob flaske" S="2.16.578.1.12.4.1.1.8212" OT="Dyrkning aerob flaske"/>
+        </Investigation>
+        <InvDate V="2020-12-02T12:14:43"/>
+        <IdResultItem>DYAER_3194525011_0</IdResultItem>
+        <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        <Accredited V="true"/>
+      </ResultItem>
+      <!--end culture 0-->
+      <!--start culture 0 germ 1-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat"/>
+          <TextResultValue>Escherichia coli</TextResultValue>
+          <TextCode V="ESCOLI" S="2.16.578.1.12.4.1.1.8271" DN="Escherichia coli"/>
+        </TextResult>
+        <ServType V="C" DN="Kansellering"/>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon"/>
+        </Investigation>
+        <InvDate V="2020-12-02T12:14:43"/>
+        <IdResultItem>3194525011_1</IdResultItem>
+        <RefIdResultItem>DYAER_3194525011_0</RefIdResultItem>
+        <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU06045" DN="Us-Ampicillin" S="2.16.578.1.12.4.1.1.7280" OT="Us-Ampicillin"/>
+            <Id V="AMP_D" S="2.16.578.1.12.4.1.1.8212" OT="Ampicillin" DN="Ampicillin"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>AMP_D_3194525011_1_6</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU07424" DN="Us-Piperacillin+Tazobaktam" S="2.16.578.1.12.4.1.1.7280" OT="Us-Piperacillin+Tazobaktam"/>
+            <Id V="TZP_D" S="2.16.578.1.12.4.1.1.8212" OT="Piperacillin-tazobactam" DN="Piperacillin-tazobactam"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>TZP_D_3194525011_1_10</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediært følsom"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU06021" DN="Us-Cefuroksim" S="2.16.578.1.12.4.1.1.7280" OT="Us-Cefuroksim"/>
+            <Id V="CXM_D" S="2.16.578.1.12.4.1.1.8212" OT="Cefuroxim" DN="Cefuroxim"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>CXM_D_3194525011_1_12</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU06015" DN="Us-Cefotaksim" S="2.16.578.1.12.4.1.1.7280" OT="Us-Cefotaksim"/>
+            <Id V="CTX_D" S="2.16.578.1.12.4.1.1.8212" OT="Cefotaxim" DN="Cefotaxim"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>CTX_D_3194525011_1_14</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU29657" DN="Us-Ertapenem" S="2.16.578.1.12.4.1.1.7280" OT="Us-Ertapenem"/>
+            <Id V="ETP_D" S="2.16.578.1.12.4.1.1.8212" OT="Ertapenem" DN="Ertapenem"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>ETP_D_3194525011_1_18</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU14407" DN="Us-Imipenem" S="2.16.578.1.12.4.1.1.7280" OT="Us-Imipenem"/>
+            <Id V="IPM_D" S="2.16.578.1.12.4.1.1.8212" OT="Imipenem" DN="Imipenem"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>IPM_D_3194525011_1_21</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU06037" DN="Us-Meropenem" S="2.16.578.1.12.4.1.1.7280" OT="Us-Meropenem"/>
+            <Id V="MEM_D" S="2.16.578.1.12.4.1.1.8212" OT="Meropenem" DN="Meropenem"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>MEM_D_3194525011_1_19</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU06046" DN="Us-Gentamicin" S="2.16.578.1.12.4.1.1.7280" OT="Us-Gentamicin"/>
+            <Id V="CN_D" S="2.16.578.1.12.4.1.1.8212" OT="Gentamicin" DN="Gentamicin"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>CN_D_3194525011_1_22</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU06049" DN="Us-Ciprofloksacin" S="2.16.578.1.12.4.1.1.7280" OT="Us-Ciprofloksacin"/>
+            <Id V="CIP_D" S="2.16.578.1.12.4.1.1.8212" OT="Ciprofloxacin" DN="Ciprofloxacin"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>CIP_D_3194525011_1_23</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+        <!--start resistance-->
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse"/>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+          </TextResult>
+          <ServType V="C" DN="Kansellering"/>
+          <Investigation>
+            <Id V="NPU07436" DN="Us-Trimetoprim+Sulfametoksazol" S="2.16.578.1.12.4.1.1.7280" OT="Us-Trimetoprim+Sulfametoksazol"/>
+            <Id V="SXT_D" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim-sulfa" DN="Trimetoprim-sulfa"/>
+          </Investigation>
+          <InvDate V="2020-12-02T12:15:42"/>
+          <IdResultItem>SXT_D_3194525011_1_24</IdResultItem>
+          <RefIdResultItem>3194525011_1</RefIdResultItem>
+          <RefAnalysedSubject>3194525011</RefAnalysedSubject>
+        </ResultItem>
+        <!--end resistance-->
+      </ResultItem>
+      <!--end culture 0 germ 1-->
+      <!--start culture 0-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat"/>
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="C" DN="Kansellering"/>
+        <Investigation>
+          <Id V="NOR25695" DN="B-Anaerob blodkultur" S="2.16.578.1.12.4.1.1.7280" OT="B-Anaerob blodkultur"/>
+          <Id V="DYANA" DN="Dyrkning anaerob flaske" S="2.16.578.1.12.4.1.1.8212" OT="Dyrkning anaerob flaske"/>
+        </Investigation>
+        <InvDate V="2020-12-02T12:16:37"/>
+        <IdResultItem>DYANA_3194525012_0</IdResultItem>
+        <RefAnalysedSubject>3194525012</RefAnalysedSubject>
+        <Accredited V="true"/>
+      </ResultItem>
+      <!--end culture 0-->
+      <!--start culture 0 germ 1-->
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat"/>
+          <TextResultValue>Escherichia coli</TextResultValue>
+          <TextCode V="ESCOLI" S="2.16.578.1.12.4.1.1.8271" DN="Escherichia coli"/>
+        </TextResult>
+        <ServType V="C" DN="Kansellering"/>
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon"/>
+        </Investigation>
+        <InvDate V="2020-12-02T12:16:37"/>
+        <Comment>Se flaske -11 for resistensbestemmelse.</Comment>
+        <IdResultItem>3194525012_1</IdResultItem>
+        <RefIdResultItem>DYANA_3194525012_0</RefIdResultItem>
+        <RefAnalysedSubject>3194525012</RefAnalysedSubject>
+      </ResultItem>
+      <!--end culture 0 germ 1-->
+      <!--end cultures-->
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter"/>
+      <HCP>
+        <Inst>
+          <Name>Helse Bergen HF</Name>
+          <Id>43</Id>
+          <!--Helse Bergen HF-->
+          <TypeId V="HER" DN="HER-id"/>
+          <Dept>
+            <Name>Mikrobiologisk avdeling</Name>
+            <Id>BAKT</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger"/>
+          </Dept>
+          <AdditionalId>
+            <Id>983974724</Id>
+            <!--Helse Bergen HF-->
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister"/>
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent"/>
+      <ComMethod V="EDI" DN="EDI"/>
+      <HCP>
+        <Inst>
+          <Name>Helse Bergen HF</Name>
+          <Id>43</Id>
+          <TypeId V="HER" DN="HER-id"/>
+          <Dept>
+            <Name>Haukeland universitetssjukehus, Medisinsk post 6</Name>
+            <Id>30169</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger"/>
+          </Dept>
+          <AdditionalId>
+            <Id>983974724</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister"/>
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

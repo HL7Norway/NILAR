@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2008-12-01 svar-v13.xsd" xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01" xmlns:xsd="http://www.w3.org/2001/XMLShema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MIGversion>v1.3 2008-12-01</MIGversion>
+  <GenDate V="2021-01-06T14:19:32" />
+  <MsgId>34F7653B-203A-47E9-B6F0-007AE313FE95</MsgId>
+  <Status V="APR" DN="Meldingsimplementeringen er godkjent" />
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2021-01-06" />
+    <ApprDate V="2021-01-06T14:19:00" />
+    <Status V="F" DN="Endelig rapport" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>34F7653B-203A-47E9-B6F0-007AE313FE95</ServProvId>
+    <RefDoc>
+      <MsgType V="REF" DN="Referanse" />
+      <FileReference>2050715.pdf</FileReference>
+    </RefDoc>
+    <ServReq>
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>25721245</Id>
+      <ReceiptDate V="2021-01-06" />
+      <IdByServProvider>25721245/1899</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="1" DN="Mann" />
+      <Name>Duck, Ole N</Name>
+      <IdByRequester>25721245</IdByRequester>
+      <OffId>17109012343</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <PostalCode>0270</PostalCode>
+        <City>OSLO</City>
+      </Address>
+      <InfItem>
+        <Observation>
+          <Description>test av XML melding resistensbestemmelse til FHI</Description>
+        </Observation>
+        <Type V="OPPL" DN="Klinisk opplysning" />
+      </InfItem>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2021-01-06T15:00:00" />
+        </CollectedSample>
+        <Type>Urin med borsyre</Type>
+        <IdByRequester>25721245</IdByRequester>
+        <IdByServProvider>25721245/1899</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="UD" S="2.16.578.1.12.4.1.1.8212" DN="U-Bakterier dyrkning" OT="U-Bakterier dyrkning" />
+        </Investigation>
+        <InvDate V="2021-01-06" />
+        <IdResultItem>UD</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+        <Accredited V="false" />
+        <RelServProv>
+          <Relation V="ALE" />
+          <HCP>
+            <HCProf>
+              <Name>Medisinsk mikrobiologi</Name>
+            </HCProf>
+          </HCP>
+        </RelServProv>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>E.COLI</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id V="IDENT" S="2.16.578.1.12.4.1.1.8212" DN="Identifikasjon" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>UD1</IdResultItem>
+        <RefIdResultItem>UD</RefIdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>&gt;100.000 kolonier pr.ml</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="KVANT" S="2.16.578.1.12.4.1.1.8212" DN="Mengde" OT="Mengde" />
+          </Investigation>
+          <RefIdResultItem>UD1</RefIdResultItem>
+          <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="CX" S="2.16.578.1.12.4.1.1.8212" DN="Us-Cefotaksim" OT="Us-Cefotaksim" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextResultValue>10</TextResultValue>
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="CF" S="2.16.578.1.12.4.1.1.8212" DN="Us-Cefuroksim" OT="Us-Cefuroksim" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="CI" S="2.16.578.1.12.4.1.1.8212" DN="Us-Ciprofloksacin" OT="Us-Ciprofloksacin" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextResultValue>15</TextResultValue>
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="GM" S="2.16.578.1.12.4.1.1.8212" DN="Us-Gentamicin" OT="Us-Gentamicin" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="MN" S="2.16.578.1.12.4.1.1.8212" DN="Us-Mecillinam" OT="Us-Mecillinam" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="NI" S="2.16.578.1.12.4.1.1.8212" DN="Us-Nitrofurantoin" OT="Us-Nitrofurantoin" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="TP" S="2.16.578.1.12.4.1.1.8212" DN="Us-Trimetoprim" OT="Us-Trimetoprim" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="TS" S="2.16.578.1.12.4.1.1.8212" DN="Us-Trimetoprim+Sulfametoksazol" OT="Us-Trimetoprim+Sulfametoksazol" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="A1" S="2.16.578.1.12.4.1.1.8212" DN="Us-Ampicillin" OT="Us-Ampicillin" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="AO" S="2.16.578.1.12.4.1.1.8212" DN="Us-Amoksicillin" OT="Us-Amoksicillin" />
+        </Investigation>
+        <RefIdResultItem>UD1</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>PSEUDOMONAS</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id V="IDENT" S="2.16.578.1.12.4.1.1.8212" DN="Identifikasjon" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>UD2</IdResultItem>
+        <RefIdResultItem>UD</RefIdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>10.000-50.000 kolonier pr.ml</TextResultValue>
+          </TextResult>
+          <Investigation>
+            <Id V="KVANT" S="2.16.578.1.12.4.1.1.8212" DN="Mengde" OT="Mengde" />
+          </Investigation>
+          <RefIdResultItem>UD2</RefIdResultItem>
+          <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="CZ" S="2.16.578.1.12.4.1.1.8212" DN="Us-Ceftazidim" OT="Us-Ceftazidim" />
+        </Investigation>
+        <RefIdResultItem>UD2</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextResultValue>0,5</TextResultValue>
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="CI" S="2.16.578.1.12.4.1.1.8212" DN="Us-Ciprofloksacin" OT="Us-Ciprofloksacin" />
+        </Investigation>
+        <RefIdResultItem>UD2</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+        </TextResult>
+        <Investigation>
+          <Id V="PT" S="2.16.578.1.12.4.1.1.8212" DN="Us-Piperacillin+Tazobaktam" OT="Us-Piperacillin+Tazobaktam" />
+        </Investigation>
+        <RefIdResultItem>UD2</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="RSB" DN="Resistensbestemmelse" />
+          <TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+        </TextResult>
+        <Investigation>
+          <Id V="TM" S="2.16.578.1.12.4.1.1.8212" DN="Us-Tobramycin" OT="Us-Tobramycin" />
+        </Investigation>
+        <RefIdResultItem>UD2</RefIdResultItem>
+        <RefAnalysedSubject>25721245/1899</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>VV-HF Drammen Sykehus</Name>
+          <Id>894166762</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>Avdeling for medisinsk mikrobiologi,Drammen</Name>
+            <Id>MIK-DS</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+            <AdditionalId>
+              <Id>103398</Id>
+              <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+            </AdditionalId>
+            <AdditionalId>
+              <Id>99392</Id>
+              <Type V="HER" DN="HER-id" />
+            </AdditionalId>
+          </Dept>
+          <HCPerson>
+            <Name>Medisinsk mikrobiologi</Name>
+            <Id>BP</Id>
+            <TypeId V="XXX" DN="Annet" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>84467</Id>
+            <Type V="HER" DN="HER-id" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent" />
+      <ComMethod V="EDI" DN="EDI" />
+      <HCP>
+        <Inst>
+          <Name>DS Medisinsk post 1</Name>
+          <Id>894166762</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>DS Medisinsk post 1</Name>
+            <Id>M1-DS</Id>
+            <TypeId V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+          </Dept>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <PostalCode>3004</PostalCode>
+          <City>DRAMMEN</City>
+        </Address>
+      </HCP>
+    </Requester>
+  </ServReport>
+</Message>

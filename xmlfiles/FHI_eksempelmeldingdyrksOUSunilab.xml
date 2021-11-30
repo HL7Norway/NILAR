@@ -1,0 +1,509 @@
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin" />
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-12-22T09:00:26.9738" />
+  <MsgId>C08DE5BA-442B-11EB-B8CF-5056AF460000</MsgId>
+  <ServReport>
+    <ServType V="M" DN="Endring" />
+    <IssueDate V="2020-12-22T08:50:35" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="N" DN="Nei" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>15523033</ServProvId>
+    <ServReq>
+      <ServType V="M" DN="Endring" />
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>15523033</Id>
+      <RequestedPrioReport V="NORM" DN="Normal" />
+      <IdByServProvider>15523033</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="1979-05-12" />
+      <Name>Testpasient Telokk, Gry Kith</Name>
+      <OffId>12057900499</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Relation V="REK" DN="Rekvirent" />
+        <HCP>
+          <Inst>
+            <Name>Barnemedisinsk sengepost 1, Rikshospital</Name>
+            <HCPerson>
+              <Name>September, August, Lege</Name>
+              <Id>9144897</Id>
+              <TypeId V="HPR" DN="HPR-nummer" />
+            </HCPerson>
+          </Inst>
+        </HCP>
+      </ResponsibleHcp>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-12-22T08:49:00" />
+        </CollectedSample>
+        <Type>Spinalvæske</Type>
+        <Comment>Test FHI
+</Comment>
+        <IdByServProvider>15523033</IdByServProvider>
+        <Accredited V="false" />
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU06061" S="2.16.578.1.12.4.1.1.7280" DN="Aerob dyrkning" OT="Aerob dyrkning" />
+          <Id V="AERD" S="2.16.578.1.12.4.1.1.8212" DN="Aerob dyrkning" OT="Aerob dyrkning" />
+        </Investigation>
+        <InvDate V="2020-12-22T08:58:11" />
+        <IdResultItem>NPU06061_1</IdResultItem>
+        <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Staphylococcus aureus</TextResultValue>
+          <TextCode V="STAURE" S="2.16.578.1.12.4.1.1.8271" DN="Staphylococcus aureus" />
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <InvDate V="2020-12-22T08:58:11" />
+        <IdResultItem>Funn_1_1</IdResultItem>
+        <RefIdResultItem>NPU06061_1</RefIdResultItem>
+        <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Vekst</TextResultValue>
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextResultValue>0.125</TextResultValue>
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="CL_E" DN="Kloramfenikol (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Kloramfenikol (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>CL_E_1_1_5</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="MPS_E" DN="Meropenem (Etest; spv)" S="2.16.578.1.12.4.1.1.8212" OT="Meropenem (Etest; spv)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>MPS_E_1_1_7</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="PGS_E" DN="Penicillin G (Etest; spv)" S="2.16.578.1.12.4.1.1.8212" OT="Penicillin G (Etest; spv)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>PGS_E_1_1_9</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediært følsom" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="CT_E" DN="Cefotaxim (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Cefotaxim (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>CT_E_1_1_11</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="TX_E" DN="Ceftriaxon (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Ceftriaxon (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>TX_E_1_1_13</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="CI_V" DN="Ciprofloksacin" S="2.16.578.1.12.4.1.1.8212" OT="Ciprofloksacin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>CI_V_1_1_15</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="CM_V" DN="Klindamycin" S="2.16.578.1.12.4.1.1.8212" OT="Klindamycin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>CM_V_1_1_18</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="KLX" DN="Kloksacillin" S="2.16.578.1.12.4.1.1.8212" OT="Kloksacillin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>KLX_1_1_19</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="FOX_D" DN="Cefoxitin" S="2.16.578.1.12.4.1.1.8212" OT="Cefoxitin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>FOX_D_1_1_20</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="E_D" DN="Erytromycin" S="2.16.578.1.12.4.1.1.8212" OT="Erytromycin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>E_D_1_1_21</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="CC_D" DN="Klindamycin" S="2.16.578.1.12.4.1.1.8212" OT="Klindamycin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>CC_D_1_1_22</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="FA_D" DN="Fucidin" S="2.16.578.1.12.4.1.1.8212" OT="Fucidin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>FA_D_1_1_23</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="GM_D" DN="Gentamicin" S="2.16.578.1.12.4.1.1.8212" OT="Gentamicin" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>GM_D_1_1_24</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="Positiv" DN="Positiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="PEN" DN="Penicillinase" S="2.16.578.1.12.4.1.1.8212" OT="Penicillinase" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>PEN_1_1_25</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="SXT_D" DN="Trimetoprim-Sulfa" S="2.16.578.1.12.4.1.1.8212" OT="Trimetoprim-Sulfa" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>SXT_D_1_1_26</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="Positiv" DN="Positiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="MLS" DN="MLS screen" S="2.16.578.1.12.4.1.1.8212" OT="MLS screen" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>MLS_1_1_27</IdResultItem>
+          <RefIdResultItem>Funn_1_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id V="NPU17956" S="2.16.578.1.12.4.1.1.7280" DN="Anaerob dyrkning" OT="Anaerob dyrkning" />
+          <Id V="ANAD" S="2.16.578.1.12.4.1.1.8212" DN="Anaerob dyrkning" OT="Anaerob dyrkning" />
+        </Investigation>
+        <InvDate V="2020-12-22T08:58:11" />
+        <IdResultItem>NPU17956_2</IdResultItem>
+        <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        <Accredited V="true" />
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Nocardia brasiliensis</TextResultValue>
+          <TextCode V="NOBRAS" S="2.16.578.1.12.4.1.1.8271" DN="Nocardia brasiliensis" />
+        </TextResult>
+        <ServType V="M" DN="Endring" />
+        <Investigation>
+          <Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" />
+        </Investigation>
+        <InvDate V="2020-12-22T08:58:11" />
+        <IdResultItem>Funn_2_1</IdResultItem>
+        <RefIdResultItem>NPU17956_2</RefIdResultItem>
+        <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        <ResultItem>
+          <TextResult>
+            <TextResultValue>Vekst</TextResultValue>
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde" />
+          </Investigation>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="FX_E" DN="Cefoxitin (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Cefoxitin (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>FX_E_2_1_6</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="CM_E" DN="Klindamycin (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Klindamycin (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>CM_E_2_1_8</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="MP_E" DN="Meropenem (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Meropenem (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>MP_E_2_1_10</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="MZ_E" DN="Metronidazol (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Metronidazol (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>MZ_E_2_1_12</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="PG_E" DN="Penicillin G (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Penicillin G (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>PG_E_2_1_14</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="PTc_E" DN="Piperacillin/tazobactam (Etest)" S="2.16.578.1.12.4.1.1.8212" OT="Piperacillin/tazobactam (Etest)" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>PTc_E_2_1_16</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+        <ResultItem>
+          <TextResult>
+            <Heading V="RSB" DN="Resistensbestemmelse" />
+            <TextCode S="2.16.578.1.12.4.1.1.8271" V="Positiv" DN="Positiv" />
+          </TextResult>
+          <ServType V="M" DN="Endring" />
+          <Investigation>
+            <Id V="PEN" DN="Penicillinase" S="2.16.578.1.12.4.1.1.8212" OT="Penicillinase" />
+          </Investigation>
+          <InvDate V="2020-12-22T08:58:11" />
+          <IdResultItem>PEN_2_1_17</IdResultItem>
+          <RefIdResultItem>Funn_2_1</RefIdResultItem>
+          <RefAnalysedSubject>15523033</RefAnalysedSubject>
+        </ResultItem>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>87711</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Mikrobiologisk institutt Bakt</Name>
+            <Id>110058</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>M</Id>
+              <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+            </AdditionalId>
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent" />
+      <ComMethod V="PST" DN="Brev" />
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <HCPerson>
+            <Name>September, August</Name>
+            <Id>9144897</Id>
+            <TypeId V="HPR" DN="HPR-nummer" />
+          </HCPerson>
+        </Inst>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svar" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>FHI</Name>
+          <Id>85217</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Fellesmottak for registerdata, FHI</Name>
+            <Id>140170</Id>
+            <TypeId V="HER" DN="HER-id" />
+            <AdditionalId>
+              <Id>2INFOLKKOR</Id>
+              <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+            </AdditionalId>
+          </Dept>
+          <AdditionalId>
+            <Id>983744516</Id>
+            <Type V="ENH" DN="Organisasjonsnummer i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </CopyDest>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svar" />
+        <ActComMethod V="PST" DN="Brev" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>Oslo Universitetssykehus HF</Name>
+          <Id>993467049</Id>
+          <TypeId V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          <Dept>
+            <Name>2 Helse Test og Sjekk HF Oslo, 3 Helse Test og Sjekk HF Oslo</Name>
+            <Id>TESTMG</Id>
+            <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </CopyDest>
+    <RelServProv>
+      <Relation V="ARP" DN="Ansvarlig for rapport" />
+      <HCP>
+        <Inst>
+          <Name>Avd. for mikrobiologi, Bakteriologi, Rikshospitalet</Name>
+        </Inst>
+        <Adress>
+          <Type V="WP" DN="Arbeidsadresse" />
+          <TeleAdress V="tel: 12345678" />
+        </Adress>
+      </HCP>
+    </RelServProv>
+  </ServReport>
+</Message>

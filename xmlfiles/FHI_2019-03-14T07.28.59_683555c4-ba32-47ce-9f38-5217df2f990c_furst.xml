@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01">
+	<Type V="S" DN="Svar" />
+	<MsgVersion>v1.3 2008-12-01</MsgVersion>
+	<MIGversion>v1.3 2008-12-01</MIGversion>
+	<GenDate V="2019-03-14T07:28:59" />
+	<MsgId>65c97493-355a-412c-8342-8084b0b8875d</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny" />
+		<IssueDate V="2019-03-14" />
+		<Status V="F" DN="Endelig rapport" />
+		<Ack V="J" DN="Ja" />
+		<MsgDescr V="MBIO" DN="Mikrobiologi" />
+		<ServProvId>W0001030</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny" />
+			<Id>W0001030</Id>
+			<ReceiptDate V="2011-01-06T00:00:00" />
+		</ServReq>
+		<Patient>
+			<Sex V="2" DN="Kvinne" />
+			<DateOfBirth V="1998-07-19" />
+			<Name>LINDVIK, ELISE</Name>
+			<OffId>19079800468</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer" />
+			<Address>
+				<Type V="H" DN="Bostedsadresse" />
+				<StreetAdr>HER</StreetAdr>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2011-01-05T00:00:00" />
+				</CollectedSample>
+				<Type>Urin (med borsyre)</Type>
+				<IdByServProvider>W0001030</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" />
+					<TextResultValue>Escherichia coli Over 100 000 pr. ml</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id V="NPU06061" S="2.16.578.1.12.4.1.1.7280" DN="Us-Aerob dyrkning" OT="Us-Aerob dyrkning" />
+				</Investigation>
+				<IdResultItem>1</IdResultItem>
+				<Accredited V="false" />
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse" />
+					<TextCode V="R" S="2.16.578.1.12.4.1.1.8271" DN="Resistent" />
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" DN="Ampicillin" OT="Ampicillin" />
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse" />
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" DN="Ciprofloxacin" OT="Ciprofloxacin" />
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse" />
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" DN="Nitrofurantoin" OT="Nitrofurantoin" />
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse" />
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" DN="Mecillinam" OT="Mecillinam" />
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse" />
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" DN="Nalidixinsyre" OT="Nalidixinsyre" />
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse" />
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv" />
+				</TextResult>
+				<ServType V="N" DN="Ny" />
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" DN="Trimetoprim" OT="Trimetoprim" />
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Fürst Medisinsk Laboratorium</Name>
+					<Id>84526</Id>
+					<TypeId V="HER" DN="HER-id" />
+					<Dept>
+						<Name>Mikrobiologisk avdeling</Name>
+						<Id>133214</Id>
+						<TypeId V="HER" DN="HER-id" />
+					</Dept>
+					<AdditionalId>
+						<Id>931469851</Id>
+						<Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+					</AdditionalId>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>FURST TESTLEGEKONTOR EDI</Name>
+					<Id>12345678</Id>
+					<TypeId V="HER" DN="HER-id" />
+					<HCPerson>
+						<Name>TEST SISSEL GRØNVOLD</Name>
+						<Id>9144889</Id>
+						<TypeId V="HPR" DN="HPR-nummer" />
+						<AdditionalId>
+							<Id>9808</Id>
+							<Type V="LOP" DN="Lokal identifikator for helsepersonell" />
+						</AdditionalId>
+					</HCPerson>
+					<AdditionalId>
+						<Id>12345678</Id>
+						<Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+					</AdditionalId>
+					<AdditionalId>
+						<Id>7630</Id>
+						<Type V="LIN" DN="Lokal identifikator for institusjoner" />
+					</AdditionalId>
+				</Inst>
+				<Address>
+					<Type V="PST" DN="Postadresse" />
+					<StreetAdr>SØREN BULLS VEI 25                                                    </StreetAdr>
+					<PostalCode>1051</PostalCode>
+					<City>OSLO                      </City>
+				</Address>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="LAB" DN="Utførende laboratorium" />
+			<HCP>
+				<Inst>
+					<Name>Fürst Medisinsk Laboratorium</Name>
+					<Id>84526</Id>
+					<TypeId V="HER" DN="HER-id" />
+					<Dept>
+						<Name>Mikrobiologisk avdeling</Name>
+						<Id>133214</Id>
+						<TypeId V="HER" DN="HER-id" />
+					</Dept>
+					<AdditionalId>
+						<Id>931469851</Id>
+						<Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+					</AdditionalId>
+				</Inst>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

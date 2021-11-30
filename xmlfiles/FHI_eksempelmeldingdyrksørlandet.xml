@@ -1,0 +1,229 @@
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:kith="http://www.kith.no/xmlstds">
+  <Type V="S" DN="Svarrapport" />
+  <MsgVersion>v1.4 2012-02-15</MsgVersion>
+  <MIGversion>v1.4 2012-02-15</MIGversion>
+  <GenDate V="2020-12-28T11:32:17" />
+  <MsgId>556951E4-0FEE-4E6C-B2D8-7EDEA5E45A08</MsgId>
+  <Status V="TEST" DN="Melding til testformål" />
+  <ServReport>
+    <ServType V="N" DN="Ny" />
+    <IssueDate V="2020-12-28" />
+    <ApprDate V="2020-12-28T11:32:00" />
+    <Status V="F" DN="Endelig rapport" />
+    <Ack V="J" DN="Ja" />
+    <MsgDescr V="MBIO" DN="Mikrobiologi" />
+    <ServProvId>556951E4-0FEE-4E6C-B2D8-7EDEA5E45A08</ServProvId>
+    <ServReq>
+      <MsgDescr V="MBIO" DN="Mikrobiologi" />
+      <Id>018323540</Id>
+      <ReceiptDate V="2020-11-16" />
+      <IdByServProvider>440269/2020</IdByServProvider>
+    </ServReq>
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <Name>Danser, Line</Name>
+      <IdByRequester>12117756</IdByRequester>
+      <OffId>13116900216</OffId>
+      <TypeOffId V="FNR" DN="Fødselsnummer" />
+      <ResponsibleHcp>
+        <Role V="REP" DN="Ansvarlig helsetjenestenhet" />
+        <Relation V="REK" DN="Rekvirent" />
+        <HCP>
+          <Inst>
+            <Name>Sørlandet sykehus HF</Name>
+            <Id>983975240</Id>
+            <TypeId V="ENH" DN="ORGANISASJONSNUMMER I ENHETSREGISTER" />
+            <Dept>
+              <Type V="08" DN="Post" />
+              <Name>Infeksjonsposten 1E SSK</Name>
+              <Id>1E-K</Id>
+              <TypeId V="LOK" DN="LOKAL IDENTIFIKATOR UTEN NÆRMERE ANGIVELSE" />
+              <AdditionalId>
+                <Id>1704</Id>
+                <Type V="LOK" DN="LOKAL IDENTIFIKATOR UTEN NÆRMERE ANGIVELSE" />
+              </AdditionalId>
+              <AdditionalId>
+                <Id>104462</Id>
+                <Type V="RSH" DN="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+              </AdditionalId>
+            </Dept>
+          </Inst>
+          <Address>
+            <Type V="PST" DN="PostAdresse" />
+            <StreetAdr>Postboks 416</StreetAdr>
+            <PostalCode>4604</PostalCode>
+            <City>Kristiansand S</City>
+          </Address>
+        </HCP>
+      </ResponsibleHcp>
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <PostalCode>4876</PostalCode>
+        <City>KONGSBERG</City>
+      </Address>
+      <InfItem>
+        <Observation>
+          <Description>test</Description>
+        </Observation>
+        <Type V="OPPL" DN="Klinisk opplysning" />
+      </InfItem>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2020-11-16T08:00:00" />
+        </CollectedSample>
+        <Type>Bronkialsekret</Type>
+        <IdByRequester>18323540</IdByRequester>
+        <IdByServProvider>440269/2020</IdByServProvider>
+      </AnalysedSubject>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>Vekst</TextResultValue>
+        </TextResult>
+        <ServType V="N" DN="Ny" />
+        <Investigation>
+          <Id V="NPU06075" S="2.16.578.1.12.4.1.1.8212" DN="Sekr-Bakterier dyrkning" OT="Sekr-Bakterier dyrkning" />
+        </Investigation>
+        <InvDate V="2020-12-28" />
+        <IdResultItem>LD</IdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>440269/2020</RefAnalysedSubject>
+        <Accredited V="true" />
+        <RelServProv>
+          <Relation V="ALE" />
+          <HCP>
+            <HCProf>
+              <Name>Avd. for med.mikrobiologi v Overlege Sølvi Noraas</Name>
+            </HCProf>
+          </HCP>
+        </RelServProv>
+      </ResultItem>
+      <ResultItem>
+        <TextResult>
+          <Heading V="LR" DN="Laboratorieresultat" />
+          <TextResultValue>NORMAL HALSFLORA</TextResultValue>
+        </TextResult>
+        <Investigation>
+          <Id V="IDENT" S="2.16.578.1.12.4.1.1.8212" DN="Identifikasjon" OT="Identifikasjon" />
+        </Investigation>
+        <IdResultItem>LD1</IdResultItem>
+        <RefIdResultItem>LD</RefIdResultItem>
+        <StatusInvestigation V="3" DN="Endelig" />
+        <RefAnalysedSubject>440269/2020</RefAnalysedSubject>
+      </ResultItem>
+    </Patient>
+    <ServProvider>
+      <Role V="SPR" DN="Tjenesteyter" />
+      <HCP>
+        <Inst>
+          <Name>Sørlandet sykehus, Kristiansand</Name>
+          <Id>81350</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>Avdeling for medisinsk mikrobiologi</Name>
+            <Id>100005</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <HCPerson>
+            <Name>Avd. for med.mikrobiologi v Overlege Sølvi Noraas</Name>
+            <Id>100005</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>983975240</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <Role V="REQ" DN="Rekvirent" />
+      <ComMethod V="EDI" DN="EDI" />
+      <HCP>
+        <Inst>
+          <Name> Infeksjonsposten 1E SSK</Name>
+          <Id>81350</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name> Infeksjonsposten 1E SSK</Name>
+            <Id>1E-K</Id>
+            <TypeId V="LOK" DN="Lokal identifikator uten nærmere angivelse" />
+          </Dept>
+          <HCPerson>
+            <Name>Benedicte Sæbø Severinsen</Name>
+            <Id>7404433</Id>
+            <TypeId V="HPR" DN="HPR-nummer" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>983975240</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Sørlandet sykehus HF, Kr.sand, Serviceboks 416</StreetAdr>
+          <PostalCode>4604</PostalCode>
+          <City>KRISTIANSAND S</City>
+        </Address>
+      </HCP>
+    </Requester>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svar" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name> Havblik Spesialistsenter</Name>
+          <Id>2408</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <HCPerson>
+            <Name>Fredrik Haugen</Name>
+            <Id>2123665</Id>
+            <TypeId V="HPR" DN="HPR-nummer" />
+          </HCPerson>
+          <AdditionalId>
+            <Id>983471862</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Kystveien 154, </StreetAdr>
+          <PostalCode>4842</PostalCode>
+          <City>ARENDAL</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+    <CopyDest>
+      <Role V="COP" DN="Kopimottaker" />
+      <CopyDestRole>
+        <MsgType V="S" DN="Svar" />
+        <ActComMethod V="EDI" DN="EDI" />
+      </CopyDestRole>
+      <HCP>
+        <Inst>
+          <Name>FHI Fellesmottak for regdata</Name>
+          <Id>85217</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <Dept>
+            <Name>FHI Fellesmottak for regdata</Name>
+            <Id>140170</Id>
+            <TypeId V="HER" DN="HER-id" />
+          </Dept>
+          <AdditionalId>
+            <Id>983744516</Id>
+            <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+          </AdditionalId>
+        </Inst>
+        <Address>
+          <Type V="PST" DN="Postadresse" />
+          <StreetAdr>Postboks 222, Skøyen, </StreetAdr>
+          <PostalCode>0212</PostalCode>
+          <City>OSLO</City>
+        </Address>
+      </HCP>
+    </CopyDest>
+  </ServReport>
+</Message>
