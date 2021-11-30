@@ -153,8 +153,8 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ----------"---------"-----------"---------- | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Code | Kunne passet i Observation.Method, men passer ikke med kardinalitet og kontekst | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note? |  | Ja |
-| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi | Ja |
-| ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation | Ja |
+| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi |  | Ja |
+| ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
