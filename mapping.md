@@ -110,7 +110,9 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## AnalysedSubject (Specimen)
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. Blir også Observation.Effective |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. |  | Ja |
+| -------------------"------------------ | Observation.Effective |  | Ja |
+| -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Nei |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Note |  | Ja |
@@ -150,10 +152,11 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
-| ----------"---------"-----------"---------- | Observation.Category | Mapping basert på kode og kodeverk | Ja |
+| ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Code | Kunne passet i Observation.Method, men passer ikke med kardinalitet og kontekst | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note? |  | Ja |
 | ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi |  | Ja |
+| ----------------"------------------ | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Nei |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
