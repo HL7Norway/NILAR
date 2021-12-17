@@ -34,7 +34,7 @@ Pasientens navn eller fødselsnummer som er oppgitt på rekvisisjonen er ikke i 
           <Inst>
             <Name>Sykehuspartner Testlegekontor-3 Winmed3</Name>
             <HCPerson>
-              <Name>Sagen, Terje, Lege</Name>
+              <Name>Juel E. Nissen, Lege</Name>
               <Id>2153661</Id>
               <TypeId DN="HPR-nummer" V="HPR" />
             </HCPerson>
