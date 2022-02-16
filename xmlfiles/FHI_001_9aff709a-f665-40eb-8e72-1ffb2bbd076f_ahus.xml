@@ -1,8 +1,268 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <Message xmlns="http://www.kith.no/xmlstds/labsvar/2008-12-01">
-  <Type V="S" DN="Svarsrapport" />
-  <MIGversion>v1.3 2008-12-01</MIGversion>
-  <GenDate V="2021-01-05T14:50:29" />
-  <MsgId>9aff709a-f665-40eb-8e72-1ffb2bbd076f</MsgId>&gt;
+	<Type V="S" DN="Svarsrapport"/>
+	<MIGversion>v1.3 2008-12-01</MIGversion>
+	<GenDate V="2021-01-05T14:50:29"/>
+	<MsgId>9aff709a-f665-40eb-8e72-1ffb2bbd076f</MsgId>&gt;
 
-			<ServReport><ServType V="N" DN="Ny" /><IssueDate V="2021-01-05T14:50:29" /><Status V="F" DN="Endelig rapport" /><Ack V="J" DN="Ja" /><MsgDescr V="MBIO" DN="Mikrobiologi" /><ServProvId>9aff709a-f665-40eb-8e72-1ffb2bbd076f</ServProvId><ServReq><ServType V="N" DN="Ny" /><IssueDate V="2021-01-05T14:34:00" /><PaymentCat V="1" DN="Ordinær pasient" /><ReqComment>RekvirentStart Legekontor: Folkehelseinstituttet Lege: MSIS Postnr: 0213 OSLO Adresse: Pb. 222 Skøyen Id: 85217 TypeId:  HER RekvirentSlutt</ReqComment><MsgDescr V="MBIO" DN="Mikrobiologi" /><Id></Id></ServReq><Patient><Sex V="2" DN="Kvinne" /><Name>DANSER, LINE</Name><OffId>13116900216</OffId><TypeOffId V="FNR" DN="Fødselsnummer" /><AnalysedSubject><CollectedSample><CollectedDate V="2021-01-05T10:00:00" /></CollectedSample><Type>Blodkultur</Type><Comment>Hoste. Redusert allmenntilstand</Comment><IdByServProvider>53000113A1</IdByServProvider></AnalysedSubject><ResultItem><ServType V="N" DN="Ny" /><Investigation><Id V="NPU58745" S="2.16.578.1.12.4.1.1.7280" DN="Blodkultur dyrkning (aerob)" /><Spec V="VERBK1" S="2.16.578.1.12.4.1.1.8212" DN="Blodkultur dyrkning (aerob)" /></Investigation><IdResultItem>VERBK1</IdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject><Accredited V="true" /><RelServProv><Relation V="ALE" /><HCP><HCProf><Name>Teknisk personell Tone Elin Langdal</Name></HCProf></HCP></RelServProv></ResultItem><ResultItem><TextResult><Heading V="LR" DN="Laboratorieresultat" /><TextResultValue>S. AUREUS (GULE STAFYLOKOKKER)</TextResultValue></TextResult><Investigation><Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon" /></Investigation><IdResultItem>1</IdResultItem><RefIdResultItem>VERBK1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Ciprofloxacin" S="2.16.578.1.12.4.1.1.8212" /><Comment>Brytningspunktene forutsetter høy dosering, se nasjonal veileder for antibiotikabruk.</Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Fusidin" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Gentamicin" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Klindamycin" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Linezolid" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Oxacillin" S="2.16.578.1.12.4.1.1.8212" /><Comment>Oxacillinsvaret kan overføres til dicloxacillin/cloxacillin, cefalexin og amoxicillin-klavulansyre.</Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Penicillin G" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Rifampicin" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextResultValue>0.250</TextResultValue><TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediær følsom" /></TextResult><Investigation><Id OT="Rifampicin-" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextResultValue>1</TextResultValue><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Teikoplanin-" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Tetracyklin" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Trimetoprim-Sulfa" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem><ResultItem><TextResult><Heading V="RSB" DN="Resistensbestemmelse" /><TextResultValue>0.125</TextResultValue><TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv" /></TextResult><Investigation><Id OT="Vankomycin-" S="2.16.578.1.12.4.1.1.8212" /><Comment></Comment></Investigation><RefIdResultItem>1</RefIdResultItem><RefAnalysedSubject>53000113A1</RefAnalysedSubject></ResultItem></Patient><ServProvider><HCP><Inst><Name>Akershus Universitetssykehus</Name><Id>30</Id><TypeId V="HER" DN="Her-id" /><Dept><Name>Laboratoriene ved Ahus</Name><Id>121585</Id><TypeId V="HER" DN="Her-id" /><AdditionalId><Id>KLIN</Id><Type DN="Lokal identifikator for avdelinger" V="LAV" /></AdditionalId></Dept><AdditionalId><Id>983971636</Id><Type DN="Organisasjonsnummeret i Enhetsregister" V="ENH" /></AdditionalId></Inst></HCP></ServProvider><Requester><Role V="REQ" DN="Rekvirent" /><HCP><Inst><Name>Folkehelseinstituttet</Name><Id>85217</Id><TypeId V="HER" DN="Her-id" /><Dept><Name>MSIS</Name><Id>103979</Id><TypeId V="HER" DN="Her-id" /></Dept><AdditionalId><Id>983744516</Id><Type DN="Organisasjonsnummeret i Enhetsregister" V="ENH" /></AdditionalId></Inst></HCP></Requester></ServReport></Message>
+			<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2021-01-05T14:50:29"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<Ack V="J" DN="Ja"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>9aff709a-f665-40eb-8e72-1ffb2bbd076f</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2021-01-05T14:34:00"/>
+			<PaymentCat V="1" DN="Ordinær pasient"/>
+			<ReqComment>RekvirentStart Legekontor: Folkehelseinstituttet Lege: MSIS Postnr: 0213 OSLO Adresse: Pb. 222 Skøyen Id: 85217 TypeId:  HER RekvirentSlutt</ReqComment>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id/>
+		</ServReq>
+		<Patient>
+			<Sex V="2" DN="Kvinne"/>
+			<Name>DANSER, LINE</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2021-01-05T10:00:00"/>
+				</CollectedSample>
+				<Type>Blodkultur</Type>
+				<Comment>Hoste. Redusert allmenntilstand</Comment>
+				<IdByServProvider>53000113A1</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU58745" S="2.16.578.1.12.4.1.1.7280" DN="Blodkultur dyrkning (aerob)"/>
+					<Spec V="VERBK1" S="2.16.578.1.12.4.1.1.8212" DN="Blodkultur dyrkning (aerob)"/>
+				</Investigation>
+				<IdResultItem>VERBK1</IdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+				<Accredited V="true"/>
+				<RelServProv>
+					<Relation V="ALE"/>
+					<HCP>
+						<HCProf>
+							<Name>Teknisk personell Tone Elin Langdal</Name>
+						</HCProf>
+					</HCP>
+				</RelServProv>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>S. AUREUS (GULE STAFYLOKOKKER)</TextResultValue>
+				</TextResult>
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon"/>
+				</Investigation>
+				<IdResultItem>1</IdResultItem>
+				<RefIdResultItem>VERBK1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Ciprofloxacin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment>Brytningspunktene forutsetter høy dosering, se nasjonal veileder for antibiotikabruk.</Comment>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Fusidin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Gentamicin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Klindamycin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Linezolid" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Oxacillin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment>Oxacillinsvaret kan overføres til dicloxacillin/cloxacillin, cefalexin og amoxicillin-klavulansyre.</Comment>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Penicillin G" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Rifampicin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.250</TextResultValue>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediær følsom"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Rifampicin-" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>1</TextResultValue>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Teikoplanin-" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Tetracyklin" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Trimetoprim-Sulfa" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.125</TextResultValue>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<Id OT="Vankomycin-" S="2.16.578.1.12.4.1.1.8212"/>
+					<Comment/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>53000113A1</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Akershus Universitetssykehus</Name>
+					<Id>30</Id>
+					<TypeId V="HER" DN="Her-id"/>
+					<Dept>
+						<Name>Laboratoriene ved Ahus</Name>
+						<Id>121585</Id>
+						<TypeId V="HER" DN="Her-id"/>
+						<AdditionalId>
+							<Id>KLIN</Id>
+							<Type DN="Lokal identifikator for avdelinger" V="LAV"/>
+						</AdditionalId>
+					</Dept>
+					<AdditionalId>
+						<Id>983971636</Id>
+						<Type DN="Organisasjonsnummeret i Enhetsregister" V="ENH"/>
+					</AdditionalId>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<Role V="REQ" DN="Rekvirent"/>
+			<HCP>
+				<Inst>
+					<Name>Folkehelseinstituttet</Name>
+					<Id>85217</Id>
+					<TypeId V="HER" DN="Her-id"/>
+					<Dept>
+						<Name>MSIS</Name>
+						<Id>103979</Id>
+						<TypeId V="HER" DN="Her-id"/>
+					</Dept>
+					<AdditionalId>
+						<Id>983744516</Id>
+						<Type DN="Organisasjonsnummeret i Enhetsregister" V="ENH"/>
+					</AdditionalId>
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

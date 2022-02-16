@@ -72,9 +72,9 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
 | ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" | Ja |
-| ServReport.ServProvId | Denne+ServReport.ServProvider.HCP.Inst.Dept.Id |  | Ja |
-| ServReport.Comment | Her må vi inn med en extention | Denne venter vi med | Nei (extention?) |
-| ServReport.CodedComment | Samme som Comment | Denne venter vi med | Nei (extention?) |
+| ServReport.ServProvId | Identifier |  | Ja |
+| ServReport.Comment | Extention |  | Ja |
+| ServReport.CodedComment |  | Extension | Ja |
 | ServReport.RefDoc |  | Kan inneholde identifiserende informasjon |  |
 | ServReport.Animal |  | NA |  |
 | ServReport.Material |  | NA |  |
@@ -130,7 +130,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.SampleCollInd | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc | Specimen.Collection.Method |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.Accredited | extension. Foreløpig til Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.Accredited | Extension |  | Ja |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject | Nøstede prøver, ikke i bruk? |  |  |
 | ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Note | Inneholder bla. faste/diett | Ja |
 | ServReport.Patient.AnalysedSubject.RelServProv | Specimen.Collection.Collector? |  | Ja |
@@ -166,7 +166,7 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.CounterSignDate | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til ett AnalysedSubject.  | Ja |
-| ServReport.Patient.ResultItem.Accredited | Observation.note | Extension. Foreløpig i Note | Ja |
+| ServReport.Patient.ResultItem.Accredited | Observation.note | Extension | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
 | ServReport.Patient.ResultItem.DiagComment | Observation.Note |  | Ja |
