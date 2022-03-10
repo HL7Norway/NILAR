@@ -29,13 +29,14 @@ Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 ti
 Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i test-server. Denne er tilgjengelig og kan testes.
 
 #### Endepunkt
-http://51.13.121.9:8080
-
-For endepunkt med støtte for helseID, bruk port 4141 (http://51.13.121.9:4141).
-
-Ved bruk av Postman eller andre generiske verktøy må man spesifisere at man etterspør FHIR v4 objekter, ellers får man ingen treff. Dett kan gjøres ved å legge en Accept inn i headeren:
-
-Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
+- Nilar1: http://51.13.121.9:8080 Første løsning, basert på Vonk/FhirlyServer. Blir ikke lenger oppdatert, men nye meldinger vil komme inn.
+  - For endepunkt med støtte for helseID, bruk port 4141 (http://51.13.121.9:4141)).
+  - Ved bruk av Postman eller andre generiske verktøy må man spesifisere at man etterspør FHIR v4 objekter, ellers får man ingen treff. Dette kan gjøres ved å legge en Accept inn i headeren:
+    -  `Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0`
+- Nilar2: http://51.13.121.9:5212 Ny løsning, oppdateres fortløpende.
+  - Krever ikke Accept header, men krever derimot header to andre headere:
+    - X-Nilar-Patient: pasientens personnummer
+    - X-Nilar-Requester: HPR-nummer (brukes for sjekk mot personverninnstillinger)
 
 #### Eksempelspørringer (id'er må byttes ut med noe man finner i databasen)
 - Generisk: [base]/\<Resource\>
@@ -43,6 +44,9 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 - Enkelt pasient: http://51.13.121.9:8080/Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6
 - Søk etter pasient: http://51.13.121.9:8080/Patient?identifier=13116900216
 - Finmasket søk etter hemoglobinmålinger: http://51.13.121.9:8080/Observation?patient=Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6&code:text=B-Hemoglobin
+
+#### Testmeldinger
+Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her: https://www.nhn.no/samhandlingsplattform/nilar.
 
 ## Oversikt over ressurser som brukes i NILAR
 
@@ -101,11 +105,23 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 ## Patient (Patient)
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
-| ServReport.Patient.Name | Patient.Name | | Ja|
-| ServReport.Patient.IdByServProvider |  | NA ||
-| ServReport.Patient.OffId | Patient.Identifier |  | Ja |
-| ServReport.Patient.TypeOffId | Patient.Identifier | Kombineres med OffId | Ja |
-| ServReport.Patient.Address |Mappes ikke||
+| ServReport.Patient.BasisForHealthServices | | Mappes ikke | |
+| ServReport.Patient.Sex | | Mappes ikke |  |
+| ServReport.Patient.DateOfBirth | | Mappes ikke |  |
+| ServReport.Patient.DateOfDeath | | Mappes ikke |  |
+| ServReport.Patient.Name |  | Mappes ikke | |
+| ServReport.Patient.IdByServProvider | | Mappes ikke | |
+| ServReport.Patient.IdByRequester | | Mappes ikke |  |
+| ServReport.Patient.OffId |  | I egen "guid db" | Ja |
+| ServReport.Patient.TypeOffId |  | I guid db | Ja |
+| ServReport.Patient.Address | |Mappes ikke||
+| ServReport.Patient.Relation | | Mappes ikke |  |
+| ServReport.Patient.ResponsibleHcp | | Se [mapping av roller](#headActors) | Ja |
+| ServReport.Patient.AdmLocation | | Mappes ikke |  |
+| ServReport.Patient.AdditionalId | | Mappes ikke |  |
+| ServReport.Patient.Address | | Mappes ikke |  |
+| ServReport.Patient.InfItem | DiagnosticReport.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.Patient | | Mappes ikke |  |
 
 ## AnalysedSubject (Specimen)
 | XML | FHIR | Kommentar | Implementert |
@@ -115,13 +131,13 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Nei |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.AdditionalInfo |  | Nei |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate | Specimen.Collection.collectedDateTime |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Extension.AdditionalInfo |  | Nei |
 | ServReport.Patient.AnalysedSubject.Type | Specimen.Type | | Ja |
 | ServReport.Patient.AnalysedSubject.TypeCoded | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
-| ServReport.Patient.AnalysedSubject.Number | specimen.note | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Ja |
+| ServReport.Patient.AnalysedSubject.Number | specimen.Extension.AdditionalInfo | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Nei |
 | ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Specimen.Collection.BodySite |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByRequester | Specimen.Identifier |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByServProvider | Specimen.AccessionIdentifier | | Ja |
@@ -129,16 +145,16 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.AnalysedSubject.PreservMaterial | Specimen.Container.Additive |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleCollInd | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc | Specimen.Collection.Method |  | Ja |
-| ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.Accredited | Extension |  | Ja |
+| ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.AnalysedSubject.Accredited | Extension  | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject | Nøstede prøver, ikke i bruk? |  |  |
-| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Note | Inneholder bla. faste/diett | Ja |
+| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Extension.AdditionalInfo | Inneholder bla. faste/diett | Nei |
 | ServReport.Patient.AnalysedSubject.RelServProv | Specimen.Collection.Collector? |  | Ja |
 
 ## ResultItem (Observation)
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
-| ServReport.Patient.ResultiItem.Comment | Observation.note |  | Ja |
+| ServReport.Patient.ResultiItem.Comment | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.NumResult |  |  | Ja |
 | ServReport.Patient.ResultItem.NumResult.NumResultValue | Observation.Value | Quantity | Ja |
 | ServReport.Patient.ResultItem.TextResultResult | Observation.Value | CodeableConcept | Ja |
@@ -147,33 +163,33 @@ Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0
 | ServReport.Patient.ResultItem.TextResult.TextCode | Observation.Value | CodeableValue.Code | Ja |
 | ServReport.Patient.ResultItem.Interval | Observation.Value | Range | Ja |
 | ServReport.Patient.ResultItem.DateResult | Observation.Value | dateTime | Ja |
-| ServReport.Patient.ResultItem.StructuredInfo.Type | Observation.Note |  | Ja |
-| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | Observation.Note | Gjelder alle innholdtypene | Ja |
+| ServReport.Patient.ResultItem.StructuredInfo.Type | Observation.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | Observation.Extension.AdditionalInfo | Gjelder alle innholdtypene | Nei |
 | ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
 | ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
-| ServReport.Patient.ResultItem.Investigation.Spec | Observation.Code | Kunne passet i Observation.Method, men passer ikke med kardinalitet og kontekst | Ja |
-| ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note? |  | Ja |
-| ServReport.Patient.ResultItem.InvDate | Observation.Note, Observation.Effective ved radiologi |  | Ja |
+| ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Nei |
+| ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.InvDate | Observation.Extension.AdditionalInfo, Observation.Effective ved radiologi |  | Nei |
 | ----------------"------------------ | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Nei |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
-| ServReport.Patient.ResultItem.StatusChangeDate | Observation.Note |  | Ja |
-| ServReport.Patient.ResultItem.DescrDate | Observation.Note |  | Ja |
-| ServReport.Patient.ResultItem.CounterSignDate | Observation.Note |  | Ja |
-| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.StatusChangeDate | Observation.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.ResultItem.DescrDate | Observation.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.ResultItem.CounterSignDate | Observation.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Extension.AdditionalInfo |  | Nei |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til ett AnalysedSubject.  | Ja |
-| ServReport.Patient.ResultItem.Accredited | Observation.note | Extension | Ja |
+| ServReport.Patient.ResultItem.Accredited | Extension | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
-| ServReport.Patient.ResultItem.DiagComment | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.DiagComment | Observation.Extension.AdditionalInfo |  | Nei |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
-## Aktører knyttet til en melding
+## <a name="headActors"></a>Aktører knyttet til en melding
 Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressurser, men trekkes ut og brukes til å lage ResourceReference's, som brukes relevante steder.
 
 ### Roller
