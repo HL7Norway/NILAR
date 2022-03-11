@@ -169,7 +169,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
 | ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
-| ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Nei |
+| ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.InvDate | Observation.Extension.AdditionalInfo, Observation.Effective ved radiologi |  | Nei |
 | ----------------"------------------ | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Nei |
