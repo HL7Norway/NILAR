@@ -128,7 +128,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 |-|-|-|-|
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. |  | Ja |
 | -------------------"------------------ | Observation.Effective |  | Ja |
-| -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Nei |
+| -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.AdditionalInfo |  | Nei |
