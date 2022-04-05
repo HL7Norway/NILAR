@@ -171,8 +171,9 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note |  | Ja |
-| ServReport.Patient.ResultItem.InvDate | Observation.Extension.AdditionalInfo, Observation.Effective ved radiologi |  | Nei |
-| ----------------"------------------ | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Nei |
+| ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi |  | Ja |
+| ----------------"-------------------- | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Ja |
+| ----------------"-------------------- | Observation.Extension.AdditionalInfo |  | Nei |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
@@ -249,6 +250,12 @@ av medisinske tjenester". Noen koder kombineres og noen blir unknown:
 | 14 | Undersøkelse slettet | Cancelled |
 | Andre |  | Unknown |
 
+## Observation.Meta
+Søkbare koder ligger litt spredt forskjellige steder i svarrapportene:
+- Delvis ligger de på ulike nivåer i nøstede ResultItems
+- Delvis ligger de i ulike elementer inni hvert ResultItem (Investigation og TextResult)
+
+For å forenkle søk og finne tilhørende "moder"-observation samles en kopi alle koder funnet i et nøstet sett av ResultItems/Observations i moder-observations Meta.Tags.
 
 ## Extensions
 Det arbeides ut fra et ønske om å holde bruken av Fhir extensiosn på et minimum. Det er likevel avdekket noen tilfeller der det ikke er plass i relevant Fhir ressurs for informasjon som anses viktig i fagmeldingen (xml). I tillegg er det en del strukturert informasjon i xml, der det ikke finnes noen passende Fhir-element, som har fått en foreløpig/tentativ mapping inn i diverse note-elementer i Fhir. For (noen av) disse er det rimelig å anta at det vil komme behov for extensions i stedet.
@@ -261,7 +268,9 @@ Det arbeides ut fra et ønske om å holde bruken av Fhir extensiosn på et minim
 ### XXX.Accredited
 - ServReport.Accredited
 - AnalysedSubject.Accredited
-- ...
+
+### Observation.DiagnosticReportRef
+Referanse tilbake til inneholdende DiagnosticReport.
 
 ## Fagområde - tillegg til utvalgte koder
 - NLK: hente fagområde fra kodeverksdefinisjon
