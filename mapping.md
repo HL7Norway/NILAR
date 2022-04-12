@@ -120,7 +120,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.AdmLocation | | Mappes ikke |  |
 | ServReport.Patient.AdditionalId | | Mappes ikke |  |
 | ServReport.Patient.Address | | Mappes ikke |  |
-| ServReport.Patient.InfItem | DiagnosticReport.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.InfItem | DiagnosticReport.Extension.AdditionalInfo | Avventer svar fra sektor | Nei |
 | ServReport.Patient.Patient | | Mappes ikke |  |
 
 ## AnalysedSubject (Specimen)
@@ -131,13 +131,13 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.AdditionalInfo |  | Nei |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.AdditionalInfo |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.AdditionalInfo |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate | Specimen.Collection.collectedDateTime |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Extension.AdditionalInfo |  | Ja |
 | ServReport.Patient.AnalysedSubject.Type | Specimen.Type | | Ja |
 | ServReport.Patient.AnalysedSubject.TypeCoded | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
-| ServReport.Patient.AnalysedSubject.Number | specimen.Extension.AdditionalInfo | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Nei |
+| ServReport.Patient.AnalysedSubject.Number | specimen.Extension.AdditionalInfo | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Ja |
 | ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Specimen.Collection.BodySite |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByRequester | Specimen.Identifier |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByServProvider | Specimen.AccessionIdentifier | | Ja |
@@ -145,10 +145,10 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.AnalysedSubject.PreservMaterial | Specimen.Container.Additive |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleCollInd | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc | Specimen.Collection.Method |  | Ja |
-| ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Extension.AdditionalInfo |  | Ja |
 | ServReport.Patient.AnalysedSubject.Accredited | Extension  | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject | Nøstede prøver, ikke i bruk? |  |  |
-| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Extension.AdditionalInfo | Inneholder bla. faste/diett | Nei |
+| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Extension.AdditionalInfo | Inneholder bla. faste/diett | Ja |
 | ServReport.Patient.AnalysedSubject.RelServProv | Specimen.Collection.Collector? |  | Ja |
 
 ## ResultItem (Observation)
@@ -163,8 +163,8 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.ResultItem.TextResult.TextCode | Observation.Value | CodeableValue.Code | Ja |
 | ServReport.Patient.ResultItem.Interval | Observation.Value | Range | Ja |
 | ServReport.Patient.ResultItem.DateResult | Observation.Value | dateTime | Ja |
-| ServReport.Patient.ResultItem.StructuredInfo.Type | Observation.Extension.AdditionalInfo |  | Nei |
-| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | Observation.Extension.AdditionalInfo | Gjelder alle innholdtypene | Nei |
+| ServReport.Patient.ResultItem.StructuredInfo.Type | Observation.Extension.AdditionalInfo |  | Ja |
+| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | Observation.Extension.AdditionalInfo | Gjelder alle innholdtypene | Ja |
 | ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
@@ -173,20 +173,20 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi |  | Ja |
 | ----------------"-------------------- | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Ja |
-| ----------------"-------------------- | Observation.Extension.AdditionalInfo |  | Nei |
+| ----------------"-------------------- | Observation.Extension.AdditionalInfo |  | Ja |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
-| ServReport.Patient.ResultItem.StatusChangeDate | Observation.Extension.AdditionalInfo |  | Nei |
-| ServReport.Patient.ResultItem.DescrDate | Observation.Extension.AdditionalInfo |  | Nei |
-| ServReport.Patient.ResultItem.CounterSignDate | Observation.Extension.AdditionalInfo |  | Nei |
-| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.ResultItem.StatusChangeDate | Observation.Extension.AdditionalInfo |  | Ja |
+| ServReport.Patient.ResultItem.DescrDate | Observation.Extension.AdditionalInfo |  | Ja |
+| ServReport.Patient.ResultItem.CounterSignDate | Observation.Extension.AdditionalInfo |  | Ja |
+| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Extension.AdditionalInfo |  | Ja |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til ett AnalysedSubject.  | Ja |
 | ServReport.Patient.ResultItem.Accredited | Extension | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
-| ServReport.Patient.ResultItem.DiagComment | Observation.Extension.AdditionalInfo |  | Nei |
+| ServReport.Patient.ResultItem.DiagComment | Observation.Extension.AdditionalInfo | Kandidat for å bli værende i Note? Avklares | Nei |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
