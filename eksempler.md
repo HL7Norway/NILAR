@@ -32,7 +32,7 @@ POST BaseURL/DiagnosticReport/_search
 <h4>2. Eksempel - Spesifikk DN for Gry Telokk</h4>
 POST BaseURL/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
-<p>body <code>_id: <guid> <guid></code></p>
+<p>body <code>_id: guid</code></p>
   
 <h4>3. Eksempel - Hopp over de første 50 DN og vis de neste 10 DN for Gry Telokk</h4>
 POST BaseURL/DiagnosticReport/_search
