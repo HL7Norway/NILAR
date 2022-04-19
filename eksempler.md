@@ -56,4 +56,4 @@ POST BaseURL/Observation/_search
 <h4>2. Eksempel - Alle Observation for Gry Telokk som inneholder en Mikroskopisk undersøkelse</h4>
 POST BaseURL/Observation/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
-<p>body <code>_tag: Mikroskopisk undersøkelse</code></p>
+<p>body <code>_tag: MI</code></p>
