@@ -69,7 +69,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 ## ServReport (Diagnostic Report)
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
-| ServReport.ServType | Styrer flyt ved mapping, mappes ikke |  |  |
+| ServReport.ServType | Styrer flyt ved mapping, mappes ikke AA: Dette er feil. Den mappes sammen med ServReport.Status|  |  |
 | ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
 | ServReport.ApprDate |  | Ikke relevant |  |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |  | Ja |
