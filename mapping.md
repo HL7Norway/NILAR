@@ -236,7 +236,7 @@ AA: Denne må oppdateres med riktig tabell, og settes sammen med opplysninger fr
 | A | Tillegg til rapport | Appended |
 | Andre |  | Unknown |
 
-## <a name="headObservationStatus"></a>Observation.Status
+## <a name="headObservationStatus"></a>Observation.Status AA: Denne må vi gå opp på nytt - Det er ServType som styrer denne infoen mest - 8245 kan gi tilleggsinfo - men dette er ikke et oblihgatorisk felt
 Observation.Status skal være en standard Fhir kode. Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
 av medisinske tjenester". Noen koder kombineres og noen blir unknown:
 | Volven 8245 |  | Fhir |
