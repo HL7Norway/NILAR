@@ -71,11 +71,11 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 |-|-|-|-|
 | ServReport.ServType | Styrer flyt ved mapping, mappes ikke AA: Dette er feil. Den mappes sammen med ServReport.Status|  |  |
 | ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
-| ServReport.ApprDate |  | Ikke relevant |  |
-| ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |  | Ja |
+| ServReport.ApprDate |  | Ikke relevant |  AA: Mappes til AdditinalInfo med ledetekst Godkjenningstidspunkt:|
+| ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |AA: Må oppdateres  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
-| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" | Ja |
+| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" AA: Stemmer dette? Eller benyttes verdier fra 8202? Hovedinndeling fagområde er vel egentlig på Message/type | Ja |
 | ServReport.ServProvId | Identifier |  | Ja |
 | ServReport.Comment | Extention |  | Ja |
 | ServReport.CodedComment |  | Extension | Ja |
