@@ -92,14 +92,14 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.ServReq.ReasonAsText.Heading | Volven=8231, ServiceRequest.reasonCode -> code |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextResultValue | ServiceRequest.reasonCode -> text |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextCode |  | Ikke i bruk |  | |
-| ServReport.ServReq.PaymentCat | | Skal ikke mappes |  |
+| ServReport.ServReq.PaymentCat | | Skal ikke mappes AA: Bør mappes i samlefelt hvis det ligger info her|  |
 | ServReport.ServReq.ReqComment | ServiceRequest.Note |  | Ja |
 | ServReport.ServReq.Ack |  | NA |  |
 | ServReport.ServReq.MsgDescr |  | NA, samme som i ServReport |  |
-| ServReport.ServReq.RequestedPrioReport |  | NA |  |
-| ServReport.ServReq.ReceiptDate |  | NA |  |
-| ServReport.ServReq.IdByServProvider |  | Ikke relevant |  |
-| ServReport.ServReq.Reservation | ServiceRequest.Note | | Ja |
+| ServReport.ServReq.RequestedPrioReport |  | NA AA: Må mappes i samlefelt hvis det ligger info her|  |
+| ServReport.ServReq.ReceiptDate |  | NA: AA: Må mappes i samlefelt hvis det ligger info her |  |
+| ServReport.ServReq.IdByServProvider |  | Ikke relevant AA: Må mappes i samlefelt hvis det ligger info her|  |
+| ServReport.ServReq.Reservation | ServiceRequest.Note AA: Her menes det vel samlefelt? | | Ja |
 | ServReport.ServReq.Comment | ServiceRequest.Note |  | Ja |
 
 ## Patient (Patient)
