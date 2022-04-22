@@ -226,6 +226,7 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
 DiagnosticReport.Status skal være en standard Fhir kode. Denne matcher godt med kodeverk 7306 "Status for rapport-S1".
+AA: Denne må oppdateres med riktig tabell, og settes sammen med opplysninger fra ServType
 
 | Volven 7306 |  | Fhir |
 |-|-|-|
