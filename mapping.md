@@ -71,15 +71,15 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 |-|-|-|-|
 | ServReport.ServType | Styrer flyt ved mapping, mappes ikke AA: Dette er feil. Den mappes sammen med ServReport.Status|  |  |
 | ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
-| ServReport.ApprDate |  | Ikke relevant |  AA: Mappes til AdditinalInfo med ledetekst Godkjenningstidspunkt:|
-| ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |AA: Må oppdateres  | Ja |
+| ServReport.ApprDate |  |  AA: Mappes til AdditinalInfo med ledetekst Godkjenningstidspunkt: | Nei |
+| ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |AA: Må oppdateres  | Nei |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
 | ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" AA: Stemmer dette? Eller benyttes verdier fra 8202? Hovedinndeling fagområde er vel egentlig på Message/type | Ja |
 | ServReport.ServProvId | Identifier |  | Ja |
 | ServReport.Comment | Extention |  | Ja |
 | ServReport.CodedComment |  | Extension | Ja |
-| ServReport.RefDoc |  | Kan inneholde identifiserende informasjon |  |
+| ServReport.RefDoc |  | Kan inneholde identifiserende informasjon, mappes ikke. Marør i Not om at RefDoc er fjernet | Nei |
 | ServReport.Animal |  | NA |  |
 | ServReport.Material |  | NA |  |
 | ServReport.PaymentResponsible |  | NA |  |
@@ -92,14 +92,14 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.ServReq.ReasonAsText.Heading | Volven=8231, ServiceRequest.reasonCode -> code |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextResultValue | ServiceRequest.reasonCode -> text |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextCode |  | Ikke i bruk |  | |
-| ServReport.ServReq.PaymentCat | | Skal ikke mappes AA: Bør mappes i samlefelt hvis det ligger info her|  |
+| ServReport.ServReq.PaymentCat | | Skal ikke mappes AA: Bør mappes i samlefelt hvis det ligger info her| Nei |
 | ServReport.ServReq.ReqComment | ServiceRequest.Note |  | Ja |
 | ServReport.ServReq.Ack |  | NA |  |
 | ServReport.ServReq.MsgDescr |  | NA, samme som i ServReport |  |
-| ServReport.ServReq.RequestedPrioReport |  | NA AA: Må mappes i samlefelt hvis det ligger info her|  |
-| ServReport.ServReq.ReceiptDate |  | NA: AA: Må mappes i samlefelt hvis det ligger info her |  |
-| ServReport.ServReq.IdByServProvider |  | Ikke relevant AA: Må mappes i samlefelt hvis det ligger info her|  |
-| ServReport.ServReq.Reservation | ServiceRequest.Note AA: Her menes det vel samlefelt? | | Ja |
+| ServReport.ServReq.RequestedPrioReport |  | NA AA: Må mappes i samlefelt hvis det ligger info her| Nei |
+| ServReport.ServReq.ReceiptDate |  | NA: AA: Må mappes i samlefelt hvis det ligger info her | Nei |
+| ServReport.ServReq.IdByServProvider |  | Ikke relevant AA: Må mappes i samlefelt hvis det ligger info her| Nei |
+| ServReport.ServReq.Reservation | ServiceRequest.Note AA: Her menes det vel samlefelt? | | Nei |
 | ServReport.ServReq.Comment | ServiceRequest.Note |  | Ja |
 
 ## Patient (Patient)
