@@ -69,13 +69,13 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 ## ServReport (Diagnostic Report)
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
-| ServReport.ServType | Styrer flyt ved mapping, mappes ikke AA: Dette er feil. Den mappes sammen med ServReport.Status|  |  |
+| ServReport.ServType | DiagnosticReport.status [(detaljer her)](#headReportStatus) | Mappes sammen med ServReport.Status  | Ja |
 | ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
 | ServReport.ApprDate |  |  AA: Mappes til AdditinalInfo med ledetekst Godkjenningstidspunkt: | Nei |
-| ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |AA: Må oppdateres  | Nei |
+| ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
-| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" AA: Stemmer dette? Eller benyttes verdier fra 8202? Hovedinndeling fagområde er vel egentlig på Message/type | Ja |
+| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" AA: Stemmer dette? Eller benyttes verdier fra 8202? Hovedinndeling fagområde er vel egentlig på Message/type IY: Det var dette vi fikk oppgitt. Dessuten er kvaliteten på Message.Type dårlig, iallfall i eksemplene. | Ja |
 | ServReport.ServProvId | Identifier |  | Ja |
 | ServReport.Comment | Extention |  | Ja |
 | ServReport.CodedComment |  | Extension | Ja |
@@ -225,31 +225,33 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
-DiagnosticReport.Status skal være en standard Fhir kode. Denne matcher godt med kodeverk 7306 "Status for rapport-S1".
-AA: Denne må oppdateres med riktig tabell, og settes sammen med opplysninger fra ServType
+DiagnosticReport.Status skal være en standard Fhir kode. Denne mappes fra en kombinasjon av ServType og Status i svarmeldingen:
 
-| Volven 7306 |  | Fhir |
+| ServType, kodeverk 7309 | Status, kodeverk 7306 | Fhir |
 |-|-|-|
-| F | Endelig rapport | Final |
-| S | Planlagt | Registered |
-| P | Foreløpig rapport | Preliminary |
-| A | Tillegg til rapport | Appended |
-| Andre |  | Unknown |
+| N (Ny) | P (Foreløpig rapport) | preliminary |
+| N (Ny) | F (Endelig rapport) | final |
+| M (Endret) | | amended |
+| M (Endret) | A (Tillegg til rapport) | appended |
+| K (Kansellert) | | cancelled |
+| Andre | | unknown |
 
 ## <a name="headObservationStatus"></a>Observation.Status AA: Denne må vi gå opp på nytt - Det er ServType som styrer denne infoen mest - 8245 kan gi tilleggsinfo - men dette er ikke et oblihgatorisk felt
 Observation.Status skal være en standard Fhir kode. Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
 av medisinske tjenester". Noen koder kombineres og noen blir unknown:
-| Volven 8245 |  | Fhir |
-|-|-|- 
-| 1 | Revidert | Corrected |
-| 2 | Foreløpig | Preliminary |
-| 3 | Endelig | Final |
-| 4 | Tillegg | Amended |
-| 5 | Henvisning registrert | Registered |
-| 6 | Prosedyrer registrert/planlagt | Registered |
-| 12 | Korrigert | Corrected |
-| 14 | Undersøkelse slettet | Cancelled |
-| Andre |  | Unknown |
+| StatusInvestigation, kodeverk 8245 | Fhir |
+|-|-|
+| 1 (Revidert) | Corrected |
+| 2 (Foreløpig) | Preliminary |
+| 3 (Endelig) | Final |
+| 4 (Tillegg) | Amended |
+| 5 (Henvisning registrert) | Registered |
+| 6 (Prosedyrer registrert/planlagt) | Registered |
+| 7 (Tildelt time) | Registered
+| 12 (Korrigert) | Corrected |
+| 14 (Undersøkelse slettet) | Cancelled |
+| 15 (I prosess) | Registered
+| Andre | Unknown |
 
 ## Observation.Meta
 Søkbare koder ligger litt spredt forskjellige steder i svarrapportene:
