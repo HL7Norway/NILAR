@@ -31,8 +31,11 @@ GET BaseURL/metadata
 <h2>Eksempler</h2>
 
 [A. RessursType](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#a-ressurstype)
+
 [B. Spesifikk ressurs](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#b-spesifikk-ressurs)
+
 [C. Skip og count](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#c-skip-og-count)
+
 [D. Include med relaterte ressurser](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#d-include-med-relaterte-ressurser)
 
 <h3>A. RessursType</h3>
