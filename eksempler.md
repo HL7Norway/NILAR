@@ -21,6 +21,9 @@ Sist oppdatert 03.06.2022
 <p>Nilar (via proxy) krever header <code>person-id</code> med pasient sitt fnr, <code>requester-id</code> med hpr-nummer (eventuelt hvem som spør (HelseNorge etc.) - brukes til å logge innsyn) og <code>Authorization</code> med helse-id token</p>
 NOTE: Headers gjelder ikke for <code>/metadata</code> der man får info om fhir-støtte som er implementert i APIet.
 
+<h4>Body</h4>
+x-www-form-urlencoded
+
 <h2>Metadata</h2>
 GET BaseURL/metadata
 <p>header <code>tom</code></p>
@@ -50,7 +53,7 @@ POST BaseURL/DiagnosticReport/fhir/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
-<p>body x-www-form-urlencoded <code>_id: guid</code></p>
+<p>body <code>_id: guid</code></p>
   
 <h4>3. Eksempel - Hopp over de første 50 DN og vis de neste 10 DN for Gry Telokk</h4>
 POST BaseURL/DiagnosticReport/_search
