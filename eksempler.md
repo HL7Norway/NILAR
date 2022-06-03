@@ -11,8 +11,8 @@ Sist oppdatert 03.06.2022
 <p> OBS! Azure vil fases ut! </p>
 
 
-<p>Endepunkt privat sky (forbigå proxy) - https://test.nilar.nhn.no/fhir/ - i eksemplene omtalt som <br>BaseUrlFhir</br></p>
-<p>Endepunkt privat sky - https://test.nilar.nhn.no/ - i eksemplene omtalt som <br>BaseUrlProxy</br></p>
+<p>Endepunkt privat sky (forbigå proxy) - https://test.nilar.nhn.no/fhir/ - i eksemplene omtalt som <b>BaseUrlFhir</b></p>
+<p>Endepunkt privat sky - https://test.nilar.nhn.no/ - i eksemplene omtalt som <b>BaseUrlProxy</b></p>
 
 
 
