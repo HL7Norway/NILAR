@@ -71,8 +71,8 @@ POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p>
 
-<h4>C.1.1. Eksempel - Hopp over 50 DiagnosticReport og vis 10 for Gry Telokk</h4>
-POST BaseURL/DiagnosticReport/_search
+<h4>C.1.1. Eksempel - Hopp over 50 DiagnosticReport og vis 10 for Gry Telokk utenfor proxy</h4>
+POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_count: 10</code> + <code>_skip: 50</code></p>
 
@@ -84,8 +84,8 @@ NOTE: "Total" vil fortsatt vise totalt antall DN for Gry Telokk. "Link>Self" vil
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
 
-<h4>D.1.1. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen</h4>
-POST BaseURL/DiagnosticReport/_search
+<h4>D.1.1. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen utenfor proxy</h4>
+POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
 
