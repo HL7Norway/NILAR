@@ -98,3 +98,5 @@ POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
 
+<h3>E. Dato og datointervall</h3>
+
