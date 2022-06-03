@@ -6,8 +6,8 @@ Sist oppdatert 03.06.2022
 <h2>Basic</h2>
 
 <h4>BaseURL</h4>
-<p>Endepunkt Azure (forbigå proxy) - http://51.13.121.9:5212/fhir/</p>
-<p>Endepunkt Azure - http://51.13.121.9:4141/proxy/</p>
+<p>Endepunkt Azure (forbigå proxy) - http://51.13.121.9:5212/fhir/</p> (deprecated)
+<p>Endepunkt Azure - http://51.13.121.9:4141/proxy/</p> (deprecated)
 <p> <i> OBS! Azure vil fases ut! </i> </p>
 
 
