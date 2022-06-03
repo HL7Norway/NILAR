@@ -101,4 +101,13 @@ POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
 
 <h3>E. Dato og datointervall</h3>
+Støtter modifiers eq, lt og gt, se: https://www.hl7.org/fhir/search.html#modifiers
 
+<h4>E.1. Format Dato</h4>
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>date: {modifier}{dato}</code></p>
+
+<h4>E.2. Format Datointervall</h4>
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>date: gt{dato}</code></p>
+<p>body <code>date: lt{dato}</code></p>
