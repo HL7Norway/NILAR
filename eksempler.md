@@ -32,7 +32,6 @@ GET BaseURL/metadata
 <h3>A. RessursType</h3>
 
 <h4>A.1. Format</h4>
-
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>tom</code></p>
 
@@ -51,7 +50,6 @@ POST <b>BaseUrlProxy</b>/Observation/_search
 <h3>B. Spesifikk ressurs</h3>
 
 <h4>B.1. Format</h4>
-
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_id: {guid}</code></p>
 
@@ -70,21 +68,23 @@ POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 <h3>C. Skip og count</h3>
 
 <h4>C.1. Format</h4>
-
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p>
 
 <h4>C.1.1. Eksempel - Hopp over 50 DiagnosticReport og vis 10 for Gry Telokk</h4>
-
 POST BaseURL/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_count: 10</code> + <code>_skip: 50</code></p>
 
 NOTE: "Total" vil fortsatt vise totalt antall DN for Gry Telokk. "Link>Self" vil reflektere spørringen. "Link" kan brukes til å navigere gjennom ressursene.
 
-<h3>C. Include med relaterte ressurser</h3>
+<h3>D. Include med relaterte ressurser</h3>
 
-<h4>4. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen</h4>
+<h4>D.1. Format</h4>
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>_include: DiagnosticReport:specimen</code></p>
+
+<h4>D.1.1. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen</h4>
 POST BaseURL/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
