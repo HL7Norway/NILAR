@@ -71,7 +71,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 |-|-|-|-|
 | ServReport.ServType | DiagnosticReport.status [(detaljer her)](#headReportStatus) | Mappes sammen med ServReport.Status  | Ja |
 | ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
-| ServReport.ApprDate | DiagnosticReport.Extension.OtherInfo |  | Ja |
+| ServReport.ApprDate | DiagnosticReport.Extension.OtherInfo | Label "Godkjenningstidspunkt" | Ja |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
@@ -92,14 +92,14 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.ServReq.ReasonAsText.Heading | Volven=8231, ServiceRequest.reasonCode -> code |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextResultValue | ServiceRequest.reasonCode -> text |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextCode |  | Ikke i bruk |  | |
-| ServReport.ServReq.PaymentCat | ServiceRequest.Extension.OtherInfo | | Ja |
+| ServReport.ServReq.PaymentCat | ServiceRequest.Extension.OtherInfo | Label "Betalingskategori" | Ja |
 | ServReport.ServReq.ReqComment | ServiceRequest.Note |  | Ja |
 | ServReport.ServReq.Ack |  | NA |  |
 | ServReport.ServReq.MsgDescr |  | NA, samme som i ServReport |  |
-| ServReport.ServReq.RequestedPrioReport | ServiceRequest.Extension.OtherInfo | | Ja |
-| ServReport.ServReq.ReceiptDate | ServiceRequest.Extension.OtherInfo |  | Nei |
-| ServReport.ServReq.IdByServProvider | ServiceRequest.Extension.OtherInfo | | Nei |
-| ServReport.ServReq.Reservation | ServiceRequest.Extension.OtherInfo | | Ja |
+| ServReport.ServReq.RequestedPrioReport | ServiceRequest.Extension.OtherInfo | Label "Ønsket svarrapporteringsprioritet" | Ja |
+| ServReport.ServReq.ReceiptDate | ServiceRequest.Extension.OtherInfo | Label "Tidspunkt for mottak" | Nei |
+| ServReport.ServReq.IdByServProvider | ServiceRequest.Extension.OtherInfo | Label "Tjenesteyters Id" | Nei |
+| ServReport.ServReq.Reservation | ServiceRequest.Extension.OtherInfo | Label "Reservasjon" | Ja |
 | ServReport.ServReq.Comment | ServiceRequest.Note |  | Ja |
 
 ## Patient (Patient)
@@ -131,13 +131,13 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.OtherInfo |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.OtherInfo |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.OtherInfo | Label "Logistikk" | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.OtherInfo | Label "Produktprøve" | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate | Specimen.Collection.collectedDateTime |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Extension.OtherInfo |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Extension.OtherInfo | Label "Produktprøve" (sammenstilt med Type) | Ja |
 | ServReport.Patient.AnalysedSubject.Type | Specimen.Type | | Ja |
 | ServReport.Patient.AnalysedSubject.TypeCoded | Specimen.Type | Ikke alltid oppgitt. Implisitt med NLK-koder | Ja |
-| ServReport.Patient.AnalysedSubject.Number | specimen.Extension.OtherInfo | Kan vurdere å bruke container. Sjekk om dette skal overføre strukturert, eller legges i note når info ligger i meldingen | Ja |
+| ServReport.Patient.AnalysedSubject.Number | specimen.Extension.OtherInfo | Label "Antall prøveglass" | Ja |
 | ServReport.Patient.AnalysedSubject.AnatomicalOrigin | Specimen.Collection.BodySite |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByRequester | Specimen.Identifier |  | Ja |
 | ServReport.Patient.AnalysedSubject.IdByServProvider | Specimen.AccessionIdentifier | | Ja |
@@ -145,10 +145,10 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.AnalysedSubject.PreservMaterial | Specimen.Container.Additive |  | Ja |
 | ServReport.Patient.AnalysedSubject.SampleCollInd | NA |  |  |
 | ServReport.Patient.AnalysedSubject.SampleCollProc | Specimen.Collection.Method |  | Ja |
-| ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Extension.OtherInfo |  | Ja |
+| ServReport.Patient.AnalysedSubject.SampleHandling | Specimen.Extension.OtherInfo | Label "Håndtering av prøve" | Ja |
 | ServReport.Patient.AnalysedSubject.Accredited | Extension  | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.AnalysedSubject.AnalysedSubject | Nøstede prøver, ikke i bruk? |  |  |
-| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Extension.OtherInfo | Inneholder bla. faste/diett | Ja |
+| ServReport.Patient.AnalysedSubject.Pretreatment | Specimen.Extension.OtherInfo | Label "Forbehandling" | Ja |
 | ServReport.Patient.AnalysedSubject.RelServProv | Specimen.Collection.Collector? |  | Ja |
 
 ## ResultItem (Observation)
@@ -163,8 +163,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.ResultItem.TextResult.TextCode | Observation.Value | CodeableValue.Code | Ja |
 | ServReport.Patient.ResultItem.Interval | Observation.Value | Range | Ja |
 | ServReport.Patient.ResultItem.DateResult | Observation.Value | dateTime | Ja |
-| ServReport.Patient.ResultItem.StructuredInfo.Type | Observation.Extension.OtherInfo |  | Ja |
-| ServReport.Patient.ResultItem.StructuredInfo.CodedInfo | Observation.Extension.OtherInfo | Gjelder alle innholdtypene | Ja |
+| ServReport.Patient.ResultItem.StructuredInfo | Observation.Extension.OtherInfo | Label "Strukturert info" | Ja |
 | ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
@@ -173,15 +172,15 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note |  | Ja |
 | ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi |  | Ja |
 | ----------------"-------------------- | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Ja |
-| ----------------"-------------------- | Observation.Extension.OtherInfo |  | Ja |
+| ----------------"-------------------- | Observation.Extension.OtherInfo | Label "Undersøkelsesdato" | Ja |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
 | ServReport.Patient.ResultItem.StatusInvestigation | Observation.Status [(detaljer her)](#headObservationStatus)  |  | Ja |
-| ServReport.Patient.ResultItem.StatusChangeDate | Observation.Extension.OtherInfo |  | Ja |
-| ServReport.Patient.ResultItem.DescrDate | Observation.Extension.OtherInfo |  | Ja |
-| ServReport.Patient.ResultItem.CounterSignDate | Observation.Extension.OtherInfo |  | Ja |
-| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Extension.OtherInfo |  | Ja |
+| ServReport.Patient.ResultItem.StatusChangeDate | Observation.Extension.OtherInfo | Label "Statusendringsdato" | Ja |
+| ServReport.Patient.ResultItem.DescrDate | Observation.Extension.OtherInfo | Label "Beskrivelsesdato" | Ja |
+| ServReport.Patient.ResultItem.CounterSignDate | Observation.Extension.OtherInfo | Label "Kontrasignaturdato" | Ja |
+| ServReport.Patient.ResultItem.MedicalValidationDate | Observation.Extension.OtherInfo | Label "Medisinsk valideringsdato" | Ja |
 | ServReport.Patient.ResultItem.RefAnalysedSubject | Observation.Specimen | RefAnalysedSubject kan i følge standard inneholde referanser til flere AnalysedSubjects, men vi tror at dette ikke brukes i praksis. Vi vil derfor bare referere til ett AnalysedSubject.  | Ja |
 | ServReport.Patient.ResultItem.Accredited | Extension | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
