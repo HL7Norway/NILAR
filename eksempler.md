@@ -74,6 +74,7 @@ POST {baseUrl}/{resourceType}/_search
 <p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p
 
 <h4>C.1.1 Eksempel - Hopp over 50 DiagnosticReport og vis 10 DiagnosticReport for Gry Telokk</h4>
+
 POST BaseURL/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_count: 10</code> + <code>_skip: 50</code></p>
