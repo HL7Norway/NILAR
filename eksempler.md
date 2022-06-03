@@ -30,7 +30,7 @@ GET BaseURL/metadata
 
 <h2>Eksempler</h2>
 
-[https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#a-ressurstype](A. RessursType)
+[A. RessursType](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#a-ressurstype )
 
 <h3>A. RessursType</h3>
 
