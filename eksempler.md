@@ -72,7 +72,7 @@ POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 <h4>C.1. Format</h4>
 
 POST {baseUrl}/{resourceType}/_search
-<p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p
+<p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p>
 
 <h4>C.1.1. Eksempel - Hopp over 50 DiagnosticReport og vis 10 for Gry Telokk</h4>
 
