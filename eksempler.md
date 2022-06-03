@@ -38,7 +38,7 @@ GET BaseURL/metadata
 
 [D. Include med relaterte ressurser](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#d-include-med-relaterte-ressurser)
 
-[E Dato og datointervall](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#e-dato-og-datointervall)
+[E. Dato og datointervall](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#e-dato-og-datointervall)
 
 <h3>A. RessursType</h3>
 
