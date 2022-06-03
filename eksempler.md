@@ -80,7 +80,7 @@ POST BaseURL/DiagnosticReport/_search
 
 NOTE: "Total" vil fortsatt vise totalt antall DN for Gry Telokk. "Link>Self" vil reflektere spørringen. "Link" kan brukes til å navigere gjennom ressursene.
 
-<h3>C. Include på relater</h3>
+<h3>C. Include med relaterte ressurser</h3>
 
 <h4>4. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen</h4>
 POST BaseURL/DiagnosticReport/_search
