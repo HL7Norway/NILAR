@@ -8,7 +8,7 @@ Sist oppdatert 03.06.2022
 <h4>BaseURL</h4>
 <p>Endepunkt Azure (forbigå proxy) - http://51.13.121.9:5212/fhir/</p>
 <p>Endepunkt Azure - http://51.13.121.9:4141/proxy/</p>
-<p> OBS! Azure vil fases ut! </p>
+<p> <i> OBS! Azure vil fases ut! </i> </p>
 
 
 <p>Endepunkt privat sky (forbigå proxy) - https://test.nilar.nhn.no/fhir/ - i eksemplene omtalt som <b>BaseUrlFhir</b></p>
@@ -32,24 +32,24 @@ GET BaseURL/metadata
 <h2>DiagnosticReport</h2>
 
 <h4>1.1 Eksempel - Alle DN for Gry Telokk utenfor proxy</h4>
-POST <br>BaseUrlFhir</br>/DiagnosticReport/_search
+POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>tom</code></p>
 
 <h4>1.2 Eksempel - Alle DN for Gry Telokk via proxy</h4>
-POST <br>BaseUrlProxy</br>/DiagnosticReport/_search
+POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
 <p>body <code>tom</code></p>
 
 <h4>2.1 Eksempel - Spesifikk DN for Gry Telokk utenfor proxy</h4>
-POST <br>BaseUrlFhir</br>/DiagnosticReport_search
+POST <b>BaseUrlFhir</b>/DiagnosticReport_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_id: guid</code></p>
 
 <h4>2.2 Eksempel - Spesifikk DN for Gry Telokk via proxy</h4>
-POST <br>BaseUrlProxy</br>/DiagnosticReport/_search
+POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
