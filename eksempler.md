@@ -14,8 +14,6 @@ Sist oppdatert 03.06.2022
 <p>Endepunkt privat sky (forbigå proxy) - https://test.nilar.nhn.no/fhir/ - i eksemplene omtalt som <b>BaseUrlFhir</b></p>
 <p>Endepunkt privat sky - https://test.nilar.nhn.no/ - i eksemplene omtalt som <b>BaseUrlProxy</b></p>
 
-
-
 <h4>Headers</h4>
 <p>Nilar (forbigå proxy) krever header <code>x-nilar-patient</code> med pasient sitt fnr</p>
 <p>Nilar (via proxy) krever header <code>person-id</code> med pasient sitt fnr, <code>requester-id</code> med hpr-nummer (eventuelt hvem som spør (HelseNorge etc.) - brukes til å logge innsyn) og <code>Authorization</code> med helse-id token</p>
@@ -29,52 +27,63 @@ GET BaseURL/metadata
 <p>header <code>tom</code></p>
 <p>body <code>tom</code></p>
 
-<h2>DiagnosticReport</h2>
+<h2>Eksempler</h2>
 
-<h4>1.1 Eksempel - Alle DN for Gry Telokk utenfor proxy</h4>
+<h3>A. RessursType</h3>
+
+<h4>A.1. Format</h4>
+
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>tom</code></p>
+
+<h4>A.1.1. Eksempel - Alle DiagnosticReport for Gry Telokk utenfor proxy</h4>
 POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>tom</code></p>
 
-<h4>1.2 Eksempel - Alle DN for Gry Telokk via proxy</h4>
-POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
+<h4>A.1.2. Eksempel - Alle Observation for Gry Telokk via proxy</h4>
+POST <b>BaseUrlProxy</b>/Observation/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
 <p>body <code>tom</code></p>
 
-<h4>2.1 Eksempel - Spesifikk DN for Gry Telokk utenfor proxy</h4>
-POST <b>BaseUrlFhir</b>/DiagnosticReport_search
+<h3>B. Spesifikk ressurs</h3>
+
+<h4>B.1. Format</h4>
+
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>_id: {guid}</code></p>
+
+<h4>B.1.1. Eksempel - Spesifikk Specimen for Gry Telokk utenfor proxy</h4>
+POST <b>BaseUrlFhir</b>/Specimen_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_id: guid</code></p>
 
-<h4>2.2 Eksempel - Spesifikk DN for Gry Telokk via proxy</h4>
+<h4>B.1.2. Eksempel - Spesifikk DiagnosticReport for Gry Telokk via proxy</h4>
 POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
 <p>body <code>_id: guid</code></p>
-  
-<h4>3. Eksempel - Hopp over de første 50 DN og vis de neste 10 DN for Gry Telokk</h4>
+
+<h3>C. Skip og count</h3>
+
+<h4>C.1. Format</h4>
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p
+
+<h4>C.1.1 Eksempel - Hopp over de første 50 DiagnosticReport og vis de neste 10 DiagnosticReport for Gry Telokk</h4>
 POST BaseURL/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_count: 10</code> + <code>_skip: 50</code></p>
 
 NOTE: "Total" vil fortsatt vise totalt antall DN for Gry Telokk. "Link>Self" vil reflektere spørringen. "Link" kan brukes til å navigere gjennom ressursene.
 
+<h3>C. Include på relater</h3>
+
 <h4>4. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen</h4>
 POST BaseURL/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
 
-<h2>Observation</h2>
-
-<h4>1. Eksempel - Alle Observation for Gry Telokk</h4>
-POST BaseURL/Observation/_search
-<p>header <code>X-Nilar-Patient: 12057900499</code> </p>
-<p>body <code>tom</code></p>
-
-<h4>2. Eksempel - Alle Observation for Gry Telokk som inneholder en Mikroskopisk undersøkelse</h4>
-POST BaseURL/Observation/_search
-<p>header <code>X-Nilar-Patient: 12057900499</code> </p>
-<p>body <code>_tag: MI</code></p>
