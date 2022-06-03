@@ -1,6 +1,5 @@
 <h1>Eksempler på kall mot NILAR API (TEST-miljøer)</h1>
 Denne siden viser eksempler på API kall mot NILAR.
-
 Forebehold om at NILAR er under utvikling og eksemplene ikke nødvendigvis er up-to-date.
 
 Sist oppdatert 03.06.2022
