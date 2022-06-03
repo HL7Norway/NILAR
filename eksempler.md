@@ -8,8 +8,13 @@ Sist oppdatert 03.06.2022
 <h4>BaseURL</h4>
 <p>Endepunkt Azure (forbigå proxy) - http://51.13.121.9:5212/fhir/</p>
 <p>Endepunkt Azure - http://51.13.121.9:4141/proxy/</p>
+<p> OBS! Azure vil fases ut! </p>
+
+
 <p>Endepunkt privat sky (forbigå proxy) - https://test.nilar.nhn.no/fhir/</p>
 <p>Endepunkt privat sky - https://test.nilar.nhn.no/</p>
+
+
 
 <h4>Headers</h4>
 <p>Nilar (forbigå proxy) krever header <code>x-nilar-patient</code> med pasient sitt fnr</p>
