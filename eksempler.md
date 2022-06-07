@@ -93,7 +93,7 @@ NOTE: "Total" vil fortsatt vise totalt antall DN for Gry Telokk. "Link>Self" vil
 
 <h4>D.1. Format</h4>
 POST {baseUrl}/{resourceType}/_search
-<p>body <code>_include: DiagnosticReport:specimen</code></p>
+<p>body <code>_include: {relation}</code></p>
 
 <h4>D.1.1. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen utenfor proxy</h4>
 POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
@@ -109,5 +109,4 @@ POST {baseUrl}/{resourceType}/_search
 
 <h4>E.2. Format Datointervall</h4>
 POST {baseUrl}/{resourceType}/_search
-<p>body <code>date: gt{dato}</code></p>
-<p>body <code>date: lt{dato}</code></p>
+<p>body <code>date: gt{dato}</code> + <code>date: lt{dato}</code></p>
