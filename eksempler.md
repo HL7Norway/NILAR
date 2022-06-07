@@ -110,3 +110,8 @@ POST {baseUrl}/{resourceType}/_search
 <h4>E.2. Format Datointervall</h4>
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>date: gt{dato}</code> + <code>date: lt{dato}</code></p>
+
+<h4>E.2.1 Eksempel - Alle Observations for Gry Telokk i en fem dagers period i 2017</h4>
+POST <b>BaseUrlFhir</b>/Observation/_search
+<p>header <code>X-Nilar-Patient: 12057900499</code> </p>
+<p>body <code>date: gt2017-09-20</code> + <code>date: lt2017-09-25</code></p>
