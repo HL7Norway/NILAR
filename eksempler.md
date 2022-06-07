@@ -40,6 +40,8 @@ GET BaseURL/metadata
 
 [E. Dato og datointervall](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#e-dato-og-datointervall)
 
+[F. Søk på Meta Tag](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#f-søk-på-meta-tag)
+
 <h3>A. RessursType</h3>
 
 <h4>A.1. Format</h4>
@@ -115,3 +117,14 @@ POST {baseUrl}/{resourceType}/_search
 POST <b>BaseUrlFhir</b>/Observation/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>date: gt2017-09-20</code> + <code>date: lt2017-09-24</code></p>
+
+<h3>F. Søk på Meta Tag</h3>
+
+<h4>F.1. Format</h4>
+POST {baseUrl}/{resourceType}/_search
+<p>body <code>_tag: {code}</code></p>
+
+<h4>F.1.1 Eksempel - Søk på Observasjoner for Gry Telokk som inneholde Meta Tag "Funn og undersøkelsesresultater"</h4>
+POST <b>BaseUrlFhir</b>/Observation/_search
+<p>header <code>X-Nilar-Patient: 12057900499</code> </p>
+<p>body <code>_tag: FU</code></p>
