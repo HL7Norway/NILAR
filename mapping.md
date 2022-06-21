@@ -70,7 +70,8 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.ServType | DiagnosticReport.status [(detaljer her)](#headReportStatus) | Mappes sammen med ServReport.Status  | Ja |
-| ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. |  |
+| ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer.
+AA: Denne datoen må vises |  |
 | ServReport.ApprDate | DiagnosticReport.Extension.OtherInfo | Label "Godkjenningstidspunkt" | Ja |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
