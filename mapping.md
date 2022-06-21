@@ -225,11 +225,14 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
-DiagnosticReport.Status skal være en standard Fhir kode. Denne mappes fra en kombinasjon av ServType og Status i svarmeldingen:
+DiagnosticReport.Status skal være en standard Fhir kode fra Code System DiagnosticReportStatus. Verdier mappes fra en kombinasjon av  verdier fra ServType og Status i svarmeldingen:
 
-ServType, kodeverk 7309
-Status, kodeverk 7306
+Message/ServReport/ServType: Kodeverk 7309
+Message/ ServReport/Status: Kodeverk 7306
+
 DiagnosticReportStatus v4.3.0 (Code System)
+Referansesett som benyttes i mappingen
+
 | Code (HL7) | Visningsnavn | Definition |
 |-|-|-|
 | registered | Registrert | The existence of the report is registered, but there is nothing yet available|
@@ -239,17 +242,42 @@ DiagnosticReportStatus v4.3.0 (Code System)
 | appended | Tillegg | Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged |
 | unknown | Ukjent | The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which |
 
-|  | Planlagt (S) | Foreløpig rapport (P) | Endelig rapport (F) | Tillegg til rapport (A) | Kommentar |
+Mapping av verdier fra ServType og Status
+
+| 7309 / 7306 | Planlagt (S) | Foreløpig rapport (P) | Endelig rapport (F) | Tillegg til rapport (A) | Kommentar |
 |-|-|-|-|-|-|
-| N (Ny) | Registrert | Foreløpig | Endelig | Ukjent ||
-| M (Endret) | Endret | Endret | Endret | Tillegg ||
-| K (Kansellert) | Kansellert | Kansellert | Kansellert | Kansellert ||
-| H (Historikk) | Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
-| A /Tillegg) |Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
+| Ny (N) | Registrert | Foreløpig | Endelig | Ukjent ||
+| Endret (M) | Endret | Endret | Endret | Tillegg ||
+| Kansellert (M) | Kansellert | Kansellert | Kansellert | Kansellert ||
+| Historikk (H) | Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
+| Tillegg (A) |Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
 
 ## <a name="headObservationStatus"></a>Observation.Status AA: Denne må vi gå opp på nytt - Det er ServType som styrer denne infoen mest - 8245 kan gi tilleggsinfo - men dette er ikke et oblihgatorisk felt
-Observation.Status skal være en standard Fhir kode. Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
+Observation.Status skal være en standard Fhir kode fra ObservationReportStatus. Verdier mappes fra en kombinasjon av  verdier fra ServType og Status i R:Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
 av medisinske tjenester". Noen koder kombineres og noen blir unknown:
+Observation.Status skal være en standard Fhir kode. Denne mappes fra en kombinasjon av  verdier fra ServType og Status i svarmeldingen:
+
+Message/ServReport/Patient/ResultItem/ServType: Kodeverk 8270
+Message/ ServReport/Patient/ResultItem/StatusInvestigation: Kodeverk 8245
+
+ObservationStatus v4.3.0 (Code System)
+Referansesett som benyttes i mappingen
+
+| Code (HL7) | Visningsnavn | Definition |
+|-|-|-|
+| registered | Registrert | The existence of the observation is registered, but there is no result yet available
+ |
+| preliminary | Foreløpig | This is an initial or interim observation: data may be incomplete or unverified
+ |
+| final | Endelig | The observation is complete and there are no further actions needed. Additional information such "released", "signed", etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied.
+ |
+| amended | Endret | Subsequent to being Final, the observation has been modified subsequent. This includes updates/new information and corrections |
+| appended | Tillegg | Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged |
+| cancelled | Kansellert | 	The observation is unavailable because the measurement was not started or not completed (also sometimes called "aborted") |
+| unknown | Ukjent | The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which |
+
+
+
 | StatusInvestigation, kodeverk 8245 | Fhir |
 |-|-|
 | 1 (Revidert) | Corrected |
