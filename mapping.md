@@ -231,6 +231,7 @@ ServType, kodeverk 7309
 Status, kodeverk 7306
 DiagnosticReportStatus v4.3.0 (Code System)
 | Code (HL7) | Visningsnavn | Definition |
+|-|-|-|
 | registered | Registrert | The existence of the report is registered, but there is nothing yet available|
 | preliminary | Foreløpig | Verified early results are available, but not all results are final |
 | final | Endelig | The report is complete and verified by an authorized person |
