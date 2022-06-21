@@ -228,13 +228,13 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 DiagnosticReport.Status skal være en standard Fhir kode. Denne mappes fra en kombinasjon av ServType og Status i svarmeldingen:
 
 | ServType, kodeverk 7309 | Status, kodeverk 7306 | Fhir |
-|-|-|-|
-| N (Ny) | P (Foreløpig rapport) | preliminary |
-| N (Ny) | F (Endelig rapport) | final |
-| M (Endret) | | amended |
-| M (Endret) | A (Tillegg til rapport) | appended |
-| K (Kansellert) | | cancelled |
-| Andre | | unknown |
+|-|-|-|-|-|-|
+|  | S (Planlagt) | P (Foreløpig rapport) | (F) Endelig rapport | (A) Tillegg til rapport | Kommentar |
+| N (Ny) | Registrert | Foreløpig | Endelig | Ukjent ||
+| M (Endret) | Endret | Endret | Endret | Tillegg ||
+| K (Kansellert) | Kansellert | Kansellert | Kansellert | Kansellert ||
+| H (Historikk) | Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
+| A /Tillegg) |Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
 
 ## <a name="headObservationStatus"></a>Observation.Status AA: Denne må vi gå opp på nytt - Det er ServType som styrer denne infoen mest - 8245 kan gi tilleggsinfo - men dette er ikke et oblihgatorisk felt
 Observation.Status skal være en standard Fhir kode. Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
