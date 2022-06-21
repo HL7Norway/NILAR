@@ -227,9 +227,12 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
 DiagnosticReport.Status skal være en standard Fhir kode. Denne mappes fra en kombinasjon av ServType og Status i svarmeldingen:
 
-| ServType, kodeverk 7309 | Status, kodeverk 7306 | Fhir |
-|-|-|-|-|-|-|
+ServType, kodeverk 7309
+Status, kodeverk 7306
+Fhir 
+
 |  | S (Planlagt) | P (Foreløpig rapport) | (F) Endelig rapport | (A) Tillegg til rapport | Kommentar |
+|-|-|-|-|-|-|
 | N (Ny) | Registrert | Foreløpig | Endelig | Ukjent ||
 | M (Endret) | Endret | Endret | Endret | Tillegg ||
 | K (Kansellert) | Kansellert | Kansellert | Kansellert | Kansellert ||
