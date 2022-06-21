@@ -229,9 +229,16 @@ DiagnosticReport.Status skal være en standard Fhir kode. Denne mappes fra en ko
 
 ServType, kodeverk 7309
 Status, kodeverk 7306
-Fhir 
+DiagnosticReportStatus v4.3.0 (Code System)
+| Code (HL7) | Visningsnavn | Definition |
+| registered | Registrert | The existence of the report is registered, but there is nothing yet available|
+| preliminary | Foreløpig | Verified early results are available, but not all results are final |
+| final | Endelig | The report is complete and verified by an authorized person |
+| amended | Endret | Subsequent to being final, the report has been modified. This includes any change in the results, diagnosis, narrative text, or other content of a report that has been issued |
+| appended | Tillegg | Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged |
+| unknown | Ukjent | The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which |
 
-|  | S (Planlagt) | P (Foreløpig rapport) | (F) Endelig rapport | (A) Tillegg til rapport | Kommentar |
+|  | Planlagt (S) | Foreløpig rapport (P) | Endelig rapport (F) | Tillegg til rapport (A) | Kommentar |
 |-|-|-|-|-|-|
 | N (Ny) | Registrert | Foreløpig | Endelig | Ukjent ||
 | M (Endret) | Endret | Endret | Endret | Tillegg ||
