@@ -29,21 +29,19 @@ Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 ti
 Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i test-server. Denne er tilgjengelig og kan testes.
 
 #### Endepunkt
-- Nilar1: http://51.13.121.9:8080 Første løsning, basert på Vonk/FhirlyServer. Blir ikke lenger oppdatert, men nye meldinger vil komme inn.
+- Nilar1: http://51.13.121.9:8080 Første løsning, basert på Vonk/FhirlyServer. DEPRECATED.
   - For endepunkt med støtte for helseID, bruk port 4141 (http://51.13.121.9:4141)).
   - Ved bruk av Postman eller andre generiske verktøy må man spesifisere at man etterspør FHIR v4 objekter, ellers får man ingen treff. Dette kan gjøres ved å legge en Accept inn i headeren:
     -  `Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0`
-- Nilar2: http://51.13.121.9:5212 Ny løsning, oppdateres fortløpende.
+- Nilar2: http://51.13.121.9:5212 DEPRECATED.
   - Krever ikke Accept header, men krever derimot header to andre headere:
     - X-Nilar-Patient: pasientens personnummer
     - X-Nilar-Requester: HPR-nummer (brukes for sjekk mot personverninnstillinger)
+- Nilar3 (Privat sky): https://test.nilar.nhn.no Ny løsning, oppdateres fortløpende.
+  - Se [Eksempler](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md) for headers.
 
-#### Eksempelspørringer (id'er må byttes ut med noe man finner i databasen)
-- Generisk: [base]/\<Resource\>
-- Alle pasienter: http://51.13.121.9:8080/Patient
-- Enkelt pasient: http://51.13.121.9:8080/Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6
-- Søk etter pasient: http://51.13.121.9:8080/Patient?identifier=13116900216
-- Finmasket søk etter hemoglobinmålinger: http://51.13.121.9:8080/Observation?patient=Patient/cb4dc222-7eda-4e6d-beb4-6060d0738aa6&code:text=B-Hemoglobin
+#### Eksempelspørringer
+Se [Eksempler](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md)
 
 #### Testmeldinger
 Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her: https://www.nhn.no/samhandlingsplattform/nilar.
