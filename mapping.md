@@ -41,7 +41,7 @@ Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i t
   - Se [Eksempler](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md) for headers.
 
 #### Eksempelspørringer
-Se [Eksempler](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md)
+Se [Eksempler](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md).
 
 #### Testmeldinger
 Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her: https://www.nhn.no/samhandlingsplattform/nilar.
