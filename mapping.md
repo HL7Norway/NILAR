@@ -29,11 +29,11 @@ Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 ti
 Testmeldinger mappes med til enhver tid gjeldenede mappingkode og legges inn i test-server. Denne er tilgjengelig og kan testes.
 
 #### Endepunkt
-- Nilar1: http://51.13.121.9:8080 Første løsning, basert på Vonk/FhirlyServer. DEPRECATED.
+- Nilar1: http://51.13.121.9:8080 Første løsning, basert på Vonk/FhirlyServer. **DEPRECATED**.
   - For endepunkt med støtte for helseID, bruk port 4141 (http://51.13.121.9:4141)).
   - Ved bruk av Postman eller andre generiske verktøy må man spesifisere at man etterspør FHIR v4 objekter, ellers får man ingen treff. Dette kan gjøres ved å legge en Accept inn i headeren:
     -  `Accept : application/fhir+json; charset=utf-8; fhirVersion=4.0`
-- Nilar2: http://51.13.121.9:5212 DEPRECATED.
+- Nilar2: http://51.13.121.9:5212 **DEPRECATED**.
   - Krever ikke Accept header, men krever derimot header to andre headere:
     - X-Nilar-Patient: pasientens personnummer
     - X-Nilar-Requester: HPR-nummer (brukes for sjekk mot personverninnstillinger)
