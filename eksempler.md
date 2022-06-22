@@ -44,6 +44,10 @@ GET BaseURL/metadata
 
 [F. Søk på Meta Tag](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#f-søk-på-meta-tag)
 
+[G. DiagnosticReport med tilhørende ServiceRequest](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#g-diagnosticreport-med-tilhørende-servicerequest)
+
+[H. PractitionerRole for DiagnosticReport](https://github.com/HL7Norway/NILAR/blob/main/eksempler.md#h-practitionerrole-for-diagnosticreport)
+
 <h3>A. RessursType</h3>
 
 <h4>A.1. Format</h4>
@@ -131,16 +135,16 @@ POST <b>BaseUrlFhir</b>/Observation/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_tag: FU</code></p>
 
-<h3> DiagnosticReport med tilhørende ServiceRequest </h3>
+<h3>G. DiagnosticReport med tilhørende ServiceRequest</h3>
 
-<h4>F.1. Format</h4>
+<h4>G.1. Format</h4>
 POST {baseUrl}/DiagnosticReport/_search
 <p>body <code>_id : <guid></code></p>
 <p>body <code>_include : DiagnosticReport:based-on</code></p>
 
-<h3> PractitionerRole for DiagnosticReport </h3>
+<h3>H. PractitionerRole for DiagnosticReport</h3>
 
-<h4>F.1. Format</h4>
+<h4>H.1. Format</h4>
 POST {baseUrl}/DiagnosticReport/_search
 <p>body <code>_id : <guid></code></p>
 <p>body <code>_include : DiagnosticReport:based-on</code></p>
