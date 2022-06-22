@@ -16,8 +16,11 @@ Sist oppdatert 07.06.2022
 <p>Endepunkt privat sky - https://test.nilar.nhn.no/ - i eksemplene omtalt som <b>BaseUrlProxy</b></p>
 
 <h4>Headers</h4>
-<p>Nilar (forbigå proxy) krever header <code>x-nilar-patient</code> med pasient sitt fnr</p>
-<p>Nilar (via proxy) krever header <code>person-id</code> med pasient sitt fnr, <code>requester-id</code> med hpr-nummer (eventuelt hvem som spør (HelseNorge etc.) - brukes til å logge innsyn) og <code>Authorization</code> med helse-id token</p>
+<p>Nilar (forbigå proxy) krever header <br /> <code>x-nilar-patient</code> med pasient sitt fnr</p>
+<p>Nilar (via proxy) krever header <br />
+  <code>person-id</code> med pasient sitt fnr, <br />
+  <code>requester-id</code> med hpr-nummer <b>dersom det ikke angis i token under 'helseid://claims/hpr/hpr_number'</b>, og <br />
+  <code>Authorization</code> med helse-id token</p>
 NOTE: Headers gjelder ikke for <code>/metadata</code> der man får info om fhir-støtte som er implementert i APIet.
 
 <h4>Body</h4>
@@ -25,7 +28,6 @@ x-www-form-urlencoded
 
 <h2>Metadata</h2>
 GET BaseURL/metadata
-<p>header <code>tom</code></p>
 <p>body <code>tom</code></p>
 
 <h2>Eksempler</h2>
@@ -128,3 +130,18 @@ POST {baseUrl}/{resourceType}/_search
 POST <b>BaseUrlFhir</b>/Observation/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_tag: FU</code></p>
+
+<h3> DiagnosticReport med tilhørende ServiceRequest </h3>
+
+<h4>F.1. Format</h4>
+POST {baseUrl}/DiagnosticReport/_search
+<p>body <code>_id : <guid></code></p>
+<p>body <code>_include : DiagnosticReport:based-on</code></p>
+
+<h3> PractitionerRole for DiagnosticReport </h3>
+
+<h4>F.1. Format</h4>
+POST {baseUrl}/DiagnosticReport/_search
+<p>body <code>_id : <guid></code></p>
+<p>body <code>_include : DiagnosticReport:based-on</code></p>
+<p>body <code>_include:iterate : ServiceRequest:requester</code></p>
