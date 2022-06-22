@@ -2,7 +2,7 @@
 Denne siden viser eksempler på API kall mot NILAR.
 Forebehold om at NILAR er under utvikling og eksemplene ikke nødvendigvis er up-to-date.
 
-Sist oppdatert 07.06.2022
+Sist oppdatert 22.06.2022
 
 <h2>Basic</h2>
 
