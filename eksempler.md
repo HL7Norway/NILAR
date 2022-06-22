@@ -139,13 +139,13 @@ POST <b>BaseUrlFhir</b>/Observation/_search
 
 <h4>G.1. Format</h4>
 POST {baseUrl}/DiagnosticReport/_search
-<p>body <code>_id : <guid></code></p>
+<p>body <code>_id : guid</code></p>
 <p>body <code>_include : DiagnosticReport:based-on</code></p>
 
 <h3>H. PractitionerRole for DiagnosticReport</h3>
 
 <h4>H.1. Format</h4>
 POST {baseUrl}/DiagnosticReport/_search
-<p>body <code>_id : <guid></code></p>
+<p>body <code>_id : guid</code></p>
 <p>body <code>_include : DiagnosticReport:based-on</code></p>
 <p>body <code>_include:iterate : ServiceRequest:requester</code></p>
