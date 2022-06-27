@@ -74,7 +74,8 @@ AA: Denne datoen må vises |  |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
 | ServReport.Ack |  | NA | |
-| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" AA: Stemmer dette? Eller benyttes verdier fra 8202? Hovedinndeling fagområde er vel egentlig på Message/type | Ja |
+| ServReport.MsgDescr | DiagnosticReport.category | Nytt kodeverk "Hovedinndeling fagområde" (avledet fra 8202) | Ja |
+|  | DiagnosticReport.code | Koden fra 8202 | Ja |
 | ServReport.ServProvId | Identifier |  | Ja |
 | ServReport.Comment | Extention |  | Ja |
 | ServReport.CodedComment |  | Extension | Ja |
