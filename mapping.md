@@ -92,7 +92,7 @@ AA: Denne datoen må vises |  |
 | ServReport.ServReq.ReasonAsText.TextResultValue | ServiceRequest.reasonCode -> text |  | Ja |
 | ServReport.ServReq.ReasonAsText.TextCode |  | Ikke i bruk |  | |
 | ServReport.ServReq.PaymentCat | ServiceRequest.Extension.OtherInfo | Label "Betalingskategori" | Ja |
-| ServReport.ServReq.ReqComment | ServiceRequest.Note |  | Ja |
+| ServReport.ServReq.ReqComment | ServiceRequest.Note | Label "Rekvirentens kommentar" | Ja |
 | ServReport.ServReq.Ack |  | NA |  |
 | ServReport.ServReq.MsgDescr |  | NA, samme som i ServReport |  |
 | ServReport.ServReq.RequestedPrioReport | ServiceRequest.Extension.OtherInfo | Label "Ønsket svarrapporteringsprioritet" | Ja |
@@ -128,8 +128,8 @@ AA: Denne datoen må vises |  |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. |  | Ja |
 | -------------------"------------------ | Observation.Effective |  | Ja |
 | -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note |  | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note |  | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note | Label "Prøvetakers kommentar" | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note | Sammenstilles med CollectoComment | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.OtherInfo | Label "Logistikk" | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.OtherInfo | Label "Produktprøve" | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate | Specimen.Collection.collectedDateTime |  | Ja |
@@ -163,12 +163,12 @@ AA: Denne datoen må vises |  |
 | ServReport.Patient.ResultItem.Interval | Observation.Value | Range | Ja |
 | ServReport.Patient.ResultItem.DateResult | Observation.Value | dateTime | Ja |
 | ServReport.Patient.ResultItem.StructuredInfo | Observation.Extension.OtherInfo | Label "Strukturert info" | Ja |
-| ServReport.Patient.ResultItem.ServType |  | Styrer flyt ved mapping, mappes ikke |  |
+| ServReport.Patient.ResultItem.ServType | Observation.Status | Sammen med StatusInvestigation | Ja |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
 | ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
 | ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Ja |
-| ServReport.Patient.ResultItem.Investigation.Comment | Observation.Note |  | Ja |
+| ServReport.Patient.ResultItem.Investigation.Comment | Observation.Code | Label "Comment" | Ja |
 | ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi |  | Ja |
 | ----------------"-------------------- | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Ja |
 | ----------------"-------------------- | Observation.Extension.OtherInfo | Label "Undersøkelsesdato" | Ja |
@@ -184,7 +184,7 @@ AA: Denne datoen må vises |  |
 | ServReport.Patient.ResultItem.Accredited | Extension | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
-| ServReport.Patient.ResultItem.DiagComment | Observation.Extension.OtherInfo | Kandidat for å bli værende i Note? Avklares | Nei |
+| ServReport.Patient.ResultItem.DiagComment | Observation.Note | Label "Diagnostisk kommentar" | Ja |
 
 *) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
 
