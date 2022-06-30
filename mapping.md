@@ -79,7 +79,7 @@ AA: Denne datoen må vises |  |
 | ServReport.ServProvId | Identifier |  | Ja |
 | ServReport.Comment | Extention |  | Ja |
 | ServReport.CodedComment |  | Extension | Ja |
-| ServReport.RefDoc |  | Kan inneholde identifiserende informasjon, mappes ikke. Marør i Not om at RefDoc er fjernet | Nei |
+| ServReport.RefDoc |  | Kan inneholde identifiserende informasjon, mappes ikke. Markør i Not om at RefDoc er fjernet | Nei |
 | ServReport.Animal |  | NA |  |
 | ServReport.Material |  | NA |  |
 | ServReport.PaymentResponsible |  | NA |  |
@@ -97,8 +97,8 @@ AA: Denne datoen må vises |  |
 | ServReport.ServReq.Ack |  | NA |  |
 | ServReport.ServReq.MsgDescr |  | NA, samme som i ServReport |  |
 | ServReport.ServReq.RequestedPrioReport | ServiceRequest.Extension.OtherInfo | Label "Ønsket svarrapporteringsprioritet" | Ja |
-| ServReport.ServReq.ReceiptDate | ServiceRequest.Extension.OtherInfo | Label "Tidspunkt for mottak" | Nei |
-| ServReport.ServReq.IdByServProvider | ServiceRequest.Extension.OtherInfo | Label "Tjenesteyters Id" | Nei |
+| ServReport.ServReq.ReceiptDate | ServiceRequest.Extension.OtherInfo | Label "Tidspunkt for mottak" | Ja |
+| ServReport.ServReq.IdByServProvider | ServiceRequest.Extension.OtherInfo | Label "Tjenesteyters Id" | Ja |
 | ServReport.ServReq.Reservation | ServiceRequest.Extension.OtherInfo | Label "Reservasjon" | Ja |
 | ServReport.ServReq.Comment | ServiceRequest.Note |  | Ja |
 
@@ -222,6 +222,16 @@ Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Or
 | HCP.Address.Type |  | NA |  |
 | HCP.Address.TeleAddress | Practitioner.Telecom, Organization.TeleCom |  | Ja |
 
+## Datoer
+Det er mange datoer i både xml og fhir. De fleste mappes der det er naturlig, men særlig datoer på "overordnet" nivå avledes på ulike måter fra andre datoer. Dette er en oversikt over datoer med spesiell betydning utover sin spesifikke betydning.
+
+| Xml | Description | Fhir | Description |
+|-|-|-|-|
+| Message.GenDate | Meldingens dato. Denne brukes til å datere versjoner av rapporten. | DiagnosticReport.IssueDate | Rapportversjonens dato. |
+| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. | | Brukes ikke |
+| ServReq.IssueDate | Rekvisisjonsdato | ServiceRequest.AuthoredOn | |
+| AnalysedSubject.CollectedSample.CollectedDate | Prøvetakingsdato. Brukes som grunnlag for å angi gyldighetstidspunkt Observation. | DiagnosticReport.Effective, Observation.Effective| Hvilket tidspunkt gjelder denne Observation. Observasjoner innen en rapport kan ha ulik effective, den eldste av disse brukes som effective også på DiagnosticReport. |
+| ResultItem.InvDate | Undersøkelsesdato. Denne brukes som gyldighetstidspunkt for Observation når det ikke foreligger prøvetakingsdato (f.eks. røntgen). | DiagnosticReport.Effective, Observation.Effective | Samme som over. |
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
 DiagnosticReport.Status skal være en standard Fhir kode fra Code System DiagnosticReportStatus. Verdier mappes fra en kombinasjon av  verdier fra ServType og Status i svarmeldingen:
@@ -241,15 +251,16 @@ Referansesett som benyttes i mappingen
 | appended | Tillegg | Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged |
 | unknown | Ukjent | The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which |
 
-Mapping av verdier fra ServType og Status
+Mapping av verdier fra ServType og Status:
 
-| 7309 / 7306 | Planlagt (S) | Foreløpig rapport (P) | Endelig rapport (F) | Tillegg til rapport (A) | Kommentar |
+| 7306 / 7309 |	Ny (N) | Endring (M) | Kansellering (C) | Historikk (H) | Tillegg (A) |
 |-|-|-|-|-|-|
-| Ny (N) | Registrert | Foreløpig | Endelig | Ukjent ||
-| Endret (M) | Endret | Endret | Endret | Tillegg ||
-| Kansellert (M) | Kansellert | Kansellert | Kansellert | Kansellert ||
-| Historikk (H) | Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
-| Tillegg (A) |Ukjent | Ukjent | Ukjent | Ukjent | Ikke lovlig kode på svarrapportnivå |
+| Planlagt (S) | Registrert |	Endret | Kansellert | Ukjent | Ukjent |
+| Foreløpig rapport (P) | Foreløpig | Endret | Kansellert | Ukjent | Ukjent |
+| Endelig rapport (F) | Endelig | Endret | Kansellert | Ukjent | Ukjent |
+| Tillegg til rapport (A) | Ukjent | Tillegg |Kansellert | Ukjent | Ukjent |
+| Kommentar	|||| Ikke lovlig kode på svarrapportnivå | Ikke lovlig kode på svarrapportnivå |
+
 
 ## <a name="headObservationStatus"></a>Observation.Status AA: Denne må vi gå opp på nytt - Det er ServType som styrer denne infoen mest - 8245 kan gi tilleggsinfo - men dette er ikke et oblihgatorisk felt
 Observation.Status skal være en standard Fhir kode fra ObservationReportStatus. Verdier mappes fra en kombinasjon av  verdier fra ServType og Status i R:Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
@@ -264,32 +275,33 @@ Referansesett som benyttes i mappingen
 
 | Code (HL7) | Visningsnavn | Definition |
 |-|-|-|
-| registered | Registrert | The existence of the observation is registered, but there is no result yet available
- |
-| preliminary | Foreløpig | This is an initial or interim observation: data may be incomplete or unverified
- |
-| final | Endelig | The observation is complete and there are no further actions needed. Additional information such "released", "signed", etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied.
- |
+| registered | Registrert | The existence of the observation is registered, but there is no result yet available |
+| preliminary | Foreløpig | This is an initial or interim observation: data may be incomplete or unverified |
+| final | Endelig | The observation is complete and there are no further actions needed. Additional information such "released", "signed", etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied. |
 | amended | Endret | Subsequent to being Final, the observation has been modified subsequent. This includes updates/new information and corrections |
 | appended | Tillegg | Subsequent to being final, the report has been modified by adding new content. The existing content is unchanged |
 | cancelled | Kansellert | 	The observation is unavailable because the measurement was not started or not completed (also sometimes called "aborted") |
 | unknown | Ukjent | The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which |
 
+8245 / 8270 | Ny (N) | Endring (M) | Kansellering (C) | Historikk (H) | Tillegg (A) |
+|-|-|-|-|-|-|
+| | Endelig | Endret | Kansellert | Endelig | Endelig |
+| Revidert (1) |Ukjent | Endret | Kansellert | Endret | Ukjent |
+| Foreløpig (2) | Foreløpig | Endret | Kansellert | Foreløpig | Foreløpig |
+| Endelig (3) | Endelig | Endret | Kansellert | Endelig | Endelig |
+| Tillegg (4) | Endelig | Endret | Kansellert | Endelig | Endelig |
+| Henvisning registrert (5) | Registrert | Ukjent | Kansellert | Ukjent | Registrert |
+| Prosedyre registrert/planlagt (6) | Registrert | Registrert | Kansellert | Ukjent | Registrert |
+| Tildelt time (7) | Registrert | Registrert | Kansellert | Ukjent | Registrert |
+| Undersøkelse gjennomført (8) | Foreløpig | Ukjent | Kansellert | Ukjent | Foreløpig |
+| Diktert (9) | Foreløpig | Ukjent | Kansellert | Ukjent | Foreløpig |
+| Skrevet (usignert svar foreligger) (10) | Foreløpig | Ukjent | Kansellert | Ukjent | Foreløpig |
+| Signert (11) | Endelig | Endret | Kansellert | Ukjent | Endelig |
+| Korrigert (usignert tilleggsbeskrivelse foreligger) (12) | Ukjent | Endret | Kansellert | Ukjent | Foreløpig |
+| Signert korrigert/ tilleggsbeskrivelse foreligger (13) | Endelig | Endret | Kansellert | Ukjent | Endelig |
+| Undersøkelse slettet (14) | Ukjent | Ukjent | Kansellert | Ukjent | Ukjent |
+| I prosess (15) | Registrert | Registrert | Kansellert | Endelig | Registrert |
 
-
-| StatusInvestigation, kodeverk 8245 | Fhir |
-|-|-|
-| 1 (Revidert) | Corrected |
-| 2 (Foreløpig) | Preliminary |
-| 3 (Endelig) | Final |
-| 4 (Tillegg) | Amended |
-| 5 (Henvisning registrert) | Registered |
-| 6 (Prosedyrer registrert/planlagt) | Registered |
-| 7 (Tildelt time) | Registered
-| 12 (Korrigert) | Corrected |
-| 14 (Undersøkelse slettet) | Cancelled |
-| 15 (I prosess) | Registered
-| Andre | Unknown |
 
 ## Observation.Meta
 Søkbare koder ligger litt spredt forskjellige steder i svarrapportene:
