@@ -59,10 +59,10 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 |-|-|-|-|
 | Type |  | Dekkes av ServReport.MsgDescr |  |
 | MIGversion |  | Denne mappes ikke i FHIR  |  |
-| GenDate | DiagnosticReport.Issued |  | Ja |
-| MsgId | DiagnosticReport.Identifier (Use = Secondary) | Må med for å kunne brukes til sporing | Ja |
+| GenDate | DiagnosticReport.Issued |AA: Tidspunktet denne instansen av svarrapporten blir sendt  | Ja |
+| MsgId | DiagnosticReport.Identifier (Use = Secondary) | Må med for å kunne brukes til sporing AA: Denne tilhører kun denne instansen og kan ikke benyttes til sporing | Ja |
 
-*) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men ved endring kan det være at IssueDate har opprinnelig dato; da vil GenDate gi mer info om når endringsmeldingen ble sendt.
+*) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men ved endring kan det være at IssueDate har opprinnelig dato; da vil GenDate gi mer info om når endringsmeldingen ble sendt. AA: IssueDate er en kliniks viktig dato siden det er denne datoen EPJ-systemet har et forhols til. GenDate er et teknisk dato som blir produsert av meldingstjeneren. IssueDate må bevares i OtherInfo osm en viktig dato
 
 ## ServReport (Diagnostic Report)
 | XML | FHIR | Kommentar | Implementert |
