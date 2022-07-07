@@ -131,7 +131,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note | Label "Prøvetakers kommentar" | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note | Sammenstilles med CollectoComment | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.Logistics | Specimen.Extension.OtherInfo | Label "Logistikk" | Ja |
-| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.OtherInfo | Label "Produktprøve" | Ja |
+| ServReport.Patient.AnalysedSubject.CollectedStudyProduct.Type | Specimen.Extension.OtherInfo | Label "Produktprøve" AA: Feil ledetekst| Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.ProducedDate | Specimen.Collection.collectedDateTime |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedStudyProduct.RefRelatedProd | Specimen.Extension.OtherInfo | Label "Produktprøve" (sammenstilt med Type) | Ja |
 | ServReport.Patient.AnalysedSubject.Type | Specimen.Type | | Ja |
