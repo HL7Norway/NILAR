@@ -68,8 +68,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.ServType | DiagnosticReport.status [(detaljer her)](#headReportStatus) | Mappes sammen med ServReport.Status  | Ja |
-| ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer.
-AA: Denne datoen må vises |  |
+| ServReport.IssueDate |  | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. AA: Denne datoen må vises. Må vurdere om dette skal være DiagnosticReport.effectivDate. Forslag til ledetekst "Rapportdato" (?) | |
 | ServReport.ApprDate | DiagnosticReport.Extension.OtherInfo | Label "Godkjenningstidspunkt" | Ja |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
@@ -127,7 +126,7 @@ AA: Denne datoen må vises |  |
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. |  | Ja |
-| -------------------"------------------ | Observation.Effective |  | Ja |
+| -------------------"------------------ | Observation.Effective |AA: Denne blir feil. Holder å mappe datoen på riktig plass under Specimen   | AA: Feil Ja |
 | -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note | Label "Prøvetakers kommentar" | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note | Sammenstilles med CollectoComment | Ja |
@@ -166,13 +165,13 @@ AA: Denne datoen må vises |  |
 | ServReport.Patient.ResultItem.StructuredInfo | Observation.Extension.OtherInfo | Label "Strukturert info" | Ja |
 | ServReport.Patient.ResultItem.ServType | Observation.Status | Sammen med StatusInvestigation | Ja |
 | ServReport.Patient.ResultItem.RefInterval.Descr | Observation.ReferenceRange.Text |  | Ja |
-| ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT | Ja |
+| ServReport.Patient.ResultItem.Investigation.Id | Observation.Code | Sprikende bruk av DN og OT AA: DN skal benyttes når det er nasjonale kodeverk. OT skal benyttes for 8212 | Ja |
 | ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Code | Label "Comment" | Ja |
 | ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi |  | Ja |
 | ----------------"-------------------- | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Ja |
-| ----------------"-------------------- | Observation.Extension.OtherInfo | Label "Undersøkelsesdato" | Ja |
+| ----------------"-------------------- | Observation.Extension.OtherInfo AA: Denne blir feil. Mappes til Obeservation.Effectice uavhengig av type undersøkelse| Label "Undersøkelsesdato" | Ja AA: Feil mapping |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
 | ServReport.Patient.ResultItem.IdResultItem | Observation.Identifier | Denne må vi se mer på! Denne er ikke unik. Brukes også til intern kobling av resultater. | Ja |
 | ServReport.Patient.ResultItem.RefIdResultItem | Observation.hasMember |  | Ja |
@@ -185,9 +184,9 @@ AA: Denne datoen må vises |  |
 | ServReport.Patient.ResultItem.Accredited | Extension | (midlertidig duplisert, skal bort fra Note) | Ja |
 | ServReport.Patient.ResultItem.ResultItem | Observation.hasMember? Observation.derivedFrom? Observation.component? | Nøstet ResultItem | Ja |
 | ServReport.Patient.ResultItem.RelServProv | Observation.Performer. Hentes fra ServReport.RelServProv om den ikke finnes |  | Ja |
-| ServReport.Patient.ResultItem.DiagComment | Observation.Note | Label "Diagnostisk kommentar" | Ja |
+| ServReport.Patient.ResultItem.DiagComment | Observation.Note | Label "Diagnostisk kommentar" AA: Tror "klinisk kommentar" er en bedre ledetekst | Ja |
 
-*) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold.
+*) Når DN og OT har ulik verdi vises "OT (DN)", ellers OT eller DN etter hvilken som har innhold. AA: DN skal vises for alle nasjonale kodeverk. OT skal vises ved kodeverk 8212. Ellers skal DN vises
 
 ## <a name="headActors"></a>Aktører knyttet til en melding
 Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressurser, men trekkes ut og brukes til å lage ResourceReference's, som brukes relevante steder.
@@ -199,7 +198,7 @@ Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressu
 | ServProvider ("Avsender") | Brukes som Performer om RelServProv mangler |  | Ja |
 | Requester ("Mottaker") | ServiceRequest.Requester | Dersom ResponsibleHcp mangler | Ja |
 | RelServProv ("Utfører/Ansvarlig") | DiagnosticReport.Performer, Observation.Performer |  | Ja |
-| CopyDest ("Kopimottaker") | NA |  |  |
+| CopyDest ("Kopimottaker") | NA | AA: Må dokumentere at opplysninger om kopimottakere ikke blir vist i Psientens prøvessvar |  |
 
 ### Mapping
 Aktører kan ha mange ulike konstallasjoner. De mappes til Practitioner eller Organization. I noen tilfeller blir det en av hver da xml gjerne oppgir person knyttet til virksomhet.
