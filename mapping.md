@@ -78,7 +78,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ServReport.ServProvId | Identifier |  | Ja |
 | ServReport.Comment | Extention |  | Ja |
 | ServReport.CodedComment |  | Extension | Ja |
-| ServReport.RefDoc |  | Kan inneholde identifiserende informasjon, mappes ikke. Markør i Not om at RefDoc er fjernet | Nei |
+| ServReport.RefDoc |  | Kan inneholde identifiserende informasjon, mappes ikke. Legger inn Comment om at RefDoc er fjernet | Ja |
 | ServReport.Animal |  | NA |  |
 | ServReport.Material |  | NA |  |
 | ServReport.PaymentResponsible |  | NA |  |
