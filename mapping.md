@@ -68,7 +68,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.ServType | DiagnosticReport.status [(detaljer her)](#headReportStatus) | Mappes sammen med ServReport.Status  | Ja |
-| ServReport.IssueDate | DiagnosticReport.Extension.OtherInfo? | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. AA: Denne datoen må vises. Må vurdere om dette skal være DiagnosticReport.effectivDate. Forslag til ledetekst "Rapportdato" (?). IY: høres ut som denne bør være egen extension. AA: Foreslår at vi avventer med egen extension. Må ha litt erfaringer fra utprøvingen| Nei |
+| ServReport.IssueDate | DiagnosticReport.Extension.OtherInfo | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. AA: Denne datoen må vises. Må vurdere om dette skal være DiagnosticReport.effectivDate. Forslag til ledetekst "Rapportdato" (?). IY: høres ut som denne bør være egen extension. AA: Foreslår at vi avventer med egen extension. Må ha litt erfaringer fra utprøvingen. Foreløpig konklusjon: OtherOnfo, label "Rapportdato" | Ja |
 | ServReport.ApprDate | DiagnosticReport.Extension.OtherInfo | Label "Godkjenningstidspunkt" | Ja |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
