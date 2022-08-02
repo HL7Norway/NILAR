@@ -68,7 +68,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.ServType | DiagnosticReport.status [(detaljer her)](#headReportStatus) | Mappes sammen med ServReport.Status  | Ja |
-| ServReport.IssueDate | DiagnosticReport.Extension.OtherInfo? | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. AA: Denne datoen må vises. Må vurdere om dette skal være DiagnosticReport.effectivDate. Forslag til ledetekst "Rapportdato" (?). IY: høres ut som denne bør være egen extension. | Nei |
+| ServReport.IssueDate | DiagnosticReport.Extension.OtherInfo? | Dato for opprettelse av rapporten. Beholdes selv om det kommer oppdateringer. Bruker derfor Message.GenDate for å få dato på endringer. AA: Denne datoen må vises. Må vurdere om dette skal være DiagnosticReport.effectivDate. Forslag til ledetekst "Rapportdato" (?). IY: høres ut som denne bør være egen extension. AA: Foreslår at vi avventer med egen extension. Må ha litt erfaringer fra utprøvingen| Nei |
 | ServReport.ApprDate | DiagnosticReport.Extension.OtherInfo | Label "Godkjenningstidspunkt" | Ja |
 | ServReport.Status | DiagnosticReport.status [(detaljer her)](#headReportStatus) |Mappes sammen med ServReport.ServType  | Ja |
 | ServReport.CancellationCode |  | Brukes ikke | |
@@ -126,7 +126,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | XML | FHIR | Kommentar | Implementert |
 |-|-|-|-|
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectedDate | Specimen.Collection.collectedDateTime. |  | Ja |
-| -------------------"------------------ | Observation.Effective |AA: Denne blir feil. Holder å mappe datoen på riktig plass under Specimen   | AA: Feil Ja |
+| -------------------"------------------ | Observation.Effective |   | AA: Feil Ja |
 | -------------------"------------------ | DiagnosticReport.Effective (tidligste Observation.Effective) |  | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorComment | Specimen.Note | Label "Prøvetakers kommentar" | Ja |
 | ServReport.Patient.AnalysedSubject.CollectedSample.CollectorCommentCoded | Specimen.Note | Sammenstilles med CollectoComment | Ja |
@@ -169,7 +169,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 | ----------------"------------------ | Observation.Category | Mapping basert på kode og kodeverk | Ja |
 | ServReport.Patient.ResultItem.Investigation.Spec | Observation.Method | Må kunne skilles fra Id i Code | Ja |
 | ServReport.Patient.ResultItem.Investigation.Comment | Observation.Code | Label "Comment" | Ja |
-| ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi |  | Ja |
+| ServReport.Patient.ResultItem.InvDate | Observation.Effective ved radiologi | AA: Tror vi skal vurdere å legge denne datoen i "OtherInfo", men det er et punkt vi kan ta opp med SAG. Og vi må ta en avskjekk med patologene om undersøkelsesdato er viktig å formidle ut | Ja |
 | ----------------"-------------------- | DiagnosticReport.Effective ved radiologi (tidligste Observation.Effective) |  | Ja |
 | ----------------"-------------------- | Observation.Extension.OtherInfo AA: Denne blir feil. Mappes til Obeservation.Effectice uavhengig av type undersøkelse| Label "Undersøkelsesdato" | Ja AA: Feil mapping |
 | ServReport.Patient.ResultItem.DevResultInd | Observation.Interpretation |  | Ja |
