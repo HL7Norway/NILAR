@@ -228,7 +228,7 @@ Det er mange datoer i både xml og fhir. De fleste mappes der det er naturlig, m
 | Xml | Description | Fhir | Description |
 |-|-|-|-|
 | Message.GenDate | Meldingens dato. Denne brukes til å datere versjoner av rapporten. | DiagnosticReport.IssueDate | Rapportversjonens dato. |
-| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. | | Brukes ikke |
+| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. | OtherInfo | Info |
 | ServReq.IssueDate | Rekvisisjonsdato | ServiceRequest.AuthoredOn | |
 | AnalysedSubject.CollectedSample.CollectedDate | Prøvetakingsdato. Brukes som grunnlag for å angi gyldighetstidspunkt Observation. | DiagnosticReport.Effective, Observation.Effective| Hvilket tidspunkt gjelder denne Observation. Observasjoner innen en rapport kan ha ulik effective, den eldste av disse brukes som effective også på DiagnosticReport. |
 | ResultItem.InvDate | Undersøkelsesdato. Denne brukes som gyldighetstidspunkt for Observation når det ikke foreligger prøvetakingsdato (f.eks. røntgen). | DiagnosticReport.Effective, Observation.Effective | Samme som over. |
