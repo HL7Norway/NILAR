@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: diagnostic.report.nilar
-canonical: http://hl7.fhir.no/nilar
+canonical: http://hl7.no/fhir/nilar
 name: DiagnosticReportIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI

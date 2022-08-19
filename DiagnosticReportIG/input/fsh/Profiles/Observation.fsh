@@ -3,6 +3,7 @@ Parent: Observation
 Description: "Observation as used in Nilar, referenced from DiagnosticReportNilar."
 * basedOn 0..0
 * partOf 0..0
+* status from ObservationStatus_VS
 * category from Expertise_VS
 * category 0..1
 * code from InvestigationId_VS
@@ -20,7 +21,7 @@ Description: "Observation as used in Nilar, referenced from DiagnosticReportNila
 * bodySite 0..0
 * method from InvestigationSpec_VS
 * device 0..0
-* referenceRange 0..1
+* referenceRange
   * type 0..0
   * appliesTo 0..0
   * age 0..0
