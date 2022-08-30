@@ -13,3 +13,16 @@ Alias: $Kodeverk_8244 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244
 Alias: $Kodeverk_8271 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271
 Alias: $Kodeverk_8340 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340
 Alias: $Kodeverk_8351 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351
+
+Alias: $NamingSystem_FNR = urn:oid:2.16.578.1.12.4.1.4.1
+Alias: $NamingSystem_DNR = urn:oid:2.16.578.1.12.4.1.4.2
+Alias: $NamingSystem_FHNR = urn:oid:2.16.578.1.12.4.1.4.3
+Alias: $NamingSystem_HPR = urn:oid:2.16.578.1.12.4.1.4.4
+Alias: $NamingSystem_HER = urn:oid:2.16.578.1.12.4.1.2
+Alias: $NamingSystem_DUF = urn:oid:2.16.578.1.12.4.1.4.5
+Alias: $NamingSystem_ENH = urn:oid:2.16.578.1.12.4.1.4.101
+Alias: $NamingSystem_RESH = urn:oid:2.16.578.1.12.4.1.4.102
+Alias: $NamingSystem_AKO = urn:oid:2.16.578.1.12.4.1.4.107
+
+Alias: $NamingSystem_IdByServProv = IdByServiceProvider
+Alias: $NamingSystem_IdByRequester = IsByRequester

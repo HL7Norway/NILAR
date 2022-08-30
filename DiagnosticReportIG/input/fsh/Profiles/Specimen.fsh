@@ -1,27 +1,26 @@
-Profile: SpecimenNilar
+Profile: NilarSpecimen
 Parent: Specimen
-Description: "Specimen as used in Nilar, referenced from DiagnosticReportNilar and ObservationNilar."
+Description: "Specimen as used in Nilar, referenced from NilarDiagnosticReport and NilarObservation."
+* identifier ^definition = "External identifiers of the specimen. Generally not global, may be internal to a specific report or requester."
+  * system MS
+  * system from IdProvider_VS
+  * value MS
+* accessionIdentifier ^definition = "In Nilar this identifier is identical to identifier.IdByServiceProvider."
 * accessionIdentifier 1..1
-* status 0..0
-* type 
+* type from SpecimenType_VS
 * subject only Reference(Patient)
-* subject 1..1
-* receivedTime 0..0
-* parent 0..0
-* request 0..0
+* subject MS
+  * display MS
+  * identifier MS
+    * system from PublicIdType_VS
+    * system MS
+    * value MS
 * collection 1..1
   * collector only Reference(PractitionerRole)
   * collected[x] only dateTime
   * collected[x] 1..1
-  * fastingStatus[x] 0..0
-* processing 0..0
 * container 0..1
-  * identifier 0..0
-  * description 0..0
-  * type 0..0
-  * capacity 0..0
-  * specimenQuantity 0..0
+  * additive[x] ^definition = "Material added to preserve the specimen."
   * additive[x] only CodeableConcept
-* condition 0..0
 * extension contains Accredited named accredited 0..1
 * extension contains OtherInfo named otherinfo 0..*

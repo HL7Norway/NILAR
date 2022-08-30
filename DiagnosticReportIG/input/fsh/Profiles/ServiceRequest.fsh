@@ -1,32 +1,20 @@
-Profile: ServiceRequestNilar
+Profile: NilarServiceRequest
 Parent: ServiceRequest
-Description: "ServiceRecuest as used in Nilar, referenced from DiagnosticReportNilar."
-* instantiatesCanonical 0..0
-* instantiatesUri 0..0
-* basedOn 0..0
-* replaces 0..0
-* requisition 0..0
-* category 0..0
-* priority 0..0
-* doNotPerform 0..0
-* code 0..0
-* orderDetail 0..0
-* quantity[x] 0..0
+Description: "ServiceRecuest as used in Nilar, referenced from NilarDiagnosticReport."
+* identifier ^definition = "External identifiers of the request. Generally not global, may be internal to a specific report or requester."
+  * system MS
+  * system from IdProvider_VS
+  * value MS
 * subject only Reference(Patient)
-* encounter 0..0
-* occurrence[x] 0..0
-* asNeeded[x] 0..0
+* subject MS
+  * display MS
+  * identifier MS
+    * system from PublicIdType_VS
+    * system MS
+    * value MS
+* requester ^definition = "The person and/or organization responsible for the request. Typically the doctor in charge of the patient (e.g. fastlege)."
 * requester only Reference(PractitionerRole)
-* performerType 0..0
-* performer 0..0
-* locationCode 0..0
-* locationReference 0..0
+* reasonCode ^definition = "Codes and/or text ientifying the reason for making the request."
 * reasonCode from RequestReason_VS
-* reasonReference 0..0
-* insurance 0..0
-* supportingInfo 0..0
-* specimen 0..0
-* bodySite 0..0
-* patientInstruction 0..0
-* relevantHistory 0..0
+* specimen ^definition = "The specimens appended to the request."
 * extension contains OtherInfo named otherinfo 0..*

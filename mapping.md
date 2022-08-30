@@ -59,7 +59,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 |-|-|-|-|
 | Type |  | Dekkes av ServReport.MsgDescr |  |
 | MIGversion |  | Denne mappes ikke i FHIR  |  |
-| GenDate | DiagnosticReport.Issued | Tidspunktet denne instansen av svarrapporten blir sendt  | Ja |
+| GenDate | DiagnosticReport.Issued, Observation.Issued | Tidspunktet denne instansen av svarrapporten blir sendt  | Ja |
 | MsgId | DiagnosticReport.Identifier (Use = Secondary) | Må med for å kunne brukes til sporing ved spærsmål/problem rundt meldingsflyten | Ja |
 
 *) GenDate er meldingens dato og samsvarer normalt med ServReport.IssueDate. Men i endringsmeldinger skal IssueDate beholde opprinnelig dato. GenDate gi mer info om når endringsmeldingen ble sendt og brukes som "versjonsdato". IssueDate er en klinisk viktig dato siden det er denne datoen EPJ-systemet har et forhold til. GenDate er et teknisk dato som blir produsert av meldingstjeneren. IssueDate må bevares i OtherInfo som en viktig dato
@@ -262,7 +262,7 @@ Mapping av verdier fra ServType og Status:
 | Kommentar	|||| Ikke lovlig kode på svarrapportnivå | Ikke lovlig kode på svarrapportnivå |
 
 
-## <a name="headObservationStatus"></a>Observation.Status AA: Denne må vi gå opp på nytt - Det er ServType som styrer denne infoen mest - 8245 kan gi tilleggsinfo - men dette er ikke et oblihgatorisk felt
+## <a name="headObservationStatus"></a>Observation.Status
 Observation.Status skal være en standard Fhir kode fra ObservationReportStatus. Verdier mappes fra en kombinasjon av  verdier fra ServType og Status i R:Denne matcher ikke helt kodeverk 8245 "Status for resultat i svarrapportering
 av medisinske tjenester". Noen koder kombineres og noen blir unknown:
 Observation.Status skal være en standard Fhir kode. Denne mappes fra en kombinasjon av  verdier fra ServType og Status i svarmeldingen:
