@@ -25,4 +25,4 @@ Alias: $NamingSystem_RESH = urn:oid:2.16.578.1.12.4.1.4.102
 Alias: $NamingSystem_AKO = urn:oid:2.16.578.1.12.4.1.4.107
 
 Alias: $NamingSystem_IdByServProv = IdByServiceProvider
-Alias: $NamingSystem_IdByRequester = IsByRequester
+Alias: $NamingSystem_IdByRequester = IdByRequester
