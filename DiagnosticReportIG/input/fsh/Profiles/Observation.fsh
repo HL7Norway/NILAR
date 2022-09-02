@@ -1,5 +1,6 @@
 Profile: NilarObservation
 Parent: Observation
+Id: nilar-observation
 Description: "Observation as used in Nilar, referenced from NilarDiagnosticReport."
 * identifier ^definition = "External identifiers of the observation. Generally not global, may be internal to a specific report."
   * system MS

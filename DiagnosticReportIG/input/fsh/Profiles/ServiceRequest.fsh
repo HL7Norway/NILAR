@@ -1,5 +1,6 @@
 Profile: NilarServiceRequest
 Parent: ServiceRequest
+Id: nilar-service-request
 Description: "ServiceRecuest as used in Nilar, referenced from NilarDiagnosticReport."
 * identifier ^definition = "External identifiers of the request. Generally not global, may be internal to a specific report or requester."
   * system MS
