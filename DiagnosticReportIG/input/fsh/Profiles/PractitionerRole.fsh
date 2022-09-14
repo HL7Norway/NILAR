@@ -1,5 +1,5 @@
 Profile: NilarPractitionerRole
-Parent: PractitionerRole
+Parent: NoBasisPractitionerRole
 Id: nilar-practitioner-role
 Description: "PractitionerRole as used in Nilar. Used to combine actors of type Practitioner and Organization. Practitioner and Organization are referenced by their Identifier."
 * practitioner ^definition = "Reference to Practitioner. May come from a direct mapping from or from a fallback in original message."

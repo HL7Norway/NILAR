@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hl7.fhir.no.basis": "2.1.1"
+  }
+}

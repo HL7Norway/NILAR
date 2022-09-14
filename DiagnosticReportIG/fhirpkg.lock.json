@@ -1,0 +1,14 @@
+{
+  "updated": "2022-09-14T12:40:06.3163974+02:00",
+  "dependencies": {
+    "hl7.fhir.no.basis": "2.1.1",
+    "hl7.fhir.core": "4.0.1",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {
+    "hl7.fhir.r3.core": "4.0.1",
+    "hl7.fhir.r3.examples": "4.0.1",
+    "hl7.fhir.r3.expansions": "4.0.1",
+    "hl7.fhir.r3.elements": "4.0.1"
+  }
+}
