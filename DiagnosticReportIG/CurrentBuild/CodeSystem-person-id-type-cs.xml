@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="person-id-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.4<a name="person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.464"> </a></td><td>HPR</td><td>Helsepersonell-nummer</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.2<a name="person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.5<a name="person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.465"> </a></td><td>DUF</td><td>DUF-nummer</td></tr></table></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs"/>
+  <version value="0.1.0"/>
+  <name value="PersonIdType_CS"/>
+  <title value="Person Id Type CS"/>
+  <status value="active"/>
+  <date value="2022-09-28T07:59:31+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Id types used to identify persons involved, other than the patient."/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+    <display value="HPR"/>
+    <definition value="Helsepersonell-nummer"/>
+  </concept>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.2"/>
+    <display value="HER"/>
+    <definition value="HER-id"/>
+  </concept>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.4.5"/>
+    <display value="DUF"/>
+    <definition value="DUF-nummer"/>
+  </concept>
+</CodeSystem>

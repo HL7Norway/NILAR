@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "organization-id-type-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.2<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.101<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46101\"> </a></td><td>ENH</td><td>Enhetsregisteret - Brønnøysund</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.102<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46102\"> </a></td><td>RESH</td><td>enheter i spesialisthelsetjenesten</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.107<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46107\"> </a></td><td>AKO</td><td>Apotekenes konsesjonsnummer</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "OrganizationIdType_CS"];
+  fhir:CodeSystem.title [ fhir:value "Organization Id Type CS"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-09-28T07:59:31+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "urn:oid:2.16.578.1.12.4.1.2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HER" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "HER-id" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ENH" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Enhetsregisteret - Brønnøysund" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RESH" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "enheter i spesialisthelsetjenesten" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AKO" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Apotekenes konsesjonsnummer" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

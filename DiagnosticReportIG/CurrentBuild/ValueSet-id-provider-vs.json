@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "id-provider-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-id-provider-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</code></a></li></ul></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/ValueSet/id-provider-vs",
+  "version": "0.1.0",
+  "name": "IdProvider_VS",
+  "title": "Id Provider VS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "description": "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs"
+      }
+    ]
+  }
+}

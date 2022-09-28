@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="main-expertise-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>LAB</td><td>Laboratoriemedisin</td></tr><tr><td>PAT</td><td>Patologi</td></tr><tr><td>BLD</td><td>Bildediagnostikk</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/main-expertise-vs"/>
+  <version value="0.1.0"/>
+  <name value="MainExpertise_VS"/>
+  <title value="Main Expertise VS"/>
+  <status value="active"/>
+  <date value="2022-09-28T07:59:31+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="The main type of labaratory expertise expressed in a DiagnosticReport."/>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"/>
+      <concept>
+        <code value="LAB"/>
+        <display value="Laboratoriemedisin"/>
+      </concept>
+      <concept>
+        <code value="PAT"/>
+        <display value="Patologi"/>
+      </concept>
+      <concept>
+        <code value="BLD"/>
+        <display value="Bildediagnostikk"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

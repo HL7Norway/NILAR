@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="organization-it-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-organization-id-type-cs.html"><code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="OrganizationItType_VS"/>
+  <title value="Organization It Type VS"/>
+  <status value="active"/>
+  <date value="2022-09-28T07:59:31+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Id types for organizations involved in DiagnosticReport/Observation"/>
+  <compose>
+    <include>
+      <system value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"/>
+    </include>
+  </compose>
+</ValueSet>

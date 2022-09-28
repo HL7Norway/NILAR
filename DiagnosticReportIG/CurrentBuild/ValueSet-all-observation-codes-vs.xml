@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="all-observation-codes-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-investigation-id-vs.html">http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs</a></li><li>Import all the codes that are contained in <a href="ValueSet-observation-result-vs.html">http://nhn.no/fhir/nilar/ValueSet/observation-result-vs</a></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs"/>
+  <version value="0.1.0"/>
+  <name value="AllObservationCodes_VS"/>
+  <title value="All Observation Codes VS"/>
+  <status value="active"/>
+  <date value="2022-09-28T07:59:31+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search."/>
+  <compose>
+    <include>
+      <valueSet value="http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://nhn.no/fhir/nilar/ValueSet/observation-result-vs"/>
+    </include>
+  </compose>
+</ValueSet>

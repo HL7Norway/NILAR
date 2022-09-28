@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-id-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.2<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.101<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46101"> </a></td><td>ENH</td><td>Enhetsregisteret - Brønnøysund</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.102<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46102"> </a></td><td>RESH</td><td>enheter i spesialisthelsetjenesten</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.107<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46107"> </a></td><td>AKO</td><td>Apotekenes konsesjonsnummer</td></tr></table></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"/>
+  <version value="0.1.0"/>
+  <name value="OrganizationIdType_CS"/>
+  <title value="Organization Id Type CS"/>
+  <status value="active"/>
+  <date value="2022-09-28T07:59:31+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.2"/>
+    <display value="HER"/>
+    <definition value="HER-id"/>
+  </concept>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+    <display value="ENH"/>
+    <definition value="Enhetsregisteret - Brønnøysund"/>
+  </concept>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+    <display value="RESH"/>
+    <definition value="enheter i spesialisthelsetjenesten"/>
+  </concept>
+  <concept>
+    <code value="urn:oid:2.16.578.1.12.4.1.4.107"/>
+    <display value="AKO"/>
+    <definition value="Apotekenes konsesjonsnummer"/>
+  </concept>
+</CodeSystem>

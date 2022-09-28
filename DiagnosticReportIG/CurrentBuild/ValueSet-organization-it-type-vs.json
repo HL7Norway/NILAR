@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "organization-it-type-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-organization-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code></a></li></ul></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
+  "version": "0.1.0",
+  "name": "OrganizationItType_VS",
+  "title": "Organization It Type VS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "description": "Id types for organizations involved in DiagnosticReport/Observation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"
+      }
+    ]
+  }
+}

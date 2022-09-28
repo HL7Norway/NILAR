@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "organization-id-type-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.2<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.101<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46101\"> </a></td><td>ENH</td><td>Enhetsregisteret - Brønnøysund</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.102<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46102\"> </a></td><td>RESH</td><td>enheter i spesialisthelsetjenesten</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.107<a name=\"organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46107\"> </a></td><td>AKO</td><td>Apotekenes konsesjonsnummer</td></tr></table></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
+  "version": "0.1.0",
+  "name": "OrganizationIdType_CS",
+  "title": "Organization Id Type CS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "urn:oid:2.16.578.1.12.4.1.2",
+      "display": "HER",
+      "definition": "HER-id"
+    },
+    {
+      "code": "urn:oid:2.16.578.1.12.4.1.4.101",
+      "display": "ENH",
+      "definition": "Enhetsregisteret - Brønnøysund"
+    },
+    {
+      "code": "urn:oid:2.16.578.1.12.4.1.4.102",
+      "display": "RESH",
+      "definition": "enheter i spesialisthelsetjenesten"
+    },
+    {
+      "code": "urn:oid:2.16.578.1.12.4.1.4.107",
+      "display": "AKO",
+      "definition": "Apotekenes konsesjonsnummer"
+    }
+  ]
+}

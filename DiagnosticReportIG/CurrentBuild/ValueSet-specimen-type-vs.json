@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "specimen-type-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8216</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351</code></li></ul></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
+  "version": "0.1.0",
+  "name": "SpecimenType_VS",
+  "title": "Specimen Type VS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "description": "Type og material in specimen.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212"
+      },
+      {
+        "system": "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8216"
+      },
+      {
+        "system": "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351"
+      }
+    ]
+  }
+}

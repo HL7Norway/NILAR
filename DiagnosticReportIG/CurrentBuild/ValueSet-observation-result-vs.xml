@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="observation-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340</code></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/observation-result-vs"/>
+  <version value="0.1.0"/>
+  <name value="ObservationResult_VS"/>
+  <title value="Observation Result VS"/>
+  <status value="active"/>
+  <date value="2022-09-28T07:59:31+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes used to convey textual result values."/>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat"/>
+    </include>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp"/>
+    </include>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243"/>
+    </include>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271"/>
+    </include>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "id-provider-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">IdByServiceProvider<a name=\"id-provider-cs-IdByServiceProvider\"> </a></td><td>IdByServProv</td><td>Id created by service provider (laboratory etc.)</td></tr><tr><td style=\"white-space:nowrap\">IdByRequester<a name=\"id-provider-cs-IdByRequester\"> </a></td><td>IdByRequester</td><td>Id created by requester (GP etc.)</td></tr></table></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs",
+  "version": "0.1.0",
+  "name": "IdProvider_CS",
+  "title": "Id Provider CS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "description": "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "IdByServiceProvider",
+      "display": "IdByServProv",
+      "definition": "Id created by service provider (laboratory etc.)"
+    },
+    {
+      "code": "IdByRequester",
+      "display": "IdByRequester",
+      "definition": "Id created by requester (GP etc.)"
+    }
+  ]
+}

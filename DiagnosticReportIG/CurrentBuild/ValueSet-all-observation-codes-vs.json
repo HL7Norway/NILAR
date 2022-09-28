@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "all-observation-codes-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-investigation-id-vs.html\">http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-observation-result-vs.html\">http://nhn.no/fhir/nilar/ValueSet/observation-result-vs</a></li></ul></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
+  "version": "0.1.0",
+  "name": "AllObservationCodes_VS",
+  "title": "All Observation Codes VS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "description": "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs"
+        ]
+      }
+    ]
+  }
+}

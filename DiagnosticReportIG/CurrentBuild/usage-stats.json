@@ -1,0 +1,142 @@
+{
+  "package": "diagnostic.report.nilar",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited",
+      "title": "Accredited",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment",
+      "title": "Comment",
+      "types": [
+        "Annotation",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref",
+      "title": "Diagnostic Report Ref",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-history",
+      "title": "History",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info",
+      "title": "Other Info",
+      "types": [
+        "Annotation"
+      ]
+    }
+  ],
+  "profiles": {
+    "DiagnosticReport": [
+      {
+        "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report",
+        "title": "NilarDiagnosticReport"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation",
+        "title": "NilarObservation"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-practitioner-role",
+        "title": "NilarPractitionerRole"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-service-request",
+        "title": "NilarServiceRequest"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-specimen",
+        "title": "NilarSpecimen"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited": [
+      "Observation",
+      "Specimen"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment": [
+      "DiagnosticReport"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref": [
+      "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-history": [
+      "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info": [
+      "DiagnosticReport",
+      "Observation",
+      "ServiceRequest",
+      "Specimen"
+    ]
+  }
+}

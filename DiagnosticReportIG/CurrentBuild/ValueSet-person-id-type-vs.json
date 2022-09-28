@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "person-id-type-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-person-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code></a></li></ul></div>"
+  },
+  "url": "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
+  "version": "0.1.0",
+  "name": "PersonIdType_VS",
+  "title": "Person Id Type VS",
+  "status": "active",
+  "date": "2022-09-28T07:59:31+00:00",
+  "publisher": "Norsk helsenett - Nilar",
+  "contact": [
+    {
+      "name": "Norsk helsenett - Nilar",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nhn.no"
+        }
+      ]
+    }
+  ],
+  "description": "Id types used to identify persons involved, other than the patient.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"
+      },
+      {
+        "system": "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs"
+      }
+    ]
+  }
+}
