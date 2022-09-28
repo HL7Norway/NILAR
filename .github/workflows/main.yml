@@ -1,0 +1,55 @@
+name: NILAR-gh-pages
+
+on:
+  workflow_dispatch:
+
+env:
+  IG: DiagnosticReportIG
+
+# The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
+# https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # Persist the FHIR Package Cache between runners.
+      # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
+      - name: 🗂️ Cache FHIR Packages
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.fhir/packages
+          key: fhir-packages
+
+      # Persist the IG Publisher input-cache between runners.
+      # Doc: https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html#igroot-input-cache
+      - name: 🗂️ Cache IG Publisher input-cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ${{ env.IG }}/input-cache
+          key: ig-publisher-input-cache    
+
+      - name: make script executable
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: chmod 774 install-no-basis-snapshots.sh
+
+      # The script installs no-basis and runs the IG build process
+      - name: run the docker script
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ./install-no-basis-snapshots.sh ${{ env.IG }}
+
+      # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
+      # This will overwrite the currently published HTML page.
+      - name: 🚀 Deploy to GitHub-Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: igs/${{ env.IG }}/output
+          destination_dir: igs/${{ env.IG }}/CurrentBuild
+          exclude_assets: '**.zip,**.tgz,**.pack'
+          commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}'
