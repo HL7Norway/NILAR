@@ -195,7 +195,7 @@ Der er flere aktører i meldingen, med ulike roller. Disse mappes ikke som ressu
 | ResponsibleHcp ("Rekvirent") | ServiceRequest.Requester |  | Ja |
 | Requester ("Mottaker") | Brukes som Requester om ResponsibleHcp mangler | Mappes ikke separat utover mulig bruk som utfyllende info for ResponsibleHcp | Ja |
 | ServProvider ("Avsender") | Brukes som Performer om RelServProv mangler | Mappes ikke separat utover mulig bruk som utfyllende info for RelServProv | Ja |
-| RelServProv ("Utfører/Ansvarlig") | DiagnosticReport.Performer, Observation.Performer |  | Ja |
+| RelServProv ("Utfører/Ansvarlig") | DiagnosticReport.Performer, Observation.Performer, Specimen.Collector |  | Ja |
 | CopyDest ("Kopimottaker") | NA | Mappes ikke |  |
 
 Requester, ServProvider og CopyDest er ikke aktører knyttet til prøvesvaret, men kommunikasjonsparter ved utlevering av svaret. Disse mappes ikke i Fhir da Fhir handler om meldingens innhold og aktører knyttet til innholdet.
@@ -227,11 +227,13 @@ Det er mange datoer i både xml og fhir. De fleste mappes der det er naturlig, m
 
 | Xml | Description | Fhir | Description |
 |-|-|-|-|
-| Message.GenDate | Meldingens dato. Denne brukes til å datere versjoner av rapporten. | DiagnosticReport.IssueDate | Rapportversjonens dato. |
-| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. | OtherInfo | Info |
+| Message.GenDate | Meldingens dato. Denne brukes til å datere versjoner av rapporten. | DiagnosticReport.IssueDate. IYR - dette er feil:Observation.Effective om ingen annen dato er angitt. | Rapportversjonens dato. |
+| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. IYR -  skal være: Observation.Effective om ingen annen dato er angitt.| OtherInfo | Info |
 | ServReq.IssueDate | Rekvisisjonsdato | ServiceRequest.AuthoredOn | |
 | AnalysedSubject.CollectedSample.CollectedDate | Prøvetakingsdato. Brukes som grunnlag for å angi gyldighetstidspunkt Observation. | DiagnosticReport.Effective, Observation.Effective| Hvilket tidspunkt gjelder denne Observation. Observasjoner innen en rapport kan ha ulik effective, den eldste av disse brukes som effective også på DiagnosticReport. |
 | ResultItem.InvDate | Undersøkelsesdato. Denne brukes som gyldighetstidspunkt for Observation når det ikke foreligger prøvetakingsdato (f.eks. røntgen). | DiagnosticReport.Effective, Observation.Effective | Samme som over. |
+
+**Merk**: Dersom ingen av kildene for Observation.Effective har verdi brukes meldingsdato (GenDate).
 
 ## <a name="headReportStatus"></a>DiagnosticReport.Status
 DiagnosticReport.Status skal være en standard Fhir kode fra Code System DiagnosticReportStatus. Verdier mappes fra en kombinasjon av  verdier fra ServType og Status i svarmeldingen:
