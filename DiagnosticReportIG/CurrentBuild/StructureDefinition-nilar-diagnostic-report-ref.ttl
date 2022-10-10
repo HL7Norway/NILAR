@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DiagnosticReportRef"];
   fhir:StructureDefinition.title [ fhir:value "Diagnostic Report Ref"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-28T07:59:31+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-10T09:03:48+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Norsk helsenett - Nilar"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

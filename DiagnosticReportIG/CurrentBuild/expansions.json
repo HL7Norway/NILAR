@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8eacb92c-bd9a-46ad-9d27-7e9034a8b9e0",
+  "id" : "0b60d929-ebd8-4634-bc06-491f480b3f65",
   "meta" : {
-    "lastUpdated" : "2022-09-28T07:59:31.115+00:00"
+    "lastUpdated" : "2022-10-10T09:03:48.720+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "IdProvider_VS",
       "title" : "Id Provider VS",
       "status" : "active",
-      "date" : "2022-09-28T07:59:31+00:00",
+      "date" : "2022-10-10T09:03:48+00:00",
       "publisher" : "Norsk helsenett - Nilar",
       "contact" : [{
         "name" : "Norsk helsenett - Nilar",
@@ -30,8 +30,8 @@
       }],
       "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers.",
       "expansion" : {
-        "identifier" : "urn:uuid:d9235e12-53f9-428a-9695-ad4a5dfb6a12",
-        "timestamp" : "2022-09-28T07:59:46+00:00",
+        "identifier" : "urn:uuid:90d23a92-018c-4657-9d20-a3974b1a6bbe",
+        "timestamp" : "2022-10-10T09:04:12+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -68,7 +68,7 @@
       "name" : "OrganizationItType_VS",
       "title" : "Organization It Type VS",
       "status" : "active",
-      "date" : "2022-09-28T07:59:31+00:00",
+      "date" : "2022-10-10T09:03:48+00:00",
       "publisher" : "Norsk helsenett - Nilar",
       "contact" : [{
         "name" : "Norsk helsenett - Nilar",
@@ -79,8 +79,8 @@
       }],
       "description" : "Id types for organizations involved in DiagnosticReport/Observation",
       "expansion" : {
-        "identifier" : "urn:uuid:3b3a79de-d438-41db-bf11-08cb8ef557dc",
-        "timestamp" : "2022-09-28T07:59:46+00:00",
+        "identifier" : "urn:uuid:6f37cb67-cfb5-4a16-a033-b7feebdf08f0",
+        "timestamp" : "2022-10-10T09:04:14+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -127,7 +127,7 @@
       "name" : "PersonIdType_VS",
       "title" : "Person Id Type VS",
       "status" : "active",
-      "date" : "2022-09-28T07:59:31+00:00",
+      "date" : "2022-10-10T09:03:48+00:00",
       "publisher" : "Norsk helsenett - Nilar",
       "contact" : [{
         "name" : "Norsk helsenett - Nilar",
@@ -138,8 +138,8 @@
       }],
       "description" : "Id types used to identify persons involved, other than the patient.",
       "expansion" : {
-        "identifier" : "urn:uuid:d06894ca-710c-4da1-8e7b-1a9706a98e2f",
-        "timestamp" : "2022-09-28T07:59:46+00:00",
+        "identifier" : "urn:uuid:02cb213d-ef9e-4a8e-883a-7569a1280eb6",
+        "timestamp" : "2022-10-10T09:04:14+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -200,7 +200,7 @@
       "name" : "PublicIdType_VS",
       "title" : "PublicIdType_VS",
       "status" : "active",
-      "date" : "2022-09-28T07:59:31+00:00",
+      "date" : "2022-10-10T09:03:48+00:00",
       "publisher" : "Norsk helsenett - Nilar",
       "contact" : [{
         "name" : "Norsk helsenett - Nilar",
@@ -211,8 +211,8 @@
       }],
       "description" : "Id types used to identify patients",
       "expansion" : {
-        "identifier" : "urn:uuid:62c44e1b-b697-4d02-b764-6884b59d1ec2",
-        "timestamp" : "2022-09-28T07:59:46+00:00",
+        "identifier" : "urn:uuid:cfda205f-eb1f-4010-af94-1d30ebba7d5c",
+        "timestamp" : "2022-10-10T09:04:14+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

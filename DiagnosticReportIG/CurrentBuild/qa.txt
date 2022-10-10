@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 49, info = 6
-IG Publisher Version: 1.2.4
-Generated Wed Sep 28 08:00:13 UTC 2022. FHIR version 4.0.1 for diagnostic.report.nilar#0.1.0 (canonical = http://nhn.no/fhir/nilar)
+IG Publisher Version: 1.2.5
+Generated Mon Oct 10 09:04:33 UTC 2022. FHIR version 4.0.1 for diagnostic.report.nilar#0.1.0 (canonical = http://nhn.no/fhir/nilar)
  Build Errors : 6 / 2 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-id-provider-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 3 / 2
@@ -36,31 +36,31 @@ Generated Wed Sep 28 08:00:13 UTC 2022. FHIR version 4.0.1 for diagnostic.report
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs : 0 / 2 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/organization-id-type-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 662, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 801, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 656, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 795, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 375, column 1054: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 390, column 1929: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 685, column 1054: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 700, column 1929: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 == fsh-generated/resources/CodeSystem-id-provider-cs.json ==
 INFORMATION: CodeSystem/id-provider-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/id-provider-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/id-provider-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/id-provider-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/id-provider-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-organization-id-type-cs.json ==
 INFORMATION: CodeSystem/organization-id-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-person-id-type-cs.json ==
 INFORMATION: CodeSystem/person-id-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/person-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/person-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/person-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/person-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-public-id-type-cs.json ==
 INFORMATION: CodeSystem/public-id-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/public-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/public-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/public-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/public-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar.json ==
 == fsh-generated/resources/StructureDefinition-nilar-accredited.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited'): The Implementation Guide contains no examples for this extension

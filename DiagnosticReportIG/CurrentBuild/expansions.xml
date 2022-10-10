@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8eacb92c-bd9a-46ad-9d27-7e9034a8b9e0"/>
+  <id value="0b60d929-ebd8-4634-bc06-491f480b3f65"/>
   <meta>
-    <lastUpdated value="2022-09-28T07:59:31.115+00:00"/>
+    <lastUpdated value="2022-10-10T09:03:48.720+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -69,7 +69,7 @@
         <name value="IdProvider_VS"/>
         <title value="Id Provider VS"/>
         <status value="active"/>
-        <date value="2022-09-28T07:59:31+00:00"/>
+        <date value="2022-10-10T09:03:48+00:00"/>
         <publisher value="Norsk helsenett - Nilar"/>
         <contact>
           <name value="Norsk helsenett - Nilar"/>
@@ -80,8 +80,8 @@
         </contact>
         <description value="Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers."/>
         <expansion>
-          <identifier value="urn:uuid:d9235e12-53f9-428a-9695-ad4a5dfb6a12"/>
-          <timestamp value="2022-09-28T07:59:46+00:00"/>
+          <identifier value="urn:uuid:90d23a92-018c-4657-9d20-a3974b1a6bbe"/>
+          <timestamp value="2022-10-10T09:04:12+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -196,7 +196,7 @@
         <name value="OrganizationItType_VS"/>
         <title value="Organization It Type VS"/>
         <status value="active"/>
-        <date value="2022-09-28T07:59:31+00:00"/>
+        <date value="2022-10-10T09:03:48+00:00"/>
         <publisher value="Norsk helsenett - Nilar"/>
         <contact>
           <name value="Norsk helsenett - Nilar"/>
@@ -207,8 +207,8 @@
         </contact>
         <description value="Id types for organizations involved in DiagnosticReport/Observation"/>
         <expansion>
-          <identifier value="urn:uuid:3b3a79de-d438-41db-bf11-08cb8ef557dc"/>
-          <timestamp value="2022-09-28T07:59:46+00:00"/>
+          <identifier value="urn:uuid:6f37cb67-cfb5-4a16-a033-b7feebdf08f0"/>
+          <timestamp value="2022-10-10T09:04:14+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -369,7 +369,7 @@
         <name value="PersonIdType_VS"/>
         <title value="Person Id Type VS"/>
         <status value="active"/>
-        <date value="2022-09-28T07:59:31+00:00"/>
+        <date value="2022-10-10T09:03:48+00:00"/>
         <publisher value="Norsk helsenett - Nilar"/>
         <contact>
           <name value="Norsk helsenett - Nilar"/>
@@ -380,8 +380,8 @@
         </contact>
         <description value="Id types used to identify persons involved, other than the patient."/>
         <expansion>
-          <identifier value="urn:uuid:d06894ca-710c-4da1-8e7b-1a9706a98e2f"/>
-          <timestamp value="2022-09-28T07:59:46+00:00"/>
+          <identifier value="urn:uuid:02cb213d-ef9e-4a8e-883a-7569a1280eb6"/>
+          <timestamp value="2022-10-10T09:04:14+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -506,7 +506,7 @@
         <name value="PublicIdType_VS"/>
         <title value="PublicIdType_VS"/>
         <status value="active"/>
-        <date value="2022-09-28T07:59:31+00:00"/>
+        <date value="2022-10-10T09:03:48+00:00"/>
         <publisher value="Norsk helsenett - Nilar"/>
         <contact>
           <name value="Norsk helsenett - Nilar"/>
@@ -517,8 +517,8 @@
         </contact>
         <description value="Id types used to identify patients"/>
         <expansion>
-          <identifier value="urn:uuid:62c44e1b-b697-4d02-b764-6884b59d1ec2"/>
-          <timestamp value="2022-09-28T07:59:46+00:00"/>
+          <identifier value="urn:uuid:cfda205f-eb1f-4010-af94-1d30ebba7d5c"/>
+          <timestamp value="2022-10-10T09:04:14+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
