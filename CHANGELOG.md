@@ -9,3 +9,6 @@
 * Rydde opp i url for extensions: http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info etc.
 * Utelat History-extension når de bare er del av en komplett rapport. Tra kun med History-extension når den sendes sammen med oppdatering. (Basert på IdResultItem, kan være en skjør betingelse når IdResultItem mangler).
 
+11.10.2022
+
+* Timeout mot PVK-API satt ned fra 60s til 5s.
