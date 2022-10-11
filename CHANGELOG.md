@@ -12,3 +12,4 @@
 11.10.2022
 
 * Timeout mot PVK-API satt ned fra 60s til 5s.
+* Ytelsesforbedrelse (ca 200ms per request)
