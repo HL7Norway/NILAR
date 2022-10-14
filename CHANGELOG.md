@@ -12,4 +12,8 @@
 11.10.2022
 
 * Timeout mot PVK-API satt ned fra 60s til 5s.
-* Ytelsesforbedrelse (ca 200ms per request)
+* Ytelsesforbedrelse (ca 200ms-600ms per request)
+
+14.10.2022
+
+* API krever organisasjon for requester som del av helse-id token.
