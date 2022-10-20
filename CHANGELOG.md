@@ -24,5 +24,5 @@
 * QA og Prod kjører på helsenettet
 
 20.10.2022
-* Bugfix: Datofeil på kansellering. Lagt inn fallback til servReport.IssueDate dersom det ikke finnes Observations å hente dato fra.
-* Bugfix: Datofeil på endringsmelding uten klokkeslett eller nær midnatt. Ble gjort om til GMT, som i slike tilfeller endrer dato.
+* Bugfix (#46471): Datofeil på kansellering. Lagt inn fallback til servReport.IssueDate dersom det ikke finnes Observations å hente dato fra.
+* Bugfix (#46517): Datofeil på endringsmelding uten klokkeslett eller nær midnatt. Ble gjort om til GMT, som i slike tilfeller endrer dato.

@@ -12,7 +12,7 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * category ^definition = "Expertise (fagområde) for the investigation and value of this observation."
 * category from Expertise_VS
 * category 0..1
-* code ^definition = "The investigations involved in this obeservation."
+* code ^definition = "The investigations involved in this observation."
 * code from InvestigationId_VS
 * subject only Reference(Patient)
 * subject MS
