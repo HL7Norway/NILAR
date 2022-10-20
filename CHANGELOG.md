@@ -23,6 +23,6 @@
 * API krever ikke organisasjon for requester som del av token da det ikke støttes i produksjon av helse-id
 * QA og Prod kjører på helsenettet
 
-19.10.2022
-* Bugfix: Datofeil på kansellering. Lagt inn fallback til servReport.IssueDate dersom CollectedEffective ikke er satt
-* Bugfix: Datofeil endringsmelding mottat av Fürst
+20.10.2022
+* Bugfix: Datofeil på kansellering. Lagt inn fallback til servReport.IssueDate dersom det ikke finnes Observations å hente dato fra.
+* Bugfix: Datofeil på endringsmelding uten klokkeslett eller nær midnatt. Ble gjort om til GMT, som i slike tilfeller endrer dato.
