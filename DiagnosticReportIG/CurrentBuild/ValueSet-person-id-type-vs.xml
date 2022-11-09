@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-public-id-type-cs.html"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li><li>Include all codes defined in <a href="CodeSystem-person-id-type-cs.html"><code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code></a></li></ul></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="PersonIdType_VS"/>
   <title value="Person Id Type VS"/>
   <status value="active"/>
-  <date value="2022-10-10T09:03:48+00:00"/>
+  <date value="2022-11-09T12:26:10+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

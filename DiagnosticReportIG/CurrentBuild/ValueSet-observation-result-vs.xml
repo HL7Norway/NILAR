@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340</code></li></ul></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ValueSet/observation-result-vs"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="ObservationResult_VS"/>
   <title value="Observation Result VS"/>
   <status value="active"/>
-  <date value="2022-10-10T09:03:48+00:00"/>
+  <date value="2022-11-09T12:26:10+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

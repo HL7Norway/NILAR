@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.1<a name=\"public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461\"> </a></td><td>FNR</td><td>Fødselsnummer</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.2<a name=\"public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462\"> </a></td><td>DNR</td><td>D-nummer</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.3<a name=\"public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463\"> </a></td><td>FHNR</td><td>Felles hjelpenummer</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.version [ fhir:value "0.1.1"];
   fhir:CodeSystem.name [ fhir:value "PublicIdType_CS"];
   fhir:CodeSystem.title [ fhir:value "Public Id Type CS"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-10-10T09:03:48+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-11-09T12:26:10+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"];
   fhir:CodeSystem.contact [
      fhir:index 0;

@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.version [ fhir:value "0.1.1"];
   fhir:ValueSet.name [ fhir:value "PublicIdType_VS"];
   fhir:ValueSet.title [ fhir:value "PublicIdType_VS"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-10-10T09:03:48+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-11-09T12:26:10+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"];
   fhir:ValueSet.contact [
      fhir:index 0;

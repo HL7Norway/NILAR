@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-id-provider-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</code></a></li></ul></div>"
   },
   "url": "http://nhn.no/fhir/nilar/ValueSet/id-provider-vs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "IdProvider_VS",
   "title": "Id Provider VS",
   "status": "active",
-  "date": "2022-10-10T09:03:48+00:00",
+  "date": "2022-11-09T12:26:10+00:00",
   "publisher": "Norsk helsenett - Nilar",
   "contact": [
     {

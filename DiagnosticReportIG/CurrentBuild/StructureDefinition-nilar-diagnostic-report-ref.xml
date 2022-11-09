@@ -10,11 +10,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="DiagnosticReportRef"/>
   <title value="Diagnostic Report Ref"/>
   <status value="active"/>
-  <date value="2022-10-10T09:03:48+00:00"/>
+  <date value="2022-11-09T12:26:10+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

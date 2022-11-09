@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.4<a name=\"person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.464\"> </a></td><td>HPR</td><td>Helsepersonell-nummer</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.2<a name=\"person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.5<a name=\"person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.465\"> </a></td><td>DUF</td><td>DUF-nummer</td></tr></table></div>"
   },
   "url": "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "PersonIdType_CS",
   "title": "Person Id Type CS",
   "status": "active",
-  "date": "2022-10-10T09:03:48+00:00",
+  "date": "2022-11-09T12:26:10+00:00",
   "publisher": "Norsk helsenett - Nilar",
   "contact": [
     {

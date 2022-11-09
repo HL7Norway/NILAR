@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">IdByServiceProvider<a name="id-provider-cs-IdByServiceProvider"> </a></td><td>IdByServProv</td><td>Id created by service provider (laboratory etc.)</td></tr><tr><td style="white-space:nowrap">IdByRequester<a name="id-provider-cs-IdByRequester"> </a></td><td>IdByRequester</td><td>Id created by requester (GP etc.)</td></tr></table></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="IdProvider_CS"/>
   <title value="Id Provider CS"/>
   <status value="active"/>
-  <date value="2022-10-10T09:03:48+00:00"/>
+  <date value="2022-11-09T12:26:10+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

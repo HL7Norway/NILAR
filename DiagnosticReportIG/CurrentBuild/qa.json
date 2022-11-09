@@ -2,10 +2,10 @@
   "url": "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
   "name": "DiagnosticReportIG",
   "package-id": "diagnostic.report.nilar",
-  "ig-ver": "0.1.0",
-  "date": "Mon, 10 Oct, 2022 09:03:48 +0000",
+  "ig-ver": "0.1.1",
+  "date": "Wed, 09 Nov, 2022 12:26:10 +0000",
   "errs": 0,
-  "warnings": 49,
+  "warnings": 53,
   "hints": 6,
   "version": "4.0.1",
   "tool": "5.0.0-ballot (3)"

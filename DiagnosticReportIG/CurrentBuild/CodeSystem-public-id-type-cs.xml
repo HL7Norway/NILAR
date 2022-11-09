@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.1<a name="public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461"> </a></td><td>FNR</td><td>Fødselsnummer</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.2<a name="public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462"> </a></td><td>DNR</td><td>D-nummer</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.3<a name="public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463"> </a></td><td>FHNR</td><td>Felles hjelpenummer</td></tr></table></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="PublicIdType_CS"/>
   <title value="Public Id Type CS"/>
   <status value="active"/>
-  <date value="2022-10-10T09:03:48+00:00"/>
+  <date value="2022-11-09T12:26:10+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
