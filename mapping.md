@@ -12,7 +12,7 @@ Kolonnene value og attributes inneholder eksempelverdier fra en [svarmelding](sv
 Tilbakemeldinger på dokumentet kan sendes til nilar@nhn.no.
 
 ### Levetid på dokumentet
-Dette dokumentet gjelder frem til vi får på plass profilering av FHIR ressursene. Vi antar at det vil være på plass i løpet av Q4 2021.
+Dette dokumentet gjelder mappingen mellom meldinger på xml-format og tilsvarende representasjon i Fhir. Det er et supplement til Fhir-profileringen, som ventes ferdig Q1 2023, og vil i en eller annen form leve parallelt med denne.
 
 ### Svarrapport 1.3 og 1.4
 Mappingen er basert på svarrapport 1.4. Det er svært små endringer fra 1.3 til 1.4 og det legges til grunn at disse ikke er relevante for oppsettet nedenfor. I koden for mapping forventes de å være enkle å håndtere, men foreløpig er det ikke funnet eksempler der endringene er relevante.
