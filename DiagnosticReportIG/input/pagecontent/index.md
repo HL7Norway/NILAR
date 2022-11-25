@@ -9,7 +9,7 @@ Svarmeldingene oppstår i laboratoriene og det er ingen kobling til denne IG ved
 Nilar vil bestrebe seg på å levere data ihht. denne IG, men variasjon som legges inn i svarmeldingene der de oppstår gjør at det kan forekomme data som ikke oppfyller alle krav i denne IG. I den grad slike varianter er kjent er de tatt hensyn til i guiden.
 
 ## Brukstilfeller
-Denne implementasjonsguiden er tiltenkt klientsystemer som ønsker å hente laboratorie og røntgensvar ut fra Nilar. I den initielle prosjektfasen ble behovene til Kjernejournal og Helsenorge lagt til grunn. Innenfor de rammene som dette har resultert i er imidlertid tjenesten generisk og kan brukes av andre systemer så langt behovene dekkes.
+Denne implementasjonsguiden er tiltenkt klientsystemer som ønsker å hente laboratorie og røntgensvar ut fra Pasientens prøvesvar. I den initielle prosjektfasen ble behovene til Kjernejournal og Helsenorge lagt til grunn. Tjenesten som sådan er imidlertid generisk og kan brukes av andre systemer så langt behovene dekkes.
 
 Eksempler på mulige klienter kan være
 - Kjernejournal - visning for helsepersonell
@@ -22,14 +22,6 @@ Denne IG skal **ikke** brukes for å **sende data** til Nilar, til det er den fo
 ## Struktur
 I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre ressurser. I kith-meldingene som mottas fra laboratoriene har de en struktur der noen ressurser eksisterer inni en annen ressurs. Mappingen løser opp i dette, men bruker informasjon i strukturer til å hente enkelt verdier fra foreldre-elementer i strukturen. Resultatet er Fhir-ressurser som er så selvstendige som de skal være, men der man i varierende grad finner spor av den opprinnelige strukturen. Mest uttalt er dette ved resistensbestemmelse, der et hierarki av ResultItems/Observations brukes til å sammenstille ulike aspekter ved undersøkelsen. Dette hierarkiet, og nødvendigheten av å se hele sammenstillingen for å få et meningsfullt totalbilde, er bevart i Fhir-ressursene.
 
-| Kith | Fhir |
-|-|-|
-|Message||
-| - ServReport | -> DiagnosticReport|
-| -- ServReq | -> ServiceRequest|
-| -- Patient | -> Reference(Patient)|
-| --- AnalysedSubject| -> Specimen |
-| --- ResultItem | -> Observation |
-| -- HCP | -> PractitionerRole |
-| --- Inst/Dept | -> Reference(Organization) |
-| --- HCPerson/HCProf | -> Reference(Practitioner) |
+## Sammenheng mellom XML dokument og FHIR ressurser
+
+![Relation mellom ressurser](../../../Visual%20mapping.svg)
