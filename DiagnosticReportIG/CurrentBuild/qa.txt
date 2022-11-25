@@ -2,9 +2,9 @@
 =========================================
 
 err = 0, warn = 53, info = 6
-IG Publisher Version: 1.2.14
-Generated Wed Nov 09 12:27:36 UTC 2022. FHIR version 4.0.1 for diagnostic.report.nilar#0.1.1 (canonical = http://nhn.no/fhir/nilar)
- Build Errors : 12 / 6 / 0
+IG Publisher Version: 1.2.19
+Generated Fri Nov 25 10:37:10 UTC 2022. FHIR version 4.0.1 for diagnostic.report.nilar#0.1.2 (canonical = http://nhn.no/fhir/nilar)
+ Build Errors : 13 / 6 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-id-provider-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 3 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-person-id-type-cs : 0 / 2 / 2
@@ -50,6 +50,7 @@ ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-pra
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 1897: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 1054: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 1929: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/index.html#/html/body/div/div/div/div/div/p/img at Line 203, column 5: The image source '../../../Visual%20mapping.svg' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -103,7 +104,7 @@ WARNING: ValueSet.where(id = 'all-observation-codes-vs'): Error from server: Una
 WARNING: ValueSet/deviation-indicator-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'deviation-indicator-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244
 == fsh-generated/resources/ValueSet-expertise-vs.json ==
-WARNING: ValueSet/expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters cant be checked
+WARNING: ValueSet/expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is unknown so the code cannot be validated)
 WARNING: ValueSet/expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-id-provider-vs.json ==
@@ -115,7 +116,7 @@ WARNING: ValueSet.where(id = 'investigation-id-vs'): Error from server: Unable t
 WARNING: ValueSet/investigation-spec-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'investigation-spec-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
 == fsh-generated/resources/ValueSet-main-expertise-vs.json ==
-WARNING: ValueSet/main-expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters cant be checked
+WARNING: ValueSet/main-expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202. Server Error: The code system 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is not known (encountered paired with code = 'LAB'); The code provided (http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202#LAB) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 WARNING: ValueSet/main-expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'main-expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-observation-result-vs.json ==

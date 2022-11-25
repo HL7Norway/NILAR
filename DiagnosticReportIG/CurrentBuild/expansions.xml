@@ -1,228 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f2ff6010-011c-4508-8afa-3e22df4b38ea"/>
+  <id value="95a3d0c6-b1dc-4a14-b436-1b2cbc78218e"/>
   <meta>
-    <lastUpdated value="2022-11-09T12:26:10.569+00:00"/>
+    <lastUpdated value="2022-11-25T10:32:08.468+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://nhn.no/fhir/nilar/ValueSet/id-provider-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="id-provider-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-id-provider-cs.html">Id Provider CS v0.1.1 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---nhn.no-fhir-nilar-CodeSystem-id-provider-cs-IdByServiceProvider"> </a>  
-                  <a href="CodeSystem-id-provider-cs.html#id-provider-cs-IdByServiceProvider">IdByServiceProvider</a>
-                </td>
-                <td>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</td>
-                <td>IdByServProv</td>
-                <td>
-                  <div>
-                    <p>Id created by service provider (laboratory etc.)</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---nhn.no-fhir-nilar-CodeSystem-id-provider-cs-IdByRequester"> </a>  
-                  <a href="CodeSystem-id-provider-cs.html#id-provider-cs-IdByRequester">IdByRequester</a>
-                </td>
-                <td>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</td>
-                <td>IdByRequester</td>
-                <td>
-                  <div>
-                    <p>Id created by requester (GP etc.)</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://nhn.no/fhir/nilar/ValueSet/id-provider-vs"/>
-        <version value="0.1.1"/>
-        <name value="IdProvider_VS"/>
-        <title value="Id Provider VS"/>
-        <status value="active"/>
-        <date value="2022-11-09T12:26:10+00:00"/>
-        <publisher value="Norsk helsenett - Nilar"/>
-        <contact>
-          <name value="Norsk helsenett - Nilar"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.nhn.no"/>
-          </telecom>
-        </contact>
-        <description value="Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers."/>
-        <expansion>
-          <identifier value="urn:uuid:ba79b7d0-83a5-4494-8a8d-e5b2fb9aad11"/>
-          <timestamp value="2022-11-09T12:26:33+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs|0.1.1"/>
-          </parameter>
-          <contains>
-            <system value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs"/>
-            <code value="IdByServiceProvider"/>
-            <display value="IdByServProv"/>
-          </contains>
-          <contains>
-            <system value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs"/>
-            <code value="IdByRequester"/>
-            <display value="IdByRequester"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="public-it-type-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-public-id-type-cs.html">Public Id Type CS v0.1.1 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.1"> </a>  
-                  <a href="CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461">urn:oid:2.16.578.1.12.4.1.4.1</a>
-                </td>
-                <td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td>
-                <td>FNR</td>
-                <td>
-                  <div>
-                    <p>Fødselsnummer</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.2"> </a>  
-                  <a href="CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462">urn:oid:2.16.578.1.12.4.1.4.2</a>
-                </td>
-                <td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td>
-                <td>DNR</td>
-                <td>
-                  <div>
-                    <p>D-nummer</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.3"> </a>  
-                  <a href="CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463">urn:oid:2.16.578.1.12.4.1.4.3</a>
-                </td>
-                <td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td>
-                <td>FHNR</td>
-                <td>
-                  <div>
-                    <p>Felles hjelpenummer</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"/>
-        <version value="0.1.1"/>
-        <name value="PublicIdType_VS"/>
-        <title value="PublicIdType_VS"/>
-        <status value="active"/>
-        <date value="2022-11-09T12:26:10+00:00"/>
-        <publisher value="Norsk helsenett - Nilar"/>
-        <contact>
-          <name value="Norsk helsenett - Nilar"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.nhn.no"/>
-          </telecom>
-        </contact>
-        <description value="Id types used to identify patients"/>
-        <expansion>
-          <identifier value="urn:uuid:df322e55-4fd9-4f0a-b987-b9e9eecca0bc"/>
-          <timestamp value="2022-11-09T12:26:49+00:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|0.1.1"/>
-          </parameter>
-          <contains>
-            <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
-            <code value="urn:oid:2.16.578.1.12.4.1.4.1"/>
-            <display value="FNR"/>
-          </contains>
-          <contains>
-            <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
-            <code value="urn:oid:2.16.578.1.12.4.1.4.2"/>
-            <display value="DNR"/>
-          </contains>
-          <contains>
-            <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
-            <code value="urn:oid:2.16.578.1.12.4.1.4.3"/>
-            <display value="FHNR"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs"/>
     <resource>
@@ -236,10 +19,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-public-id-type-cs.html">Public Id Type CS v0.1.1 (CodeSystem)</a>
+                  <a href="CodeSystem-public-id-type-cs.html">Public Id Type CS v0.1.2 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-person-id-type-cs.html">Person Id Type CS v0.1.1 (CodeSystem)</a>
+                  <a href="CodeSystem-person-id-type-cs.html">Person Id Type CS v0.1.2 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -346,11 +129,11 @@
           </div>
         </text>
         <url value="http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="PersonIdType_VS"/>
         <title value="Person Id Type VS"/>
         <status value="active"/>
-        <date value="2022-11-09T12:26:10+00:00"/>
+        <date value="2022-11-25T10:32:08+00:00"/>
         <publisher value="Norsk helsenett - Nilar"/>
         <contact>
           <name value="Norsk helsenett - Nilar"/>
@@ -361,8 +144,8 @@
         </contact>
         <description value="Id types used to identify persons involved, other than the patient."/>
         <expansion>
-          <identifier value="urn:uuid:24c3d182-dddd-49cd-bfc1-4e6f569e9745"/>
-          <timestamp value="2022-11-09T12:26:55+00:00"/>
+          <identifier value="urn:uuid:d23a825a-35a8-4365-b33f-96b0d19f4ac1"/>
+          <timestamp value="2022-11-25T10:35:26+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -370,11 +153,11 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|0.1.1"/>
+            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|0.1.2"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs|0.1.1"/>
+            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
@@ -411,6 +194,105 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://nhn.no/fhir/nilar/ValueSet/id-provider-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="id-provider-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-id-provider-cs.html">Id Provider CS v0.1.2 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---nhn.no-fhir-nilar-CodeSystem-id-provider-cs-IdByServiceProvider"> </a>  
+                  <a href="CodeSystem-id-provider-cs.html#id-provider-cs-IdByServiceProvider">IdByServiceProvider</a>
+                </td>
+                <td>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</td>
+                <td>IdByServProv</td>
+                <td>
+                  <div>
+                    <p>Id created by service provider (laboratory etc.)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---nhn.no-fhir-nilar-CodeSystem-id-provider-cs-IdByRequester"> </a>  
+                  <a href="CodeSystem-id-provider-cs.html#id-provider-cs-IdByRequester">IdByRequester</a>
+                </td>
+                <td>http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs</td>
+                <td>IdByRequester</td>
+                <td>
+                  <div>
+                    <p>Id created by requester (GP etc.)</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://nhn.no/fhir/nilar/ValueSet/id-provider-vs"/>
+        <version value="0.1.2"/>
+        <name value="IdProvider_VS"/>
+        <title value="Id Provider VS"/>
+        <status value="active"/>
+        <date value="2022-11-25T10:32:08+00:00"/>
+        <publisher value="Norsk helsenett - Nilar"/>
+        <contact>
+          <name value="Norsk helsenett - Nilar"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.nhn.no"/>
+          </telecom>
+        </contact>
+        <description value="Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers."/>
+        <expansion>
+          <identifier value="urn:uuid:2bd6d611-dec4-4c33-9dd6-88f8d8caaa87"/>
+          <timestamp value="2022-11-25T10:36:19+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs|0.1.2"/>
+          </parameter>
+          <contains>
+            <system value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs"/>
+            <code value="IdByServiceProvider"/>
+            <display value="IdByServProv"/>
+          </contains>
+          <contains>
+            <system value="http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs"/>
+            <code value="IdByRequester"/>
+            <display value="IdByRequester"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs"/>
     <resource>
       <ValueSet>
@@ -420,7 +302,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-organization-id-type-cs.html">Organization Id Type CS v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-organization-id-type-cs.html">Organization Id Type CS v0.1.2 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -497,11 +379,11 @@
           </div>
         </text>
         <url value="http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="OrganizationItType_VS"/>
         <title value="Organization It Type VS"/>
         <status value="active"/>
-        <date value="2022-11-09T12:26:10+00:00"/>
+        <date value="2022-11-25T10:32:08+00:00"/>
         <publisher value="Norsk helsenett - Nilar"/>
         <contact>
           <name value="Norsk helsenett - Nilar"/>
@@ -512,8 +394,8 @@
         </contact>
         <description value="Id types for organizations involved in DiagnosticReport/Observation"/>
         <expansion>
-          <identifier value="urn:uuid:5bf18f6d-d2b9-4ab9-98a2-ee16f0bd13cc"/>
-          <timestamp value="2022-11-09T12:26:55+00:00"/>
+          <identifier value="urn:uuid:7b63f592-79fa-442e-9429-c57eb7fe486d"/>
+          <timestamp value="2022-11-25T10:36:19+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -521,7 +403,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs|0.1.1"/>
+            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"/>
@@ -542,6 +424,124 @@
             <system value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"/>
             <code value="urn:oid:2.16.578.1.12.4.1.4.107"/>
             <display value="AKO"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="public-it-type-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-public-id-type-cs.html">Public Id Type CS v0.1.2 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.1"> </a>  
+                  <a href="CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461">urn:oid:2.16.578.1.12.4.1.4.1</a>
+                </td>
+                <td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td>
+                <td>FNR</td>
+                <td>
+                  <div>
+                    <p>Fødselsnummer</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.2"> </a>  
+                  <a href="CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462">urn:oid:2.16.578.1.12.4.1.4.2</a>
+                </td>
+                <td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td>
+                <td>DNR</td>
+                <td>
+                  <div>
+                    <p>D-nummer</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.3"> </a>  
+                  <a href="CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463">urn:oid:2.16.578.1.12.4.1.4.3</a>
+                </td>
+                <td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td>
+                <td>FHNR</td>
+                <td>
+                  <div>
+                    <p>Felles hjelpenummer</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"/>
+        <version value="0.1.2"/>
+        <name value="PublicIdType_VS"/>
+        <title value="PublicIdType_VS"/>
+        <status value="active"/>
+        <date value="2022-11-25T10:32:08+00:00"/>
+        <publisher value="Norsk helsenett - Nilar"/>
+        <contact>
+          <name value="Norsk helsenett - Nilar"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.nhn.no"/>
+          </telecom>
+        </contact>
+        <description value="Id types used to identify patients"/>
+        <expansion>
+          <identifier value="urn:uuid:42de5080-abe1-4406-aebd-cf03e678cb9f"/>
+          <timestamp value="2022-11-25T10:36:28+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|0.1.2"/>
+          </parameter>
+          <contains>
+            <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
+            <code value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <display value="FNR"/>
+          </contains>
+          <contains>
+            <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
+            <code value="urn:oid:2.16.578.1.12.4.1.4.2"/>
+            <display value="DNR"/>
+          </contains>
+          <contains>
+            <system value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
+            <code value="urn:oid:2.16.578.1.12.4.1.4.3"/>
+            <display value="FHNR"/>
           </contains>
         </expansion>
       </ValueSet>

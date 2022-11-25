@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231</code></li></ul></div>"
   },
   "url": "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "RequestReason_VS",
   "title": "Request Reason VS",
   "status": "active",
-  "date": "2022-11-09T12:26:10+00:00",
+  "date": "2022-11-25T10:32:08+00:00",
   "publisher": "Norsk helsenett - Nilar",
   "contact": [
     {

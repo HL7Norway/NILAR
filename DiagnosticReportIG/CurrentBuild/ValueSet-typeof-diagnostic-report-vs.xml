@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202</code></li></ul></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ValueSet/typeof-diagnostic-report-vs"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="TypeDiagnosticReport_VS"/>
   <title value="Type of diagnostic report"/>
   <status value="active"/>
-  <date value="2022-11-09T12:26:10+00:00"/>
+  <date value="2022-11-25T10:32:08+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

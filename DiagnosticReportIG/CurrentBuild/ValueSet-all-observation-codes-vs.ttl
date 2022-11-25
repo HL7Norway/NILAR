@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-investigation-id-vs.html\">http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-observation-result-vs.html\">http://nhn.no/fhir/nilar/ValueSet/observation-result-vs</a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.1"];
+  fhir:ValueSet.version [ fhir:value "0.1.2"];
   fhir:ValueSet.name [ fhir:value "AllObservationCodes_VS"];
   fhir:ValueSet.title [ fhir:value "All Observation Codes VS"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-09T12:26:10+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-11-25T10:32:08+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"];
   fhir:ValueSet.contact [
      fhir:index 0;
