@@ -11,7 +11,7 @@ Mappen mdr ("Mapping Decision Record") inneholder ulike problemstillinger som m√
 
 ## Annet
 
-https://ehelse.no/aktuelt/utvikler-nye-samhandlingslosninger
+https://www.nhn.no/tjenester/pasientens-provesvar
 
 ## Mapping
 Beskrivelse av mapping mellom XML og FHIR ressurser finners [her]( mapping.md "her"). 
