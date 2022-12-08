@@ -53,7 +53,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
             </span>
@@ -111,7 +111,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v0.1.2). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v0.1.3). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -183,7 +183,7 @@
         
           Active
           
-            as of 2022-11-25
+            as of 2022-12-08
           
         
       </td>
@@ -224,6 +224,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>&lt; 123038009 |Specimen|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>&lt; 49062001 |Device|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>&lt; 260245000 |Findings values| OR  &lt; 365860008 |General clinical state finding| OR &lt; 250171008 |Clinical history or observation findings| OR  &lt; 415229000 |Racial group| OR &lt; 365400002 |Finding of puberty stage| OR&lt; 443938003 |Procedure carried out on subject|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>&lt; 260245000 |Findings values| OR  &lt; 365860008 |General clinical state finding| OR &lt; 250171008 |Clinical history or observation findings| OR  &lt; 415229000 |Racial group| OR &lt; 365400002 |Finding of puberty stage| OR&lt; 443938003 |Procedure carried out on subject|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;component</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>363714003 |Interprets| &lt; 441742003 |Evaluation finding|</td> </tr>
@@ -268,6 +270,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td>OBX.7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>OBX-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>OBX-7</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>OBX-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>OBX-10</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>OBX-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>Relationships established by OBX-4 usage</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>Relationships established by OBX-4 usage</td> </tr>
@@ -336,6 +340,9 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low</td><td>value:IVL_PQ.low</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high</td><td>value:IVL_PQ.high</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>interpretationCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>interpretationCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age</td><td>outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=&quot;age&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>value:ST</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>outBoundRelationship</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>.targetObservation</td> </tr>
@@ -432,7 +439,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 25, 2022 10:32+0000">2022-11-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 8, 2022 09:21+0000">2022-12-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

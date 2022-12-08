@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "identifier-source-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-identifier-source-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
+  "version" : "0.1.3",
+  "name" : "IdentifierSource_VS",
+  "title" : "Identifier Source VS",
+  "status" : "active",
+  "date" : "2022-12-08T09:21:28+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"
+    }]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "identifier-source-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MsgId<a name=\"identifier-source-cs-MsgId\"> </a></td><td>MessageId</td><td>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</td></tr><tr><td style=\"white-space:nowrap\">ServReqId<a name=\"identifier-source-cs-ServReqId\"> </a></td><td>ServiceRequestId</td><td>Id of the service request, given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">ServReqIdByServProvider<a name=\"identifier-source-cs-ServReqIdByServProvider\"> </a></td><td>ServiceRequestIdByServiceProvider</td><td>Id of the service request, given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectId<a name=\"identifier-source-cs-AnalysedSubjectId\"> </a></td><td>AnalysedSubjectId</td><td>Id of the analysed subbject (Spesimen), given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectIdByRequester<a name=\"identifier-source-cs-AnalysedSubjectIdByRequester\"> </a></td><td>AnalysedSubjectIdByServiceProvider</td><td>Id of the analysed subbject (Spesimen), given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">ServReportId<a name=\"identifier-source-cs-ServReportId\"> </a></td><td>ServiceReportId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr><tr><td style=\"white-space:nowrap\">ResultItemId<a name=\"identifier-source-cs-ResultItemId\"> </a></td><td>ResultItemId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr></table></div>"
+  },
+  "url" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+  "version" : "0.1.3",
+  "name" : "IdentifierSource_CS",
+  "title" : "Identifier Source CS",
+  "status" : "active",
+  "date" : "2022-12-08T09:21:28+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers.",
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "MsgId",
+    "display" : "MessageId",
+    "definition" : "Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios."
+  },
+  {
+    "code" : "ServReqId",
+    "display" : "ServiceRequestId",
+    "definition" : "Id of the service request, given by the requester."
+  },
+  {
+    "code" : "ServReqIdByServProvider",
+    "display" : "ServiceRequestIdByServiceProvider",
+    "definition" : "Id of the service request, given by the service provider."
+  },
+  {
+    "code" : "AnalysedSubjectId",
+    "display" : "AnalysedSubjectId",
+    "definition" : "Id of the analysed subbject (Spesimen), given by the requester."
+  },
+  {
+    "code" : "AnalysedSubjectIdByRequester",
+    "display" : "AnalysedSubjectIdByServiceProvider",
+    "definition" : "Id of the analysed subbject (Spesimen), given by the service provider."
+  },
+  {
+    "code" : "ServReportId",
+    "display" : "ServiceReportId",
+    "definition" : "Id of the ServReport (DiagnosticReport), always given by service provider."
+  },
+  {
+    "code" : "ResultItemId",
+    "display" : "ResultItemId",
+    "definition" : "Id of the ServReport (DiagnosticReport), always given by service provider."
+  }]
+}

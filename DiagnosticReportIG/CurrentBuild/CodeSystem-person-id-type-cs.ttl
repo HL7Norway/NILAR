@@ -7,18 +7,18 @@
 
 <http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "person-id-type-cs"];
+  fhir:Resource.id [ fhir:value "person-id-type-cs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.4<a name=\"person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.464\"> </a></td><td>HPR</td><td>Helsepersonell-nummer</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.2<a name=\"person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:2.16.578.1.12.4.1.4.5<a name=\"person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.465\"> </a></td><td>DUF</td><td>DUF-nummer</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs"];
-  fhir:CodeSystem.version [ fhir:value "0.1.2"];
-  fhir:CodeSystem.name [ fhir:value "PersonIdType_CS"];
-  fhir:CodeSystem.title [ fhir:value "Person Id Type CS"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-11-25T10:32:08+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.3"]; # 
+  fhir:CodeSystem.name [ fhir:value "PersonIdType_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Person Id Type CS"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
@@ -27,10 +27,10 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Id types used to identify persons involved, other than the patient."];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Id types used to identify persons involved, other than the patient."]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.4" ];
@@ -46,7 +46,7 @@
      fhir:CodeSystem.concept.code [ fhir:value "urn:oid:2.16.578.1.12.4.1.4.5" ];
      fhir:CodeSystem.concept.display [ fhir:value "DUF" ];
      fhir:CodeSystem.concept.definition [ fhir:value "DUF-nummer" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

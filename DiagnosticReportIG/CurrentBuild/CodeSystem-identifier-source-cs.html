@@ -1,11 +1,9 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DIAGNOSTIC.REPORT.NILAR\Id Provider VS - TTL Representation - FHIR v4.0.1</title>
+    <title>DIAGNOSTIC.REPORT.NILAR\Identifier Source CS - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.14"}
-    h3,h4,h5,h6{--heading-prefix:"2.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.25"}
+    h3,h4,h5,h6{--heading-prefix:"2.25"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -51,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
             </span>
@@ -96,7 +94,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Id Provider VS</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Identifier Source CS</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -108,9 +106,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v0.1.2). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v0.1.3). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
 
 
 
@@ -122,29 +120,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="ValueSet-id-provider-vs.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ValueSet-id-provider-vs.xml.html">XML</a>
+      <a href="CodeSystem-identifier-source-cs.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-id-provider-vs.json.html">JSON</a>
+      <a href="CodeSystem-identifier-source-cs.json.html">JSON</a>
     </li>
   
 
 
   
-    <li class="active">
-      <a href="#">TTL</a>
+    <li>
+      <a href="CodeSystem-identifier-source-cs.ttl.html">TTL</a>
     </li>
   
 
@@ -152,84 +150,78 @@
 
 </ul>
 
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Identifier Source CS
 
-<a name="root"> </a>
+  </h2>
 
-
-<h2 id="root">: Id Provider VS - TTL Representation</h2>
   <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs|0.1.3"/></span>
+      </td>
+    </tr>
+
     <tr>
 
-      <td colspan="2">
+
+
+
+
+
+
+      <td colspan="4">
         
           Active
           
-            as of 2022-11-25
+            as of 2022-12-08
           
         
       </td>
 
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">IdentifierSource_CS</span></td>
     </tr>
+
+
+
+
   </table>
 
+<p>
+<p>Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers.</p>
 
-<p><a href="ValueSet-id-provider-vs.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-id-provider-vs.ttl" download>Download</a></p>
+</p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
 
-# - resource -------------------------------------------------------------------
-
- a fhir:ValueSet;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;id-provider-vs&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-id-provider-cs.html\&quot;&gt;&lt;code&gt;http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://nhn.no/fhir/nilar/ValueSet/id-provider-vs&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.2&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IdProvider_VS&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Id Provider VS&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-11-25T10:32:08+00:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Norsk helsenett - Nilar&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Norsk helsenett - Nilar&quot; ];
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://www.nhn.no&quot; ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers.&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs&quot; ]     ]
-  ].
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
-
-</code></pre>
+  
+<ul>
+ <li><a href="ValueSet-identifier-source-vs.html">IdentifierSource_VS</a></li>
+</ul>
 
 
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">MsgId<a name="identifier-source-cs-MsgId"> </a></td><td>MessageId</td><td>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</td></tr><tr><td style="white-space:nowrap">ServReqId<a name="identifier-source-cs-ServReqId"> </a></td><td>ServiceRequestId</td><td>Id of the service request, given by the requester.</td></tr><tr><td style="white-space:nowrap">ServReqIdByServProvider<a name="identifier-source-cs-ServReqIdByServProvider"> </a></td><td>ServiceRequestIdByServiceProvider</td><td>Id of the service request, given by the service provider.</td></tr><tr><td style="white-space:nowrap">AnalysedSubjectId<a name="identifier-source-cs-AnalysedSubjectId"> </a></td><td>AnalysedSubjectId</td><td>Id of the analysed subbject (Spesimen), given by the requester.</td></tr><tr><td style="white-space:nowrap">AnalysedSubjectIdByRequester<a name="identifier-source-cs-AnalysedSubjectIdByRequester"> </a></td><td>AnalysedSubjectIdByServiceProvider</td><td>Id of the analysed subbject (Spesimen), given by the service provider.</td></tr><tr><td style="white-space:nowrap">ServReportId<a name="identifier-source-cs-ServReportId"> </a></td><td>ServiceReportId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr><tr><td style="white-space:nowrap">ResultItemId<a name="identifier-source-cs-ResultItemId"> </a></td><td>ResultItemId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr></table></div>
+
+  
 
   <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -253,7 +245,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 25, 2022 10:32+0000">2022-11-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 8, 2022 09:21+0000">2022-12-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -7,17 +7,17 @@
 
 <http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "diagnostic.report.nilar"];
+  fhir:Resource.id [ fhir:value "diagnostic.report.nilar"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
-  ];
-  fhir:ImplementationGuide.url [ fhir:value "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.2"];
-  fhir:ImplementationGuide.name [ fhir:value "DiagnosticReportIG"];
-  fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-11-25T10:32:08+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "Norsk helsenett - Nilar"];
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.1.3"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "DiagnosticReportIG"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
@@ -26,13 +26,13 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
      ]
-  ];
-  fhir:ImplementationGuide.packageId [ fhir:value "diagnostic.report.nilar"];
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "diagnostic.report.nilar"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
-  ];
+  ]; # 
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
@@ -56,7 +56,7 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.no.basis" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.1.2-beta" ]
-  ];
+  ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0;
@@ -849,11 +849,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://nhn.no/fhir/nilar/ValueSet/id-provider-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/id-provider-vs" ]
+         fhir:link <http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/identifier-source-vs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Id Provider VS" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifier Source VS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -1003,11 +1003,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/id-provider-cs" ]
+         fhir:link <http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/identifier-source-cs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Id Provider CS" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifier Source CS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 25;
@@ -1021,6 +1021,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/organization-id-type-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization Id Type CS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types used to identify organizations." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
@@ -1133,7 +1134,7 @@
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

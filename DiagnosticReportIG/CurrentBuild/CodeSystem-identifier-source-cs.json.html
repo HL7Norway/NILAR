@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DIAGNOSTIC.REPORT.NILAR\Id Provider CS - JSON Representation - FHIR v4.0.1</title>
+    <title>DIAGNOSTIC.REPORT.NILAR\Identifier Source CS - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,7 +51,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
             </span>
@@ -96,7 +96,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Id Provider CS</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Identifier Source CS</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -109,7 +109,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v0.1.2). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v0.1.3). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -123,14 +123,14 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-id-provider-cs.html">Narrative Content</a>
+    <a href="CodeSystem-identifier-source-cs.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-id-provider-cs.xml.html">XML</a>
+      <a href="CodeSystem-identifier-source-cs.xml.html">XML</a>
     </li>
   
 
@@ -144,7 +144,7 @@
 
   
     <li>
-      <a href="CodeSystem-id-provider-cs.ttl.html">TTL</a>
+      <a href="CodeSystem-identifier-source-cs.ttl.html">TTL</a>
     </li>
   
 
@@ -156,7 +156,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Id Provider CS - JSON Representation</h2>
+<h2 id="root">: Identifier Source CS - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -164,7 +164,7 @@
         
           Active
           
-            as of 2022-11-25
+            as of 2022-12-08
           
         
       </td>
@@ -173,7 +173,7 @@
   </table>
 
 
-<p><a href="CodeSystem-id-provider-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-id-provider-cs.json" download>Download</a></p>
+<p><a href="CodeSystem-identifier-source-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-identifier-source-cs.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -183,17 +183,17 @@
   <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "id-provider-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "identifier-source-cs",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IdByServiceProvider&lt;a name=\&quot;id-provider-cs-IdByServiceProvider\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IdByServProv&lt;/td&gt;&lt;td&gt;Id created by service provider (laboratory etc.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IdByRequester&lt;a name=\&quot;id-provider-cs-IdByRequester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IdByRequester&lt;/td&gt;&lt;td&gt;Id created by requester (GP etc.)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MsgId&lt;a name=\&quot;identifier-source-cs-MsgId\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MessageId&lt;/td&gt;&lt;td&gt;Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ServReqId&lt;a name=\&quot;identifier-source-cs-ServReqId\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ServiceRequestId&lt;/td&gt;&lt;td&gt;Id of the service request, given by the requester.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ServReqIdByServProvider&lt;a name=\&quot;identifier-source-cs-ServReqIdByServProvider\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ServiceRequestIdByServiceProvider&lt;/td&gt;&lt;td&gt;Id of the service request, given by the service provider.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AnalysedSubjectId&lt;a name=\&quot;identifier-source-cs-AnalysedSubjectId\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AnalysedSubjectId&lt;/td&gt;&lt;td&gt;Id of the analysed subbject (Spesimen), given by the requester.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AnalysedSubjectIdByRequester&lt;a name=\&quot;identifier-source-cs-AnalysedSubjectIdByRequester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AnalysedSubjectIdByServiceProvider&lt;/td&gt;&lt;td&gt;Id of the analysed subbject (Spesimen), given by the service provider.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ServReportId&lt;a name=\&quot;identifier-source-cs-ServReportId\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ServiceReportId&lt;/td&gt;&lt;td&gt;Id of the ServReport (DiagnosticReport), always given by service provider.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ResultItemId&lt;a name=\&quot;identifier-source-cs-ResultItemId\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ResultItemId&lt;/td&gt;&lt;td&gt;Id of the ServReport (DiagnosticReport), always given by service provider.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.2",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "IdProvider_CS",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Id Provider CS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.3",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "IdentifierSource_CS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Identifier Source CS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-11-25T10:32:08+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-12-08T09:21:28+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Norsk helsenett - Nilar",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -206,19 +206,44 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers.",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 2,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 7,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IdByServiceProvider",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IdByServProv",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id created by service provider (laboratory etc.)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MsgId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MessageId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios."
     },
     {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IdByRequester",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IdByRequester",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id created by requester (GP etc.)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ServReqId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ServiceRequestId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id of the service request, given by the requester."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ServReqIdByServProvider",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ServiceRequestIdByServiceProvider",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id of the service request, given by the service provider."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AnalysedSubjectId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AnalysedSubjectId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id of the analysed subbject (Spesimen), given by the requester."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AnalysedSubjectIdByRequester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AnalysedSubjectIdByServiceProvider",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id of the analysed subbject (Spesimen), given by the service provider."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ServReportId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ServiceReportId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id of the ServReport (DiagnosticReport), always given by service provider."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ResultItemId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ResultItemId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Id of the ServReport (DiagnosticReport), always given by service provider."
     }
   ]
 }</code></pre>
@@ -251,7 +276,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 25, 2022 10:32+0000">2022-11-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 8, 2022 09:21+0000">2022-12-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

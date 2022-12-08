@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="DiagnosticReportIG"/>
   <status value="draft"/>
-  <date value="2022-11-25T10:32:08+00:00"/>
+  <date value="2022-12-08T09:21:28+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
@@ -583,10 +583,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/id-provider-vs"/>
+        <reference value="ValueSet/identifier-source-vs"/>
       </reference>
-      <name value="Id Provider VS"/>
-      <description value="Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers."/>
+      <name value="Identifier Source VS"/>
+      <description value="Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -704,10 +704,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/id-provider-cs"/>
+        <reference value="CodeSystem/identifier-source-cs"/>
       </reference>
-      <name value="Id Provider CS"/>
-      <description value="Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to represent the origins of the identifiers."/>
+      <name value="Identifier Source CS"/>
+      <description value="Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -718,6 +718,7 @@
         <reference value="CodeSystem/organization-id-type-cs"/>
       </reference>
       <name value="Organization Id Type CS"/>
+      <description value="Id types used to identify organizations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -1,34 +1,28 @@
 {
-  "resourceType": "ValueSet",
-  "id": "request-reason-vs",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231</code></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "request-reason-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231</code></li></ul></div>"
   },
-  "url": "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
-  "version": "0.1.2",
-  "name": "RequestReason_VS",
-  "title": "Request Reason VS",
-  "status": "active",
-  "date": "2022-11-25T10:32:08+00:00",
-  "publisher": "Norsk helsenett - Nilar",
-  "contact": [
-    {
-      "name": "Norsk helsenett - Nilar",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.nhn.no"
-        }
-      ]
-    }
-  ],
-  "description": "Type of text reply, indicates reason for request.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231"
-      }
-    ]
+  "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
+  "version" : "0.1.3",
+  "name" : "RequestReason_VS",
+  "title" : "Request Reason VS",
+  "status" : "active",
+  "date" : "2022-12-08T09:21:28+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "Type of text reply, indicates reason for request.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231"
+    }]
   }
 }

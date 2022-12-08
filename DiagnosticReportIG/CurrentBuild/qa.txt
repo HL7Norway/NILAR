@@ -1,12 +1,12 @@
 ﻿DiagnosticReportIG : Validation Results
 =========================================
 
-err = 0, warn = 53, info = 6
-IG Publisher Version: 1.2.19
-Generated Fri Nov 25 10:37:10 UTC 2022. FHIR version 4.0.1 for diagnostic.report.nilar#0.1.2 (canonical = http://nhn.no/fhir/nilar)
- Build Errors : 13 / 6 / 0
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-id-provider-cs : 0 / 2 / 2
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 3 / 2
+err = 0, warn = 51, info = 6
+IG Publisher Version: 1.2.22
+Generated Thu Dec 08 09:22:15 UTC 2022. FHIR version 4.0.1 for diagnostic.report.nilar#0.1.3 (canonical = http://nhn.no/fhir/nilar)
+ Build Errors : 13 / 5 / 0
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-identifier-source-cs : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-person-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-public-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar : 0 / 0 / 1
@@ -23,7 +23,7 @@ Generated Fri Nov 25 10:37:10 UTC 2022. FHIR version 4.0.1 for diagnostic.report
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-all-observation-codes-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-deviation-indicator-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-expertise-vs : 0 / 3 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-id-provider-vs : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-identifier-source-vs : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-id-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-spec-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-main-expertise-vs : 0 / 3 / 1
@@ -37,32 +37,30 @@ Generated Fri Nov 25 10:37:10 UTC 2022. FHIR version 4.0.1 for diagnostic.report
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/organization-id-type-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 468, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 498, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 981, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1122, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 343, column 1046: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 1897: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 430, column 1054: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 445, column 1929: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 748, column 1046: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 1897: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 1054: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 1929: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/index.html#/html/body/div/div/div/div/div/p/img at Line 203, column 5: The image source '../../../Visual%20mapping.svg' cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 473, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 505, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1000, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1152, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 343, column 1277: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 2128: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 430, column 1285: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 445, column 2160: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 748, column 1277: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 2128: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 1285: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 2160: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/index.html#/html/body/div/div/div/div/div/p/img at Line 203, column 5: The image source '../images/Visual%20mapping.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-id-provider-cs.json ==
-INFORMATION: CodeSystem/id-provider-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/id-provider-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/id-provider-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-identifier-source-cs.json ==
+INFORMATION: CodeSystem/identifier-source-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/identifier-source-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/identifier-source-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-organization-id-type-cs.json ==
 INFORMATION: CodeSystem/organization-id-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/organization-id-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-person-id-type-cs.json ==
 INFORMATION: CodeSystem/person-id-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -107,8 +105,8 @@ WARNING: ValueSet.where(id = 'deviation-indicator-vs'): Error from server: Unabl
 WARNING: ValueSet/expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is unknown so the code cannot be validated)
 WARNING: ValueSet/expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
-== fsh-generated/resources/ValueSet-id-provider-vs.json ==
-WARNING: ValueSet/id-provider-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-identifier-source-vs.json ==
+WARNING: ValueSet/identifier-source-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-investigation-id-vs.json ==
 WARNING: ValueSet/investigation-id-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'investigation-id-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat

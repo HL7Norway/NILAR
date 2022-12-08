@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "identifier-source-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MsgId<a name=\"identifier-source-cs-MsgId\"> </a></td><td>MessageId</td><td>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</td></tr><tr><td style=\"white-space:nowrap\">ServReqId<a name=\"identifier-source-cs-ServReqId\"> </a></td><td>ServiceRequestId</td><td>Id of the service request, given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">ServReqIdByServProvider<a name=\"identifier-source-cs-ServReqIdByServProvider\"> </a></td><td>ServiceRequestIdByServiceProvider</td><td>Id of the service request, given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectId<a name=\"identifier-source-cs-AnalysedSubjectId\"> </a></td><td>AnalysedSubjectId</td><td>Id of the analysed subbject (Spesimen), given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectIdByRequester<a name=\"identifier-source-cs-AnalysedSubjectIdByRequester\"> </a></td><td>AnalysedSubjectIdByServiceProvider</td><td>Id of the analysed subbject (Spesimen), given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">ServReportId<a name=\"identifier-source-cs-ServReportId\"> </a></td><td>ServiceReportId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr><tr><td style=\"white-space:nowrap\">ResultItemId<a name=\"identifier-source-cs-ResultItemId\"> </a></td><td>ResultItemId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.3"]; # 
+  fhir:CodeSystem.name [ fhir:value "IdentifierSource_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Identifier Source CS"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers."]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "MsgId" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MessageId" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "ServReqId" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ServiceRequestId" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id of the service request, given by the requester." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "ServReqIdByServProvider" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ServiceRequestIdByServiceProvider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id of the service request, given by the service provider." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "AnalysedSubjectId" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AnalysedSubjectId" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id of the analysed subbject (Spesimen), given by the requester." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "AnalysedSubjectIdByRequester" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AnalysedSubjectIdByServiceProvider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id of the analysed subbject (Spesimen), given by the service provider." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "ServReportId" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ServiceReportId" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id of the ServReport (DiagnosticReport), always given by service provider." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "ResultItemId" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ResultItemId" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Id of the ServReport (DiagnosticReport), always given by service provider." ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

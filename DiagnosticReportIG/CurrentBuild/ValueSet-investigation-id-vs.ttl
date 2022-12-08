@@ -7,18 +7,18 @@
 
 <http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "investigation-id-vs"];
+  fhir:Resource.id [ fhir:value "investigation-id-vs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219</code></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.2"];
-  fhir:ValueSet.name [ fhir:value "InvestigationId_VS"];
-  fhir:ValueSet.title [ fhir:value "Investigation Id VS"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-25T10:32:08+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.3"]; # 
+  fhir:ValueSet.name [ fhir:value "InvestigationId_VS"]; # 
+  fhir:ValueSet.title [ fhir:value "Investigation Id VS"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
@@ -27,8 +27,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "Codes used to identify individual investigations leading up to an observation."];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Codes used to identify individual investigations leading up to an observation."]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
@@ -46,7 +46,7 @@
        fhir:index 4;
        fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -7,18 +7,18 @@
 
 <http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "public-it-type-vs"];
+  fhir:Resource.id [ fhir:value "public-it-type-vs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.2"];
-  fhir:ValueSet.name [ fhir:value "PublicIdType_VS"];
-  fhir:ValueSet.title [ fhir:value "PublicIdType_VS"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-25T10:32:08+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.3"]; # 
+  fhir:ValueSet.name [ fhir:value "PublicIdType_VS"]; # 
+  fhir:ValueSet.title [ fhir:value "PublicIdType_VS"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
@@ -27,14 +27,14 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "Id types used to identify patients"];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Id types used to identify patients"]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
        fhir:ValueSet.compose.include.system [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

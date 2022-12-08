@@ -386,14 +386,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Observation/f:referenceRange</sch:title>
-    <sch:rule context="f:Observation/f:referenceRange">
-      <sch:assert test="count(f:type) &lt;= 0">type: maximum cardinality of 'type' is 0</sch:assert>
-      <sch:assert test="count(f:appliesTo) &lt;= 0">appliesTo: maximum cardinality of 'appliesTo' is 0</sch:assert>
-      <sch:assert test="count(f:age) &lt;= 0">age: maximum cardinality of 'age' is 0</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>Observation.referenceRange</sch:title>
     <sch:rule context="f:Observation/f:referenceRange">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

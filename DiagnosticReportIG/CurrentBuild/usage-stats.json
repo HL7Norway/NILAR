@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

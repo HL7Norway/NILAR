@@ -1,205 +1,205 @@
 [
   {
-    "id": "id-provider-cs",
-    "type": "CodeSystem",
-    "url": "http://nhn.no/fhir/nilar/CodeSystem/id-provider-cs",
-    "version": "0.1.2",
-    "name": "IdProvider_CS"
+    "id" : "identifier-source-cs",
+    "type" : "CodeSystem",
+    "url" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+    "version" : "0.1.3",
+    "name" : "IdentifierSource_CS"
   },
   {
-    "id": "organization-id-type-cs",
-    "type": "CodeSystem",
-    "url": "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
-    "version": "0.1.2",
-    "name": "OrganizationIdType_CS"
+    "id" : "organization-id-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
+    "version" : "0.1.3",
+    "name" : "OrganizationIdType_CS"
   },
   {
-    "id": "person-id-type-cs",
-    "type": "CodeSystem",
-    "url": "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
-    "version": "0.1.2",
-    "name": "PersonIdType_CS"
+    "id" : "person-id-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
+    "version" : "0.1.3",
+    "name" : "PersonIdType_CS"
   },
   {
-    "id": "public-id-type-cs",
-    "type": "CodeSystem",
-    "url": "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
-    "version": "0.1.2",
-    "name": "PublicIdType_CS"
+    "id" : "public-id-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
+    "version" : "0.1.3",
+    "name" : "PublicIdType_CS"
   },
   {
-    "id": "diagnostic.report.nilar",
-    "type": "ImplementationGuide",
-    "url": "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
-    "version": "0.1.2",
-    "name": "DiagnosticReportIG"
+    "id" : "diagnostic.report.nilar",
+    "type" : "ImplementationGuide",
+    "url" : "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
+    "version" : "0.1.3",
+    "name" : "DiagnosticReportIG"
   },
   {
-    "id": "nilar-accredited",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited",
-    "version": "0.1.2",
-    "name": "Accredited"
+    "id" : "nilar-accredited",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited",
+    "version" : "0.1.3",
+    "name" : "Accredited"
   },
   {
-    "id": "nilar-comment",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment",
-    "version": "0.1.2",
-    "name": "Comment"
+    "id" : "nilar-comment",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment",
+    "version" : "0.1.3",
+    "name" : "Comment"
   },
   {
-    "id": "nilar-diagnostic-report",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report",
-    "version": "0.1.2",
-    "name": "NilarDiagnosticReport"
+    "id" : "nilar-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report",
+    "version" : "0.1.3",
+    "name" : "NilarDiagnosticReport"
   },
   {
-    "id": "nilar-diagnostic-report-ref",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref",
-    "version": "0.1.2",
-    "name": "DiagnosticReportRef"
+    "id" : "nilar-diagnostic-report-ref",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref",
+    "version" : "0.1.3",
+    "name" : "DiagnosticReportRef"
   },
   {
-    "id": "nilar-history",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-history",
-    "version": "0.1.2",
-    "name": "History"
+    "id" : "nilar-history",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-history",
+    "version" : "0.1.3",
+    "name" : "History"
   },
   {
-    "id": "nilar-observation",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation",
-    "version": "0.1.2",
-    "name": "NilarObservation"
+    "id" : "nilar-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation",
+    "version" : "0.1.3",
+    "name" : "NilarObservation"
   },
   {
-    "id": "nilar-other-info",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info",
-    "version": "0.1.2",
-    "name": "OtherInfo"
+    "id" : "nilar-other-info",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info",
+    "version" : "0.1.3",
+    "name" : "OtherInfo"
   },
   {
-    "id": "nilar-practitioner-role",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-practitioner-role",
-    "version": "0.1.2",
-    "name": "NilarPractitionerRole"
+    "id" : "nilar-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-practitioner-role",
+    "version" : "0.1.3",
+    "name" : "NilarPractitionerRole"
   },
   {
-    "id": "nilar-service-request",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-service-request",
-    "version": "0.1.2",
-    "name": "NilarServiceRequest"
+    "id" : "nilar-service-request",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-service-request",
+    "version" : "0.1.3",
+    "name" : "NilarServiceRequest"
   },
   {
-    "id": "nilar-specimen",
-    "type": "StructureDefinition",
-    "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-specimen",
-    "version": "0.1.2",
-    "name": "NilarSpecimen"
+    "id" : "nilar-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-specimen",
+    "version" : "0.1.3",
+    "name" : "NilarSpecimen"
   },
   {
-    "id": "all-observation-codes-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
-    "version": "0.1.2",
-    "name": "AllObservationCodes_VS"
+    "id" : "all-observation-codes-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
+    "version" : "0.1.3",
+    "name" : "AllObservationCodes_VS"
   },
   {
-    "id": "deviation-indicator-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs",
-    "version": "0.1.2",
-    "name": "DeviationIndicator_VS"
+    "id" : "deviation-indicator-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs",
+    "version" : "0.1.3",
+    "name" : "DeviationIndicator_VS"
   },
   {
-    "id": "expertise-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/expertise-vs",
-    "version": "0.1.2",
-    "name": "Expertise_VS"
+    "id" : "expertise-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/expertise-vs",
+    "version" : "0.1.3",
+    "name" : "Expertise_VS"
   },
   {
-    "id": "id-provider-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/id-provider-vs",
-    "version": "0.1.2",
-    "name": "IdProvider_VS"
+    "id" : "identifier-source-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
+    "version" : "0.1.3",
+    "name" : "IdentifierSource_VS"
   },
   {
-    "id": "investigation-id-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs",
-    "version": "0.1.2",
-    "name": "InvestigationId_VS"
+    "id" : "investigation-id-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs",
+    "version" : "0.1.3",
+    "name" : "InvestigationId_VS"
   },
   {
-    "id": "investigation-spec-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
-    "version": "0.1.2",
-    "name": "InvestigationSpec_VS"
+    "id" : "investigation-spec-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
+    "version" : "0.1.3",
+    "name" : "InvestigationSpec_VS"
   },
   {
-    "id": "main-expertise-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/main-expertise-vs",
-    "version": "0.1.2",
-    "name": "MainExpertise_VS"
+    "id" : "main-expertise-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/main-expertise-vs",
+    "version" : "0.1.3",
+    "name" : "MainExpertise_VS"
   },
   {
-    "id": "observation-result-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs",
-    "version": "0.1.2",
-    "name": "ObservationResult_VS"
+    "id" : "observation-result-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs",
+    "version" : "0.1.3",
+    "name" : "ObservationResult_VS"
   },
   {
-    "id": "organization-it-type-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
-    "version": "0.1.2",
-    "name": "OrganizationItType_VS"
+    "id" : "organization-it-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
+    "version" : "0.1.3",
+    "name" : "OrganizationItType_VS"
   },
   {
-    "id": "person-id-type-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
-    "version": "0.1.2",
-    "name": "PersonIdType_VS"
+    "id" : "person-id-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
+    "version" : "0.1.3",
+    "name" : "PersonIdType_VS"
   },
   {
-    "id": "public-it-type-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
-    "version": "0.1.2",
-    "name": "PublicIdType_VS"
+    "id" : "public-it-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
+    "version" : "0.1.3",
+    "name" : "PublicIdType_VS"
   },
   {
-    "id": "request-reason-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
-    "version": "0.1.2",
-    "name": "RequestReason_VS"
+    "id" : "request-reason-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
+    "version" : "0.1.3",
+    "name" : "RequestReason_VS"
   },
   {
-    "id": "specimen-type-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
-    "version": "0.1.2",
-    "name": "SpecimenType_VS"
+    "id" : "specimen-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
+    "version" : "0.1.3",
+    "name" : "SpecimenType_VS"
   },
   {
-    "id": "typeof-diagnostic-report-vs",
-    "type": "ValueSet",
-    "url": "http://nhn.no/fhir/nilar/ValueSet/typeof-diagnostic-report-vs",
-    "version": "0.1.2",
-    "name": "TypeDiagnosticReport_VS"
+    "id" : "typeof-diagnostic-report-vs",
+    "type" : "ValueSet",
+    "url" : "http://nhn.no/fhir/nilar/ValueSet/typeof-diagnostic-report-vs",
+    "version" : "0.1.3",
+    "name" : "TypeDiagnosticReport_VS"
   }
 ]

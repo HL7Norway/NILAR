@@ -7,18 +7,18 @@
 
 <http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "all-observation-codes-vs"];
+  fhir:Resource.id [ fhir:value "all-observation-codes-vs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-investigation-id-vs.html\">http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-observation-result-vs.html\">http://nhn.no/fhir/nilar/ValueSet/observation-result-vs</a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.2"];
-  fhir:ValueSet.name [ fhir:value "AllObservationCodes_VS"];
-  fhir:ValueSet.title [ fhir:value "All Observation Codes VS"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-25T10:32:08+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.3"]; # 
+  fhir:ValueSet.name [ fhir:value "AllObservationCodes_VS"]; # 
+  fhir:ValueSet.title [ fhir:value "All Observation Codes VS"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
@@ -27,8 +27,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search."];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search."]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
@@ -45,7 +45,7 @@
          fhir:link <http://nhn.no/fhir/nilar/ValueSet/observation-result-vs>
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
