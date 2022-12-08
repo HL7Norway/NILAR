@@ -4,7 +4,7 @@ Id: nilar-specimen
 Description: "Specimen as used in Nilar, referenced from NilarDiagnosticReport and NilarObservation."
 * identifier ^definition = "External identifiers of the specimen. Generally not global, may be internal to a specific report or requester."
   * system MS
-  * system from IdProvider_VS
+  * system from IdentifierSource_VS
   * value MS
 * accessionIdentifier ^definition = "In Nilar this identifier is identical to identifier.IdByServiceProvider."
 * accessionIdentifier 1..1
@@ -21,7 +21,7 @@ Description: "Specimen as used in Nilar, referenced from NilarDiagnosticReport a
   * collected[x] only dateTime
   * collected[x] 1..1
 * container 0..1
-  * additive[x] ^definition = "Material added to the specimen for preservation purposes."
+  * additive[x] ^definition = "Material added to the specimen for preservation purposes. Pure text, no codesystem binding."
   * additive[x] only CodeableConcept
 * extension contains Accredited named accredited 0..1
 * extension contains OtherInfo named otherinfo 0..*

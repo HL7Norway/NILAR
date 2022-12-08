@@ -26,3 +26,8 @@
 20.10.2022
 * Bugfix (#46471): Datofeil på kansellering. Lagt inn fallback til servReport.IssueDate dersom det ikke finnes Observations å hente dato fra.
 * Bugfix (#46517): Datofeil på endringsmelding uten klokkeslett eller nær midnatt. Ble gjort om til GMT, som i slike tilfeller endrer dato.
+
+08.12.2022
+* NLK-kodeverk oppdateres automatisk til siste versjon.
+* Ny mekanisme for oppslag i PVK.
+* Justering i tokenvalidering. Presisering fra HelseId - berører ikke etablert bruk fra KJ.

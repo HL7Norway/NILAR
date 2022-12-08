@@ -4,7 +4,7 @@ Id: nilar-diagnostic-report
 Description: "DiagnosticReport for use in Nilar to accomodate laboratory reports received using http://www.kith.no/xmlstds/labsvar/2012-02-15, v1.3 and v1.4."
 * identifier ^definition = "External identifier of the report. Not global but should be unique within a laboratory."
   * system MS
-  * system from IdProvider_VS
+  * system from IdentifierSource_VS
   * value MS
 * basedOn ^definition = "The service request that instantiated the investigations and results contained in this report."
 * basedOn only Reference(ServiceRequest)

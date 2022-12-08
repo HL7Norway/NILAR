@@ -52,7 +52,7 @@ Det er mulig å sende inne egne testmeldinger, beskrivelse for dette finnes her:
 
 ### Sammenheng mellom XML dokument og FHIR ressurser
 
-![Relation mellom ressurser](Visual%20mapping.svg)
+![Relation mellom ressurser](Visual%20mapping.png)
 
 ## Message
 | XML | FHIR | Kommentar | Implementert |
@@ -228,7 +228,7 @@ Det er mange datoer i både xml og fhir. De fleste mappes der det er naturlig, m
 | Xml | Description | Fhir | Description |
 |-|-|-|-|
 | Message.GenDate | Meldingens dato. Denne brukes til å datere versjoner av rapporten. | DiagnosticReport.Issued | Rapportversjonens dato. |
-| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. | OtherInfo | Info |
+| ServReport.IssueDate| Rapportens utstedelsesdato. Alle versjoner av rapporten har samme verdi her. Den er derfor ikke egnet til å datere versjoner. | OtherInfo. Også fallback for DiagnosticReport.Effective og Observation.Effective | Info |
 | ServReq.IssueDate | Rekvisisjonsdato | ServiceRequest.AuthoredOn | |
 | AnalysedSubject.CollectedSample.CollectedDate | Prøvetakingsdato. Brukes som grunnlag for å angi gyldighetstidspunkt Observation. | DiagnosticReport.Effective, Observation.Effective| Hvilket tidspunkt gjelder denne Observation. Observasjoner innen en rapport kan ha ulik effective, den eldste av disse brukes som DiagnosticReport.Effective. |
 | ResultItem.InvDate | Undersøkelsesdato. Denne brukes som gyldighetstidspunkt for Observation når det ikke foreligger prøvetakingsdato (f.eks. røntgen). | DiagnosticReport.Effective, Observation.Effective | Samme som over. |
