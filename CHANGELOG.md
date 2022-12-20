@@ -34,3 +34,6 @@
 * NLK-kodeverk oppdateres automatisk til siste versjon.
 * Ny mekanisme for oppslag i PVK.
 * Justering i tokenvalidering. Presisering fra HelseId - berører ikke etablert bruk fra KJ.
+
+20.12.2022
+* OperationOutcome.IssueType endres fra "Value" til "NotFound" dersom det ikke returneres noe data.
