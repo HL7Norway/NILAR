@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
-  "version" : "0.1.4",
+  "version" : "1.0.0",
   "name" : "PublicIdType_VS",
   "title" : "PublicIdType_VS",
   "status" : "active",
-  "date" : "2022-12-23T09:32:03+00:00",
+  "date" : "2022-12-23T09:40:36+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
