@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "InvestigationSpec_VS"]; # 
   fhir:ValueSet.title [ fhir:value "Investigation Spec VS"]; # 
   fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2022-12-23T09:40:36+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2022-12-23T09:52:16+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;

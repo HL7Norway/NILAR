@@ -3,7 +3,7 @@
   "name" : "DiagnosticReportIG",
   "package-id" : "diagnostic.report.nilar",
   "ig-ver" : "1.0.0",
-  "date" : "Fri, 23 Dec, 2022 09:40:36 +0000",
+  "date" : "Fri, 23 Dec, 2022 09:52:16 +0000",
   "errs" : 0,
   "warnings" : 51,
   "hints" : 6,

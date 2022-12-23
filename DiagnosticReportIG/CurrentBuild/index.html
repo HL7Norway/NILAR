@@ -174,7 +174,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h1 id="diagnosticreportig">DiagnosticReportIG</h1>
 
-<p>Dette er implementasjonsguide for tjenesten <strong>Pasientens Prøvesvar</strong>, i prosjektfasen kalt <strong>Nilar</strong> (Nasjonalt Informasjonssytem for laboratorie- og røntgensvar). Nilar brukes som identifikator på ressursene i denne IG og brukes også som navn på tjenesten i dokumentasjonen.</p>
+<p>Dette er implementasjonsguide for tjenesten <strong>Pasientens Prøvesvar</strong>, i prosjektfasen kalt <strong>Nilar</strong> (Nasjonalt Informasjonstjeneste for laboratorie- og røntgensvar). Nilar brukes som identifikator på ressursene i denne IG og brukes også som navn på tjenesten i dokumentasjonen.</p>
 
 <p>Data inn til Nilar leveres med KITH-meldingen svarrapport, v1.4 (og 1.3), som xml. Skjemadefinisjonen, sammen med observert variasjon i innholdet i disse meldingene, legger føringene som kommer til uttrykk i denne IG.</p>
 
@@ -193,14 +193,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <h3 id="brukstilfeller-som-ikke-er-tiltenkt">Brukstilfeller som <strong>ikke</strong> er tiltenkt</h3>
-<p>Denne IG skal <strong>ikke</strong> brukes for å <strong>sende data</strong> til Nilar, til det er den for tett knyttet til gammel meldingsstandard. Den er kun ment som en beskrivels av hva man kan forvente UT fra Nilar, gitt at datagrunnlaget er meldinger mottatt på kith meldingsstandard.</p>
+<p>Denne IG skal <strong>ikke</strong> brukes for å <strong>sende data</strong> til Nilar, til det er den for tett knyttet til KITH meldingsstandard. Den er kun ment som en beskrivels av hva man kan forvente <strong>UT</strong> fra Nilar, gitt at datagrunnlaget er meldinger mottatt på KITH meldingsstandard.</p>
 
 <h2 id="struktur">Struktur</h2>
 <p>I Fhir er de ulike ressursene “selvstendige”, med mulige referanser til andre ressurser. I kith-meldingene som mottas fra laboratoriene har de en struktur der noen ressurser eksisterer inni en annen ressurs. Mappingen løser opp i dette, men bruker informasjon i strukturer til å hente enkelt verdier fra foreldre-elementer i strukturen. Resultatet er Fhir-ressurser som er så selvstendige som de skal være, men der man i varierende grad finner spor av den opprinnelige strukturen. Mest uttalt er dette ved resistensbestemmelse, der et hierarki av ResultItems/Observations brukes til å sammenstille ulike aspekter ved undersøkelsen. Dette hierarkiet, og nødvendigheten av å se hele sammenstillingen for å få et meningsfullt totalbilde, er bevart i Fhir-ressursene.</p>
 
 <h2 id="sammenheng-mellom-xml-dokument-og-fhir-ressurser">Sammenheng mellom XML dokument og FHIR ressurser</h2>
 
-<p><a name="l328">​</a><img src="Visual%20mapping.png" alt="Relation mellom ressurser"/></p>
+<p><a name="l331">​</a><img src="Visual%20mapping.png" alt="Relation mellom ressurser"/></p>
 
 
 
@@ -226,7 +226,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 23, 2022 09:40+0000">2022-12-23</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 23, 2022 09:52+0000">2022-12-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
