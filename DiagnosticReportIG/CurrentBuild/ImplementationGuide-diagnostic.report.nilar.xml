@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"/>
-  <version value="0.1.3"/>
+  <version value="0.1.4"/>
   <name value="DiagnosticReportIG"/>
   <status value="draft"/>
-  <date value="2022-12-08T09:21:28+00:00"/>
+  <date value="2022-12-23T09:32:03+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

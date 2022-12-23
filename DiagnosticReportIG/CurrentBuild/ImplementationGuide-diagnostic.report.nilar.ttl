@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
   ]; # 
   fhir:ImplementationGuide.url [ fhir:value "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"]; # 
-  fhir:ImplementationGuide.version [ fhir:value "0.1.3"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.1.4"]; # 
   fhir:ImplementationGuide.name [ fhir:value "DiagnosticReportIG"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2022-12-08T09:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2022-12-23T09:32:03+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
