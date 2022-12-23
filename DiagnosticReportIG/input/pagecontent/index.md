@@ -24,4 +24,4 @@ I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre re
 
 ## Sammenheng mellom XML dokument og FHIR ressurser
 
-![Relation mellom ressurser](../images/Visual%20mapping.png)
+![Relation mellom ressurser](Visual%20mapping.png)
