@@ -83,7 +83,7 @@ POST https://test.nilar.nhn.no/fhir/Specimen_search
 <p>body <code>_id: guid</code></p>
 
 <h4>B.1.2. Eksempel Endepunkt 2 - Spesifikk DiagnosticReport for Gry Telokk via proxy</h4>
-POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
+POST https://test.nilar.nhn.no/DiagnosticReport/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
