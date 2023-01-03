@@ -10,7 +10,7 @@ Sist oppdatert 03.01.2023
 
 Nilar eksponerer to endepunkter for test slik at det er mulig å implementere mot løsningen uten Helse-ID token.
 
-<p>Endepunkt 1 (forbigå proxy) - https://test.nilar.nhn.no/fhir/
+<p>Endepunkt 1 (forbigå proxy - uten Helse-ID) - https://test.nilar.nhn.no/fhir/
 <p>Endepunkt 2 - https://test.nilar.nhn.no/
 
 <h4>Headers for Endepunkt 1</h4>
