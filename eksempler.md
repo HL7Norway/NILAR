@@ -15,7 +15,7 @@ Nilar eksponerer to endepunkter for test slik at det er mulig å implementere mo
 
 <h4>Headers for Endepunkt 1</h4>
 
-<p>NOTE: Headers gjelder ikke for <code>/metadata</code> der man får info om fhir-støtte som er implementert i APIet.</p>
+<p>NOTE: Headers gjelder ikke for <code>/metadata</code>.</p>
 
 <p>Nilar (forbigå proxy) headers <br /> 
   <code>x-nilar-patient</code> med pasient sitt fnr
