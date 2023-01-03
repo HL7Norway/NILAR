@@ -2,27 +2,33 @@
 Denne siden viser eksempler på API kall mot NILAR.
 Forebehold om at NILAR er under utvikling og eksemplene ikke nødvendigvis er up-to-date.
 
-Sist oppdatert 22.06.2022
+Sist oppdatert 03.01.2023
 
 <h2>Basic</h2>
 
 <h4>BaseURL</h4>
-<p>Endepunkt Azure (forbigå proxy) - http://51.13.121.9:5212/fhir/ (deprecated)</p> 
-<p>Endepunkt Azure - http://51.13.121.9:4141/proxy/ (deprecated)</p>
-<p> <i> OBS! Azure vil fases ut! </i> </p>
 
+Nilar eksponerer to endepunkter for test slik at det er mulig å implementere mot løsningen uten Helse-ID token.
 
-<p>Endepunkt privat sky (forbigå proxy) - https://test.nilar.nhn.no/fhir/ - i eksemplene omtalt som <b>BaseUrlFhir</b></p>
-<p>Endepunkt privat sky - https://test.nilar.nhn.no/ - i eksemplene omtalt som <b>BaseUrlProxy</b></p>
+<p>Endepunkt 1 (forbigå proxy) - https://test.nilar.nhn.no/fhir/
+<p>Endepunkt 2 - https://test.nilar.nhn.no/
 
-<h4>Headers</h4>
-<p>Nilar (forbigå proxy) krever header <br /> <code>x-nilar-patient</code> med pasient sitt fnr</p>
-<p>Nilar (via proxy) krever header <br />
+<h4>Headers for Endepunkt 1</h4>
+
+<p>NOTE: Headers gjelder ikke for <code>/metadata</code> der man får info om fhir-støtte som er implementert i APIet.</p>
+
+<p>Nilar (forbigå proxy) headers <br /> 
+  <code>x-nilar-patient</code> med pasient sitt fnr
+  <code>x-nilar-requester</code> med requester sitt fnr/hpr,<br />
+  <code>x-nilar-reason</code> med samtykkekode - default 0, <br />
+  <code>x-nilar-correlation-Id</code> - helst guid, <br /></p>
+
+<h4>Headers for Endepunkt 2</h4>
+<p>Nilar (via proxy) krever headers <br />
   <code>person-id</code> med pasient sitt fnr, <br />
-  <code>requester-id</code> med hpr-nummer <b>dersom det ikke angis i token under 'helseid://claims/hpr/hpr_number'</b>, og <br />
-  <code>Authorization</code> med helse-id token</p>
-NOTE: Headers gjelder ikke for <code>/metadata</code> der man får info om fhir-støtte som er implementert i APIet.
-
+  <code>Authorization</code> med helse-id token
+  <code>Grunnlag</code> med samtykkekode - default 0, <br /></p>
+  
 <h4>Body</h4>
 x-www-form-urlencoded
 
@@ -54,15 +60,14 @@ GET BaseURL/metadata
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>tom</code></p>
 
-<h4>A.1.1. Eksempel - Alle DiagnosticReport for Gry Telokk utenfor proxy</h4>
-POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
+<h4>A.1.1. Eksempel Endepunkt 1 - Alle DiagnosticReport for Gry Telokk utenfor proxy</h4>
+POST https://test.nilar.nhn.no/fhir/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>tom</code></p>
 
-<h4>A.1.2. Eksempel - Alle Observation for Gry Telokk via proxy</h4>
-POST <b>BaseUrlProxy</b>/Observation/_search
+<h4>A.1.2. Eksempel Endepunkt 2 - Alle Observation for Gry Telokk via proxy</h4>
+POST https://test.nilar.nhn.no/Observation/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
-<p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
 <p>header <code>Authorization: Bearer token </code> </p>
 <p>body <code>tom</code></p>
 
@@ -72,12 +77,12 @@ POST <b>BaseUrlProxy</b>/Observation/_search
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_id: {guid}</code></p>
 
-<h4>B.1.1. Eksempel - Spesifikk Specimen for Gry Telokk utenfor proxy</h4>
-POST <b>BaseUrlFhir</b>/Specimen_search
+<h4>B.1.1. Eksempel Endepunkt 1 - Spesifikk Specimen for Gry Telokk utenfor proxy</h4>
+POST https://test.nilar.nhn.no/fhir/Specimen_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_id: guid</code></p>
 
-<h4>B.1.2. Eksempel - Spesifikk DiagnosticReport for Gry Telokk via proxy</h4>
+<h4>B.1.2. Eksempel Endepunkt 2 - Spesifikk DiagnosticReport for Gry Telokk via proxy</h4>
 POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 <p>header <code>Person-Id: 12057900499</code> </p>
 <p>header <code>Requester-Id: hpr-nummer eller string </code> </p>
@@ -90,8 +95,8 @@ POST <b>BaseUrlProxy</b>/DiagnosticReport/_search
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_count: {count}</code> + <code>_skip: {skip}</code></p>
 
-<h4>C.1.1. Eksempel - Hopp over 50 DiagnosticReport og vis 10 for Gry Telokk utenfor proxy</h4>
-POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
+<h4>C.1.1. Eksempel Endepunkt 1 - Hopp over 50 DiagnosticReport og vis 10 for Gry Telokk utenfor proxy</h4>
+POST https://test.nilar.nhn.no/fhir/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_count: 10</code> + <code>_skip: 50</code></p>
 
@@ -103,8 +108,8 @@ NOTE: "Total" vil fortsatt vise totalt antall DN for Gry Telokk. "Link>Self" vil
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_include: {relation}</code></p>
 
-<h4>D.1.1. Eksempel - Alle DN for Gry Telokk med tilhørende Specimen utenfor proxy</h4>
-POST <b>BaseUrlFhir</b>/DiagnosticReport/_search
+<h4>D.1.1. Eksempel Endepunkt 1 - Alle DN for Gry Telokk med tilhørende Specimen utenfor proxy</h4>
+POST https://test.nilar.nhn.no/fhir/DiagnosticReport/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_include: DiagnosticReport:specimen</code></p>
 
@@ -119,8 +124,8 @@ POST {baseUrl}/{resourceType}/_search
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>date: gt{dato}</code> + <code>date: lt{dato}</code></p>
 
-<h4>E.2.1 Eksempel - Alle Observations for Gry Telokk i en fem dagers periode i 2017</h4>
-POST <b>BaseUrlFhir</b>/Observation/_search
+<h4>E.2.1 Eksempel Endepunt 1 - Alle Observations for Gry Telokk i en fem dagers periode i 2017</h4>
+POST https://test.nilar.nhn.no/fhir/Observation/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>date: gt2017-09-20</code> + <code>date: lt2017-09-24</code></p>
 
@@ -130,8 +135,8 @@ POST <b>BaseUrlFhir</b>/Observation/_search
 POST {baseUrl}/{resourceType}/_search
 <p>body <code>_tag: {code}</code></p>
 
-<h4>F.1.1 Eksempel - Søk på Observasjoner for Gry Telokk som inneholde Meta Tag "Funn og undersøkelsesresultater"</h4>
-POST <b>BaseUrlFhir</b>/Observation/_search
+<h4>F.1.1 Eksempel Endepunkt 1 - Søk på Observasjoner for Gry Telokk som inneholde Meta Tag "Funn og undersøkelsesresultater"</h4>
+POST https://test.nilar.nhn.no/fhir/Observation/_search
 <p>header <code>X-Nilar-Patient: 12057900499</code> </p>
 <p>body <code>_tag: FU</code></p>
 
