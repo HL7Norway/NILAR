@@ -29,7 +29,7 @@ I produksjon er kun **endepunkt 2** tilgjengelig.
 <h4>Headers for Endepunkt 2</h4>
 <p>Nilar (via proxy) krever headers <br />
   <code>person-id</code> med pasient sitt fnr, <br />
-  <code>Authorization</code> med helse-id token
+  <code>Authorization</code> med helse-id token<br />
   <code>Grunnlag</code> med samtykkekode - default 0, <br /></p>
   
 <h4>Body</h4>
