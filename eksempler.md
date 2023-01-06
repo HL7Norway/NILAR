@@ -2,7 +2,7 @@
 Denne siden viser eksempler på API kall mot NILAR.
 Forebehold om at NILAR er under utvikling og eksemplene ikke nødvendigvis er up-to-date.
 
-NOTE: Dette er et utvalg av eksempelspørringer for å understøtte utviklere i oppstartsfasen. Se Nilar sin FHIR profil på [HL7 Github](https://hl7norway.github.io/NILAR/DiagnosticReportIG/CurrentBuild/index.html).
+NOTE: Dette er et utvalg av eksempelspørringer for å understøtte utviklere i oppstartsfasen. Se Nilar sin FHIR profil på [HL7 Github](https://hl7norway.github.io/NILAR/DiagnosticReportIG/CurrentBuild/toc.html).
 
 Sist oppdatert 03.01.2023
 
