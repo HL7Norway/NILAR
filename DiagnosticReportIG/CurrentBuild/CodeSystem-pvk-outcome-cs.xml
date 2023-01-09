@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pvk-outcome-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">Specific<a name="pvk-outcome-cs-Specific"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style="white-space:nowrap">General<a name="pvk-outcome-cs-General"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style="white-space:nowrap">Reservation<a name="pvk-outcome-cs-Reservation"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs"/>
+  <version value="1.1.0"/>
+  <name value="PvkOutcome_CS"/>
+  <title value="Pvk Outcome CS"/>
+  <status value="active"/>
+  <date value="2023-01-09T13:10:52+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="A code that indicates how privacy settings (PVK) may have affected the outcome."/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Specific"/>
+    <display value="SpecificBlock"/>
+    <definition value="A restriction exist for the actual health care provider, preventing access to all data for the person."/>
+  </concept>
+  <concept>
+    <code value="General"/>
+    <display value="GeneralBlock"/>
+    <definition value="A restriction exist for all health care providers, preventing access to all data for the person."/>
+  </concept>
+  <concept>
+    <code value="Reservation"/>
+    <display value="Reservation"/>
+    <definition value="The person has a reservatioan against being recorded and hence no data is available."/>
+  </concept>
+</CodeSystem>

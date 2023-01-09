@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "outcome-details-vs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-pvk-outcome-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code></a></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "1.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "OutcomeDetails_VS"]; # 
+  fhir:ValueSet.title [ fhir:value "Outcome Details VS"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-01-09T13:10:52+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "A code that gives more details to the outcome, such as privacy settings."]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

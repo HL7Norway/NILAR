@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="DiagnosticReportIG"/>
   <status value="active"/>
-  <date value="2022-12-23T09:52:16+00:00"/>
+  <date value="2023-01-09T13:10:52+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
@@ -462,6 +462,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/nilar-operation-outcome"/>
+      </reference>
+      <name value="NilarOperationOutcome"/>
+      <description value="OperationOutcome used to bring feedback to client. It has some particular used for informing about privacy settings that might influence query results."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/nilar-practitioner-role"/>
       </reference>
       <name value="NilarPractitionerRole"/>
@@ -649,6 +660,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/outcome-details-vs"/>
+      </reference>
+      <name value="Outcome Details VS"/>
+      <description value="A code that gives more details to the outcome, such as privacy settings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/person-id-type-vs"/>
       </reference>
       <name value="Person Id Type VS"/>
@@ -741,6 +763,17 @@
       </reference>
       <name value="Public Id Type CS"/>
       <description value="Id types used to identify patients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/pvk-outcome-cs"/>
+      </reference>
+      <name value="Pvk Outcome CS"/>
+      <description value="A code that indicates how privacy settings (PVK) may have affected the outcome."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

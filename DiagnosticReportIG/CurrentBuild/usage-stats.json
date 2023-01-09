@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -51,6 +51,12 @@
       {
         "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation",
         "title": "NilarObservation"
+      }
+    ],
+    "OperationOutcome": [
+      {
+        "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome",
+        "title": "NilarOperationOutcome"
       }
     ],
     "PractitionerRole": [

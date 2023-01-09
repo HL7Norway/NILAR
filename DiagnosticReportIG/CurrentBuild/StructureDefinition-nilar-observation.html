@@ -53,7 +53,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">1.1.0 - ci-build
 
 
             </span>
@@ -111,7 +111,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v1.0.0). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v1.1.0). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -191,7 +191,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation|1.0.0"/></span>
+      <span class="copy-text">1.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation|1.1.0"/></span>
       </td>
     </tr>
 
@@ -207,7 +207,7 @@
         
           Active
           
-            as of 2022-12-23
+            as of 2023-01-09
           
         
       </td>
@@ -699,7 +699,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
       "<a href="StructureDefinition-nilar-observation.html#Observation.component.valuePeriod" title="The information determined as a result of making the observation, if the information has a simple value" class="dict"><span style="text-decoration: underline">valuePeriod</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Actual component result</span>
       "<a href="StructureDefinition-nilar-observation.html#Observation.component.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.component.value[x] is missing" class="dict"><span style="text-decoration: underline">dataAbsentReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the component result is missing</a></span>
       "<a href="StructureDefinition-nilar-observation.html#Observation.component.interpretation" title="A categorical assessment of an observation value.  For example, high, low, normal" class="dict"><span style="text-decoration: underline">interpretation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">High, low, normal, etc.</a></span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>. One of these 0:</span>
+      "<a href="StructureDefinition-nilar-observation.html#Observation.component.referenceRange" title="Guidance on how to interpret the value by comparison to a normal or recommended range" class="dict"><span style="text-decoration: underline">referenceRange</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>
     }],
   }
 
@@ -1172,7 +1172,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
       "<a href="StructureDefinition-nilar-observation.html#Observation.component.valuePeriod" title="The information determined as a result of making the observation, if the information has a simple value" class="dict"><span style="text-decoration: underline">valuePeriod</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Actual component result</span>
       "<a href="StructureDefinition-nilar-observation.html#Observation.component.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.component.value[x] is missing" class="dict"><span style="text-decoration: underline">dataAbsentReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the component result is missing</a></span>
       "<a href="StructureDefinition-nilar-observation.html#Observation.component.interpretation" title="A categorical assessment of an observation value.  For example, high, low, normal" class="dict"><span style="text-decoration: underline">interpretation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">High, low, normal, etc.</a></span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>. One of these 0:</span>
+      "<a href="StructureDefinition-nilar-observation.html#Observation.component.referenceRange" title="Guidance on how to interpret the value by comparison to a normal or recommended range" class="dict"><span style="text-decoration: underline">referenceRange</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>
     }],
   }
 
@@ -1278,7 +1278,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 23, 2022 09:52+0000">2022-12-23</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 9, 2023 13:10+0000">2023-01-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

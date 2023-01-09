@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "pvk-outcome-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Specific<a name=\"pvk-outcome-cs-Specific\"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"pvk-outcome-cs-General\"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"pvk-outcome-cs-Reservation\"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>"
+  },
+  "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
+  "version" : "1.1.0",
+  "name" : "PvkOutcome_CS",
+  "title" : "Pvk Outcome CS",
+  "status" : "active",
+  "date" : "2023-01-09T13:10:52+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "A code that indicates how privacy settings (PVK) may have affected the outcome.",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Specific",
+    "display" : "SpecificBlock",
+    "definition" : "A restriction exist for the actual health care provider, preventing access to all data for the person."
+  },
+  {
+    "code" : "General",
+    "display" : "GeneralBlock",
+    "definition" : "A restriction exist for all health care providers, preventing access to all data for the person."
+  },
+  {
+    "code" : "Reservation",
+    "display" : "Reservation",
+    "definition" : "The person has a reservatioan against being recorded and hence no data is available."
+  }]
+}

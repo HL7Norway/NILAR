@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "name" : "DiagnosticReportIG",
   "status" : "active",
-  "date" : "2022-12-23T09:52:16+00:00",
+  "date" : "2023-01-09T13:10:52+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -618,6 +618,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/nilar-operation-outcome"
+      },
+      "name" : "NilarOperationOutcome",
+      "description" : "OperationOutcome used to bring feedback to client. It has some particular used for informing about privacy settings that might influence query results.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/nilar-practitioner-role"
       },
       "name" : "NilarPractitionerRole",
@@ -822,6 +834,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/outcome-details-vs"
+      },
+      "name" : "Outcome Details VS",
+      "description" : "A code that gives more details to the outcome, such as privacy settings.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/person-id-type-vs"
       },
       "name" : "Person Id Type VS",
@@ -922,6 +946,18 @@
       },
       "name" : "Public Id Type CS",
       "description" : "Id types used to identify patients",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/pvk-outcome-cs"
+      },
+      "name" : "Pvk Outcome CS",
+      "description" : "A code that indicates how privacy settings (PVK) may have affected the outcome.",
       "exampleBoolean" : false
     }],
     "page" : {

@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
   ]; # 
   fhir:ImplementationGuide.url [ fhir:value "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"]; # 
-  fhir:ImplementationGuide.version [ fhir:value "1.0.0"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "1.1.0"]; # 
   fhir:ImplementationGuide.name [ fhir:value "DiagnosticReportIG"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2022-12-23T09:52:16+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-01-09T13:10:52+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -695,6 +695,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nilar-operation-outcome" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NilarOperationOutcome" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "OperationOutcome used to bring feedback to client. It has some particular used for informing about privacy settings that might influence query results." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-practitioner-role>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/nilar-practitioner-role" ]
        ];
@@ -702,7 +716,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole as used in Nilar. Used to combine actors of type Practitioner and Organization. Practitioner and Organization are referenced by their Identifier." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -716,7 +730,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRecuest as used in Nilar, referenced from NilarDiagnosticReport." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -730,7 +744,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specimen as used in Nilar, referenced from NilarDiagnosticReport and NilarObservation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -744,7 +758,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to indicate if the party involved has accreditation for aquiring the specimen or perfoing the analysis in question." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -758,7 +772,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This extension is intended to add an element similar to 'Note' in resources that do not have Note." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -772,7 +786,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "In Nilar the origin of observations is a report. This extension is used to create a reference form each observation back to the report of origin." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -786,7 +800,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -800,7 +814,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Other info collected from xml for which there is no corresponding element or extension in Fhir." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -814,7 +828,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -828,7 +842,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if a numeric observation value is ouside reference boundaries." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -842,7 +856,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Expertise of investigation used in producing an Observation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -856,7 +870,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -870,7 +884,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used to identify individual investigations leading up to an observation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -884,7 +898,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used to specify individual investigations regarding methods used." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -898,7 +912,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The main type of labaratory expertise expressed in a DiagnosticReport." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -912,7 +926,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used to convey textual result values." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -926,7 +940,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types for organizations involved in DiagnosticReport/Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/outcome-details-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Outcome Details VS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code that gives more details to the outcome, such as privacy settings." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -940,7 +968,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types used to identify persons involved, other than the patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -954,7 +982,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types used to identify patients" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -968,7 +996,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of text reply, indicates reason for request." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -982,7 +1010,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type og material in specimen." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -996,7 +1024,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of diagnostic report, indication the kind of tests/procedures performed in a DiagnosticReport." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1010,7 +1038,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1024,7 +1052,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types used to identify organizations." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1038,7 +1066,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types used to identify persons involved, other than the patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1050,6 +1078,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Public Id Type CS" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id types used to identify patients" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pvk-outcome-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pvk Outcome CS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code that indicates how privacy settings (PVK) may have affected the outcome." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
