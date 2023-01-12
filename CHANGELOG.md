@@ -40,6 +40,7 @@
 
 12.01.2023
 * System på OperationOutcome for PVK er endret til "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs". Bakoverkompatibelt med System "NilarPvkOutcome".
+* Eksempel:
 
 <code>"coding": [
     {
