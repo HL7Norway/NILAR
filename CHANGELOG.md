@@ -39,5 +39,16 @@
 * OperationOutcome.IssueType endres fra "Value" til "NotFound" dersom det ikke returneres noe data.
 
 12.01.2023
-* System på OpeartionOutcome for PVK er endret til "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs". Bakoverkompatibelt med System "NilarPvkOutcome".
+* System på OperationOutcome for PVK er endret til "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs". Bakoverkompatibelt med System "NilarPvkOutcome".
 
+<code>"coding": [
+    {
+        "system": "NilarPvkOutcome",
+        "code": "Specific"
+    },
+    {
+        "system": "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
+        "code": "Specific"
+    }
+]
+</code>
