@@ -1,3 +1,11 @@
+```diff
+- OBS! Dokumentasjonen til Pasientens Prøvesvar (NILAR) har blitt flyttet til UtviklerPortalen
+```
+
+[Utviklerportalen](https://utviklerportal.nhn.no/informasjonstjenester/pasientens-proevesvar/)
+
+Dette dokumentet eksisterer kun for historikk, og vil ikke bli oppdatert!
+
 # Mapping fra XML til FHIR (R4)
 
 ### Hvordan lese dokumentet
