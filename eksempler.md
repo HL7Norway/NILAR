@@ -1,3 +1,11 @@
+```diff
+- OBS! Dokumentasjonen til Pasientens Prøvesvar (NILAR) har blitt flyttet til UtviklerPortalen
+```
+
+[Utviklerportalen](https://utviklerportal.nhn.no/informasjonstjenester/pasientens-proevesvar/)
+
+Dette dokumentet eksisterer kun for historikk, og vil ikke bli oppdatert!
+
 <h1>Eksempler på kall mot NILAR API (TEST-miljøer)</h1>
 Denne siden viser eksempler på API kall mot NILAR.<br />
 Forebehold om at NILAR er under utvikling og eksemplene ikke nødvendigvis er up-to-date.<br />
