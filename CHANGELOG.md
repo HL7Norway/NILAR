@@ -1,3 +1,11 @@
+```diff
+- OBS! Dokumentasjonen til Pasientens Prøvesvar (NILAR) har blitt flyttet til UtviklerPortalen
+```
+
+[Utviklerportalen](https://utviklerportal.nhn.no/informasjonstjenester/pasientens-proevesvar/pasientens-proevesvar-release-notes/)
+
+Dette dokumentet eksisterer kun for historikk, og vil ikke bli oppdatert!
+
 05.10.2022
 
 * Støtte for saksbehandler og verifikasjonspersonell uten HPR-nummer. Krever grunnlag header med relevant kode.
