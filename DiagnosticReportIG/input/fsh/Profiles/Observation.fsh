@@ -38,3 +38,8 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * extension contains DiagnosticReportRef named diagnosticreportref 1..1
 * extension contains History named history 0..1
 * extension contains OtherInfo named otherinfo 0..*
+* extension contains InvestigationDate named investigationdate 0..1
+* extension contains StatusChangedDate named statuschangeddate 0..1
+* extension contains CounterSignDate named countersigndate 0..1
+* extension contains MedicalValidationDate named medicalvalidationdate 0..1
+* extension contains DescriptionDate named descriptiondate 0..1

@@ -19,3 +19,10 @@ Description: "ServiceRecuest as used in Nilar, referenced from NilarDiagnosticRe
 * reasonCode from RequestReason_VS
 * specimen ^definition = "The specimens appended to the request."
 * extension contains OtherInfo named otherinfo 0..*
+* extension contains ReceiptDate named receiptdate 0..1
+* extension contains PaymentCategory named paymentcategory 0..1
+* extension contains Comment named comment 0..*
+* extension[comment]
+  * ^definition = "Each comment may have two codes. System '8234' represents a 'heading', any other code the actual comment as a coded text."
+  * valueCodeableConcept from RequisitionComment_VS
+* extension contains Reservation named reservation 0..*
