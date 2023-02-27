@@ -28,3 +28,7 @@ Description: "DiagnosticReport for use in Nilar to accomodate laboratory reports
 * performer only Reference(PractitionerRole)
 * extension contains OtherInfo named otherinfo 0..*
 * extension contains Comment named comment 0..*
+* extension[comment]
+  * valueCodeableConcept from ReportComment_VS
+* extension contains ReportDate named reportdate 1..1 MS
+* extension contains ApprovalDate named approvaldate 0..1
