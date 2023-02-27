@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-identifier-source-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code></a></li></ul></div>"
   ]; # 
   fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs"]; # 
-  fhir:ValueSet.version [ fhir:value "1.1.0"]; # 
+  fhir:ValueSet.version [ fhir:value "1.2.0"]; # 
   fhir:ValueSet.name [ fhir:value "IdentifierSource_VS"]; # 
   fhir:ValueSet.title [ fhir:value "Identifier Source VS"]; # 
   fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-01-09T13:10:52+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;

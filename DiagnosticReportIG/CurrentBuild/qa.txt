@@ -1,9 +1,9 @@
 ﻿DiagnosticReportIG : Validation Results
 =========================================
 
-err = 0, warn = 55, info = 7
-IG Publisher Version: 1.2.26
-Generated Mon Jan 09 13:11:52 UTC 2023. FHIR version 4.0.1 for diagnostic.report.nilar#1.1.0 (canonical = http://nhn.no/fhir/nilar)
+err = 0, warn = 83, info = 7
+IG Publisher Version: 1.2.38
+Generated Mon Feb 27 07:48:31 UTC 2023. FHIR version 4.0.1 for diagnostic.report.nilar#1.2.0 (canonical = http://nhn.no/fhir/nilar)
  Build Errors : 13 / 5 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-identifier-source-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 2 / 2
@@ -12,17 +12,34 @@ Generated Mon Jan 09 13:11:52 UTC 2023. FHIR version 4.0.1 for diagnostic.report
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-pvk-outcome-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar : 0 / 0 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-accredited : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-approval-date : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-comment : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-container-count : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-counter-sign-date : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-description-date : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-diagnostic-report : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-diagnostic-report-ref : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-history : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-investigation-date : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-logistics : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-medical-validation-date : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-observation : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-operation-outcome : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-other-info : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-payment-category : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-practitioner-role : 0 / 3 / 3
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-pretreatment : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-receipt-date : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-report-date : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-reservation : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-sample-handling : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-service-request : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-specimen : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-status-change-date : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-study-product-ref : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-study-product-type : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-all-observation-codes-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-collector-comment-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-deviation-indicator-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-expertise-vs : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-identifier-source-vs : 0 / 1 / 1
@@ -32,9 +49,14 @@ Generated Mon Jan 09 13:11:52 UTC 2023. FHIR version 4.0.1 for diagnostic.report
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-observation-result-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-organization-it-type-vs : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-outcome-details-vs : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-payment-category-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-person-id-type-vs : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-pretreatment-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-public-it-type-vs : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-report-comment-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-request-reason-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-requisition-comment-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-reservation-codes-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-specimen-type-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs : 0 / 2 / 1
 </table>
@@ -45,13 +67,13 @@ ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-pra
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1055, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1216, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 343, column 1277: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 2128: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 2147: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 430, column 1285: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 445, column 2160: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 445, column 2179: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 748, column 1277: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 2128: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 2147: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 1285: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 2160: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 2179: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/index.html#/html/body/div/div/div/div/div/p/img at Line 203, column 5: The image source 'Visual%20mapping.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -80,38 +102,73 @@ WARNING: CodeSystem/pvk-outcome-cs: CodeSystem: The ShareableCodeSystem profile 
 == fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar.json ==
 == fsh-generated/resources/StructureDefinition-nilar-accredited.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-approval-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-approval-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-comment.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-container-count.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-container-count'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-counter-sign-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-counter-sign-date'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-description-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-description-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-diagnostic-report.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-nilar-diagnostic-report-ref.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-history.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-history'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-investigation-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-logistics.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-medical-validation-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-medical-validation-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-observation.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-nilar-operation-outcome.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-nilar-other-info.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-payment-category.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-practitioner-role.json ==
 INFORMATION: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[11].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[84].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[43].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.9034 on element PractitionerRole.code could not be resolved
 WARNING: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[56].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8451 on element PractitionerRole.specialty could not be resolved
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-practitioner-role'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-nilar-pretreatment.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-receipt-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-receipt-date'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-report-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-reservation.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-sample-handling.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-service-request.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-service-request'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-nilar-specimen.json ==
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-specimen'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-nilar-status-change-date.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-study-product-ref.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-ref'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-study-product-type.json ==
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-all-observation-codes-vs.json ==
 WARNING: ValueSet/all-observation-codes-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'all-observation-codes-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
+== fsh-generated/resources/ValueSet-collector-comment-vs.json ==
+WARNING: ValueSet/collector-comment-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'collector-comment-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275
 == fsh-generated/resources/ValueSet-deviation-indicator-vs.json ==
 WARNING: ValueSet/deviation-indicator-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'deviation-indicator-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244
 == fsh-generated/resources/ValueSet-expertise-vs.json ==
-WARNING: ValueSet/expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is unknown so the code cannot be validated)
+WARNING: ValueSet/expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202. Server Error: The code system 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is not known (encountered paired with code = 'CLIN'); The code provided (http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202#CLIN) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 WARNING: ValueSet/expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-identifier-source-vs.json ==
@@ -123,7 +180,7 @@ WARNING: ValueSet.where(id = 'investigation-id-vs'): Error from server: Unable t
 WARNING: ValueSet/investigation-spec-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'investigation-spec-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
 == fsh-generated/resources/ValueSet-main-expertise-vs.json ==
-WARNING: ValueSet/main-expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202. Server Error: The code system 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is not known (encountered paired with code = 'LAB'); The code provided (http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202#LAB) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/main-expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is unknown so the code cannot be validated)
 WARNING: ValueSet/main-expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'main-expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-observation-result-vs.json ==
@@ -133,13 +190,28 @@ WARNING: ValueSet.where(id = 'observation-result-vs'): Error from server: Unable
 WARNING: ValueSet/organization-it-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-outcome-details-vs.json ==
 WARNING: ValueSet/outcome-details-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-payment-category-vs.json ==
+WARNING: ValueSet/payment-category-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'payment-category-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101
 == fsh-generated/resources/ValueSet-person-id-type-vs.json ==
 WARNING: ValueSet/person-id-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-pretreatment-vs.json ==
+WARNING: ValueSet/pretreatment-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'pretreatment-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232
 == fsh-generated/resources/ValueSet-public-it-type-vs.json ==
 WARNING: ValueSet/public-it-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-report-comment-vs.json ==
+WARNING: ValueSet/report-comment-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'report-comment-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269
 == fsh-generated/resources/ValueSet-request-reason-vs.json ==
 WARNING: ValueSet/request-reason-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'request-reason-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231
+== fsh-generated/resources/ValueSet-requisition-comment-vs.json ==
+WARNING: ValueSet/requisition-comment-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'requisition-comment-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234
+== fsh-generated/resources/ValueSet-reservation-codes-vs.json ==
+WARNING: ValueSet/reservation-codes-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'reservation-codes-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108
 == fsh-generated/resources/ValueSet-specimen-type-vs.json ==
 WARNING: ValueSet/specimen-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'specimen-type-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212

@@ -12,9 +12,20 @@
   <sch:pattern>
     <sch:title>f:DiagnosticReport</sch:title>
     <sch:rule context="f:DiagnosticReport">
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date']) &gt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-approval-date']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-approval-date': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:DiagnosticReport/f:extension</sch:title>
+    <sch:rule context="f:DiagnosticReport/f:extension">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

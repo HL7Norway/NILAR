@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "reservation-codes-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108</code></li></ul></div>"
+  },
+  "url" : "http://nhn.no/fhir/nilar/ValueSet/reservation-codes-vs",
+  "version" : "1.2.0",
+  "name" : "ReservationCodes_VS",
+  "title" : "Reservation Codes",
+  "status" : "active",
+  "date" : "2023-02-27T07:47:29+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "Reservations the patient might have, regarding registration etc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108"
+    }]
+  }
+}

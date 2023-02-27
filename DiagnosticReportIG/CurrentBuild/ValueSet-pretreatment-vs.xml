@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pretreatment-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232</code></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs"/>
+  <version value="1.2.0"/>
+  <name value="Pretreatment_VS"/>
+  <title value="Pretreatment-VS"/>
+  <status value="active"/>
+  <date value="2023-02-27T07:47:29+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes for pretreatment of patient from which specimen is sampled."/>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pretreatment-vs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232</code></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "1.2.0"]; # 
+  fhir:ValueSet.name [ fhir:value "Pretreatment_VS"]; # 
+  fhir:ValueSet.title [ fhir:value "Pretreatment-VS"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Codes for pretreatment of patient from which specimen is sampled."]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

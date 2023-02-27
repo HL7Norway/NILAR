@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "requisition-comment-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274</code></li></ul></div>"
+  },
+  "url" : "http://nhn.no/fhir/nilar/ValueSet/requisition-comment-vs",
+  "version" : "1.2.0",
+  "name" : "RequisitionComment_VS",
+  "title" : "Requisition Comment VS",
+  "status" : "active",
+  "date" : "2023-02-27T07:47:29+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "Codes used in requsition comments. 8234 represents 'heading', 8274 reresents coded text.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234"
+    },
+    {
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274"
+    }]
+  }
+}

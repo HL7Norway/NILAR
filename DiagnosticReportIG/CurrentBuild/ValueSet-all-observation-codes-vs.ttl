@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "all-observation-codes-vs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-investigation-id-vs.html\">http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-observation-result-vs.html\">http://nhn.no/fhir/nilar/ValueSet/observation-result-vs</a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-investigation-id-vs.html\">Investigation Id VS</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-observation-result-vs.html\">Observation Result VS</a></li></ul></div>"
   ]; # 
   fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs"]; # 
-  fhir:ValueSet.version [ fhir:value "1.1.0"]; # 
+  fhir:ValueSet.version [ fhir:value "1.2.0"]; # 
   fhir:ValueSet.name [ fhir:value "AllObservationCodes_VS"]; # 
   fhir:ValueSet.title [ fhir:value "All Observation Codes VS"]; # 
   fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-01-09T13:10:52+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;

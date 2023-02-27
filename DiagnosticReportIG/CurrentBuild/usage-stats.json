@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -11,11 +11,39 @@
       ]
     },
     {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-approval-date",
+      "title": "Approval Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment",
       "title": "Comment",
       "types": [
         "Annotation",
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-container-count",
+      "title": "Container Count",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-counter-sign-date",
+      "title": "Counter Sign Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-description-date",
+      "title": "Description Date",
+      "types": [
+        "dateTime"
       ]
     },
     {
@@ -33,10 +61,97 @@
       ]
     },
     {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date",
+      "title": "Investigation Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics",
+      "title": "Logistics",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-medical-validation-date",
+      "title": "Medical Validation Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info",
       "title": "Other Info",
       "types": [
         "Annotation"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category",
+      "title": "Payment Category",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment",
+      "title": "Pretreatment",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-receipt-date",
+      "title": "Receipt Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date",
+      "title": "Report Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation",
+      "title": "Reservation",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling",
+      "title": "Sample Handling",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date",
+      "title": "Status Changed Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-ref",
+      "title": "Study Product Ref",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-type",
+      "title": "Study Product Type",
+      "types": [
+        "string"
       ]
     }
   ],
@@ -97,9 +212,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -108,9 +220,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
       "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
@@ -132,8 +241,22 @@
       "Observation",
       "Specimen"
     ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment": [
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-approval-date": [
       "DiagnosticReport"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment": [
+      "DiagnosticReport",
+      "ServiceRequest",
+      "Specimen.collection"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-container-count": [
+      "Specimen"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-counter-sign-date": [
+      "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-description-date": [
+      "Observation"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref": [
       "Observation"
@@ -141,11 +264,47 @@
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-history": [
       "Observation"
     ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date": [
+      "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics": [
+      "Specimen.collection"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-medical-validation-date": [
+      "Observation"
+    ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info": [
       "DiagnosticReport",
       "Observation",
       "ServiceRequest",
       "Specimen"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category": [
+      "ServiceRequest"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment": [
+      "Specimen"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-receipt-date": [
+      "ServiceRequest"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date": [
+      "DiagnosticReport"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation": [
+      "ServiceRequest"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling": [
+      "Specimen"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date": [
+      "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-ref": [
+      "Specimen.collection"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-type": [
+      "Specimen.collection"
     ]
   }
 }

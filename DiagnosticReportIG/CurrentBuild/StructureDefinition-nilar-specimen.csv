@@ -31,6 +31,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Other Info","Other info collected from xml for which there is no corresponding element or extension in Fhir.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.extension:pretreatment","Specimen.extension","pretreatment","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment]]} {[]}
+","Pretreatment","Specifies pretreatment of patient from which specimen is sampled.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.extension:containercount","Specimen.extension","containercount","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-container-count]]} {[]}
+","Container Count","Number of containers or other devices related to a specimen sample.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.extension:samplehandling","Specimen.extension","samplehandling","","",0,*,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling]]} {[]}
+","Sample Handling","Precausions or warnings regarding handling of the specimen sample.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Specimen.modifierExtension","Specimen.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -143,10 +155,41 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".participation[typeCode=SBJ].act[classCode=SPECCOLLECT, moodCode=EVN]","SPM-14"
 "Specimen.collection.id","Specimen.collection.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Specimen.collection.extension","Specimen.collection.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Specimen.collection.extension","Specimen.collection.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.collection.extension:logistics","Specimen.collection.extension","logistics","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics]]} {[]}
+","Logistics","How the sample is being sent.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.collection.extension:comment","Specimen.collection.extension","comment","","",0,*,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment]]} {[]}
+","Comment","This extension is intended to add an element similar to 'Note' in resources that do not have Note.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.collection.extension:comment.id","Specimen.collection.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Specimen.collection.extension:comment.extension","Specimen.collection.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.collection.extension:comment.url","Specimen.collection.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Specimen.collection.extension:comment.value[x]","Specimen.collection.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Specimen.collection.extension:comment.value[x]:valueCodeableConcept","Specimen.collection.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nhn.no/fhir/nilar/ValueSet/collector-comment-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Specimen.collection.extension:studyproducttype","Specimen.collection.extension","studyproducttype","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-type]]} {[]}
+","Study Product Type","Type of studied product.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Specimen.collection.extension:studyproductref","Specimen.collection.extension","studyproductref","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-ref]]} {[]}
+","Study Product Ref","Reference to product being studied.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Specimen.collection.modifierExtension","Specimen.collection.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.

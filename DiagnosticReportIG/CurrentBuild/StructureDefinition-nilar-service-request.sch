@@ -10,6 +10,21 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:ServiceRequest</sch:title>
+    <sch:rule context="f:ServiceRequest">
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-receipt-date']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-receipt-date': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ServiceRequest/f:extension</sch:title>
+    <sch:rule context="f:ServiceRequest/f:extension">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:ServiceRequest/f:identifier</sch:title>
     <sch:rule context="f:ServiceRequest/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>

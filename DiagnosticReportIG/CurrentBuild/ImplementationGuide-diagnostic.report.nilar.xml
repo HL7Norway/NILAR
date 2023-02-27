@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"/>
-  <version value="1.1.0"/>
+  <version value="1.2.0"/>
   <name value="DiagnosticReportIG"/>
   <status value="active"/>
-  <date value="2023-01-09T13:10:52+00:00"/>
+  <date value="2023-02-27T07:47:29+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
@@ -517,10 +517,54 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/nilar-approval-date"/>
+      </reference>
+      <name value="Approval Date"/>
+      <description value="Time diagnostic report was approved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/nilar-comment"/>
       </reference>
       <name value="Comment"/>
       <description value="This extension is intended to add an element similar to 'Note' in resources that do not have Note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-container-count"/>
+      </reference>
+      <name value="Container Count"/>
+      <description value="Number of containers or other devices related to a specimen sample."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-counter-sign-date"/>
+      </reference>
+      <name value="Counter Sign Date"/>
+      <description value="Time the investigation was counter signed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-description-date"/>
+      </reference>
+      <name value="Description Date"/>
+      <description value="Time for description of image-based investigation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -550,10 +594,142 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/nilar-investigation-date"/>
+      </reference>
+      <name value="Investigation Date"/>
+      <description value="Time the investigation was performed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-logistics"/>
+      </reference>
+      <name value="Logistics"/>
+      <description value="How the sample is being sent."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-medical-validation-date"/>
+      </reference>
+      <name value="Medical Validation Date"/>
+      <description value="Time of medical validation of the investigation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/nilar-other-info"/>
       </reference>
       <name value="Other Info"/>
       <description value="Other info collected from xml for which there is no corresponding element or extension in Fhir."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-payment-category"/>
+      </reference>
+      <name value="Payment Category"/>
+      <description value="Who pays for these investigations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-pretreatment"/>
+      </reference>
+      <name value="Pretreatment"/>
+      <description value="Specifies pretreatment of patient from which specimen is sampled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-receipt-date"/>
+      </reference>
+      <name value="Receipt Date"/>
+      <description value="Time the request was received."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-report-date"/>
+      </reference>
+      <name value="Report Date"/>
+      <description value="Time this report was first published (first version)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-reservation"/>
+      </reference>
+      <name value="Reservation"/>
+      <description value="Reservations the patient might have, regarding registration etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-sample-handling"/>
+      </reference>
+      <name value="Sample Handling"/>
+      <description value="Precausions or warnings regarding handling of the specimen sample."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-status-change-date"/>
+      </reference>
+      <name value="Status Changed Date"/>
+      <description value="Time of last state change."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-study-product-ref"/>
+      </reference>
+      <name value="Study Product Ref"/>
+      <description value="Reference to product being studied."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-study-product-type"/>
+      </reference>
+      <name value="Study Product Type"/>
+      <description value="Type of studied product."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -565,6 +741,17 @@
       </reference>
       <name value="All Observation Codes VS"/>
       <description value="All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/collector-comment-vs"/>
+      </reference>
+      <name value="Collector Comment VS"/>
+      <description value="Coded comments from collector of sample."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -671,10 +858,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/payment-category-vs"/>
+      </reference>
+      <name value="Payment Category VS"/>
+      <description value="Codes for who will pay for the investigations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/person-id-type-vs"/>
       </reference>
       <name value="Person Id Type VS"/>
       <description value="Id types used to identify persons involved, other than the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pretreatment-vs"/>
+      </reference>
+      <name value="Pretreatment-VS"/>
+      <description value="Codes for pretreatment of patient from which specimen is sampled."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -693,10 +902,43 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/report-comment-vs"/>
+      </reference>
+      <name value="Report Comment VS"/>
+      <description value="Codes used for comments in diagnostic report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/request-reason-vs"/>
       </reference>
       <name value="Request Reason VS"/>
       <description value="Type of text reply, indicates reason for request."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/requisition-comment-vs"/>
+      </reference>
+      <name value="Requisition Comment VS"/>
+      <description value="Codes used in requsition comments. 8234 represents 'heading', 8274 reresents coded text."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/reservation-codes-vs"/>
+      </reference>
+      <name value="Reservation Codes"/>
+      <description value="Reservations the patient might have, regarding registration etc."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
