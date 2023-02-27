@@ -1,3 +1,11 @@
+```diff
+- OBS! Dokumentasjonen til Pasientens Prøvesvar (NILAR) har blitt flyttet til UtviklerPortalen
+```
+
+[Utviklerportalen](https://utviklerportal.nhn.no/informasjonstjenester/pasientens-proevesvar/)
+
+Dette repoet inneholder nå bare kildekoden for Fhir-profil for Pasientens Prøvesvar (DiagnosticReportIG). Øvrig dokumentasjon er beholdt for historisk referanse, men blir ikke vedlikeholdt her.
+
 # NILAR
 Nasjonal informasjonstjeneste for laboratorie- og radiologisvar
 
