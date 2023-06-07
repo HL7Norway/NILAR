@@ -32,3 +32,4 @@ Description: "DiagnosticReport for use in Nilar to accomodate laboratory reports
   * valueCodeableConcept from ReportComment_VS
 * extension contains ReportDate named reportdate 1..1 MS
 * extension contains ApprovalDate named approvaldate 0..1
+* extension contains Restriction named restriction 0..*
