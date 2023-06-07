@@ -22,3 +22,4 @@ Alias: $Kodeverk_8274 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274
 Alias: $Kodeverk_8275 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275
 Alias: $Kodeverk_8340 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340
 Alias: $Kodeverk_8351 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351
+Alias: $Kodeverk_9603 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603
