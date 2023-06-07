@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -92,7 +92,6 @@
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category",
       "title": "Payment Category",
       "types": [
-        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -100,7 +99,6 @@
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment",
       "title": "Pretreatment",
       "types": [
-        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -122,7 +120,76 @@
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation",
       "title": "Reservation",
       "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-restrict-until",
+      "title": "Restrict Until",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction",
+      "title": "Restriction",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
         "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction-code",
+      "title": "Restriction Code",
+      "types": [
         "CodeableConcept"
       ]
     },
@@ -224,6 +291,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page"
@@ -293,6 +363,16 @@
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation": [
       "ServiceRequest"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-restrict-until": [
+      "Extension"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction": [
+      "DiagnosticReport",
+      "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction-code": [
+      "Extension"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling": [
       "Specimen"

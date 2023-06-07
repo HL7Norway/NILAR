@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.2<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462"> </a></td><td>HER</td><td>HER-id</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.101<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46101"> </a></td><td>ENH</td><td>Enhetsregisteret - Brønnøysund</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.102<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46102"> </a></td><td>RESH</td><td>enheter i spesialisthelsetjenesten</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.107<a name="organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46107"> </a></td><td>AKO</td><td>Apotekenes konsesjonsnummer</td></tr></table></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"/>
-  <version value="1.2.0"/>
+  <version value="1.2.1"/>
   <name value="OrganizationIdType_CS"/>
   <title value="Organization Id Type CS"/>
   <status value="active"/>
-  <date value="2023-02-27T07:47:29+00:00"/>
+  <date value="2023-06-07T09:10:14+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-pvk-outcome-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code></a></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "OutcomeDetails_VS",
   "title" : "Outcome Details VS",
   "status" : "active",
-  "date" : "2023-02-27T07:47:29+00:00",
+  "date" : "2023-06-07T09:10:14+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

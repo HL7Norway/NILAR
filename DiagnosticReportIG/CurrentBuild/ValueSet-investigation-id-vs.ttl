@@ -5,53 +5,41 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "investigation-id-vs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219</code></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs"]; # 
-  fhir:ValueSet.version [ fhir:value "1.2.0"]; # 
-  fhir:ValueSet.name [ fhir:value "InvestigationId_VS"]; # 
-  fhir:ValueSet.title [ fhir:value "Investigation Id VS"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "Codes used to identify individual investigations leading up to an observation."]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat" ]
-     ], [
-       fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp" ]
-     ], [
-       fhir:index 2;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk" ]
-     ], [
-       fhir:index 3;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212" ]
-     ], [
-       fhir:index 4;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219" ]
-     ]
+<http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "investigation-id-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219</code></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.1"] ; # 
+  fhir:name [ fhir:v "InvestigationId_VS"] ; # 
+  fhir:title [ fhir:v "Investigation Id VS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-07T09:10:14+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.nhn.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes used to identify individual investigations leading up to an observation."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219"^^xsd:anyURI ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

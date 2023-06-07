@@ -5,74 +5,58 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://nhn.no/fhir/nilar/ValueSet/expertise-vs> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "expertise-vs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>CLIN</td><td>Medisinsk biokjemi</td></tr><tr><td>MBIO</td><td>Medisinsk mikrobiologi</td></tr><tr><td>MGEN</td><td>Medisinsk genetikk</td></tr><tr><td>FARM</td><td>Klinisk farmakologi</td></tr><tr><td>IMTR</td><td>Immunologi og transfusjonsmedisin</td></tr><tr><td>PAT</td><td>Patologi</td></tr><tr><td>RAD</td><td>Radiologi</td></tr><tr><td>NUK</td><td>Nukleærmedisin</td></tr></table></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/expertise-vs"]; # 
-  fhir:ValueSet.version [ fhir:value "1.2.0"]; # 
-  fhir:ValueSet.name [ fhir:value "Expertise_VS"]; # 
-  fhir:ValueSet.title [ fhir:value "Expertise ValueSet"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "Expertise of investigation used in producing an Observation."]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "CLIN" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk biokjemi" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "MBIO" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk mikrobiologi" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "MGEN" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medisinsk genetikk" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "FARM" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Klinisk farmakologi" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "IMTR" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunologi og transfusjonsmedisin" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "PAT" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patologi" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "RAD" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiologi" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "NUK" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nukleærmedisin" ]
-       ]
-     ]
+<http://nhn.no/fhir/nilar/ValueSet/expertise-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "expertise-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>CLIN</td><td>Medisinsk biokjemi</td></tr><tr><td>MBIO</td><td>Medisinsk mikrobiologi</td></tr><tr><td>MGEN</td><td>Medisinsk genetikk</td></tr><tr><td>FARM</td><td>Klinisk farmakologi</td></tr><tr><td>IMTR</td><td>Immunologi og transfusjonsmedisin</td></tr><tr><td>PAT</td><td>Patologi</td></tr><tr><td>RAD</td><td>Radiologi</td></tr><tr><td>NUK</td><td>Nukleærmedisin</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/expertise-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.1"] ; # 
+  fhir:name [ fhir:v "Expertise_VS"] ; # 
+  fhir:title [ fhir:v "Expertise ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-07T09:10:14+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.nhn.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Expertise of investigation used in producing an Observation."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "CLIN" ] ;
+         fhir:display [ fhir:v "Medisinsk biokjemi" ]
+       ] [
+         fhir:code [ fhir:v "MBIO" ] ;
+         fhir:display [ fhir:v "Medisinsk mikrobiologi" ]
+       ] [
+         fhir:code [ fhir:v "MGEN" ] ;
+         fhir:display [ fhir:v "Medisinsk genetikk" ]
+       ] [
+         fhir:code [ fhir:v "FARM" ] ;
+         fhir:display [ fhir:v "Klinisk farmakologi" ]
+       ] [
+         fhir:code [ fhir:v "IMTR" ] ;
+         fhir:display [ fhir:v "Immunologi og transfusjonsmedisin" ]
+       ] [
+         fhir:code [ fhir:v "PAT" ] ;
+         fhir:display [ fhir:v "Patologi" ]
+       ] [
+         fhir:code [ fhir:v "RAD" ] ;
+         fhir:display [ fhir:v "Radiologi" ]
+       ] [
+         fhir:code [ fhir:v "NUK" ] ;
+         fhir:display [ fhir:v "Nukleærmedisin" ]
+       ] )
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://nhn.no/fhir/nilar/ValueSet/expertise-vs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

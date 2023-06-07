@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "DeviationIndicator_VS",
   "title" : "Deviation Indicator VS",
   "status" : "active",
-  "date" : "2023-02-27T07:47:29+00:00",
+  "date" : "2023-06-07T09:10:14+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

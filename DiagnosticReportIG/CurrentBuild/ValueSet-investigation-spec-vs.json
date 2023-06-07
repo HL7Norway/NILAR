@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "InvestigationSpec_VS",
   "title" : "Investigation Spec VS",
   "status" : "active",
-  "date" : "2023-02-27T07:47:29+00:00",
+  "date" : "2023-06-07T09:10:14+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

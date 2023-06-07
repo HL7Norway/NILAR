@@ -5,53 +5,43 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "pvk-outcome-cs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Specific<a name=\"pvk-outcome-cs-Specific\"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"pvk-outcome-cs-General\"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"pvk-outcome-cs-Reservation\"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs"]; # 
-  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "PvkOutcome_CS"]; # 
-  fhir:CodeSystem.title [ fhir:value "Pvk Outcome CS"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "A code that indicates how privacy settings (PVK) may have affected the outcome."]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "Specific" ];
-     fhir:CodeSystem.concept.display [ fhir:value "SpecificBlock" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "A restriction exist for the actual health care provider, preventing access to all data for the person." ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "General" ];
-     fhir:CodeSystem.concept.display [ fhir:value "GeneralBlock" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "A restriction exist for all health care providers, preventing access to all data for the person." ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "Reservation" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Reservation" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The person has a reservatioan against being recorded and hence no data is available." ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pvk-outcome-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Specific<a name=\"pvk-outcome-cs-Specific\"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"pvk-outcome-cs-General\"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"pvk-outcome-cs-Reservation\"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.1"] ; # 
+  fhir:name [ fhir:v "PvkOutcome_CS"] ; # 
+  fhir:title [ fhir:v "Pvk Outcome CS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-07T09:10:14+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.nhn.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A code that indicates how privacy settings (PVK) may have affected the outcome."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Specific" ] ;
+     fhir:display [ fhir:v "SpecificBlock" ] ;
+     fhir:definition [ fhir:v "A restriction exist for the actual health care provider, preventing access to all data for the person." ]
+  ] [
+     fhir:code [ fhir:v "General" ] ;
+     fhir:display [ fhir:v "GeneralBlock" ] ;
+     fhir:definition [ fhir:v "A restriction exist for all health care providers, preventing access to all data for the person." ]
+  ] [
+     fhir:code [ fhir:v "Reservation" ] ;
+     fhir:display [ fhir:v "Reservation" ] ;
+     fhir:definition [ fhir:v "The person has a reservatioan against being recorded and hence no data is available." ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

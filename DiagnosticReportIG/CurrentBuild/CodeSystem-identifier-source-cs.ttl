@@ -5,73 +5,59 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "identifier-source-cs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MsgId<a name=\"identifier-source-cs-MsgId\"> </a></td><td>MessageId</td><td>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</td></tr><tr><td style=\"white-space:nowrap\">ServReqId<a name=\"identifier-source-cs-ServReqId\"> </a></td><td>ServiceRequestId</td><td>Id of the service request, given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">ServReqIdByServProvider<a name=\"identifier-source-cs-ServReqIdByServProvider\"> </a></td><td>ServiceRequestIdByServiceProvider</td><td>Id of the service request, given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectId<a name=\"identifier-source-cs-AnalysedSubjectId\"> </a></td><td>AnalysedSubjectId</td><td>Id of the analysed subbject (Spesimen), given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectIdByRequester<a name=\"identifier-source-cs-AnalysedSubjectIdByRequester\"> </a></td><td>AnalysedSubjectIdByServiceProvider</td><td>Id of the analysed subbject (Spesimen), given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">ServReportId<a name=\"identifier-source-cs-ServReportId\"> </a></td><td>ServiceReportId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr><tr><td style=\"white-space:nowrap\">ResultItemId<a name=\"identifier-source-cs-ResultItemId\"> </a></td><td>ResultItemId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"]; # 
-  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "IdentifierSource_CS"]; # 
-  fhir:CodeSystem.title [ fhir:value "Identifier Source CS"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-27T07:47:29+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers."]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "MsgId" ];
-     fhir:CodeSystem.concept.display [ fhir:value "MessageId" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios." ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "ServReqId" ];
-     fhir:CodeSystem.concept.display [ fhir:value "ServiceRequestId" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id of the service request, given by the requester." ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "ServReqIdByServProvider" ];
-     fhir:CodeSystem.concept.display [ fhir:value "ServiceRequestIdByServiceProvider" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id of the service request, given by the service provider." ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "AnalysedSubjectId" ];
-     fhir:CodeSystem.concept.display [ fhir:value "AnalysedSubjectId" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id of the analysed subbject (Spesimen), given by the requester." ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "AnalysedSubjectIdByRequester" ];
-     fhir:CodeSystem.concept.display [ fhir:value "AnalysedSubjectIdByServiceProvider" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id of the analysed subbject (Spesimen), given by the service provider." ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "ServReportId" ];
-     fhir:CodeSystem.concept.display [ fhir:value "ServiceReportId" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id of the ServReport (DiagnosticReport), always given by service provider." ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "ResultItemId" ];
-     fhir:CodeSystem.concept.display [ fhir:value "ResultItemId" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Id of the ServReport (DiagnosticReport), always given by service provider." ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "identifier-source-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MsgId<a name=\"identifier-source-cs-MsgId\"> </a></td><td>MessageId</td><td>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</td></tr><tr><td style=\"white-space:nowrap\">ServReqId<a name=\"identifier-source-cs-ServReqId\"> </a></td><td>ServiceRequestId</td><td>Id of the service request, given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">ServReqIdByServProvider<a name=\"identifier-source-cs-ServReqIdByServProvider\"> </a></td><td>ServiceRequestIdByServiceProvider</td><td>Id of the service request, given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectId<a name=\"identifier-source-cs-AnalysedSubjectId\"> </a></td><td>AnalysedSubjectId</td><td>Id of the analysed subbject (Spesimen), given by the requester.</td></tr><tr><td style=\"white-space:nowrap\">AnalysedSubjectIdByRequester<a name=\"identifier-source-cs-AnalysedSubjectIdByRequester\"> </a></td><td>AnalysedSubjectIdByServiceProvider</td><td>Id of the analysed subbject (Spesimen), given by the service provider.</td></tr><tr><td style=\"white-space:nowrap\">ServReportId<a name=\"identifier-source-cs-ServReportId\"> </a></td><td>ServiceReportId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr><tr><td style=\"white-space:nowrap\">ResultItemId<a name=\"identifier-source-cs-ResultItemId\"> </a></td><td>ResultItemId</td><td>Id of the ServReport (DiagnosticReport), always given by service provider.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.1"] ; # 
+  fhir:name [ fhir:v "IdentifierSource_CS"] ; # 
+  fhir:title [ fhir:v "Identifier Source CS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-07T09:10:14+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.nhn.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "MsgId" ] ;
+     fhir:display [ fhir:v "MessageId" ] ;
+     fhir:definition [ fhir:v "Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios." ]
+  ] [
+     fhir:code [ fhir:v "ServReqId" ] ;
+     fhir:display [ fhir:v "ServiceRequestId" ] ;
+     fhir:definition [ fhir:v "Id of the service request, given by the requester." ]
+  ] [
+     fhir:code [ fhir:v "ServReqIdByServProvider" ] ;
+     fhir:display [ fhir:v "ServiceRequestIdByServiceProvider" ] ;
+     fhir:definition [ fhir:v "Id of the service request, given by the service provider." ]
+  ] [
+     fhir:code [ fhir:v "AnalysedSubjectId" ] ;
+     fhir:display [ fhir:v "AnalysedSubjectId" ] ;
+     fhir:definition [ fhir:v "Id of the analysed subbject (Spesimen), given by the requester." ]
+  ] [
+     fhir:code [ fhir:v "AnalysedSubjectIdByRequester" ] ;
+     fhir:display [ fhir:v "AnalysedSubjectIdByServiceProvider" ] ;
+     fhir:definition [ fhir:v "Id of the analysed subbject (Spesimen), given by the service provider." ]
+  ] [
+     fhir:code [ fhir:v "ServReportId" ] ;
+     fhir:display [ fhir:v "ServiceReportId" ] ;
+     fhir:definition [ fhir:v "Id of the ServReport (DiagnosticReport), always given by service provider." ]
+  ] [
+     fhir:code [ fhir:v "ResultItemId" ] ;
+     fhir:display [ fhir:v "ResultItemId" ] ;
+     fhir:definition [ fhir:v "Id of the ServReport (DiagnosticReport), always given by service provider." ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

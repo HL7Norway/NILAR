@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="document-restriction-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603</code></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/document-restriction-vs"/>
+  <version value="1.2.1"/>
+  <name value="DocumentRestriction_VS"/>
+  <title value="Document Restriction VS"/>
+  <status value="active"/>
+  <date value="2023-06-07T09:10:14+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes with furtehr information about a document restriction."/>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603"/>
+    </include>
+  </compose>
+</ValueSet>

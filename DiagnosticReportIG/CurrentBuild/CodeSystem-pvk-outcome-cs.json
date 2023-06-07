@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Specific<a name=\"pvk-outcome-cs-Specific\"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"pvk-outcome-cs-General\"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"pvk-outcome-cs-Reservation\"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "PvkOutcome_CS",
   "title" : "Pvk Outcome CS",
   "status" : "active",
-  "date" : "2023-02-27T07:47:29+00:00",
+  "date" : "2023-06-07T09:10:14+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
