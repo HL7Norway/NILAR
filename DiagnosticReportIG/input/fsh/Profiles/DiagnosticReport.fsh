@@ -33,3 +33,4 @@ Description: "DiagnosticReport for use in Nilar to accomodate laboratory reports
 * extension contains ReportDate named reportdate 1..1 MS
 * extension contains ApprovalDate named approvaldate 0..1
 * extension contains Restriction named restriction 0..*
+* extension contains InfItem named infitem 0..*
