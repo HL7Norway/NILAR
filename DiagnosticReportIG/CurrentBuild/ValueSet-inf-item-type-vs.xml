@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="inf-item-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/inf-item-type-vs"/>
+  <version value="1.3.0"/>
+  <name value="InfItemType_VS"/>
+  <title value="Inf Item Type VS"/>
+  <status value="active"/>
+  <date value="2023-08-30T12:04:38+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes for type of clinical information."/>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233"/>
+    </include>
+  </compose>
+</ValueSet>

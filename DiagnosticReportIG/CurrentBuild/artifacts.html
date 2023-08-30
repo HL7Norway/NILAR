@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.2.1 - ci-build
+            <span style="display:inline-block;">1.3.0 - ci-build
 
 
             </span>
@@ -114,7 +114,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v1.2.1). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">DiagnosticReportIG - Local Development build (v1.3.0). See the <a href="http://nhn.no/fhir/nilar/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -288,6 +288,69 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Indicates if an observation (or possibly awhole report) is ‘history’, i.e. a copy/repetition af information sent previously.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item.html"
+                     title="StructureDefinition/nilar-inf-item">Inf Item</a>
+               </td>
+               <td>
+<p>Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item-coded-descr.html"
+                     title="StructureDefinition/nilar-inf-item-coded-descr">Inf Item Coded Descr</a>
+               </td>
+               <td>
+<p>Coded description of clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item-descr.html"
+                     title="StructureDefinition/nilar-inf-item-descr">Inf Item Descr</a>
+               </td>
+               <td>
+<p>Description of the clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item-end.html"
+                     title="StructureDefinition/nilar-inf-item-end">Inf Item End</a>
+               </td>
+               <td>
+<p>End time for clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item-org-time.html"
+                     title="StructureDefinition/nilar-inf-item-org-time">Inf Item Org Time</a>
+               </td>
+               <td>
+<p>Time of recording the clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item-start.html"
+                     title="StructureDefinition/nilar-inf-item-start">Inf Item Start</a>
+               </td>
+               <td>
+<p>Start time for clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nilar-inf-item-type.html"
+                     title="StructureDefinition/nilar-inf-item-type">Inf Item Type</a>
+               </td>
+               <td>
+<p>Type of clinical information</p>
 </td>
             </tr>
             <tr>
@@ -501,6 +564,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-inf-item-coded-descr-vs.html"
+                     title="ValueSet/inf-item-coded-descr-vs">Inf Item Coded Descr VS</a>
+               </td>
+               <td>
+<p>Value set for coded description of clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-inf-item-type-vs.html" title="ValueSet/inf-item-type-vs">Inf Item Type VS</a>
+               </td>
+               <td>
+<p>Codes for type of clinical information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-investigation-id-vs.html"
                      title="ValueSet/investigation-id-vs">Investigation Id VS</a>
                </td>
@@ -510,11 +590,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-investigation-method-vs.html"
+                     title="ValueSet/investigation-method-vs">Investigation Method VS</a>
+               </td>
+               <td>
+<p>Codes used to specify method used in investigation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-investigation-spec-vs.html"
                      title="ValueSet/investigation-spec-vs">Investigation Spec VS</a>
                </td>
                <td>
-<p>Codes used to specify individual investigations regarding methods used.</p>
+<p>Codes used to specify supplementary information about investigations.</p>
 </td>
             </tr>
             <tr>
@@ -724,7 +813,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#1.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 7, 2023 09:10+0000">2023-06-07</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>.  Package diagnostic.report.nilar#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 30, 2023 12:04+0000">2023-08-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

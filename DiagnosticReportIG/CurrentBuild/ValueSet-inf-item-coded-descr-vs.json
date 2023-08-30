@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "inf-item-coded-descr-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs",
+  "version" : "1.3.0",
+  "name" : "InfItemCodedDescr_VS",
+  "title" : "Inf Item Coded Descr VS",
+  "status" : "active",
+  "date" : "2023-08-30T12:04:38+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "description" : "Value set for coded description of clinical information.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209"
+    },
+    {
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210"
+    },
+    {
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217"
+    },
+    {
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218"
+    },
+    {
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277"
+    }]
+  }
+}

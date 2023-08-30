@@ -1,10 +1,10 @@
 ﻿DiagnosticReportIG : Validation Results
 =========================================
 
-err = 0, warn = 112, info = 7
-IG Publisher Version: 1.3.14
-Generated Wed Jun 07 09:11:40 UTC 2023. FHIR version 4.0.1 for diagnostic.report.nilar#1.2.1 (canonical = http://nhn.no/fhir/nilar)
- Build Errors : 13 / 5 / 0
+err = 0, warn = 134, info = 7
+IG Publisher Version: 1.4.1
+Generated Wed Aug 30 12:07:08 UTC 2023. FHIR version 4.0.1 for diagnostic.report.nilar#1.3.0 (canonical = http://nhn.no/fhir/nilar)
+ Build Errors : 4 / 7 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-identifier-source-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-person-id-type-cs : 0 / 2 / 2
@@ -20,6 +20,13 @@ Generated Wed Jun 07 09:11:40 UTC 2023. FHIR version 4.0.1 for diagnostic.report
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-diagnostic-report : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-diagnostic-report-ref : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-history : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item-coded-descr : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item-descr : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item-end : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item-org-time : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item-start : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-inf-item-type : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-investigation-date : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-logistics : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-medical-validation-date : 0 / 2 / 1
@@ -47,7 +54,10 @@ Generated Wed Jun 07 09:11:40 UTC 2023. FHIR version 4.0.1 for diagnostic.report
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-document-restriction-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-expertise-vs : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-identifier-source-vs : 0 / 1 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-inf-item-coded-descr-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-inf-item-type-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-id-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-method-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-spec-vs : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-main-expertise-vs : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-observation-result-vs : 0 / 2 / 1
@@ -66,18 +76,11 @@ Generated Wed Jun 07 09:11:40 UTC 2023. FHIR version 4.0.1 for diagnostic.report
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 487, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 521, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1055, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1216, column 116: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 343, column 1277: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 2147: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 430, column 1285: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 445, column 2179: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 748, column 1277: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 752, column 2147: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 1285: The link 'urn:oid:2.16.578.1.12.4.1.1.9034' for "urn:oid:2.16.578.1.12.4.1.1.9034" cannot be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-practitioner-role.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 2179: The link 'urn:oid:2.16.578.1.12.4.1.1.8451' for "urn:oid:2.16.578.1.12.4.1.1.8451" cannot be resolved
+WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
+WARNING: PractitionerRole.specialty: The reference urn:oid:2.16.578.1.12.4.1.1.8451 could not be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-service-request-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 480, column 2358: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 428, column 2441: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 837, column 2441: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/DiagnosticReportIG/output/index.html#/html/body/div/div/div/div/div/p/img at Line 203, column 5: The image source 'Visual%20mapping.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -130,6 +133,27 @@ WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefi
 == fsh-generated/resources/StructureDefinition-nilar-history.json ==
 WARNING: StructureDefinition/nilar-history: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-history'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item.json ==
+WARNING: StructureDefinition/nilar-inf-item: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item-coded-descr.json ==
+WARNING: StructureDefinition/nilar-inf-item-coded-descr: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-coded-descr'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item-descr.json ==
+WARNING: StructureDefinition/nilar-inf-item-descr: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-descr'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item-end.json ==
+WARNING: StructureDefinition/nilar-inf-item-end: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-end'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item-org-time.json ==
+WARNING: StructureDefinition/nilar-inf-item-org-time: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-org-time'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item-start.json ==
+WARNING: StructureDefinition/nilar-inf-item-start: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-start'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-inf-item-type.json ==
+WARNING: StructureDefinition/nilar-inf-item-type: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-investigation-date.json ==
 WARNING: StructureDefinition/nilar-investigation-date: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date'): The Implementation Guide contains no examples for this extension
@@ -205,19 +229,28 @@ WARNING: ValueSet.where(id = 'deviation-indicator-vs'): Error from server: Unabl
 WARNING: ValueSet/document-restriction-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'document-restriction-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603
 == fsh-generated/resources/ValueSet-expertise-vs.json ==
-WARNING: ValueSet/expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is unknown so the code cannot be validated)
+WARNING: ValueSet/expertise-vs: ValueSet.compose.include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' is unknown so the code cannot be validated)
 WARNING: ValueSet/expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-identifier-source-vs.json ==
 WARNING: ValueSet/identifier-source-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-inf-item-coded-descr-vs.json ==
+WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'inf-item-coded-descr-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209
+== fsh-generated/resources/ValueSet-inf-item-type-vs.json ==
+WARNING: ValueSet/inf-item-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'inf-item-type-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233
 == fsh-generated/resources/ValueSet-investigation-id-vs.json ==
 WARNING: ValueSet/investigation-id-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'investigation-id-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
+== fsh-generated/resources/ValueSet-investigation-method-vs.json ==
+WARNING: ValueSet/investigation-method-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'investigation-method-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354
 == fsh-generated/resources/ValueSet-investigation-spec-vs.json ==
 WARNING: ValueSet/investigation-spec-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'investigation-spec-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
 == fsh-generated/resources/ValueSet-main-expertise-vs.json ==
-WARNING: ValueSet/main-expertise-vs: ValueSet.compose[0].include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: The CodeSystem http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 is unknown (from Tx-Server))
+WARNING: ValueSet/main-expertise-vs: ValueSet.compose.include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: The CodeSystem http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 is unknown (from Tx-Server))
 WARNING: ValueSet/main-expertise-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'main-expertise-vs'): Error from server: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-observation-result-vs.json ==

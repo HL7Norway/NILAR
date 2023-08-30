@@ -10,13 +10,13 @@
   fhir:id [ fhir:v "diagnostic.report.nilar"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.2.1"] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
   fhir:name [ fhir:v "DiagnosticReportIG"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-06-07T09:10:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-30T12:04:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
@@ -702,6 +702,114 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item" ] ;
+       fhir:description [ fhir:v "Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-coded-descr> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item-coded-descr" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Coded Descr" ] ;
+       fhir:description [ fhir:v "Coded description of clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs> ;
+         fhir:reference [ fhir:v "ValueSet/inf-item-coded-descr-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Coded Descr VS" ] ;
+       fhir:description [ fhir:v "Value set for coded description of clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-descr> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item-descr" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Descr" ] ;
+       fhir:description [ fhir:v "Description of the clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-end> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item-end" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item End" ] ;
+       fhir:description [ fhir:v "End time for clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-org-time> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item-org-time" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Org Time" ] ;
+       fhir:description [ fhir:v "Time of recording the clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-start> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item-start" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Start" ] ;
+       fhir:description [ fhir:v "Start time for clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/nilar-inf-item-type" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Type" ] ;
+       fhir:description [ fhir:v "Type of clinical information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/ValueSet/inf-item-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/inf-item-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Inf Item Type VS" ] ;
+       fhir:description [ fhir:v "Codes for type of clinical information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date> ;
          fhir:reference [ fhir:v "StructureDefinition/nilar-investigation-date" ]
        ] ;
@@ -726,11 +834,23 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/investigation-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Investigation Method VS" ] ;
+       fhir:description [ fhir:v "Codes used to specify method used in investigation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs> ;
          fhir:reference [ fhir:v "ValueSet/investigation-spec-vs" ]
        ] ;
        fhir:name [ fhir:v "Investigation Spec VS" ] ;
-       fhir:description [ fhir:v "Codes used to specify individual investigations regarding methods used." ] ;
+       fhir:description [ fhir:v "Codes used to specify supplementary information about investigations." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

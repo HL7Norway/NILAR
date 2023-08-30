@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -58,6 +58,104 @@
       "title": "History",
       "types": [
         "boolean"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item",
+      "title": "Inf Item",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-coded-descr",
+      "title": "Inf Item Coded Descr",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-descr",
+      "title": "Inf Item Descr",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-end",
+      "title": "Inf Item End",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-org-time",
+      "title": "Inf Item Org Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-start",
+      "title": "Inf Item Start",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-type",
+      "title": "Inf Item Type",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -316,6 +414,7 @@
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment": [
       "DiagnosticReport",
+      "Extension",
       "ServiceRequest",
       "Specimen.collection"
     ],
@@ -333,6 +432,27 @@
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-history": [
       "Observation"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item": [
+      "DiagnosticReport"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-coded-descr": [
+      "Extension"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-descr": [
+      "Extension"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-end": [
+      "Extension"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-org-time": [
+      "Extension"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-start": [
+      "Extension"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item-type": [
+      "Extension"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date": [
       "Observation"

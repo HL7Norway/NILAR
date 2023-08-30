@@ -3,14 +3,14 @@
   "id" : "all-observation-codes-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-investigation-id-vs.html\">Investigation Id VS</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-observation-result-vs.html\">Observation Result VS</a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
-  "version" : "1.2.1",
+  "version" : "1.3.0",
   "name" : "AllObservationCodes_VS",
   "title" : "All Observation Codes VS",
   "status" : "active",
-  "date" : "2023-06-07T09:10:14+00:00",
+  "date" : "2023-08-30T12:04:38+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

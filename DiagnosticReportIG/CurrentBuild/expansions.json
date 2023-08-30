@@ -1,99 +1,35 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4c8eb835-bffb-4254-a7ab-49d00b0624bb",
+  "id" : "71bf929e-3484-4a1e-b543-1cae32981d0f",
   "meta" : {
-    "lastUpdated" : "2023-06-07T09:10:14.103+00:00"
+    "lastUpdated" : "2023-08-30T12:04:38.673+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-identifier-source-cs.html\">Identifier Source CS v1.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-MsgId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-MsgId\">MsgId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>MessageId</td><td><div><p>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ServReqId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ServReqId\">ServReqId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ServiceRequestId</td><td><div><p>Id of the service request, given by the requester.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ServReqIdByServProvider\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ServReqIdByServProvider\">ServReqIdByServProvider</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ServiceRequestIdByServiceProvider</td><td><div><p>Id of the service request, given by the service provider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-AnalysedSubjectId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-AnalysedSubjectId\">AnalysedSubjectId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>AnalysedSubjectId</td><td><div><p>Id of the analysed subbject (Spesimen), given by the requester.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-AnalysedSubjectIdByRequester\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-AnalysedSubjectIdByRequester\">AnalysedSubjectIdByRequester</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>AnalysedSubjectIdByServiceProvider</td><td><div><p>Id of the analysed subbject (Spesimen), given by the service provider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ServReportId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ServReportId\">ServReportId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ServiceReportId</td><td><div><p>Id of the ServReport (DiagnosticReport), always given by service provider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ResultItemId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ResultItemId\">ResultItemId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ResultItemId</td><td><div><p>Id of the ServReport (DiagnosticReport), always given by service provider.</p>\n</div></td></tr></table></div>"
-      },
-      "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
-      "version" : "1.2.1",
-      "name" : "IdentifierSource_VS",
-      "title" : "Identifier Source VS",
-      "status" : "active",
-      "date" : "2023-06-07T09:10:14+00:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:3ddd2671-e70a-47f5-855f-14aca70ed90e",
-        "timestamp" : "2023-06-07T09:10:47+00:00",
-        "total" : 7,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs|1.2.1"
-        }],
-        "contains" : [{
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "MsgId",
-          "display" : "MessageId"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "ServReqId",
-          "display" : "ServiceRequestId"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "ServReqIdByServProvider",
-          "display" : "ServiceRequestIdByServiceProvider"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "AnalysedSubjectId",
-          "display" : "AnalysedSubjectId"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "AnalysedSubjectIdByRequester",
-          "display" : "AnalysedSubjectIdByServiceProvider"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "ServReportId",
-          "display" : "ServiceReportId"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-          "code" : "ResultItemId",
-          "display" : "ResultItemId"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-organization-id-type-cs.html\">Organization Id Type CS v1.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\">urn:oid:2.16.578.1.12.4.1.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>HER</td><td><div><p>HER-id</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.101\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46101\">urn:oid:2.16.578.1.12.4.1.4.101</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>ENH</td><td><div><p>Enhetsregisteret - Brønnøysund</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.102\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46102\">urn:oid:2.16.578.1.12.4.1.4.102</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>RESH</td><td><div><p>enheter i spesialisthelsetjenesten</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.107\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46107\">urn:oid:2.16.578.1.12.4.1.4.107</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>AKO</td><td><div><p>Apotekenes konsesjonsnummer</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-organization-id-type-cs.html\">codesystem Organization Id Type CS v1.3.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\">urn:oid:2.16.578.1.12.4.1.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>HER</td><td><div><p>HER-id</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.101\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46101\">urn:oid:2.16.578.1.12.4.1.4.101</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>ENH</td><td><div><p>Enhetsregisteret - Brønnøysund</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.102\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46102\">urn:oid:2.16.578.1.12.4.1.4.102</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>RESH</td><td><div><p>enheter i spesialisthelsetjenesten</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-organization-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.107\"> </a>\u00a0\u00a0<a href=\"CodeSystem-organization-id-type-cs.html#organization-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.46107\">urn:oid:2.16.578.1.12.4.1.4.107</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</td><td>AKO</td><td><div><p>Apotekenes konsesjonsnummer</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
-      "version" : "1.2.1",
+      "version" : "1.3.0",
       "name" : "OrganizationItType_VS",
       "title" : "Organization It Type VS",
       "status" : "active",
-      "date" : "2023-06-07T09:10:14+00:00",
+      "date" : "2023-08-30T12:04:38+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:965d9509-7e7d-47bc-91b9-66d7f0c2e805",
-        "timestamp" : "2023-06-07T09:10:48+00:00",
+        "identifier" : "urn:uuid:720467ec-a09f-4ec0-ac5b-f2b8aca3e594",
+        "timestamp" : "2023-08-30T12:06:01+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
-          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs|1.2.1"
+          "name" : "used-codesystem",
+          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs|1.3.0"
         }],
         "contains" : [{
           "system" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
@@ -119,78 +55,34 @@
     }
   },
   {
-    "fullUrl" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-pvk-outcome-cs.html\">Pvk Outcome CS v1.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-pvk-outcome-cs-Specific\"> </a>\u00a0\u00a0<a href=\"CodeSystem-pvk-outcome-cs.html#pvk-outcome-cs-Specific\">Specific</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</td><td>SpecificBlock</td><td><div><p>A restriction exist for the actual health care provider, preventing access to all data for the person.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-pvk-outcome-cs-General\"> </a>\u00a0\u00a0<a href=\"CodeSystem-pvk-outcome-cs.html#pvk-outcome-cs-General\">General</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</td><td>GeneralBlock</td><td><div><p>A restriction exist for all health care providers, preventing access to all data for the person.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-pvk-outcome-cs-Reservation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-pvk-outcome-cs.html#pvk-outcome-cs-Reservation\">Reservation</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</td><td>Reservation</td><td><div><p>The person has a reservatioan against being recorded and hence no data is available.</p>\n</div></td></tr></table></div>"
-      },
-      "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
-      "version" : "1.2.1",
-      "name" : "OutcomeDetails_VS",
-      "title" : "Outcome Details VS",
-      "status" : "active",
-      "date" : "2023-06-07T09:10:14+00:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:77368ab1-2936-4126-bca0-09888d66a3c0",
-        "timestamp" : "2023-06-07T09:10:49+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs|1.2.1"
-        }],
-        "contains" : [{
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-          "code" : "Specific",
-          "display" : "SpecificBlock"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-          "code" : "General",
-          "display" : "GeneralBlock"
-        },
-        {
-          "system" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-          "code" : "Reservation",
-          "display" : "Reservation"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-public-id-type-cs.html\">Public Id Type CS v1.2.1 (CodeSystem)</a></li><li><a href=\"CodeSystem-person-id-type-cs.html\">Person Id Type CS v1.2.1 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461\">urn:oid:2.16.578.1.12.4.1.4.1</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FNR</td><td><div><p>Fødselsnummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462\">urn:oid:2.16.578.1.12.4.1.4.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>DNR</td><td><div><p>D-nummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463\">urn:oid:2.16.578.1.12.4.1.4.3</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FHNR</td><td><div><p>Felles hjelpenummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-person-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-person-id-type-cs.html#person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.464\">urn:oid:2.16.578.1.12.4.1.4.4</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</td><td>HPR</td><td><div><p>Helsepersonell-nummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-person-id-type-cs-urn-oid-2.16.578.1.12.4.1.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-person-id-type-cs.html#person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\">urn:oid:2.16.578.1.12.4.1.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</td><td>HER</td><td><div><p>HER-id</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-person-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-person-id-type-cs.html#person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.465\">urn:oid:2.16.578.1.12.4.1.4.5</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</td><td>DUF</td><td><div><p>DUF-nummer</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-person-id-type-cs.html\">codesystem Person Id Type CS v1.3.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-public-id-type-cs.html\">codesystem Public Id Type CS v1.3.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461\">urn:oid:2.16.578.1.12.4.1.4.1</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FNR</td><td><div><p>Fødselsnummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462\">urn:oid:2.16.578.1.12.4.1.4.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>DNR</td><td><div><p>D-nummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463\">urn:oid:2.16.578.1.12.4.1.4.3</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FHNR</td><td><div><p>Felles hjelpenummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-person-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-person-id-type-cs.html#person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.464\">urn:oid:2.16.578.1.12.4.1.4.4</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</td><td>HPR</td><td><div><p>Helsepersonell-nummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-person-id-type-cs-urn-oid-2.16.578.1.12.4.1.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-person-id-type-cs.html#person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.462\">urn:oid:2.16.578.1.12.4.1.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</td><td>HER</td><td><div><p>HER-id</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-person-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-person-id-type-cs.html#person-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.465\">urn:oid:2.16.578.1.12.4.1.4.5</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</td><td>DUF</td><td><div><p>DUF-nummer</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
-      "version" : "1.2.1",
+      "version" : "1.3.0",
       "name" : "PersonIdType_VS",
       "title" : "Person Id Type VS",
       "status" : "active",
-      "date" : "2023-06-07T09:10:14+00:00",
+      "date" : "2023-08-30T12:04:38+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8f20de28-ffd2-418b-94a6-e7e37fcbbe16",
-        "timestamp" : "2023-06-07T09:10:58+00:00",
+        "identifier" : "urn:uuid:4b5fc506-255e-4df1-9169-9953026c06b2",
+        "timestamp" : "2023-08-30T12:06:02+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
-          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|1.2.1"
+          "name" : "used-codesystem",
+          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|1.3.0"
         },
         {
-          "name" : "version",
-          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs|1.2.1"
+          "name" : "used-codesystem",
+          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs|1.3.0"
         }],
         "contains" : [{
           "system" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
@@ -231,25 +123,25 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-public-id-type-cs.html\">Public Id Type CS v1.2.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461\">urn:oid:2.16.578.1.12.4.1.4.1</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FNR</td><td><div><p>Fødselsnummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462\">urn:oid:2.16.578.1.12.4.1.4.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>DNR</td><td><div><p>D-nummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463\">urn:oid:2.16.578.1.12.4.1.4.3</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FHNR</td><td><div><p>Felles hjelpenummer</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-public-id-type-cs.html\">codesystem Public Id Type CS v1.3.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461\">urn:oid:2.16.578.1.12.4.1.4.1</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FNR</td><td><div><p>Fødselsnummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462\">urn:oid:2.16.578.1.12.4.1.4.2</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>DNR</td><td><div><p>D-nummer</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-public-id-type-cs-urn-oid-2.16.578.1.12.4.1.4.3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-public-id-type-cs.html#public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463\">urn:oid:2.16.578.1.12.4.1.4.3</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</td><td>FHNR</td><td><div><p>Felles hjelpenummer</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
-      "version" : "1.2.1",
+      "version" : "1.3.0",
       "name" : "PublicIdType_VS",
       "title" : "PublicIdType_VS",
       "status" : "active",
-      "date" : "2023-06-07T09:10:14+00:00",
+      "date" : "2023-08-30T12:04:38+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9dc1e858-15a8-4366-974e-52dc07112842",
-        "timestamp" : "2023-06-07T09:11:01+00:00",
+        "identifier" : "urn:uuid:8930e4c2-716b-40b7-b837-cdfd7bc547f5",
+        "timestamp" : "2023-08-30T12:06:08+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
-          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|1.2.1"
+          "name" : "used-codesystem",
+          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs|1.3.0"
         }],
         "contains" : [{
           "system" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
@@ -265,6 +157,114 @@
           "system" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
           "code" : "urn:oid:2.16.578.1.12.4.1.4.3",
           "display" : "FHNR"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-pvk-outcome-cs.html\">codesystem Pvk Outcome CS v1.3.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-pvk-outcome-cs-Specific\"> </a>\u00a0\u00a0<a href=\"CodeSystem-pvk-outcome-cs.html#pvk-outcome-cs-Specific\">Specific</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</td><td>SpecificBlock</td><td><div><p>A restriction exist for the actual health care provider, preventing access to all data for the person.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-pvk-outcome-cs-General\"> </a>\u00a0\u00a0<a href=\"CodeSystem-pvk-outcome-cs.html#pvk-outcome-cs-General\">General</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</td><td>GeneralBlock</td><td><div><p>A restriction exist for all health care providers, preventing access to all data for the person.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-pvk-outcome-cs-Reservation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-pvk-outcome-cs.html#pvk-outcome-cs-Reservation\">Reservation</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</td><td>Reservation</td><td><div><p>The person has a reservatioan against being recorded and hence no data is available.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
+      "version" : "1.3.0",
+      "name" : "OutcomeDetails_VS",
+      "title" : "Outcome Details VS",
+      "status" : "active",
+      "date" : "2023-08-30T12:04:38+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:ba4e8bd0-883f-433b-bc0b-cde4030d770d",
+        "timestamp" : "2023-08-30T12:06:10+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs|1.3.0"
+        }],
+        "contains" : [{
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
+          "code" : "Specific",
+          "display" : "SpecificBlock"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
+          "code" : "General",
+          "display" : "GeneralBlock"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
+          "code" : "Reservation",
+          "display" : "Reservation"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-identifier-source-cs.html\">codesystem Identifier Source CS v1.3.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-MsgId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-MsgId\">MsgId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>MessageId</td><td><div><p>Id for the message ('envelope') used to convey the report. Useful in some tracing scenarios.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ServReqId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ServReqId\">ServReqId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ServiceRequestId</td><td><div><p>Id of the service request, given by the requester.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ServReqIdByServProvider\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ServReqIdByServProvider\">ServReqIdByServProvider</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ServiceRequestIdByServiceProvider</td><td><div><p>Id of the service request, given by the service provider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-AnalysedSubjectId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-AnalysedSubjectId\">AnalysedSubjectId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>AnalysedSubjectId</td><td><div><p>Id of the analysed subbject (Spesimen), given by the requester.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-AnalysedSubjectIdByRequester\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-AnalysedSubjectIdByRequester\">AnalysedSubjectIdByRequester</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>AnalysedSubjectIdByServiceProvider</td><td><div><p>Id of the analysed subbject (Spesimen), given by the service provider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ServReportId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ServReportId\">ServReportId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ServiceReportId</td><td><div><p>Id of the ServReport (DiagnosticReport), always given by service provider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---nhn.no-fhir-nilar-CodeSystem-identifier-source-cs-ResultItemId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-identifier-source-cs.html#identifier-source-cs-ResultItemId\">ResultItemId</a></td><td>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</td><td>ResultItemId</td><td><div><p>Id of the ServReport (DiagnosticReport), always given by service provider.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
+      "version" : "1.3.0",
+      "name" : "IdentifierSource_VS",
+      "title" : "Identifier Source VS",
+      "status" : "active",
+      "date" : "2023-08-30T12:04:38+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:b02ce6a8-206d-4029-854a-6473d75e6ee9",
+        "timestamp" : "2023-08-30T12:06:10+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs|1.3.0"
+        }],
+        "contains" : [{
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "MsgId",
+          "display" : "MessageId"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "ServReqId",
+          "display" : "ServiceRequestId"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "ServReqIdByServProvider",
+          "display" : "ServiceRequestIdByServiceProvider"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "AnalysedSubjectId",
+          "display" : "AnalysedSubjectId"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "AnalysedSubjectIdByRequester",
+          "display" : "AnalysedSubjectIdByServiceProvider"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "ServReportId",
+          "display" : "ServiceReportId"
+        },
+        {
+          "system" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+          "code" : "ResultItemId",
+          "display" : "ResultItemId"
         }]
       }
     }

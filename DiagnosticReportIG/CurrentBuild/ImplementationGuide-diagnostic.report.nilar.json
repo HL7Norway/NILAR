@@ -3,13 +3,13 @@
   "id" : "diagnostic.report.nilar",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
-  "version" : "1.2.1",
+  "version" : "1.3.0",
   "name" : "DiagnosticReportIG",
   "status" : "active",
-  "date" : "2023-06-07T09:10:14+00:00",
+  "date" : "2023-08-30T12:04:38+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -788,6 +788,114 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item"
+      },
+      "name" : "Inf Item",
+      "description" : "Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-coded-descr"
+      },
+      "name" : "Inf Item Coded Descr",
+      "description" : "Coded description of clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/inf-item-coded-descr-vs"
+      },
+      "name" : "Inf Item Coded Descr VS",
+      "description" : "Value set for coded description of clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-descr"
+      },
+      "name" : "Inf Item Descr",
+      "description" : "Description of the clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-end"
+      },
+      "name" : "Inf Item End",
+      "description" : "End time for clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-org-time"
+      },
+      "name" : "Inf Item Org Time",
+      "description" : "Time of recording the clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-start"
+      },
+      "name" : "Inf Item Start",
+      "description" : "Start time for clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-type"
+      },
+      "name" : "Inf Item Type",
+      "description" : "Type of clinical information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/inf-item-type-vs"
+      },
+      "name" : "Inf Item Type VS",
+      "description" : "Codes for type of clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/nilar-investigation-date"
       },
       "name" : "Investigation Date",
@@ -812,10 +920,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/investigation-method-vs"
+      },
+      "name" : "Investigation Method VS",
+      "description" : "Codes used to specify method used in investigation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/investigation-spec-vs"
       },
       "name" : "Investigation Spec VS",
-      "description" : "Codes used to specify individual investigations regarding methods used.",
+      "description" : "Codes used to specify supplementary information about investigations.",
       "exampleBoolean" : false
     },
     {

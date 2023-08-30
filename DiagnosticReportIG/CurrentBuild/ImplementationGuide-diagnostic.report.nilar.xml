@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="diagnostic.report.nilar"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"/>
-  <version value="1.2.1"/>
+  <version value="1.3.0"/>
   <name value="DiagnosticReportIG"/>
   <status value="active"/>
-  <date value="2023-06-07T09:10:14+00:00"/>
+  <date value="2023-08-30T12:04:38+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
@@ -616,6 +616,105 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/nilar-inf-item"/>
+      </reference>
+      <name value="Inf Item"/>
+      <description value="Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-inf-item-coded-descr"/>
+      </reference>
+      <name value="Inf Item Coded Descr"/>
+      <description value="Coded description of clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/inf-item-coded-descr-vs"/>
+      </reference>
+      <name value="Inf Item Coded Descr VS"/>
+      <description value="Value set for coded description of clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-inf-item-descr"/>
+      </reference>
+      <name value="Inf Item Descr"/>
+      <description value="Description of the clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-inf-item-end"/>
+      </reference>
+      <name value="Inf Item End"/>
+      <description value="End time for clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-inf-item-org-time"/>
+      </reference>
+      <name value="Inf Item Org Time"/>
+      <description value="Time of recording the clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-inf-item-start"/>
+      </reference>
+      <name value="Inf Item Start"/>
+      <description value="Start time for clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-inf-item-type"/>
+      </reference>
+      <name value="Inf Item Type"/>
+      <description value="Type of clinical information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/inf-item-type-vs"/>
+      </reference>
+      <name value="Inf Item Type VS"/>
+      <description value="Codes for type of clinical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/nilar-investigation-date"/>
       </reference>
       <name value="Investigation Date"/>
@@ -638,10 +737,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/investigation-method-vs"/>
+      </reference>
+      <name value="Investigation Method VS"/>
+      <description value="Codes used to specify method used in investigation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/investigation-spec-vs"/>
       </reference>
       <name value="Investigation Spec VS"/>
-      <description value="Codes used to specify individual investigations regarding methods used."/>
+      <description value="Codes used to specify supplementary information about investigations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
