@@ -7,3 +7,5 @@ Thumbs.db
 */template
 */node_modules/*
 DiagnosticReportIG/sushi.bat
+.vs/
+xmlfiles.zip
