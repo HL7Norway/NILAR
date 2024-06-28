@@ -37,7 +37,6 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * extension contains Accredited named accredited 0..1
 * extension contains DiagnosticReportRef named diagnosticreportref 1..1
 * extension contains History named history 0..1
-* extension contains OtherInfo named otherinfo 0..*
 * extension contains InvestigationDate named investigationdate 0..1
 * extension contains StatusChangeDate named statuschangedate 0..1
 * extension contains CounterSignDate named countersigndate 0..1
@@ -45,3 +44,4 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * extension contains DescriptionDate named descriptiondate 0..1
 * extension contains Restriction named restriction 0..*
 * extension contains Specification named specification 0..1
+* extension contains RelatedObservation named relatedobservation 0..1

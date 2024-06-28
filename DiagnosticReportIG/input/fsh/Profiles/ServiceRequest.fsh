@@ -18,7 +18,6 @@ Description: "ServiceRecuest as used in Nilar, referenced from NilarDiagnosticRe
 * reasonCode ^definition = "Codes and/or text ientifying the reason for making the request."
 * reasonCode from RequestReason_VS
 * specimen ^definition = "The specimens appended to the request."
-* extension contains OtherInfo named otherinfo 0..*
 * extension contains ReceiptDate named receiptdate 0..1
 * extension contains PaymentCategory named paymentcategory 0..1
 * extension contains Comment named comment 0..*

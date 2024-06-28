@@ -26,7 +26,6 @@ Description: "DiagnosticReport for use in Nilar to accomodate laboratory reports
 * issued ^definition = "The date the report version was issued. Reports from labs has an IssueDate which represents the date of the first version and does not change in subsequent versions. Issued, representing the isse date of the version, is therefore derived from the message itself (GenDate)."
 * issued MS
 * performer only Reference(PractitionerRole)
-* extension contains OtherInfo named otherinfo 0..*
 * extension contains Comment named comment 0..*
 * extension[comment]
   * valueCodeableConcept from ReportComment_VS

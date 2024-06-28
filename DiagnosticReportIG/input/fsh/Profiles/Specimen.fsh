@@ -30,7 +30,6 @@ Description: "Specimen as used in Nilar, referenced from NilarDiagnosticReport a
   * additive[x] ^definition = "Material added to the specimen for preservation purposes. Pure text, no codesystem binding."
   * additive[x] only CodeableConcept
 * extension contains Accredited named accredited 0..1
-* extension contains OtherInfo named otherinfo 0..*
 * extension contains Pretreatment named pretreatment 0..1
 * extension contains ContainerCount named containercount 0..1
 * extension contains SampleHandling named samplehandling 0..*
