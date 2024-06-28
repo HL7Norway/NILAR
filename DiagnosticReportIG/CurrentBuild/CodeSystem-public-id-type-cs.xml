@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="public-id-type-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem public-id-type-cs</b></p><a name="public-id-type-cs"> </a><a name="hcpublic-id-type-cs"> </a><a name="hcpublic-id-type-cs-en-US"> </a><p>This  code system <code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.1<a name="public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.461"> </a></td><td>FNR</td><td>Fødselsnummer</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.2<a name="public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.462"> </a></td><td>DNR</td><td>D-nummer</td></tr><tr><td style="white-space:nowrap">urn:oid:2.16.578.1.12.4.1.4.3<a name="public-id-type-cs-urn.58oid.582.4616.46578.461.4612.464.461.464.463"> </a></td><td>FHNR</td><td>Felles hjelpenummer</td></tr></table></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"/>
-  <version value="1.3.0"/>
+  <version value="1.4.0"/>
   <name value="PublicIdType_CS"/>
   <title value="Public Id Type CS"/>
   <status value="active"/>
-  <date value="2023-08-30T12:04:38+00:00"/>
+  <date value="2024-06-28T12:17:56+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

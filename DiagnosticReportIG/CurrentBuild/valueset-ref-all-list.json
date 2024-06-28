@@ -1,0 +1,882 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/issue-severity",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IssueSeverity",
+      "title" : "IssueSeverity",
+      "description" : "How the issue affects the success of the action.",
+      "systems" : ["http://hl7.org/fhir/issue-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.408"],
+      "sources" : ["2.16.840.1.113883.4.642.3.408"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-operation-outcome.html" : "NilarOperationOutcome"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/issue-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IssueType",
+      "title" : "IssueType",
+      "description" : "A code that describes the type of issue.",
+      "systems" : ["http://hl7.org/fhir/issue-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.410"],
+      "sources" : ["2.16.840.1.113883.4.642.3.410"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-operation-outcome.html" : "NilarOperationOutcome"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+      "StructureDefinition-nilar-operation-outcome.html" : "NilarOperationOutcome"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRSpecimenCollectionMethod",
+      "title" : "FHIR Specimen Collection Method",
+      "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.468"],
+      "sources" : ["2.16.840.1.113883.4.642.3.468"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenContainerType",
+      "title" : "Specimen Container Type",
+      "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.470"],
+      "sources" : ["2.16.840.1.113883.4.642.3.470"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenProcessingProcedure",
+      "title" : "Specimen processing procedure",
+      "description" : "The technique that is used to perform the process or preserve the specimen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+      "oids" : ["2.16.840.1.113883.4.642.3.469"],
+      "sources" : ["2.16.840.1.113883.4.642.3.469"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "systems" : ["http://hl7.org/fhir/specimen-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.471"],
+      "sources" : ["2.16.840.1.113883.4.642.3.471"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "AllObservationCodes_VS",
+      "title" : "All Observation Codes VS",
+      "description" : "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/collector-comment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "CollectorComment_VS",
+      "title" : "Collector Comment VS",
+      "description" : "Coded comments from collector of sample.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DeviationIndicator_VS",
+      "title" : "Deviation Indicator VS",
+      "description" : "Indicates if a numeric observation value is ouside reference boundaries.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/document-restriction-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DocumentRestriction_VS",
+      "title" : "Document Restriction VS",
+      "description" : "Codes with furtehr information about a document restriction.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-restriction-code.html" : "Restriction Code"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/expertise-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Expertise_VS",
+      "title" : "Expertise ValueSet",
+      "description" : "Expertise of investigation used in producing an Observation.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "IdentifierSource_VS",
+      "title" : "Identifier Source VS",
+      "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers.",
+      "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InfItemCodedDescr_VS",
+      "title" : "Inf Item Coded Descr VS",
+      "description" : "Value set for coded description of clinical information.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-inf-item-coded-descr.html" : "Inf Item Coded Descr"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InfItemType_VS",
+      "title" : "Inf Item Type VS",
+      "description" : "Codes for type of clinical information.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-inf-item-type.html" : "Inf Item Type"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InvestigationId_VS",
+      "title" : "Investigation Id VS",
+      "description" : "Codes used to identify individual investigations leading up to an observation.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "ValueSet-all-observation-codes-vs.html" : "All Observation Codes VS"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InvestigationMethod_VS",
+      "title" : "Investigation Method VS",
+      "description" : "Codes used to specify method used in investigation.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InvestigationSpec_VS",
+      "title" : "Investigation Spec VS",
+      "description" : "Codes used to specify supplementary information about investigations.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/main-expertise-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "MainExpertise_VS",
+      "title" : "Main Expertise VS",
+      "description" : "The main type of labaratory expertise expressed in a DiagnosticReport.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ObservationResult_VS",
+      "title" : "Observation Result VS",
+      "description" : "Codes used to convey textual result values.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "ValueSet-all-observation-codes-vs.html" : "All Observation Codes VS"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "OrganizationItType_VS",
+      "title" : "Organization It Type VS",
+      "description" : "Id types for organizations involved in DiagnosticReport/Observation",
+      "systems" : [
+        "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "OutcomeDetails_VS",
+      "title" : "Outcome Details VS",
+      "description" : "A code that gives more details to the outcome, such as privacy settings.",
+      "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-operation-outcome.html" : "NilarOperationOutcome"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/payment-category-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PaymentCategory_VS",
+      "title" : "Payment Category VS",
+      "description" : "Codes for who will pay for the investigations.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-payment-category.html" : "Payment Category"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PersonIdType_VS",
+      "title" : "Person Id Type VS",
+      "description" : "Id types used to identify persons involved, other than the patient.",
+      "systems" : [
+        "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
+        "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Pretreatment_VS",
+      "title" : "Pretreatment-VS",
+      "description" : "Codes for pretreatment of patient from which specimen is sampled.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-pretreatment.html" : "Pretreatment"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PublicIdType_VS",
+      "title" : "PublicIdType_VS",
+      "description" : "Id types used to identify patients",
+      "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+      "StructureDefinition-nilar-observation.html" : "NilarObservation",
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/report-comment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ReportComment_VS",
+      "title" : "Report Comment VS",
+      "description" : "Codes used for comments in diagnostic report.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8272",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8273",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "RequestReason_VS",
+      "title" : "Request Reason VS",
+      "description" : "Type of text reply, indicates reason for request.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/requisition-comment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "RequisitionComment_VS",
+      "title" : "Requisition Comment VS",
+      "description" : "Codes used in requsition comments. 8234 represents 'heading', 8274 reresents coded text.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/reservation-codes-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ReservationCodes_VS",
+      "title" : "Reservation Codes",
+      "description" : "Reservations the patient might have, regarding registration etc.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-reservation.html" : "Reservation"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SpecimenType_VS",
+      "title" : "Specimen Type VS",
+      "description" : "Type og material in specimen.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8216",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/typeof-diagnostic-report-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "TypeDiagnosticReport_VS",
+      "title" : "Type of diagnostic report",
+      "description" : "Type of diagnostic report, indication the kind of tests/procedures performed in a DiagnosticReport.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdditivePreservative",
+      "title" : "hl7VS-additivePreservative",
+      "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+      "oids" : ["2.16.840.1.113883.21.245"],
+      "sources" : ["2.16.840.1.113883.21.245"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenCondition",
+      "title" : "hl7VS-specimenCondition",
+      "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "oids" : ["2.16.840.1.113883.21.333"],
+      "sources" : ["2.16.840.1.113883.21.333"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRelevantClincialInformation",
+      "title" : "hl7VS-relevantClincialInformation",
+      "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+      "oids" : ["2.16.840.1.113883.21.440"],
+      "sources" : ["2.16.840.1.113883.21.440"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-specimen.html" : "NilarSpecimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest"
+    }
+  ]
+}

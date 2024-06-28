@@ -21,6 +21,8 @@
       <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-counter-sign-date']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-counter-sign-date': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-medical-validation-date']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-medical-validation-date': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-description-date']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-description-date': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-related-observation']) &lt;= 1">extension with URL = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-related-observation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:interpretation) &lt;= 1">interpretation: maximum cardinality of 'interpretation' is 1</sch:assert>

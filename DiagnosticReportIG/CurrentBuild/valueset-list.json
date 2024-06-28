@@ -1,0 +1,277 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "AllObservationCodes_VS",
+      "title" : "All Observation Codes VS",
+      "description" : "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/collector-comment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "CollectorComment_VS",
+      "title" : "Collector Comment VS",
+      "description" : "Coded comments from collector of sample.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DeviationIndicator_VS",
+      "title" : "Deviation Indicator VS",
+      "description" : "Indicates if a numeric observation value is ouside reference boundaries.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/document-restriction-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "DocumentRestriction_VS",
+      "title" : "Document Restriction VS",
+      "description" : "Codes with furtehr information about a document restriction.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/expertise-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Expertise_VS",
+      "title" : "Expertise ValueSet",
+      "description" : "Expertise of investigation used in producing an Observation.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "IdentifierSource_VS",
+      "title" : "Identifier Source VS",
+      "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers.",
+      "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InfItemCodedDescr_VS",
+      "title" : "Inf Item Coded Descr VS",
+      "description" : "Value set for coded description of clinical information.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InfItemType_VS",
+      "title" : "Inf Item Type VS",
+      "description" : "Codes for type of clinical information.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InvestigationId_VS",
+      "title" : "Investigation Id VS",
+      "description" : "Codes used to identify individual investigations leading up to an observation.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InvestigationMethod_VS",
+      "title" : "Investigation Method VS",
+      "description" : "Codes used to specify method used in investigation.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "InvestigationSpec_VS",
+      "title" : "Investigation Spec VS",
+      "description" : "Codes used to specify supplementary information about investigations.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/main-expertise-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "MainExpertise_VS",
+      "title" : "Main Expertise VS",
+      "description" : "The main type of labaratory expertise expressed in a DiagnosticReport.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ObservationResult_VS",
+      "title" : "Observation Result VS",
+      "description" : "Codes used to convey textual result values.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "OrganizationItType_VS",
+      "title" : "Organization It Type VS",
+      "description" : "Id types for organizations involved in DiagnosticReport/Observation",
+      "systems" : [
+        "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "OutcomeDetails_VS",
+      "title" : "Outcome Details VS",
+      "description" : "A code that gives more details to the outcome, such as privacy settings.",
+      "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/payment-category-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PaymentCategory_VS",
+      "title" : "Payment Category VS",
+      "description" : "Codes for who will pay for the investigations.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PersonIdType_VS",
+      "title" : "Person Id Type VS",
+      "description" : "Id types used to identify persons involved, other than the patient.",
+      "systems" : [
+        "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
+        "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Pretreatment_VS",
+      "title" : "Pretreatment-VS",
+      "description" : "Codes for pretreatment of patient from which specimen is sampled.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PublicIdType_VS",
+      "title" : "PublicIdType_VS",
+      "description" : "Id types used to identify patients",
+      "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/report-comment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ReportComment_VS",
+      "title" : "Report Comment VS",
+      "description" : "Codes used for comments in diagnostic report.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8272",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8273",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "RequestReason_VS",
+      "title" : "Request Reason VS",
+      "description" : "Type of text reply, indicates reason for request.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/requisition-comment-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "RequisitionComment_VS",
+      "title" : "Requisition Comment VS",
+      "description" : "Codes used in requsition comments. 8234 represents 'heading', 8274 reresents coded text.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/reservation-codes-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ReservationCodes_VS",
+      "title" : "Reservation Codes",
+      "description" : "Reservations the patient might have, regarding registration etc.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108"]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "SpecimenType_VS",
+      "title" : "Specimen Type VS",
+      "description" : "Type og material in specimen.",
+      "systems" : [
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8216",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212",
+        "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351"
+      ]
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/ValueSet/typeof-diagnostic-report-vs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "TypeDiagnosticReport_VS",
+      "title" : "Type of diagnostic report",
+      "description" : "Type of diagnostic report, indication the kind of tests/procedures performed in a DiagnosticReport.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202"]
+    }
+  ]
+}

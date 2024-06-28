@@ -1,0 +1,44 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "IdentifierSource_CS",
+      "title" : "Identifier Source CS",
+      "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers."
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "OrganizationIdType_CS",
+      "title" : "Organization Id Type CS",
+      "description" : "Id types used to identify organizations."
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PersonIdType_CS",
+      "title" : "Person Id Type CS",
+      "description" : "Id types used to identify persons involved, other than the patient."
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PublicIdType_CS",
+      "title" : "Public Id Type CS",
+      "description" : "Id types used to identify patients"
+    },
+    {
+      "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "PvkOutcome_CS",
+      "title" : "Pvk Outcome CS",
+      "description" : "A code that indicates how privacy settings (PVK) may have affected the outcome."
+    }
+  ]
+}

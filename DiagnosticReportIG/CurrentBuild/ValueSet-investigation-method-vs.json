@@ -3,14 +3,14 @@
   "id" : "investigation-method-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet investigation-method-vs</b></p><a name=\"investigation-method-vs\"> </a><a name=\"hcinvestigation-method-vs\"> </a><a name=\"hcinvestigation-method-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "InvestigationMethod_VS",
   "title" : "Investigation Method VS",
   "status" : "active",
-  "date" : "2023-08-30T12:04:38+00:00",
+  "date" : "2024-06-28T12:17:56+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

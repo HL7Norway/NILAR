@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "public-it-type-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet public-it-type-vs</b></p><a name=\"public-it-type-vs\"> </a><a name=\"hcpublic-it-type-vs\"> </a><a name=\"hcpublic-it-type-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "PublicIdType_VS"] ; # 
   fhir:title [ fhir:v "PublicIdType_VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-30T12:04:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-28T12:17:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;

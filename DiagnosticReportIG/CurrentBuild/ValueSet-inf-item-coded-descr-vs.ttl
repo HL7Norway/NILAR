@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "inf-item-coded-descr-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet inf-item-coded-descr-vs</b></p><a name=\"inf-item-coded-descr-vs\"> </a><a name=\"hcinf-item-coded-descr-vs\"> </a><a name=\"hcinf-item-coded-descr-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277</code></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "InfItemCodedDescr_VS"] ; # 
   fhir:title [ fhir:v "Inf Item Coded Descr VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-08-30T12:04:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-28T12:17:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;

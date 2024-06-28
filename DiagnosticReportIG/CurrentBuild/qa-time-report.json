@@ -1,596 +1,59 @@
 {
-  "date" : "Wed, 30 Aug, 2023 12:04:38 +0000",
+  "date" : "Fri, 28 Jun, 2024 12:17:56 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar.json",
-      "size" : 19832,
+      "size" : 20067,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 66,
-          "length" : 719
+          "start" : 36,
+          "length" : 14
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 87,
-          "length" : 6
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 87,
-          "length" : 691
-        },
-        {
-          "activity" : "validate",
-          "start" : 117,
-          "length" : 1385
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 118,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 119,
-          "length" : 282
-        },
-        {
-          "activity" : "generate2",
-          "start" : 126,
-          "length" : 188
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 183,
-          "length" : 1
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 184,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 8
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 209,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-restriction-code.json",
-      "size" : 1560,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 117
-        },
-        {
-          "activity" : "loadInfo",
-          "start" : 60,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 90
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 66,
-          "length" : 200
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 88,
-          "length" : 286
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 162
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 38
-        },
-        {
-          "activity" : "generate2",
-          "start" : 126,
-          "length" : 1106
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-main-expertise-vs.json",
-      "size" : 737,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 88,
-          "length" : 372
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 460
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 7
-        },
-        {
-          "activity" : "generate2",
-          "start" : 127,
-          "length" : 9848
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-status-change-date.json",
-      "size" : 1370,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 95
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 106
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 67,
-          "length" : 209
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 88,
-          "length" : 198
-        },
-        {
-          "activity" : "validate",
-          "start" : 109,
-          "length" : 122
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 29
-        },
-        {
-          "activity" : "generate2",
-          "start" : 137,
-          "length" : 318
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-start.json",
-      "size" : 1364,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 93
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 89
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 67,
-          "length" : 204
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 88,
-          "length" : 207
-        },
-        {
-          "activity" : "validate",
-          "start" : 109,
-          "length" : 87
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 118,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 27
-        },
-        {
-          "activity" : "generate2",
-          "start" : 137,
-          "length" : 362
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-investigation-spec-vs.json",
-      "size" : 722,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 89,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 14
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 138,
-          "length" : 653
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-investigation-date.json",
-      "size" : 1391,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 87
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 60,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 78
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 67,
-          "length" : 200
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 89,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 109,
-          "length" : 82
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 29
-        },
-        {
-          "activity" : "generate2",
-          "start" : 138,
-          "length" : 283
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-payment-category-vs.json",
-      "size" : 414,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 89,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 8
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 5
-        },
-        {
-          "activity" : "generate2",
-          "start" : 138,
-          "length" : 628
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-investigation-method-vs.json",
-      "size" : 435,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 89,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 9
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 5
-        },
-        {
-          "activity" : "generate2",
-          "start" : 139,
-          "length" : 656
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-report-comment-vs.json",
-      "size" : 579,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 89,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
+          "start" : 36,
           "length" : 10
         },
         {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 140,
-          "length" : 817
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-service-request.json",
-      "size" : 7110,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 357
-        },
-        {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 492
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 67,
-          "length" : 2410
-        },
-        {
           "activity" : "generateNarratives",
-          "start" : 89,
-          "length" : 2192
+          "start" : 36,
+          "length" : 60
         },
         {
           "activity" : "validate",
-          "start" : 109,
-          "length" : 1156
+          "start" : 43,
+          "length" : 568
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 118,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 358
-        },
-        {
-          "activity" : "generate2",
-          "start" : 141,
-          "length" : 2259
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 183,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 14
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 209,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-organization-it-type-vs.json",
-      "size" : 460,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
+          "start" : 44,
           "length" : 3
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 91,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 9
-        },
-        {
           "activity" : "generate1",
-          "start" : 120,
-          "length" : 6
+          "start" : 44,
+          "length" : 159
         },
         {
           "activity" : "generate2",
-          "start" : 143,
-          "length" : 73
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-description-date.json",
-      "size" : 1405,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 71
+          "start" : 50,
+          "length" : 109
         },
         {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 80
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 70,
-          "length" : 213
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 91,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 110,
-          "length" : 102
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 29
-        },
-        {
-          "activity" : "generate2",
-          "start" : 143,
-          "length" : 251
+          "activity" : "generateExampleZip",
+          "start" : 75,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
+          "start" : 76,
+          "length" : 7
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 209,
+          "start" : 87,
           "length" : 1
         }
       ]
@@ -601,978 +64,124 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 56,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 14
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 91,
-          "length" : 10
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 58
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 143,
-          "length" : 92
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-study-product-type.json",
-      "size" : 1362,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 70
-        },
-        {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 101
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 70,
-          "length" : 203
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 91,
-          "length" : 206
-        },
-        {
-          "activity" : "validate",
-          "start" : 110,
-          "length" : 77
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 24
-        },
-        {
-          "activity" : "generate2",
-          "start" : 143,
-          "length" : 337
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-approval-date.json",
-      "size" : 1359,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 71
-        },
-        {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 78
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 70,
-          "length" : 200
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 91,
-          "length" : 194
-        },
-        {
-          "activity" : "validate",
-          "start" : 110,
-          "length" : 76
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 28
-        },
-        {
-          "activity" : "generate2",
-          "start" : 144,
-          "length" : 232
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-medical-validation-date.json",
-      "size" : 1442,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 56,
-          "length" : 71
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 60,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 77
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 70,
-          "length" : 207
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 92,
-          "length" : 196
-        },
-        {
-          "activity" : "validate",
-          "start" : 110,
-          "length" : 80
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 25
-        },
-        {
-          "activity" : "generate2",
-          "start" : 144,
-          "length" : 257
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-observation-result-vs.json",
-      "size" : 779,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 92,
+          "start" : 34,
           "length" : 5
         },
         {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 12
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 144,
-          "length" : 310
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-person-id-type-vs.json",
-      "size" : 521,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 2
-        },
-        {
           "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 92,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
+          "start" : 35,
           "length" : 8
         },
         {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 7
-        },
-        {
-          "activity" : "generate2",
-          "start" : 144,
-          "length" : 39
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-operation-outcome.json",
-      "size" : 1474,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 58
-        },
-        {
-          "activity" : "load",
-          "start" : 61,
-          "length" : 44
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 70,
-          "length" : 557
-        },
-        {
           "activity" : "generateNarratives",
-          "start" : 92,
-          "length" : 514
-        },
-        {
-          "activity" : "validate",
-          "start" : 110,
-          "length" : 306
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 97
-        },
-        {
-          "activity" : "generate2",
-          "start" : 144,
-          "length" : 427
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-requisition-comment-vs.json",
-      "size" : 555,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 92,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 10
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 5
-        },
-        {
-          "activity" : "generate2",
-          "start" : 145,
-          "length" : 589
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-request-reason-vs.json",
-      "size" : 409,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 92,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
+          "start" : 36,
           "length" : 8
         },
         {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 145,
-          "length" : 571
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-coded-descr.json",
-      "size" : 1566,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 67
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 78
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 71,
-          "length" : 242
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 92,
-          "length" : 204
-        },
-        {
           "activity" : "validate",
-          "start" : 111,
-          "length" : 79
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 24
-        },
-        {
-          "activity" : "generate2",
-          "start" : 146,
-          "length" : 127
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-counter-sign-date.json",
-      "size" : 1394,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 65
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 79
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 71,
-          "length" : 196
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 93,
-          "length" : 194
-        },
-        {
-          "activity" : "validate",
-          "start" : 111,
-          "length" : 83
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 118,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 120,
-          "length" : 23
-        },
-        {
-          "activity" : "generate2",
-          "start" : 146,
-          "length" : 126
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 209,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-practitioner-role.json",
-      "size" : 2970,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 185
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 232
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 71,
-          "length" : 2463
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 93,
-          "length" : 2372
-        },
-        {
-          "activity" : "validate",
-          "start" : 111,
-          "length" : 1703
+          "start" : 39,
+          "length" : 32
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 118,
-          "length" : 5
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 118,
+          "start" : 44,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 120,
-          "length" : 517
+          "start" : 44,
+          "length" : 21
         },
         {
           "activity" : "generate2",
-          "start" : 146,
-          "length" : 1656
+          "start" : 50,
+          "length" : 1643
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 17
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 209,
-          "length" : 2
+          "start" : 76,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-all-observation-codes-vs.json",
-      "size" : 653,
+      "name" : "fsh-generated/resources/CodeSystem-organization-id-type-cs.json",
+      "size" : 888,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 57,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
+          "start" : 34,
           "length" : 3
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 95,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 10
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 7
-        },
-        {
-          "activity" : "generate2",
-          "start" : 148,
-          "length" : 346
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-collector-comment-vs.json",
-      "size" : 412,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 2
-        },
-        {
           "activity" : "load",
-          "start" : 60,
-          "length" : 3
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 87,
+          "start" : 36,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 95,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 11
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 148,
-          "length" : 568
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-specimen-type-vs.json",
-      "size" : 559,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 95,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 12
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 149,
-          "length" : 557
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-reservation.json",
-      "size" : 1556,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 66
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 79
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 74,
-          "length" : 199
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 95,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 112,
-          "length" : 75
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 28
-        },
-        {
-          "activity" : "generate2",
-          "start" : 149,
-          "length" : 141
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 209,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-end.json",
-      "size" : 1348,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 65
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 60,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 78
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 74,
-          "length" : 227
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 95,
-          "length" : 205
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 86
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 26
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 137
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-accredited.json",
-      "size" : 1509,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 66
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 78
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 74,
-          "length" : 265
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 96,
-          "length" : 194
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 90
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 26
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 136
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-diagnostic-report-ref.json",
-      "size" : 1744,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 66
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 78
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 75,
-          "length" : 231
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 96,
-          "length" : 206
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 71
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 54
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 132
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-sample-handling.json",
-      "size" : 1429,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 66
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 95
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 75,
-          "length" : 207
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 96,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 73
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 64
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 118
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-type.json",
-      "size" : 1490,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 66
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 106
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 75,
-          "length" : 197
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 96,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 75
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 48
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 132
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-pvk-outcome-cs.json",
-      "size" : 929,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 96,
+          "start" : 36,
           "length" : 5
         },
         {
           "activity" : "validate",
-          "start" : 108,
-          "length" : 14
+          "start" : 39,
+          "length" : 8
         },
         {
           "activity" : "generate1",
-          "start" : 121,
-          "length" : 18
+          "start" : 44,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 150,
-          "length" : 33
+          "start" : 51,
+          "length" : 62
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-person-id-type-cs.json",
+      "size" : 715,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 50
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 1
         }
       ]
@@ -1583,1398 +192,2059 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 57,
+          "start" : 34,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 60,
-          "length" : 3
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 96,
-          "length" : 5
+          "start" : 36,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 108,
-          "length" : 13
+          "start" : 39,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 121,
-          "length" : 21
+          "start" : 44,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 150,
-          "length" : 28
+          "start" : 52,
+          "length" : 48
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-pvk-outcome-cs.json",
+      "size" : 929,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 49
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-accredited.json",
+      "size" : 1390,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "scan",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 80
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 55
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 654
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-approval-date.json",
+      "size" : 1240,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 193
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-comment.json",
+      "size" : 1394,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 23
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 41
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 159
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-nilar-container-count.json",
-      "size" : 1432,
+      "size" : 1313,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 57,
-          "length" : 65
-        },
-        {
-          "activity" : "load",
-          "start" : 62,
-          "length" : 104
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 75,
-          "length" : 196
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 96,
-          "length" : 206
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 67
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 34
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 125
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-public-it-type-vs.json",
-      "size" : 395,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
+          "start" : 34,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 150,
-          "length" : 33
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-receipt-date.json",
-      "size" : 1341,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 57,
-          "length" : 98
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 105
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 75,
-          "length" : 205
+          "start" : 36,
+          "length" : 22
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 194
+          "start" : 36,
+          "length" : 8
         },
         {
           "activity" : "validate",
-          "start" : 113,
-          "length" : 73
+          "start" : 41,
+          "length" : 38
         },
         {
           "activity" : "generate1",
-          "start" : 121,
-          "length" : 34
+          "start" : 44,
+          "length" : 51
         },
         {
           "activity" : "generate2",
-          "start" : 150,
-          "length" : 114
+          "start" : 53,
+          "length" : 177
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 2
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 209,
+          "start" : 87,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-payment-category.json",
-      "size" : 1524,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-counter-sign-date.json",
+      "size" : 1275,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 58,
-          "length" : 71
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 121
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 76,
-          "length" : 198
+          "start" : 36,
+          "length" : 16
         },
         {
           "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 71
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 118,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 55
-        },
-        {
-          "activity" : "generate2",
-          "start" : 151,
-          "length" : 121
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-pretreatment-vs.json",
-      "size" : 418,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 66,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
+          "start" : 36,
           "length" : 9
         },
         {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 30
+        },
+        {
           "activity" : "generate1",
-          "start" : 121,
-          "length" : 14
+          "start" : 44,
+          "length" : 51
         },
         {
           "activity" : "generate2",
-          "start" : 151,
-          "length" : 569
+          "start" : 53,
+          "length" : 151
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-descr.json",
-      "size" : 1370,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-description-date.json",
+      "size" : 1286,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 58,
-          "length" : 70
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 60,
-          "length" : 1
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 83
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 76,
-          "length" : 196
+          "start" : 36,
+          "length" : 18
         },
         {
           "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 205
+          "start" : 36,
+          "length" : 39
         },
         {
           "activity" : "validate",
-          "start" : 113,
-          "length" : 67
+          "start" : 41,
+          "length" : 29
         },
         {
           "activity" : "generate1",
-          "start" : 121,
-          "length" : 59
+          "start" : 44,
+          "length" : 51
         },
         {
           "activity" : "generate2",
-          "start" : 151,
-          "length" : 118
+          "start" : 53,
+          "length" : 133
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 2
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/CodeSystem-person-id-type-cs.json",
-      "size" : 715,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-diagnostic-report-ref.json",
+      "size" : 1625,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 58,
+          "start" : 34,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 12
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 15
-        },
-        {
-          "activity" : "generate2",
-          "start" : 151,
-          "length" : 33
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-pretreatment.json",
-      "size" : 1559,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 71
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 82
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 76,
-          "length" : 265
+          "start" : 36,
+          "length" : 20
         },
         {
           "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 195
+          "start" : 36,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 113,
-          "length" : 104
+          "start" : 41,
+          "length" : 31
         },
         {
           "activity" : "generate1",
-          "start" : 121,
+          "start" : 44,
           "length" : 52
         },
         {
           "activity" : "generate2",
-          "start" : 151,
-          "length" : 120
+          "start" : 53,
+          "length" : 127
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-inf-item-type-vs.json",
-      "size" : 394,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 8
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 5
-        },
-        {
-          "activity" : "generate2",
-          "start" : 151,
-          "length" : 558
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-outcome-details-vs.json",
-      "size" : 437,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 8
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 17
-        },
-        {
-          "activity" : "generate2",
-          "start" : 152,
-          "length" : 34
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-organization-id-type-cs.json",
-      "size" : 888,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 14
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 152,
-          "length" : 29
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-identifier-source-vs.json",
-      "size" : 544,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 152,
-          "length" : 75
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 164,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-restrict-until.json",
-      "size" : 1369,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 70
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 97
-        },
-        {
-          "activity" : "generateSnapshots",
           "start" : 76,
-          "length" : 273
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 97,
-          "length" : 194
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 72
-        },
-        {
-          "activity" : "validate",
-          "start" : 117,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 37
-        },
-        {
-          "activity" : "generate2",
-          "start" : 152,
-          "length" : 175
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-restriction.json",
-      "size" : 2452,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 107
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 120
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 77,
-          "length" : 297
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 98,
-          "length" : 296
-        },
-        {
-          "activity" : "validate",
-          "start" : 113,
-          "length" : 154
-        },
-        {
-          "activity" : "generate1",
-          "start" : 121,
-          "length" : 65
-        },
-        {
-          "activity" : "generate2",
-          "start" : 152,
-          "length" : 243
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-org-time.json",
-      "size" : 1395,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-diagnostic-report.json",
+      "size" : 7849,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 58,
-          "length" : 70
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 80
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 77,
-          "length" : 200
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 98,
-          "length" : 194
-        },
-        {
-          "activity" : "validate",
-          "start" : 114,
-          "length" : 76
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 22
-        },
-        {
-          "activity" : "generate2",
-          "start" : 153,
-          "length" : 184
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item.json",
-      "size" : 4342,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 197
-        },
-        {
-          "activity" : "scan",
-          "start" : 60,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 220
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 77,
-          "length" : 518
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 98,
-          "length" : 514
-        },
-        {
-          "activity" : "validate",
-          "start" : 114,
-          "length" : 203
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 61
-        },
-        {
-          "activity" : "generate2",
-          "start" : 153,
-          "length" : 416
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-investigation-id-vs.json",
-      "size" : 810,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 2
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 60,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 99,
+          "start" : 34,
           "length" : 5
         },
         {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 117
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 60
+        },
+        {
           "activity" : "validate",
-          "start" : 108,
-          "length" : 13
+          "start" : 41,
+          "length" : 265
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 118,
+          "start" : 44,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 122,
-          "length" : 6
+          "start" : 44,
+          "length" : 396
         },
         {
           "activity" : "generate2",
-          "start" : 153,
-          "length" : 326
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-other-info.json",
-      "size" : 1461,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 70
-        },
-        {
-          "activity" : "load",
-          "start" : 63,
-          "length" : 89
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 78,
-          "length" : 205
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 195
-        },
-        {
-          "activity" : "validate",
-          "start" : 114,
-          "length" : 68
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 22
-        },
-        {
-          "activity" : "generate2",
-          "start" : 154,
-          "length" : 145
+          "start" : 53,
+          "length" : 797
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-inf-item-coded-descr-vs.json",
-      "size" : 786,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 3
+          "start" : 76,
+          "length" : 12
         },
         {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 4
-        },
-        {
-          "activity" : "checkR4R4B",
+          "activity" : "scanExamplesForR5",
           "start" : 87,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 23
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 6
-        },
-        {
-          "activity" : "generate2",
-          "start" : 154,
-          "length" : 638
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-document-restriction-vs.json",
-      "size" : 444,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 10
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 19
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 5
-        },
-        {
-          "activity" : "generate2",
-          "start" : 154,
-          "length" : 564
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-expertise-vs.json",
-      "size" : 1209,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 60,
-          "length" : 8
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 268
-        },
-        {
-          "activity" : "validate",
-          "start" : 108,
-          "length" : 21
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 7
-        },
-        {
-          "activity" : "generate2",
-          "start" : 155,
-          "length" : 578
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-study-product-ref.json",
-      "size" : 1378,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 58,
-          "length" : 70
-        },
-        {
-          "activity" : "load",
-          "start" : 64,
-          "length" : 79
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 78,
-          "length" : 236
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 205
-        },
-        {
-          "activity" : "validate",
-          "start" : 114,
-          "length" : 65
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
-          "length" : 21
-        },
-        {
-          "activity" : "generate2",
-          "start" : 155,
-          "length" : 114
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 184,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-nilar-history.json",
-      "size" : 1499,
+      "size" : 1380,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 58,
-          "length" : 70
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 64,
-          "length" : 79
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 78,
-          "length" : 273
+          "start" : 36,
+          "length" : 17
         },
         {
           "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 195
+          "start" : 37,
+          "length" : 9
         },
         {
           "activity" : "validate",
-          "start" : 114,
-          "length" : 63
+          "start" : 41,
+          "length" : 36
         },
         {
           "activity" : "generate1",
-          "start" : 122,
-          "length" : 22
+          "start" : 45,
+          "length" : 50
         },
         {
           "activity" : "generate2",
-          "start" : 156,
-          "length" : 123
+          "start" : 54,
+          "length" : 77
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 2
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-diagnostic-report.json",
-      "size" : 8701,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-coded-descr.json",
+      "size" : 1447,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 58,
-          "length" : 499
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 64,
-          "length" : 522
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 78,
-          "length" : 2176
+          "start" : 36,
+          "length" : 12
         },
         {
           "activity" : "generateNarratives",
-          "start" : 99,
-          "length" : 2025
+          "start" : 37,
+          "length" : 8
         },
         {
           "activity" : "validate",
-          "start" : 114,
-          "length" : 753
+          "start" : 41,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 85
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-descr.json",
+      "size" : 1251,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 24
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 118,
+          "start" : 44,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 122,
-          "length" : 291
+          "start" : 45,
+          "length" : 50
         },
         {
           "activity" : "generate2",
-          "start" : 156,
-          "length" : 1268
+          "start" : 54,
+          "length" : 88
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-end.json",
+      "size" : 1229,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
           "length" : 11
         },
         {
-          "activity" : "scanExamplesForR5",
-          "start" : 209,
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 76
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-comment.json",
-      "size" : 1513,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-org-time.json",
+      "size" : 1276,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 59,
-          "length" : 66
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 35,
+          "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 64,
-          "length" : 106
+          "start" : 35,
+          "length" : 3
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 81,
-          "length" : 204
+          "start" : 36,
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 102,
-          "length" : 196
+          "start" : 37,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 115,
-          "length" : 71
-        },
-        {
-          "activity" : "generate1",
-          "start" : 122,
+          "start" : 41,
           "length" : 23
         },
         {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 51
+        },
+        {
           "activity" : "generate2",
-          "start" : 157,
-          "length" : 114
+          "start" : 54,
+          "length" : 71
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 2
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-report-date.json",
-      "size" : 1381,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-start.json",
+      "size" : 1245,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 59,
-          "length" : 65
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 64,
-          "length" : 95
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 81,
-          "length" : 199
+          "start" : 36,
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 102,
-          "length" : 193
+          "start" : 37,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 115,
-          "length" : 63
+          "start" : 41,
+          "length" : 23
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 122,
-          "length" : 21
+          "start" : 45,
+          "length" : 49
         },
         {
           "activity" : "generate2",
-          "start" : 157,
-          "length" : 109
+          "start" : 54,
+          "length" : 79
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-nilar-observation.json",
-      "size" : 11990,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item-type.json",
+      "size" : 1371,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 59,
-          "length" : 551
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 64,
-          "length" : 630
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 81,
-          "length" : 3057
+          "start" : 36,
+          "length" : 11
         },
         {
           "activity" : "generateNarratives",
-          "start" : 102,
-          "length" : 2786
+          "start" : 37,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 115,
-          "length" : 1032
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 118,
-          "length" : 1
+          "start" : 41,
+          "length" : 27
         },
         {
           "activity" : "generate1",
-          "start" : 122,
-          "length" : 431
+          "start" : 45,
+          "length" : 53
         },
         {
           "activity" : "generate2",
-          "start" : 157,
-          "length" : 2119
+          "start" : 55,
+          "length" : 74
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 69,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 57
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-inf-item.json",
+      "size" : 4223,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 73
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 122
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 217
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 209,
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-investigation-date.json",
+      "size" : 1272,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 52
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 75
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 87,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-nilar-logistics.json",
-      "size" : 1320,
+      "size" : 1201,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 60,
-          "length" : 72
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 65,
-          "length" : 79
+          "start" : 35,
+          "length" : 3
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 84,
-          "length" : 210
+          "start" : 36,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 105,
-          "length" : 203
+          "start" : 37,
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 116,
-          "length" : 61
+          "start" : 41,
+          "length" : 20
         },
         {
           "activity" : "generate1",
-          "start" : 122,
-          "length" : 23
+          "start" : 45,
+          "length" : 51
         },
         {
           "activity" : "generate2",
-          "start" : 159,
-          "length" : 156
+          "start" : 55,
+          "length" : 68
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-medical-validation-date.json",
+      "size" : 1323,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 23
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
           "length" : 2
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs.json",
-      "size" : 494,
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-observation.json",
+      "size" : 11666,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 60,
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 76
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 355
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
           "length" : 2
         },
         {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 616
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1119
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-operation-outcome.json",
+      "size" : 1253,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 56
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 142
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 144
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-payment-category.json",
+      "size" : 1405,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 54
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 67
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-practitioner-role.json",
+      "size" : 2970,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 69
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 321
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 443
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 1014
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-pretreatment.json",
+      "size" : 1440,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
           "activity" : "load-configure",
-          "start" : 60,
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 35,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 60,
-          "length" : 2
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 105,
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 30
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 57
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 90
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-receipt-date.json",
+      "size" : 1222,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 84
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-related-observation.json",
+      "size" : 1385,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
           "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 108,
-          "length" : 21
+          "start" : 42,
+          "length" : 27
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 123,
-          "length" : 5
+          "start" : 47,
+          "length" : 51
         },
         {
           "activity" : "generate2",
-          "start" : 159,
-          "length" : 588
+          "start" : 58,
+          "length" : 82
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 8
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-report-date.json",
+      "size" : 1262,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 52
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 100
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-reservation.json",
+      "size" : 1437,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 52
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 59
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-restrict-until.json",
+      "size" : 1250,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 66
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-restriction-code.json",
+      "size" : 1441,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 55
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-restriction.json",
+      "size" : 2333,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 56
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 74
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 90
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-sample-handling.json",
+      "size" : 1310,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 25
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 80
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-service-request.json",
+      "size" : 6112,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 36
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 268
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 378
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 499
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-specification.json",
+      "size" : 1318,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 59
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-nilar-specimen.json",
-      "size" : 9064,
+      "size" : 8349,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 60,
-          "length" : 513
+          "start" : 34,
+          "length" : 5
         },
         {
-          "activity" : "load",
-          "start" : 65,
-          "length" : 597
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 84,
-          "length" : 2701
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 105,
-          "length" : 2609
-        },
-        {
-          "activity" : "validate",
-          "start" : 116,
-          "length" : 879
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 118,
+          "activity" : "load-configure",
+          "start" : 35,
           "length" : 1
         },
         {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 51
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 295
+        },
+        {
           "activity" : "scanForUsageStats",
-          "start" : 118,
+          "start" : 44,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 123,
-          "length" : 341
+          "start" : 48,
+          "length" : 428
         },
         {
           "activity" : "generate2",
-          "start" : 160,
-          "length" : 1290
+          "start" : 59,
+          "length" : 673
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 21
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 209,
-          "length" : 1
+          "start" : 76,
+          "length" : 12
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 209,
+          "start" : 87,
           "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-status-change-date.json",
+      "size" : 1251,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 105
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-study-product-ref.json",
+      "size" : 1259,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 24
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 85
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-nilar-study-product-type.json",
+      "size" : 1243,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 22
+        },
+        {
+          "activity" : "checkConformanceResources2",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 91
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-all-observation-codes-vs.json",
+      "size" : 653,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 105
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 2361
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-collector-comment-vs.json",
+      "size" : 412,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 237
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 312
         }
       ]
     },
@@ -2984,38 +2254,767 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 60,
-          "length" : 2
+          "start" : 34,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 60,
+          "start" : 35,
           "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 108,
-          "length" : 5
+          "start" : 37,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 108,
-          "length" : 13
+          "start" : 39,
+          "length" : 29
         },
         {
           "activity" : "generate1",
-          "start" : 123,
-          "length" : 5
+          "start" : 48,
+          "length" : 10
         },
         {
           "activity" : "generate2",
-          "start" : 161,
-          "length" : 592
+          "start" : 62,
+          "length" : 311
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-document-restriction-vs.json",
+      "size" : 444,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 31
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 294
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
+          "start" : 76,
           "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-expertise-vs.json",
+      "size" : 1209,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1964
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 71
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 260
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-identifier-source-vs.json",
+      "size" : 544,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 47
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-inf-item-coded-descr-vs.json",
+      "size" : 786,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 139
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 416
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-inf-item-type-vs.json",
+      "size" : 394,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 274
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-investigation-id-vs.json",
+      "size" : 810,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 145
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 147
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-investigation-method-vs.json",
+      "size" : 435,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "scan",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 28
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 268
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-investigation-spec-vs.json",
+      "size" : 722,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 141
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-main-expertise-vs.json",
+      "size" : 737,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 241
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 276
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-observation-result-vs.json",
+      "size" : 779,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 77
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 249
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-organization-it-type-vs.json",
+      "size" : 460,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 49
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-outcome-details-vs.json",
+      "size" : 437,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 41
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-payment-category-vs.json",
+      "size" : 414,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 285
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-person-id-type-vs.json",
+      "size" : 521,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 45
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-pretreatment-vs.json",
+      "size" : 418,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 291
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-public-it-type-vs.json",
+      "size" : 395,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 31
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-report-comment-vs.json",
+      "size" : 579,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 78
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 331
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-request-reason-vs.json",
+      "size" : 409,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 258
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-requisition-comment-vs.json",
+      "size" : 555,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 50
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 295
         }
       ]
     },
@@ -3025,38 +3024,110 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 60,
-          "length" : 1
+          "start" : 34,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 60,
-          "length" : 3
+          "start" : 35,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 108,
-          "length" : 4
+          "start" : 39,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 108,
-          "length" : 16
+          "start" : 40,
+          "length" : 33
         },
         {
           "activity" : "generate1",
-          "start" : 123,
-          "length" : 5
+          "start" : 48,
+          "length" : 10
         },
         {
           "activity" : "generate2",
-          "start" : 162,
-          "length" : 574
+          "start" : 67,
+          "length" : 286
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-specimen-type-vs.json",
+      "size" : 559,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 51
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 313
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs.json",
+      "size" : 494,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 256
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 184,
-          "length" : 6
+          "start" : 76,
+          "length" : 1
         }
       ]
     }

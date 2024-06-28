@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -180,13 +180,6 @@
       ]
     },
     {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info",
-      "title": "Other Info",
-      "types": [
-        "Annotation"
-      ]
-    },
-    {
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category",
       "title": "Payment Category",
       "types": [
@@ -205,6 +198,13 @@
       "title": "Receipt Date",
       "types": [
         "dateTime"
+      ]
+    },
+    {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-related-observation",
+      "title": "Related Observation",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -299,6 +299,13 @@
       ]
     },
     {
+      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification",
+      "title": "Specification",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date",
       "title": "Status Changed Date",
       "types": [
@@ -366,9 +373,6 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
@@ -463,12 +467,6 @@
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-medical-validation-date": [
       "Observation"
     ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-other-info": [
-      "DiagnosticReport",
-      "Observation",
-      "ServiceRequest",
-      "Specimen"
-    ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category": [
       "ServiceRequest"
     ],
@@ -477,6 +475,9 @@
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-receipt-date": [
       "ServiceRequest"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-related-observation": [
+      "Observation"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-report-date": [
       "DiagnosticReport"
@@ -496,6 +497,9 @@
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling": [
       "Specimen"
+    ],
+    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification": [
+      "Observation"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date": [
       "Observation"

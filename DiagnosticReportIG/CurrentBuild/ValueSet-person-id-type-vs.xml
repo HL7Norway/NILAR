@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="person-id-type-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet person-id-type-vs</b></p><a name="person-id-type-vs"> </a><a name="hcperson-id-type-vs"> </a><a name="hcperson-id-type-vs-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-public-id-type-cs.html"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li><li>Include all codes defined in <a href="CodeSystem-person-id-type-cs.html"><code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code></a></li></ul></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs"/>
-  <version value="1.3.0"/>
+  <version value="1.4.0"/>
   <name value="PersonIdType_VS"/>
   <title value="Person Id Type VS"/>
   <status value="active"/>
-  <date value="2023-08-30T12:04:38+00:00"/>
+  <date value="2024-06-28T12:17:56+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
