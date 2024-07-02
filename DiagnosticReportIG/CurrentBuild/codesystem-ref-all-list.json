@@ -145,7 +145,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "IdentifierSource_CS",
       "title" : "Identifier Source CS",
@@ -156,7 +156,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "OrganizationIdType_CS",
       "title" : "Organization Id Type CS",
@@ -167,7 +167,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "PersonIdType_CS",
       "title" : "Person Id Type CS",
@@ -178,7 +178,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "PublicIdType_CS",
       "title" : "Public Id Type CS",
@@ -190,7 +190,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "PvkOutcome_CS",
       "title" : "Pvk Outcome CS",
@@ -209,18 +209,18 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
       "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
       "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",

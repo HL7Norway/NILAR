@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "IdentifierSource_CS",
       "title" : "Identifier Source CS",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "OrganizationIdType_CS",
       "title" : "Organization Id Type CS",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "PersonIdType_CS",
       "title" : "Person Id Type CS",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "PublicIdType_CS",
       "title" : "Public Id Type CS",
@@ -47,7 +47,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-      "version" : "1.4.0",
+      "version" : "1.4.1",
       "status" : "active",
       "name" : "PvkOutcome_CS",
       "title" : "Pvk Outcome CS",

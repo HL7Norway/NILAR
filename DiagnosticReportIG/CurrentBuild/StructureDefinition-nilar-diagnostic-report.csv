@@ -52,10 +52,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Approval Date","Time diagnostic report was approved.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.extension:restriction","DiagnosticReport.extension","restriction","","",0,*,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction]]} {[]}
-","Restriction","Used on DiagnisticReport and Observation to convey a restriction. Not applicable for restrictions that apply to the requesting person, such restrictions results in the datat not being provided at all.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "DiagnosticReport.extension:infitem","DiagnosticReport.extension","infitem","","",0,*,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item]]} {[]}
 ","Inf Item","Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

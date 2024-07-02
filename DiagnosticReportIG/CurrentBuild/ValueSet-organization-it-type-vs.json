@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet organization-it-type-vs</b></p><a name=\"organization-it-type-vs\"> </a><a name=\"hcorganization-it-type-vs\"> </a><a name=\"hcorganization-it-type-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-organization-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code></a></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
-  "version" : "1.4.0",
+  "version" : "1.4.1",
   "name" : "OrganizationItType_VS",
   "title" : "Organization It Type VS",
   "status" : "active",
-  "date" : "2024-06-28T12:17:56+00:00",
+  "date" : "2024-07-02T13:23:40+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

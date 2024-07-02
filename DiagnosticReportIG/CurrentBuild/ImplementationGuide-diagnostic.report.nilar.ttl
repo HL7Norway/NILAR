@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide diagnostic.report.nilar</b></p><a name=\"diagnostic.report.nilar\"> </a><a name=\"hcdiagnostic.report.nilar\"> </a><a name=\"hcdiagnostic.report.nilar-en-US\"> </a><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.4.0"] ; # 
+  fhir:version [ fhir:v "1.4.1"] ; # 
   fhir:name [ fhir:v "DiagnosticReportIG"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-28T12:17:56+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-02T13:23:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
@@ -1229,42 +1229,6 @@
        ] ;
        fhir:name [ fhir:v "Reservation Codes" ] ;
        fhir:description [ fhir:v "Reservations the patient might have, regarding registration etc." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-restrict-until> ;
-         fhir:reference [ fhir:v "StructureDefinition/nilar-restrict-until" ]
-       ] ;
-       fhir:name [ fhir:v "Restrict Until" ] ;
-       fhir:description [ fhir:v "Date on which the restriction expires." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction> ;
-         fhir:reference [ fhir:v "StructureDefinition/nilar-restriction" ]
-       ] ;
-       fhir:name [ fhir:v "Restriction" ] ;
-       fhir:description [ fhir:v "Used on DiagnisticReport and Observation to convey a restriction. Not applicable for restrictions that apply to the requesting person, such restrictions results in the datat not being provided at all." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction-code> ;
-         fhir:reference [ fhir:v "StructureDefinition/nilar-restriction-code" ]
-       ] ;
-       fhir:name [ fhir:v "Restriction Code" ] ;
-       fhir:description [ fhir:v "Code giving further details about the restriction." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

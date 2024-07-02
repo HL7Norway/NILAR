@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet specimen-type-vs</b></p><a name=\"specimen-type-vs\"> </a><a name=\"hcspecimen-type-vs\"> </a><a name=\"hcspecimen-type-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8216</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
-  "version" : "1.4.0",
+  "version" : "1.4.1",
   "name" : "SpecimenType_VS",
   "title" : "Specimen Type VS",
   "status" : "active",
-  "date" : "2024-06-28T12:17:56+00:00",
+  "date" : "2024-07-02T13:23:40+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

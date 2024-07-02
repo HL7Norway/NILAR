@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet all-observation-codes-vs</b></p><a name="all-observation-codes-vs"> </a><a name="hcall-observation-codes-vs"> </a><a name="hcall-observation-codes-vs-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-investigation-id-vs.html">Investigation Id VS</a></li><li>Import all the codes that are contained in <a href="ValueSet-observation-result-vs.html">Observation Result VS</a></li></ul></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs"/>
-  <version value="1.4.0"/>
+  <version value="1.4.1"/>
   <name value="AllObservationCodes_VS"/>
   <title value="All Observation Codes VS"/>
   <status value="active"/>
-  <date value="2024-06-28T12:17:56+00:00"/>
+  <date value="2024-07-02T13:23:40+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>

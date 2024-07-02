@@ -1,10 +1,10 @@
 DiagnosticReportIG : Validation Results
 =========================================
 
-err = 0, warn = 172, info = 7
+err = 0, warn = 163, info = 7
 $--
 Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = http://nhn.no/fhir/nilar)
- Build Errors : 1 / 45 / 0
+ Build Errors : 1 / 42 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-identifier-source-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-person-id-type-cs : 0 / 2 / 2
@@ -39,9 +39,6 @@ Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = htt
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-related-observation : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-report-date : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-reservation : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-restrict-until : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-restriction : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-restriction-code : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-sample-handling : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-service-request : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-specification : 0 / 2 / 1
@@ -107,9 +104,6 @@ WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-r
 WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-related-observation.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
 WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-report-date.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
 WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-reservation.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
-WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-restrict-until.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
-WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-restriction-code.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
-WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-restriction.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
 WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-sample-handling.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
 WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-service-request.html: The html source has duplicate anchor Ids: ServiceRequest.extension.url,ServiceRequest.priority,ServiceRequest.requester,ServiceRequest.text,ServiceRequest.specimen,ServiceRequest.instantiatesCanonical,ServiceRequest.id,ServiceRequest.instantiatesUri,ServiceRequest.identifier.assigner,ServiceRequest.locationCode,ServiceRequest.reasonReference,ServiceRequest.quantity_x_,ServiceRequest.subject.display,ServiceRequest.subject.identifier.period,ServiceRequest.intent,ServiceRequest.subject.identifier.assigner,ServiceRequest.supportingInfo,ServiceRequest.requisition,ServiceRequest.subject.reference,ServiceRequest.language,ServiceRequest.identifier,ServiceRequest.identifier.id,ServiceRequest,ServiceRequest.relevantHistory,ServiceRequest.basedOn,ServiceRequest.modifierExtension,ServiceRequest.subject.identifier,ServiceRequest.encounter,ServiceRequest.identifier.system,ServiceRequest.performer,ServiceRequest.identifier.type,ServiceRequest.occurrence_x_,ServiceRequest.identifier.use,ServiceRequest.code,ServiceRequest.note,ServiceRequest.identifier.value,ServiceRequest.performerType,ServiceRequest.patientInstruction,ServiceRequest.locationReference,ServiceRequest.implicitRules,ServiceRequest.subject.identifier.extension,ServiceRequest.subject.identifier.value,ServiceRequest.contained,ServiceRequest.subject.type,ServiceRequest.subject.extension,ServiceRequest.subject.identifier.use,ServiceRequest.subject.identifier.type,ServiceRequest.asNeeded_x_,ServiceRequest.replaces,ServiceRequest.meta,summary,ServiceRequest.doNotPerform,ServiceRequest.extension,ServiceRequest.subject.id,ServiceRequest.subject.identifier.id,ServiceRequest.status,ServiceRequest.category,ServiceRequest.insurance,ServiceRequest.authoredOn,ServiceRequest.extension.value_x_,ServiceRequest.identifier.period,ServiceRequest.bodySite,ServiceRequest.subject,ServiceRequest.extension.extension,ServiceRequest.reasonCode,ServiceRequest.identifier.extension,ServiceRequest.subject.identifier.system,ServiceRequest.orderDetail,ServiceRequest.extension.id
 WARNING: /github/workspace/DiagnosticReportIG/output/StructureDefinition-nilar-specification.html: The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id
@@ -225,15 +219,6 @@ WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefi
 == fsh-generated/resources/StructureDefinition-nilar-reservation.json ==
 WARNING: StructureDefinition/nilar-reservation: StructureDefinition.context[0]: Review the extension type for nilar-reservation: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-nilar-restrict-until.json ==
-WARNING: StructureDefinition/nilar-restrict-until: StructureDefinition.context[0]: Review the extension type for nilar-restrict-until: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-restrict-until'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-nilar-restriction.json ==
-WARNING: StructureDefinition/nilar-restriction: StructureDefinition.context[0]: Review the extension type for nilar-restriction: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-nilar-restriction-code.json ==
-WARNING: StructureDefinition/nilar-restriction-code: StructureDefinition.context[0]: Review the extension type for nilar-restriction-code: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-restriction-code'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-sample-handling.json ==
 WARNING: StructureDefinition/nilar-sample-handling: StructureDefinition.context[0]: Review the extension type for nilar-sample-handling: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-sample-handling'): The Implementation Guide contains no examples for this extension

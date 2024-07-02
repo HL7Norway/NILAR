@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet report-comment-vs</b></p><a name="report-comment-vs"> </a><a name="hcreport-comment-vs"> </a><a name="hcreport-comment-vs-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8272</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8273</code></li></ul></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ValueSet/report-comment-vs"/>
-  <version value="1.4.0"/>
+  <version value="1.4.1"/>
   <name value="ReportComment_VS"/>
   <title value="Report Comment VS"/>
   <status value="active"/>
-  <date value="2024-06-28T12:17:56+00:00"/>
+  <date value="2024-07-02T13:23:40+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
