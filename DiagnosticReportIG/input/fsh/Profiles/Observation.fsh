@@ -42,6 +42,5 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * extension contains CounterSignDate named countersigndate 0..1
 * extension contains MedicalValidationDate named medicalvalidationdate 0..1
 * extension contains DescriptionDate named descriptiondate 0..1
-* extension contains Restriction named restriction 0..*
 * extension contains Specification named specification 0..1
 * extension contains RelatedObservation named relatedobservation 0..1
