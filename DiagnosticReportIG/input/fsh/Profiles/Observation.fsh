@@ -26,6 +26,8 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * performer only Reference(PractitionerRole)
 * value[x] only Quantity or CodeableConcept or dateTime or Range
 * valueCodeableConcept from ObservationResult_VS
+* valueQuantity
+  * code from UnitsOfMeasure_VS
 * interpretation 0..1
 * interpretation from DeviationIndicator_VS
 * method from InvestigationSpec_VS

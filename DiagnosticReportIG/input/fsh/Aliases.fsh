@@ -1,4 +1,5 @@
 Alias: $Fhir_ObservationStatus = http://hl7.org/fhir/observation-status
+Alias: $UCUM = http://unitsofmeasure.org
 
 Alias: $Kodeverk_3108 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108
 Alias: $Kodeverk_4101 = http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101
