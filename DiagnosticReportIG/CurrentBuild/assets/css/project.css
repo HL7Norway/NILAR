@@ -180,6 +180,15 @@ body {
   max-width: 100%;
 }
 
+#fcp-nav {
+  line-height: 50px;
+  float: right;
+}
+
+#fcp-nav a {
+  color: inherit;
+}
+
 #project-nav {
   line-height: 50px;
   float: left;
@@ -754,4 +763,10 @@ li a[href^="http://"]:not([no-external^="true"]):after,li a[href^="https://"]:no
   padding: 0px 0px; 
   border-width: 0px;
   background-color: transparent;
+}
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
 }

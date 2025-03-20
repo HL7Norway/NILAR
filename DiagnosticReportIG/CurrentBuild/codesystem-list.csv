@@ -1,6 +1,6 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs,1.4.1,active,,IdentifierSource_CS,Identifier Source CS,"Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers.",
-http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs,1.4.1,active,,OrganizationIdType_CS,Organization Id Type CS,"Id types used to identify organizations.",
-http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs,1.4.1,active,,PersonIdType_CS,Person Id Type CS,"Id types used to identify persons involved, other than the patient.",
-http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs,1.4.1,active,,PublicIdType_CS,Public Id Type CS,"Id types used to identify patients",
-http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs,1.4.1,active,,PvkOutcome_CS,Pvk Outcome CS,"A code that indicates how privacy settings (PVK) may have affected the outcome.",
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs,1.4.2,active,,IdentifierSource_CS,Identifier Source CS,"Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers.",
+http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs,1.4.2,active,,OrganizationIdType_CS,Organization Id Type CS,"Id types used to identify organizations.",
+http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs,1.4.2,active,,PersonIdType_CS,Person Id Type CS,"Id types used to identify persons involved, other than the patient.",
+http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs,1.4.2,active,,PublicIdType_CS,Public Id Type CS,"Id types used to identify patients",
+http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs,1.4.2,active,,PvkOutcome_CS,Pvk Outcome CS,"A code that indicates how privacy settings (PVK) may have affected the outcome.",

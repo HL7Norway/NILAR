@@ -73,6 +73,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "oids" : ["2.16.840.1.113883.4.642.4.60"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+    },
+    {
       "url" : "http://hl7.org/fhir/request-intent",
       "version" : "4.0.1",
       "status" : "draft",
@@ -145,7 +157,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs",
-      "version" : "1.4.1",
+      "version" : "1.4.2",
       "status" : "active",
       "name" : "IdentifierSource_CS",
       "title" : "Identifier Source CS",
@@ -156,7 +168,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs",
-      "version" : "1.4.1",
+      "version" : "1.4.2",
       "status" : "active",
       "name" : "OrganizationIdType_CS",
       "title" : "Organization Id Type CS",
@@ -167,7 +179,7 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs",
-      "version" : "1.4.1",
+      "version" : "1.4.2",
       "status" : "active",
       "name" : "PersonIdType_CS",
       "title" : "Person Id Type CS",
@@ -178,19 +190,19 @@
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs",
-      "version" : "1.4.1",
+      "version" : "1.4.2",
       "status" : "active",
       "name" : "PublicIdType_CS",
       "title" : "Public Id Type CS",
       "description" : "Id types used to identify patients",
       "uses" : {
       },
-      "ValueSet-person-id-type-vs.html" : "Person Id Type VS",
-      "ValueSet-public-it-type-vs.html" : "PublicIdType_VS"
+      "ValueSet-public-it-type-vs.html" : "PublicIdType_VS",
+      "ValueSet-person-id-type-vs.html" : "Person Id Type VS"
     },
     {
       "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-      "version" : "1.4.1",
+      "version" : "1.4.2",
       "status" : "active",
       "name" : "PvkOutcome_CS",
       "title" : "Pvk Outcome CS",
@@ -209,18 +221,18 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
       "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
       "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes"
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -236,8 +248,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "PractitionerRole",
       "title" : "Practitioner role",
       "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
@@ -248,8 +260,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ObservationReferenceRangeMeaningCodes",
       "title" : "Observation Reference Range Meaning Codes",
       "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
@@ -280,7 +292,7 @@
       "oids" : ["2.16.840.1.113883.18.229"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
@@ -304,7 +316,7 @@
       "oids" : ["2.16.840.1.113883.18.317"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
@@ -316,7 +328,7 @@
       "oids" : ["2.16.840.1.113883.18.422"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -340,7 +352,19 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-units-of-measure-vs.html" : "Units of measure VS"
     },
     {
       "url" : "urn:ietf:bcp:47",

@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "collector-comment-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet collector-comment-vs</b></p><a name=\"collector-comment-vs\"> </a><a name=\"hccollector-comment-vs\"> </a><a name=\"hccollector-comment-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275</code></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet collector-comment-vs</b></p><a name=\"collector-comment-vs\"> </a><a name=\"hccollector-comment-vs\"> </a><a name=\"collector-comment-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/collector-comment-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.4.1"] ; # 
+  fhir:version [ fhir:v "1.4.2"] ; # 
   fhir:name [ fhir:v "CollectorComment_VS"] ; # 
   fhir:title [ fhir:v "Collector Comment VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-07-02T13:23:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-20T10:06:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;

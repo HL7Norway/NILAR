@@ -3,14 +3,14 @@
   "id" : "document-restriction-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet document-restriction-vs</b></p><a name=\"document-restriction-vs\"> </a><a name=\"hcdocument-restriction-vs\"> </a><a name=\"hcdocument-restriction-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet document-restriction-vs</b></p><a name=\"document-restriction-vs\"> </a><a name=\"hcdocument-restriction-vs\"> </a><a name=\"document-restriction-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/document-restriction-vs",
-  "version" : "1.4.1",
+  "version" : "1.4.2",
   "name" : "DocumentRestriction_VS",
   "title" : "Document Restriction VS",
   "status" : "active",
-  "date" : "2024-07-02T13:23:40+00:00",
+  "date" : "2025-03-20T10:06:13+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

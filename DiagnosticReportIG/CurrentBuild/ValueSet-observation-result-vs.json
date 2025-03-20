@@ -3,14 +3,14 @@
   "id" : "observation-result-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet observation-result-vs</b></p><a name=\"observation-result-vs\"> </a><a name=\"hcobservation-result-vs\"> </a><a name=\"hcobservation-result-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet observation-result-vs</b></p><a name=\"observation-result-vs\"> </a><a name=\"hcobservation-result-vs\"> </a><a name=\"observation-result-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs",
-  "version" : "1.4.1",
+  "version" : "1.4.2",
   "name" : "ObservationResult_VS",
   "title" : "Observation Result VS",
   "status" : "active",
-  "date" : "2024-07-02T13:23:40+00:00",
+  "date" : "2025-03-20T10:06:13+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

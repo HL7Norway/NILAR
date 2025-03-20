@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="units-of-measure-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet units-of-measure-vs</b></p><a name="units-of-measure-vs"> </a><a name="hcunits-of-measure-vs"> </a><a name="units-of-measure-vs-en-US"> </a><ul><li>Include all codes defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a></li></ul></div>
+  </text>
+  <url value="http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs"/>
+  <version value="1.4.2"/>
+  <name value="UnitsOfMeasure_VS"/>
+  <title value="Units of measure VS"/>
+  <status value="active"/>
+  <date value="2025-03-20T10:06:13+00:00"/>
+  <publisher value="Norsk helsenett - Nilar"/>
+  <contact>
+    <name value="Norsk helsenett - Nilar"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nhn.no"/>
+    </telecom>
+  </contact>
+  <description value="Unified Code for Units of Measure (UCUM)."/>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+    </include>
+  </compose>
+</ValueSet>

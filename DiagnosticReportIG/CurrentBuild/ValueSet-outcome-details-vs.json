@@ -3,14 +3,14 @@
   "id" : "outcome-details-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet outcome-details-vs</b></p><a name=\"outcome-details-vs\"> </a><a name=\"hcoutcome-details-vs\"> </a><a name=\"hcoutcome-details-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-pvk-outcome-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet outcome-details-vs</b></p><a name=\"outcome-details-vs\"> </a><a name=\"hcoutcome-details-vs\"> </a><a name=\"outcome-details-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-pvk-outcome-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code></a></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
-  "version" : "1.4.1",
+  "version" : "1.4.2",
   "name" : "OutcomeDetails_VS",
   "title" : "Outcome Details VS",
   "status" : "active",
-  "date" : "2024-07-02T13:23:40+00:00",
+  "date" : "2025-03-20T10:06:13+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

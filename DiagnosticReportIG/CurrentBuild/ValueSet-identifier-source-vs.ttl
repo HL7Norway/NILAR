@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "identifier-source-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet identifier-source-vs</b></p><a name=\"identifier-source-vs\"> </a><a name=\"hcidentifier-source-vs\"> </a><a name=\"hcidentifier-source-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-identifier-source-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet identifier-source-vs</b></p><a name=\"identifier-source-vs\"> </a><a name=\"hcidentifier-source-vs\"> </a><a name=\"identifier-source-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-identifier-source-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.4.1"] ; # 
+  fhir:version [ fhir:v "1.4.2"] ; # 
   fhir:name [ fhir:v "IdentifierSource_VS"] ; # 
   fhir:title [ fhir:v "Identifier Source VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-07-02T13:23:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-20T10:06:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;

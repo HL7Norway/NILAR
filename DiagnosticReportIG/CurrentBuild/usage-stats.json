@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -338,6 +338,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited": [
       "Observation",
