@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "hl7.fhir.no.basis": "2.1.2-beta"
+    "hl7.fhir.no.basis": "file:../snapshots/hl7.fhir.no.basis-2.2.2-snapshots.tgz",
+    "hl7.fhir.r4.core": "^4.0.1"
   }
 }
