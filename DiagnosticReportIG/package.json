@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "hl7.fhir.no.basis": "2.1.2-beta"
+    "hl7.fhir.no.basis": "2.2.2"
   }
 }

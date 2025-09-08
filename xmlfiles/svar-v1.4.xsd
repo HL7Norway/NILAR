@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File name: svar-v14.xsd -->
+<!-- Version: "v1.4 2012-02-15" -->
+<!-- Endringer fra versjon 1.3 til versjon 1.4:
+- Endret namespace xmlns:lsr og targetNamespace til http://www.kith.no/xmlstds/labsvar/2012-02-15
+- Forekomsten av ServReport er redusert til kun 1
+- Elementet ResultItem/ServType er obligatorisk
+- Fjernet elementet Permission under ServReq da dette elementet aldri har vært dokumentert eller i bruk
+- Endret datatype fra CS til CV for Type (Type) under Strukturert opplysning (StructuredInfo)
+- Endret datatype og for Kode (Code) under Kodet opplysning (CodetInfo) for å sikre en robust struktur. 
+  Merk: Bruk av denne strukturen forutsetter oppdatert eller ny veiledning 
+-->
+<!-- Endringer fra versjon 1.2 til versjon 1.3:
+- Endret tegnsett til UTF-8
+- Endret namespace til http://www.kith.no/xmlstds/labsvar/2008-12-01
+- Nytt element <element name="ComMethod" type="kith:CS" minOccurs="0"/> under <Requester> og <ServProvider>
+- Nytt element <element name="ServType" type="kith:CS" minOccurs="0"/> under <AnalysedSubject>
+- Nytt element <element name="IdByServProv" type="kith:ST" minOccurs="0"/> under <AnalysedSubject>
+- Nytt element <element name="TextCode" type="kith:CV" minOccurs="0"/> under <Comment> for å være kompatibel med rekvisisjonsmeldingen
+- Lagt til flere nye elementer under <RefDoc> for å være kompatibel med Hodemelding, epikrise v1.1 og henvisning v1.0
+- Endret datatype for RefDoc/Id fra ST til string for å være kompatibel med MsgHead-v1_2.xsd
+-->
+<!-- -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:kith="http://www.kith.no/xmlstds" xmlns:lsr="http://www.kith.no/xmlstds/labsvar/2012-02-15" targetNamespace="http://www.kith.no/xmlstds/labsvar/2012-02-15" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<import namespace="http://www.kith.no/xmlstds" schemaLocation="file:kith.xsd"/>
+	<!-- Class: Svarrapportmelding -->
+	<element name="Message">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CS"/>
+				<element name="MsgVersion" type="kith:ST" minOccurs="0"/>
+				<element name="MIGversion" type="kith:ST"/>
+				<element name="GenDate" type="kith:TS"/>
+				<element name="MsgId" type="kith:ST"/>
+				<element name="Status" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:ServReport" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Svarrapport -->
+	<element name="ServReport">
+		<complexType>
+			<sequence>
+				<element name="ServType" type="kith:CS"/>
+				<element name="IssueDate" type="kith:TS"/>
+				<element name="ApprDate" type="kith:TS" minOccurs="0"/>
+				<element name="Status" type="kith:CS"/>
+				<element name="CancellationCode" type="kith:CV" minOccurs="0"/>
+				<element name="Ack" type="kith:CS" minOccurs="0"/>
+				<element name="MsgDescr" type="kith:CS"/>
+				<element name="ServProvId" type="kith:ST"/>
+				<element name="Comment" type="kith:ST" minOccurs="0"/>
+				<element name="CodedComment" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:RefDoc" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:ServReq" minOccurs="0" maxOccurs="unbounded"/>
+				<choice>
+					<element ref="lsr:Patient" minOccurs="0"/>
+					<element ref="lsr:Animal" minOccurs="0"/>
+					<element ref="lsr:Material" minOccurs="0"/>
+				</choice>
+				<element ref="lsr:ServProvider"/>
+				<element ref="lsr:Requester"/>
+				<element ref="lsr:PaymentResponsible" minOccurs="0"/>
+				<element ref="lsr:CopyDest" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:RelServProv" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Rekvisisjon -->
+	<element name="ServReq">
+		<complexType>
+			<sequence>
+				<element name="ServType" type="kith:CS" minOccurs="0"/>
+				<element name="IssueDate" type="kith:TS" minOccurs="0"/>
+				<element name="PaymentCat" type="kith:CS" minOccurs="0"/>
+				<element name="ReqComment" type="kith:ST" minOccurs="0"/>
+				<element name="Ack" type="kith:CS" minOccurs="0"/>
+				<element name="MsgDescr" type="kith:CS" minOccurs="0"/>
+				<element name="Id" type="kith:ST"/>
+				<element name="RequestedPrioReport" type="kith:CS" minOccurs="0"/>
+				<element name="ReceiptDate" type="kith:TS" minOccurs="0"/>
+				<element name="IdByServProvider" type="kith:ST" minOccurs="0"/>
+				<element name="Reservation" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				<!-- Tatt bort element Permission i versjon 1.4 da dette aldri har vært dokumentert eller i bruk
+				<element name="Permission" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				-->
+				<element ref="lsr:ReasonAsText" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Comment" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Kommentar til rekvisisjon -->
+	<element name="Comment">
+		<complexType>
+			<sequence>
+				<element name="Heading" type="kith:CS" minOccurs="0"/>
+				<element name="TextResultValue" type="kith:ST" minOccurs="0"/>
+				<element name="TextCode" type="kith:CV" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Begrunnelse for rekvisisjon -->
+	<element name="ReasonAsText">
+		<complexType>
+			<sequence>
+				<element name="Heading" type="kith:CS" minOccurs="0"/>
+				<element name="TextResultValue" type="anyType" minOccurs="0"/>
+				<element name="TextCode" type="kith:CV" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Tjenesteyter -->
+	<element name="ServProvider">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element name="ComMethod" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:HCP"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Referert dokument -->
+	<element name="RefDoc">
+		<complexType>
+			<sequence>
+				<element name="IssueDate" type="kith:TS" minOccurs="0"/>
+				<element name="MsgType" type="kith:CS"/>
+				<element name="Id" type="string" minOccurs="0"/>
+				<element name="MimeType" type="string" minOccurs="0"/>
+				<element name="Description" type="string" minOccurs="0"/>
+				<element name="Compression" type="kith:CS" minOccurs="0"/>
+				<choice>
+					<element name="FileReference" type="anyURI" minOccurs="0"/>
+					<element name="Content" minOccurs="0">
+						<complexType>
+							<complexContent>
+								<restriction base="anyType">
+									<sequence>
+										<any processContents="strict" minOccurs="0" maxOccurs="unbounded"/>
+									</sequence>
+								</restriction>
+							</complexContent>
+						</complexType>
+					</element>
+				</choice>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Pasient -->
+	<element name="Patient">
+		<complexType>
+			<sequence>
+				<element name="BasisForHealthServices" type="kith:CS" minOccurs="0"/>
+				<element name="Sex" type="kith:CS" minOccurs="0"/>
+				<element name="DateOfBirth" type="kith:TS" minOccurs="0"/>
+				<element name="DateOfDeath" type="kith:TS" minOccurs="0"/>
+				<element name="Name" type="kith:ST" minOccurs="0"/>
+				<element name="IdByServProvider" type="kith:ST" minOccurs="0"/>
+				<element name="IdByRequester" type="kith:ST" minOccurs="0"/>
+				<element name="OffId" type="kith:ST"/>
+				<element name="TypeOffId" type="kith:CS"/>
+				<element name="Relation" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:ResponsibleHcp" minOccurs="0"/>
+				<element ref="lsr:AdmLocation" minOccurs="0"/>
+				<element ref="lsr:AdditionalId" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Address" minOccurs="0"/>
+				<element ref="lsr:InfItem" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:AnalysedSubject" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:ResultItem" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Patient" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Materiale -->
+	<element name="Material">
+		<complexType>
+			<sequence>
+				<element name="InvMaterial" type="kith:ST" minOccurs="0"/>
+				<element name="IdByServProvider" type="kith:ST" minOccurs="0"/>
+				<element name="IdByRequester" type="kith:ST" minOccurs="0"/>
+				<element name="Relation" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:ResponsibleHcp" minOccurs="0"/>
+				<element ref="lsr:AnalysedSubject" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:ResultItem" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Material" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Dyr -->
+	<element name="Animal">
+		<complexType>
+			<sequence>
+				<element name="Sex" type="kith:CS" minOccurs="0"/>
+				<element name="Name" type="kith:ST" minOccurs="0"/>
+				<element name="NameOwner" type="kith:ST" minOccurs="0"/>
+				<element name="Species" type="kith:ST" minOccurs="0"/>
+				<element name="IdByServProvider" type="kith:ST" minOccurs="0"/>
+				<element name="IdByRequester" type="kith:ST" minOccurs="0"/>
+				<element name="Relation" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:ResponsibleHcp" minOccurs="0"/>
+				<element ref="lsr:AnalysedSubject" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:ResultItem" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Animal" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Betalingsansvarlig -->
+	<element name="PaymentResponsible">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element name="TypeGuarantor" type="kith:ST"/>
+				<element ref="lsr:HCP"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Kopimottaker -->
+	<element name="CopyDest">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:CopyDestRole" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:HCP"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Henvisende instans -->
+	<element name="Requester">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element name="ComMethod" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:HCP"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Alternativ pasientid -->
+	<element name="AdditionalId">
+		<complexType>
+			<sequence>
+				<element name="Id" type="kith:ST"/>
+				<element name="Type" type="kith:CS"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Kopimottakerrolle -->
+	<element name="CopyDestRole">
+		<complexType>
+			<sequence>
+				<element name="MsgType" type="kith:CS"/>
+				<element name="ReqComMethod" type="kith:CS" minOccurs="0"/>
+				<element name="ActComMethod" type="kith:CS" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Oppholdssted -->
+	<element name="AdmLocation">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element name="StartDateTime" type="kith:TS" minOccurs="0"/>
+				<element name="EndDateTime" type="kith:TS" minOccurs="0"/>
+				<element name="AdmCat" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:Location"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Ansvarlig Helsetjenesteenhet -->
+	<element name="ResponsibleHcp">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element name="Relation" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:HCP"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Klinisk opplysning -->
+	<element name="InfItem">
+		<complexType>
+			<sequence>
+				<element ref="lsr:Observation"/>
+				<element name="Type" type="kith:CS"/>
+				<element name="StartDateTime" type="kith:TS" minOccurs="0"/>
+				<element name="EndDateTime" type="kith:TS" minOccurs="0"/>
+				<element name="OrgDate" type="kith:TS" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Undersøkelse -->
+	<element name="Investigation">
+		<complexType>
+			<sequence>
+				<element name="Id" type="kith:CV" maxOccurs="unbounded"/>
+				<element name="Spec" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				<element name="Comment" type="kith:ST" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Forbehandling -->
+	<element name="Pretreatment">
+		<complexType>
+			<sequence>
+				<element name="Heading" type="kith:CS" minOccurs="0"/>
+				<element name="TextResultValue" type="kith:ST" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Undersøkelsesresultat -->
+	<element name="ResultItem">
+		<complexType>
+			<sequence>
+				<choice minOccurs="0">
+					<element ref="lsr:TextResult"/>
+					<element ref="lsr:Interval"/>
+					<element ref="lsr:DateResult"/>
+					<element ref="lsr:NumResult"/>
+				</choice>
+				<element name="ServType" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:RefInterval" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Investigation" minOccurs="0" maxOccurs="unbounded"/>
+				<element name="InvDate" type="kith:TS" minOccurs="0"/>
+				<element name="Comment" type="kith:ST" minOccurs="0"/>
+				<element name="DevResultInd" type="kith:CS" minOccurs="0"/>
+				<element name="IdResultItem" type="kith:ST" minOccurs="0"/>
+				<element name="RefIdResultItem" type="kith:ST" minOccurs="0"/>
+				<element name="StatusInvestigation" type="kith:CS" minOccurs="0"/>
+				<element name="StatusChangeDate" type="kith:TS" minOccurs="0"/>
+				<element name="DescrDate" type="kith:TS" minOccurs="0"/>
+				<element name="CounterSignDate" type="kith:TS" minOccurs="0"/>
+				<element name="MedicalValidationDate" type="kith:TS" minOccurs="0"/>
+				<element name="RefAnalysedSubject" type="kith:ST" minOccurs="0" maxOccurs="unbounded"/>
+				<element name="Accredited" type="kith:BL" minOccurs="0"/>
+				<element ref="lsr:RelServProv" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:DiagComment" minOccurs="0"/>
+				<element ref="lsr:StructuredInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:ResultItem" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Tekstlig resultat -->
+	<element name="TextResult">
+		<complexType>
+			<sequence>
+				<element name="Heading" type="kith:CS" minOccurs="0"/>
+				<element name="TextResultValue" type="anyType" minOccurs="0"/>
+				<element name="TextCode" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				<element name="Unit" type="kith:ST" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Usikkerhetsintervall -->
+	<element name="Interval">
+		<complexType>
+			<sequence>
+				<element name="Low" type="kith:PQ" minOccurs="0"/>
+				<element name="High" type="kith:PQ" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Datoresultat -->
+	<element name="DateResult">
+		<complexType>
+			<sequence>
+				<element name="DateResultValue" type="kith:TS"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Numerisk resultat -->
+	<element name="NumResult">
+		<complexType>
+			<sequence>
+				<element name="ArithmeticComp" type="kith:CS" minOccurs="0"/>
+				<element name="NumResultValue" type="kith:PQ"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Referansegrense -->
+	<element name="RefInterval">
+		<complexType>
+			<sequence>
+				<element name="Descr" type="kith:ST" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Analysert objekt -->
+	<element name="AnalysedSubject">
+		<complexType>
+			<sequence>
+				<choice minOccurs="0">
+					<element ref="lsr:CollectedSample"/>
+					<element ref="lsr:CollectedStudyProduct"/>
+				</choice>
+				<element name="ServType" type="kith:CS" minOccurs="0"/>
+				<element name="Type" type="kith:ST" minOccurs="0"/>
+				<element name="TypeCoded" type="kith:CV" minOccurs="0"/>
+				<element name="IdByRequester" type="kith:ST" minOccurs="0"/>
+				<element name="PreservMaterial" type="kith:ST" minOccurs="0"/>
+				<element name="Comment" type="kith:ST" minOccurs="0"/>
+				<element name="AnatomicalOrigin" type="kith:ST" minOccurs="0"/>
+				<element name="Number" type="kith:INT" minOccurs="0"/>
+				<element name="SampleCollInd" type="kith:CS" minOccurs="0"/>
+				<element name="SampleCollProc" type="kith:CV" minOccurs="0"/>
+				<element name="SampleHandling" type="kith:ST" minOccurs="0" maxOccurs="unbounded"/>
+				<element name="IdByServProvider" type="kith:ST"/>
+				<element name="Accredited" type="kith:BL" minOccurs="0"/>
+				<element ref="lsr:AnalysedSubject" minOccurs="0"/>
+				<element ref="lsr:Pretreatment" minOccurs="0"/>
+				<element ref="lsr:RelServProv" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Adresse -->
+	<element name="Address">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CS"/>
+				<element name="StreetAdr" type="kith:ST" minOccurs="0"/>
+				<element name="PostalCode" type="kith:ST" minOccurs="0"/>
+				<element name="City" type="kith:ST" minOccurs="0"/>
+				<element name="County" type="kith:CS" minOccurs="0"/>
+				<element name="Country" type="kith:CS" minOccurs="0"/>
+				<element name="CityDistr" type="kith:CS" minOccurs="0"/>
+				<element name="TeleAddress" type="kith:URL" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Annen klinisk opplysning -->
+	<element name="Observation">
+		<complexType>
+			<sequence>
+				<element name="Description" type="anyType" minOccurs="0"/>
+				<element name="Comment" type="kith:ST" minOccurs="0"/>
+				<element name="CodedDescr" type="kith:CV" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Tatt prøve -->
+	<element name="CollectedSample">
+		<complexType>
+			<sequence>
+				<element name="CollectedDate" type="kith:TS" minOccurs="0"/>
+				<element name="CollectorComment" type="kith:ST" minOccurs="0"/>
+				<element name="CollectorCommentCoded" type="kith:CV" minOccurs="0" maxOccurs="unbounded"/>
+				<element name="Logistics" type="kith:ST" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Tatt annet objekt -->
+	<element name="CollectedStudyProduct">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:ST" minOccurs="0"/>
+				<element name="ProducedDate" type="kith:TS" minOccurs="0"/>
+				<element name="RefRelatedProd" type="kith:ST" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Lokalitet -->
+	<element name="Location">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CS" minOccurs="0"/>
+				<element name="Description" type="kith:ST" minOccurs="0"/>
+				<element ref="lsr:SubLocation" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:Address" minOccurs="0"/>
+				<element ref="lsr:Inst"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Person i helsevesenet -->
+	<element name="HCProf">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CS" minOccurs="0"/>
+				<element name="Name" type="kith:ST" minOccurs="0"/>
+				<element name="Id" type="kith:ST" minOccurs="0"/>
+				<element name="TypeId" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:AdditionalId" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Tilknyttet tjenesteyter -->
+	<element name="RelServProv">
+		<complexType>
+			<sequence>
+				<element name="Role" type="kith:CS" minOccurs="0"/>
+				<element name="Relation" type="kith:CS"/>
+				<element ref="lsr:HCP"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Helsetjenesteenhet -->
+	<element name="HCP">
+		<complexType>
+			<sequence>
+				<choice>
+					<element ref="lsr:Inst"/>
+					<element ref="lsr:HCProf"/>
+				</choice>
+				<element name="MedSpeciality" type="kith:CV" minOccurs="0"/>
+				<element ref="lsr:Address" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Institusjon -->
+	<element name="Inst">
+		<complexType>
+			<sequence>
+				<element name="Name" type="kith:ST" minOccurs="0"/>
+				<element name="Id" type="kith:ST" minOccurs="0"/>
+				<element name="TypeId" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:Dept" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:HCPerson" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:AdditionalId" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Sublokalitet -->
+	<element name="SubLocation">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CS"/>
+				<element name="Place" type="kith:ST"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Avdeling -->
+	<element name="Dept">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CS" minOccurs="0"/>
+				<element name="Name" type="kith:ST" minOccurs="0"/>
+				<element name="Id" type="kith:ST" minOccurs="0"/>
+				<element name="TypeId" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:AdditionalId" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Person i organisasjon -->
+	<element name="HCPerson">
+		<complexType>
+			<sequence>
+				<element name="Name" type="kith:ST" minOccurs="0"/>
+				<element name="Id" type="kith:ST" minOccurs="0"/>
+				<element name="TypeId" type="kith:CS" minOccurs="0"/>
+				<element ref="lsr:AdditionalId" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Kommentar som diagnose -->
+	<element name="DiagComment">
+		<complexType>
+			<sequence>
+				<element name="Concept" type="kith:CV"/>
+				<element ref="lsr:Modifier" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Moderator -->
+	<element name="Modifier">
+		<complexType>
+			<sequence>
+				<element name="Name" type="kith:CS"/>
+				<element name="Value" type="kith:CV" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Strukturert opplysning -->
+	<element name="StructuredInfo">
+		<complexType>
+			<sequence>
+				<element name="Type" type="kith:CV"/>
+				<element ref="lsr:TextInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:IntegerInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:PhysicalInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:CodedInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<element ref="lsr:BooleanInfo" minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Tekstlig opplysning -->
+	<element name="TextInfo">
+		<complexType>
+			<sequence>
+				<element name="Text" type="kith:ST"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Heltallsopplysning -->
+	<element name="IntegerInfo">
+		<complexType>
+			<sequence>
+				<element name="Integer" type="kith:INT"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Fysisk størrelse -->
+	<element name="PhysicalInfo">
+		<complexType>
+			<sequence>
+				<element name="Quantity" type="kith:PQ"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Kodet opplysning -->
+	<element name="CodedInfo">
+		<complexType>
+			<sequence>
+				<element name="Code" type="kith:CV"/>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- Class: Boolsk opplysning -->
+	<element name="BooleanInfo">
+		<complexType>
+			<sequence>
+				<element name="Flag" type="kith:BL"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
