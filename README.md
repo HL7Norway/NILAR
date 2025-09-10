@@ -6,8 +6,8 @@
 
 Dette repoet inneholder nå bare kildekoden for Fhir-profil for Pasientens Prøvesvar (DiagnosticReportIG). Øvrig dokumentasjon er beholdt for historisk referanse, men blir ikke vedlikeholdt her.
 
-# NILAR
-Nasjonal informasjonstjeneste for laboratorie- og radiologisvar. Opprinnelig prosjektnavn, tjenesten heter nå Pasientens Prøvesvar.
+# Pasientens Prøvesvar (PPS)
+Nasjonal informasjonstjeneste for laboratorie- og radiologisvar. Herav opprinnelig prosjektnavn **NILAR**.
 
 ## Plan
 
