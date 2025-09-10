@@ -3,14 +3,14 @@
   "id" : "request-reason-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet request-reason-vs</b></p><a name=\"request-reason-vs\"> </a><a name=\"hcrequest-reason-vs\"> </a><a name=\"request-reason-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet request-reason-vs</b></p><a name=\"request-reason-vs\"> </a><a name=\"hcrequest-reason-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
-  "version" : "1.4.2",
+  "version" : "1.5.0",
   "name" : "RequestReason_VS",
   "title" : "Request Reason VS",
   "status" : "active",
-  "date" : "2025-03-20T10:06:13+00:00",
+  "date" : "2025-09-10T06:36:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

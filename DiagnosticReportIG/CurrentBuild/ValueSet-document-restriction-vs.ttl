@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "document-restriction-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet document-restriction-vs</b></p><a name=\"document-restriction-vs\"> </a><a name=\"hcdocument-restriction-vs\"> </a><a name=\"document-restriction-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603</code></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet document-restriction-vs</b></p><a name=\"document-restriction-vs\"> </a><a name=\"hcdocument-restriction-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/document-restriction-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.4.2"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "DocumentRestriction_VS"] ; # 
   fhir:title [ fhir:v "Document Restriction VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-20T10:06:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-10T06:36:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;

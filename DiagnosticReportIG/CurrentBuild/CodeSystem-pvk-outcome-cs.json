@@ -3,14 +3,14 @@
   "id" : "pvk-outcome-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem pvk-outcome-cs</b></p><a name=\"pvk-outcome-cs\"> </a><a name=\"hcpvk-outcome-cs\"> </a><a name=\"pvk-outcome-cs-en-US\"> </a><p>This  code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Specific<a name=\"pvk-outcome-cs-Specific\"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"pvk-outcome-cs-General\"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"pvk-outcome-cs-Reservation\"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem pvk-outcome-cs</b></p><a name=\"pvk-outcome-cs\"> </a><a name=\"hcpvk-outcome-cs\"> </a><p>This  code system <code>http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Specific<a name=\"pvk-outcome-cs-Specific\"> </a></td><td>SpecificBlock</td><td>A restriction exist for the actual health care provider, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">General<a name=\"pvk-outcome-cs-General\"> </a></td><td>GeneralBlock</td><td>A restriction exist for all health care providers, preventing access to all data for the person.</td></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"pvk-outcome-cs-Reservation\"> </a></td><td>Reservation</td><td>The person has a reservatioan against being recorded and hence no data is available.</td></tr></table></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
-  "version" : "1.4.2",
+  "version" : "1.5.0",
   "name" : "PvkOutcome_CS",
   "title" : "Pvk Outcome CS",
   "status" : "active",
-  "date" : "2025-03-20T10:06:13+00:00",
+  "date" : "2025-09-10T06:36:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

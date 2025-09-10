@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "person-id-type-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet person-id-type-vs</b></p><a name=\"person-id-type-vs\"> </a><a name=\"hcperson-id-type-vs\"> </a><a name=\"person-id-type-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-person-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet person-id-type-vs</b></p><a name=\"person-id-type-vs\"> </a><a name=\"hcperson-id-type-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-public-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-person-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/person-id-type-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.4.2"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "PersonIdType_VS"] ; # 
   fhir:title [ fhir:v "Person Id Type VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-20T10:06:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-10T06:36:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;

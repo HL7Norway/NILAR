@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "diagnostic.report.nilar"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide diagnostic.report.nilar</b></p><a name=\"diagnostic.report.nilar\"> </a><a name=\"hcdiagnostic.report.nilar\"> </a><a name=\"diagnostic.report.nilar-en-US\"> </a><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide diagnostic.report.nilar</b></p><a name=\"diagnostic.report.nilar\"> </a><a name=\"hcdiagnostic.report.nilar\"> </a><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.4.2"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "DiagnosticReportIG"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-20T10:06:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-10T06:36:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
@@ -43,7 +43,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -62,11 +62,11 @@
   ] [
      fhir:id [ fhir:v "hl7_fhir_no_basis" ] ;
      fhir:uri [
-       fhir:v "http://hl7.no/fhir/"^^xsd:anyURI ;
-       fhir:link <http://hl7.no/fhir/>
+       fhir:v "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.no.basis" ] ;
-     fhir:version [ fhir:v "2.1.2-beta" ]
+     fhir:version [ fhir:v "2.2.2" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -463,7 +463,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.4.1"
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
        ]
      ] [
        fhir:extension ( [

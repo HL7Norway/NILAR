@@ -3,14 +3,14 @@
   "id" : "investigation-spec-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet investigation-spec-vs</b></p><a name=\"investigation-spec-vs\"> </a><a name=\"hcinvestigation-spec-vs\"> </a><a name=\"investigation-spec-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet investigation-spec-vs</b></p><a name=\"investigation-spec-vs\"> </a><a name=\"hcinvestigation-spec-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
-  "version" : "1.4.2",
+  "version" : "1.5.0",
   "name" : "InvestigationSpec_VS",
   "title" : "Investigation Spec VS",
   "status" : "active",
-  "date" : "2025-03-20T10:06:13+00:00",
+  "date" : "2025-09-10T06:36:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

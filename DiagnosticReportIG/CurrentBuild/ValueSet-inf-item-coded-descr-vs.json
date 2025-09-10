@@ -3,14 +3,14 @@
   "id" : "inf-item-coded-descr-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet inf-item-coded-descr-vs</b></p><a name=\"inf-item-coded-descr-vs\"> </a><a name=\"hcinf-item-coded-descr-vs\"> </a><a name=\"inf-item-coded-descr-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet inf-item-coded-descr-vs</b></p><a name=\"inf-item-coded-descr-vs\"> </a><a name=\"hcinf-item-coded-descr-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218</code></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277</code></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs",
-  "version" : "1.4.2",
+  "version" : "1.5.0",
   "name" : "InfItemCodedDescr_VS",
   "title" : "Inf Item Coded Descr VS",
   "status" : "active",
-  "date" : "2025-03-20T10:06:13+00:00",
+  "date" : "2025-09-10T06:36:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

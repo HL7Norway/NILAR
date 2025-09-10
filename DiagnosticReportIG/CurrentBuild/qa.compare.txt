@@ -1,16 +1,16 @@
 DiagnosticReportIG : Validation Results
 =========================================
 
-err = 0, warn = 129, info = 8
+err = 9, warn = 169, info = 8
 $--
 Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = http://nhn.no/fhir/nilar)
- Build Errors : 1 / 7 / 0
+ Build Errors : 1 / 6 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-identifier-source-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-person-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-public-id-type-cs : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-pvk-outcome-cs : 0 / 2 / 2
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar : 0 / 0 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-accredited : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-approval-date : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-comment : 0 / 2 / 1
@@ -33,7 +33,7 @@ Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = htt
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-observation : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-operation-outcome : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-payment-category : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-practitioner-role : 0 / 1 / 3
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-practitioner-role : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-pretreatment : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-receipt-date : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-related-observation : 0 / 2 / 1
@@ -47,37 +47,36 @@ Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = htt
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-study-product-ref : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-study-product-type : 0 / 2 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-all-observation-codes-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-collector-comment-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-deviation-indicator-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-document-restriction-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-expertise-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-collector-comment-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-deviation-indicator-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-document-restriction-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-expertise-vs : 7 / 3 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-identifier-source-vs : 0 / 1 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-inf-item-coded-descr-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-inf-item-type-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-id-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-method-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-spec-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-main-expertise-vs : 0 / 3 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-observation-result-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-inf-item-coded-descr-vs : 0 / 7 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-inf-item-type-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-id-vs : 0 / 7 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-method-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-investigation-spec-vs : 0 / 6 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-main-expertise-vs : 2 / 3 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-observation-result-vs : 0 / 7 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-organization-it-type-vs : 0 / 1 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-outcome-details-vs : 0 / 1 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-payment-category-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-payment-category-vs : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-person-id-type-vs : 0 / 1 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-pretreatment-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-pretreatment-vs : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-public-it-type-vs : 0 / 1 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-report-comment-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-request-reason-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-requisition-comment-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-reservation-codes-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-specimen-type-vs : 0 / 2 / 1
- /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs : 0 / 2 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-report-comment-vs : 0 / 5 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-request-reason-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-requisition-comment-vs : 0 / 4 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-reservation-codes-vs : 0 / 3 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-specimen-type-vs : 0 / 5 / 1
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs : 0 / 3 / 1
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-units-of-measure-vs : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
 WARNING: PractitionerRole.specialty: The reference urn:oid:2.16.578.1.12.4.1.1.8451 could not be resolved
-ERROR: /github/workspace/DiagnosticReportIG/output/index.html#/html/body/div/div/div/div/div/p/img at Line 209, column 5: The image source 'Visual%20mapping.png' cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/p/img at Line 209, column 5: The image source 'Visual%20mapping.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -103,6 +102,8 @@ INFORMATION: CodeSystem/pvk-outcome-cs: CodeSystem: CodeSystems SHOULD have a st
 WARNING: CodeSystem/pvk-outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/pvk-outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-diagnostic.report.nilar.json ==
+WARNING: ImplementationGuide/diagnostic.report.nilar: ImplementationGuide.dependsOn[2].uri: A definition could not be found for Canonical URL 'http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis'
+WARNING: ImplementationGuide/diagnostic.report.nilar: ImplementationGuide.dependsOn[2]: The canonical URL http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis doesn't point to an actual ImplementationGuide resource
 == fsh-generated/resources/StructureDefinition-nilar-accredited.json ==
 WARNING: StructureDefinition/nilar-accredited: StructureDefinition.context[0]: Review the extension type for nilar-accredited: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-accredited'): The Implementation Guide contains no examples for this extension
@@ -168,8 +169,8 @@ WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefi
 WARNING: StructureDefinition/nilar-payment-category: StructureDefinition.context[0]: Review the extension type for nilar-payment-category: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-practitioner-role.json ==
-INFORMATION: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[11].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[84].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[43].binding.valueSet: A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.9034'
+WARNING: StructureDefinition/nilar-practitioner-role: StructureDefinition.snapshot.element[56].binding.valueSet: A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8451'
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-practitioner-role'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-nilar-pretreatment.json ==
 WARNING: StructureDefinition/nilar-pretreatment: StructureDefinition.context[0]: Review the extension type for nilar-pretreatment: extensions should not have a context of Element unless it's really intended that they can be used anywhere
@@ -207,75 +208,123 @@ WARNING: StructureDefinition/nilar-study-product-type: StructureDefinition.conte
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-all-observation-codes-vs.json ==
 WARNING: ValueSet/all-observation-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'all-observation-codes-vs'): Unable to expand included value set 'http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs': Unable to expand imported value set: Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat (and Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat)
+WARNING: ValueSet.where(id = 'all-observation-codes-vs'): Unable to expand included value set 'http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs': Unable to expand imported value set: Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat (and Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat)
 == fsh-generated/resources/ValueSet-collector-comment-vs.json ==
+WARNING: ValueSet/collector-comment-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275'
 WARNING: ValueSet/collector-comment-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'collector-comment-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275
+WARNING: ValueSet.where(id = 'collector-comment-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8275
 == fsh-generated/resources/ValueSet-deviation-indicator-vs.json ==
+WARNING: ValueSet/deviation-indicator-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244'
 WARNING: ValueSet/deviation-indicator-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'deviation-indicator-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244
+WARNING: ValueSet.where(id = 'deviation-indicator-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244
 == fsh-generated/resources/ValueSet-document-restriction-vs.json ==
+WARNING: ValueSet/document-restriction-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603'
 WARNING: ValueSet/document-restriction-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'document-restriction-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603
+WARNING: ValueSet.where(id = 'document-restriction-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-9603
 == fsh-generated/resources/ValueSet-expertise-vs.json ==
-WARNING: ValueSet/expertise-vs: ValueSet.compose.include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+WARNING: ValueSet/expertise-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202'
+INFORMATION: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[0]: A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[1]: The code 'MBIO' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[2]: The code 'MGEN' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[3]: The code 'FARM' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[4]: The code 'IMTR' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[5]: The code 'PAT' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[6]: The code 'RAD' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/expertise-vs: ValueSet.compose.include[0].concept[7]: The code 'NUK' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
 WARNING: ValueSet/expertise-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'expertise-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
+WARNING: ValueSet.where(id = 'expertise-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-identifier-source-vs.json ==
 WARNING: ValueSet/identifier-source-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-inf-item-coded-descr-vs.json ==
+WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209'
+WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8210'
+WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8217'
+WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet.compose.include[3].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8218'
+WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet.compose.include[4].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8277'
 WARNING: ValueSet/inf-item-coded-descr-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'inf-item-coded-descr-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209
+WARNING: ValueSet.where(id = 'inf-item-coded-descr-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8209
 == fsh-generated/resources/ValueSet-inf-item-type-vs.json ==
+WARNING: ValueSet/inf-item-type-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233'
 WARNING: ValueSet/inf-item-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'inf-item-type-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233
+WARNING: ValueSet.where(id = 'inf-item-type-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8233
 == fsh-generated/resources/ValueSet-investigation-id-vs.json ==
+WARNING: ValueSet/investigation-id-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat'
+WARNING: ValueSet/investigation-id-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp'
+WARNING: ValueSet/investigation-id-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk'
+WARNING: ValueSet/investigation-id-vs: ValueSet.compose.include[3].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212'
+WARNING: ValueSet/investigation-id-vs: ValueSet.compose.include[4].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8219'
 WARNING: ValueSet/investigation-id-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'investigation-id-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
+WARNING: ValueSet.where(id = 'investigation-id-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
 == fsh-generated/resources/ValueSet-investigation-method-vs.json ==
+WARNING: ValueSet/investigation-method-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354'
 WARNING: ValueSet/investigation-method-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'investigation-method-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354
+WARNING: ValueSet.where(id = 'investigation-method-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354
 == fsh-generated/resources/ValueSet-investigation-spec-vs.json ==
+WARNING: ValueSet/investigation-spec-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat'
+WARNING: ValueSet/investigation-spec-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp'
+WARNING: ValueSet/investigation-spec-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7280-nlk'
+WARNING: ValueSet/investigation-spec-vs: ValueSet.compose.include[3].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212'
 WARNING: ValueSet/investigation-spec-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'investigation-spec-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
+WARNING: ValueSet.where(id = 'investigation-spec-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
 == fsh-generated/resources/ValueSet-main-expertise-vs.json ==
-WARNING: ValueSet/main-expertise-vs: ValueSet.compose.include[0]: Unknown System 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+WARNING: ValueSet/main-expertise-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202'
+INFORMATION: ValueSet/main-expertise-vs: ValueSet.compose.include[0].concept[0]: A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated
+ERROR: ValueSet/main-expertise-vs: ValueSet.compose.include[0].concept[1]: The code 'PAT' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
+ERROR: ValueSet/main-expertise-vs: ValueSet.compose.include[0].concept[2]: The code 'BLD' is not valid in the system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202 (A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202' could not be found, so the code cannot be validated)
 WARNING: ValueSet/main-expertise-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'main-expertise-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
+WARNING: ValueSet.where(id = 'main-expertise-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-observation-result-vs.json ==
+WARNING: ValueSet/observation-result-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat'
+WARNING: ValueSet/observation-result-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7270-ncrp'
+WARNING: ValueSet/observation-result-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8243'
+WARNING: ValueSet/observation-result-vs: ValueSet.compose.include[3].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8271'
+WARNING: ValueSet/observation-result-vs: ValueSet.compose.include[4].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8340'
 WARNING: ValueSet/observation-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'observation-result-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
+WARNING: ValueSet.where(id = 'observation-result-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-7010-norpat
 == fsh-generated/resources/ValueSet-organization-it-type-vs.json ==
 WARNING: ValueSet/organization-it-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-outcome-details-vs.json ==
 WARNING: ValueSet/outcome-details-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-payment-category-vs.json ==
+WARNING: ValueSet/payment-category-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101'
 WARNING: ValueSet/payment-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'payment-category-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101
+WARNING: ValueSet.where(id = 'payment-category-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-4101
 == fsh-generated/resources/ValueSet-person-id-type-vs.json ==
 WARNING: ValueSet/person-id-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-pretreatment-vs.json ==
+WARNING: ValueSet/pretreatment-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232'
 WARNING: ValueSet/pretreatment-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'pretreatment-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232
+WARNING: ValueSet.where(id = 'pretreatment-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232
 == fsh-generated/resources/ValueSet-public-it-type-vs.json ==
 WARNING: ValueSet/public-it-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-report-comment-vs.json ==
+WARNING: ValueSet/report-comment-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269'
+WARNING: ValueSet/report-comment-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8272'
+WARNING: ValueSet/report-comment-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8273'
 WARNING: ValueSet/report-comment-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'report-comment-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269
+WARNING: ValueSet.where(id = 'report-comment-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8269
 == fsh-generated/resources/ValueSet-request-reason-vs.json ==
+WARNING: ValueSet/request-reason-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231'
 WARNING: ValueSet/request-reason-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'request-reason-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231
+WARNING: ValueSet.where(id = 'request-reason-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8231
 == fsh-generated/resources/ValueSet-requisition-comment-vs.json ==
+WARNING: ValueSet/requisition-comment-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234'
+WARNING: ValueSet/requisition-comment-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274'
 WARNING: ValueSet/requisition-comment-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'requisition-comment-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234
+WARNING: ValueSet.where(id = 'requisition-comment-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234
 == fsh-generated/resources/ValueSet-reservation-codes-vs.json ==
+WARNING: ValueSet/reservation-codes-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108'
 WARNING: ValueSet/reservation-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'reservation-codes-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108
+WARNING: ValueSet.where(id = 'reservation-codes-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-3108
 == fsh-generated/resources/ValueSet-specimen-type-vs.json ==
+WARNING: ValueSet/specimen-type-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212'
+WARNING: ValueSet/specimen-type-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8216'
+WARNING: ValueSet/specimen-type-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8351'
 WARNING: ValueSet/specimen-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'specimen-type-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212
+WARNING: ValueSet.where(id = 'specimen-type-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8212
 == fsh-generated/resources/ValueSet-typeof-diagnostic-report-vs.json ==
+WARNING: ValueSet/typeof-diagnostic-report-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202'
 WARNING: ValueSet/typeof-diagnostic-report-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'typeof-diagnostic-report-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
+WARNING: ValueSet.where(id = 'typeof-diagnostic-report-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://ehelse.no/fhir/CodeSystem/no-kodeverk-8202
 == fsh-generated/resources/ValueSet-units-of-measure-vs.json ==
 WARNING: ValueSet/units-of-measure-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
