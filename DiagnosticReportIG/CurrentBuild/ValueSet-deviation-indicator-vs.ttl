@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet deviation-indicator-vs</b></p><a name=\"deviation-indicator-vs\"> </a><a name=\"hcdeviation-indicator-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8244</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs"] ;
-  fhir:ValueSet.version [ fhir:value "1.6.0"] ;
+  fhir:ValueSet.version [ fhir:value "1.5.0"] ;
   fhir:ValueSet.name [ fhir:value "DeviationIndicator_VS"] ;
   fhir:ValueSet.title [ fhir:value "Deviation Indicator VS"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
-  fhir:ValueSet.date [ fhir:value "2026-08-28T11:20:46+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-28T12:05:03+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;

@@ -1,4 +1,4 @@
-# Reservation - v1.6.0
+# Reservation - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:Reservation |
 
 Reservations the patient might have, regarding registration etc.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-reservation.cs
   "resourceType" : "StructureDefinition",
   "id" : "nilar-reservation",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-reservation",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "Reservation",
   "title" : "Reservation",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

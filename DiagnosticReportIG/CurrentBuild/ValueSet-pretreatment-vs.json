@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet pretreatment-vs</b></p><a name=\"pretreatment-vs\"> </a><a name=\"hcpretreatment-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8232</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "Pretreatment_VS",
   "title" : "Pretreatment-VS",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

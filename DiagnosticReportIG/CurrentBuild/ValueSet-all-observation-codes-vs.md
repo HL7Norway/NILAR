@@ -1,4 +1,4 @@
-# All Observation Codes VS - v1.6.0
+# All Observation Codes VS - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:AllObservationCodes_VS |
 
  
@@ -48,11 +48,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "all-observation-codes-vs",
   "url" : "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "AllObservationCodes_VS",
   "title" : "All Observation Codes VS",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

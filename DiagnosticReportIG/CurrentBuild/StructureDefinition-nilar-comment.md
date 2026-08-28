@@ -1,4 +1,4 @@
-# Comment - v1.6.0
+# Comment - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:Comment |
 
 This extension is intended to add an element similar to 'Note' in resources that do not have Note.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-comment.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "nilar-comment",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "Comment",
   "title" : "Comment",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

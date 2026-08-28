@@ -1,4 +1,4 @@
-# Artifacts Summary - v1.6.0
+# Artifacts Summary - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -53,13 +53,6 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Sample Handling](StructureDefinition-nilar-sample-handling.md) | Precausions or warnings regarding handling of the specimen sample. |
 | [Specification](StructureDefinition-nilar-specification.md) | This extension is used to convey further specification about an object. |
 | [Status Changed Date](StructureDefinition-nilar-status-change-date.md) | Time of last state change. |
-| [Structured Info](StructureDefinition-nilar-structured-info.md) | Used on Observation to convey additional information. |
-| [Structured Info Boolean](StructureDefinition-nilar-structured-info-boolean.md) | Boolean information. |
-| [Structured Info Coded](StructureDefinition-nilar-structured-info-coded.md) | Coded information. |
-| [Structured Info Integer](StructureDefinition-nilar-structured-info-integer.md) | Integer information. |
-| [Structured Info Physical](StructureDefinition-nilar-structured-info-physical.md) | Physical information. |
-| [Structured Info Text](StructureDefinition-nilar-structured-info-text.md) | Textual information. |
-| [Structured Info Type](StructureDefinition-nilar-structured-info-type.md) | Type of information. |
 | [Study Product Ref](StructureDefinition-nilar-study-product-ref.md) | Reference to product being studied. |
 | [Study Product Type](StructureDefinition-nilar-study-product-type.md) | Type of studied product. |
 

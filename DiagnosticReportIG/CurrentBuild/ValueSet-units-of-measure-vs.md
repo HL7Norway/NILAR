@@ -1,4 +1,4 @@
-# Units of measure VS - v1.6.0
+# Units of measure VS - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:UnitsOfMeasure_VS |
 
  
@@ -46,11 +46,11 @@ Unified Code for Units of Measure (UCUM).
   "resourceType" : "ValueSet",
   "id" : "units-of-measure-vs",
   "url" : "http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "UnitsOfMeasure_VS",
   "title" : "Units of measure VS",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

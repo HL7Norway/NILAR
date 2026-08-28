@@ -1,4 +1,4 @@
-# Payment Category - v1.6.0
+# Payment Category - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:PaymentCategory |
 
 Who pays for these investigations.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-payment-catego
   "resourceType" : "StructureDefinition",
   "id" : "nilar-payment-category",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "PaymentCategory",
   "title" : "Payment Category",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

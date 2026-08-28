@@ -1,4 +1,4 @@
-# Inf Item - v1.6.0
+# Inf Item - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:InfItem |
 
 Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-inf-item.csv),
   "resourceType" : "StructureDefinition",
   "id" : "nilar-inf-item",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-inf-item",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "InfItem",
   "title" : "Inf Item",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

@@ -1,4 +1,4 @@
-# Identifier Source VS - v1.6.0
+# Identifier Source VS - v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs | *Version*:1.6.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs | *Version*:1.5.0 |
 | Active as of 2026-08-28 | *Computable Name*:IdentifierSource_VS |
 
  
@@ -49,11 +49,11 @@ Various resources has one or two identifiers, provided by requester or service p
   "resourceType" : "ValueSet",
   "id" : "identifier-source-vs",
   "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
-  "version" : "1.6.0",
+  "version" : "1.5.0",
   "name" : "IdentifierSource_VS",
   "title" : "Identifier Source VS",
   "status" : "active",
-  "date" : "2026-08-28T11:20:46+00:00",
+  "date" : "2026-08-28T12:05:03+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

@@ -1,6 +1,6 @@
 {
   "package": "diagnostic.report.nilar",
-  "version": "1.6.0",
+  "version": "1.5.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -243,104 +243,6 @@
       ]
     },
     {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info",
-      "title": "Structured Info",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-boolean",
-      "title": "Structured Info Boolean",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-coded",
-      "title": "Structured Info Coded",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-integer",
-      "title": "Structured Info Integer",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-physical",
-      "title": "Structured Info Physical",
-      "types": [
-        "Quantity"
-      ]
-    },
-    {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-text",
-      "title": "Structured Info Text",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-type",
-      "title": "Structured Info Type",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-ref",
       "title": "Study Product Ref",
       "types": [
@@ -518,27 +420,6 @@
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date": [
       "Observation"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info": [
-      "Observation"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-boolean": [
-      "Extension"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-coded": [
-      "Extension"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-integer": [
-      "Extension"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-physical": [
-      "Extension"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-text": [
-      "Extension"
-    ],
-    "http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-type": [
-      "Extension"
     ],
     "http://nhn.no/fhir/nilar/StructureDefinition/nilar-study-product-ref": [
       "Specimen.collection"
