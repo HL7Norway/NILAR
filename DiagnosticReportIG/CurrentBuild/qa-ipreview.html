@@ -11,63 +11,32 @@
     <p style="color: maroon">
       <b>This fragment is not visible to the reader</b>
     </p>
-    <div>
-      <p>This publication includes IP covered under the following statements.</p>
-
-      <ul>
-
-        <li>
-The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.           <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a>
-          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1">
-             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
-          </div>
-          <div style="display: none" id="ipp2_1">
-
-            <ul>
-
-              <li>
-                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
-:                 <a href="StructureDefinition-nilar-observation.html">NilarObservation</a>
- and                 <a href="ValueSet-units-of-measure-vs.html">UnitsOfMeasure_VS</a>
-              </li>
-
-
-            </ul>
-
-
-          </div>
-        </li>
-
-
-      </ul>
-
-
-    </div>
+    <div>No use of external IP (other than from the FHIR specification)</div>
     <h2>Copyright and Registered Trademark Uses</h2>
     <ul>
       <li>
 
-          IG &copy; 2022+ Norsk helsenett - Nilar.  Package diagnostic.report.nilar#1.5.0 based on FHIR 4.0.1. Generated 2025-09-10 
+          IG &copy; 2022+ Norsk helsenett - Nilar.  Package diagnostic.report.nilar#1.6.0 based on FHIR 4.0.1. Generated 2026-08-28
           
           
                       Links: Table of Contents |
                  QA Report
                  
                 
-           
+          
          (        <a href="toc.html">src</a>
 )
       </li>
       <li>
 
-          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   &reg;&copy; HL7 |
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide  &reg;&copy; HL7 |
              
                 CC0
          (        <a href="searchform.html">src</a>
 )
       </li>
       <li>
-DiagnosticReportIG - Local Development build (v1.5.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+DiagnosticReportIG - Local Development build (v1.6.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
 )
       </li>
     </ul>
@@ -94,6 +63,7 @@ DiagnosticReportIG - Local Development build (v1.5.0) built by the FHIR (HL7&reg
         <td>
 Include all codes defined in           <a href="http://unitsofmeasure.org">
 <code>http://unitsofmeasure.org</code>          </a>
+          <span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span>
         </td>
       </tr>
       <tr>
@@ -106,8 +76,8 @@ Include all codes defined in           <a href="http://unitsofmeasure.org">
         <td>
 
           IG &copy; 2022+           <a style="color:var(--footer-hyperlink-text-color)" href="https://www.nhn.no">Norsk helsenett - Nilar</a>
-.  Package diagnostic.report.nilar#1.5.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, Sep 10, 2025 06:37+0000">2025-09-10</span>
+.  Package diagnostic.report.nilar#1.6.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Fri, Aug 28, 2026 11:20+0000">2026-08-28</span>
 
                     <br/>
 
@@ -125,19 +95,26 @@ Include all codes defined in           <a href="http://unitsofmeasure.org">
       </tr>
       <tr>
         <td>
-          <a href="StructureDefinition-nilar-observation.html">web</a>
+          <a href="StructureDefinition-nilar-observation-mappings.html">web</a>
         </td>
         <td>
-          <a href="http://ucum.org">ucum.org</a>
+          <a href="http://snomed.info/conceptdomain">snomed.info</a>
         </td>
         <td>
-          <a style="opacity: 1.0" href="ValueSet-units-of-measure-vs.html">UnitsOfMeasure_VS</a>
-(a valid code from           <a href="http://ucum.org">UCUM</a>
-)          <div>
-            <code>http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs</code>
-            <button data-clipboard-text="http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs" title="Click to copy URL" class="btn-copy"></button>
-          </div>
-          <div>From this IG</div>
+          <a href="http://snomed.info/conceptdomain" title="http://snomed.info/conceptdomain">SNOMED CT Concept Domain Binding</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-nilar-service-request-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://siframework.org/cqf">siframework.org</a>
+        </td>
+        <td>
+          <a href="http://siframework.org/cqf" title="http://siframework.org/cqf">Quality Improvement and Clinical Knowledge (QUICK)</a>
+          <span style="float: right">
+<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a>          </span>
         </td>
       </tr>
       <tr>

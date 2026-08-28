@@ -3,14 +3,14 @@
   "id" : "organization-it-type-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet organization-it-type-vs</b></p><a name=\"organization-it-type-vs\"> </a><a name=\"hcorganization-it-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-organization-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet organization-it-type-vs</b></p><a name=\"organization-it-type-vs\"> </a><a name=\"hcorganization-it-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-organization-id-type-cs.html\"><code>http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.6.0</span></li></ul></div>"
   },
   "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "OrganizationItType_VS",
   "title" : "Organization It Type VS",
   "status" : "active",
-  "date" : "2025-09-10T06:36:19+00:00",
+  "date" : "2026-08-28T11:20:46+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

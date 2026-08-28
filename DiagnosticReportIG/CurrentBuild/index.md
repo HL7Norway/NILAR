@@ -1,0 +1,1925 @@
+# Home - v1.6.0
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar | *Version*:1.6.0 |
+| Active as of 2026-08-28 | *Computable Name*:DiagnosticReportIG |
+
+# Implementasjonsguide for DiagnosticReport i Pasientens Prøvesvar
+
+Dette er implementasjonsguide (IG) for tjenesten **Pasientens Prøvesvar**, i prosjektfasen kalt **Nilar** (Nasjonalt Informasjonstjeneste for laboratorie- og røntgensvar). Nilar brukes som identifikator på ressursene i denne IG og brukes også som navn på tjenesten i dokumentasjonen.
+
+Data inn til Nilar leveres med KITH-meldingen svarrapport, v1.4 (og 1.3), som xml. Skjemadefinisjonen, sammen med observert variasjon i innholdet i disse meldingene, legger føringene som kommer til uttrykk i denne IG.
+
+Svarmeldingene oppstår i laboratoriene og det er ingen kobling til denne IG ved opprettelse av svarmeldingene. Videre mapping til Fhir tar utgangspunkt i innholdet i xml. Det er er derfor ingen bruk av denne IG ved opprettelse av den informasjon som leveres ut fra Nilar. IG'en er en ren dokumentasjon for mottakere av data fra Nilar.
+
+Nilar vil bestrebe seg på å levere data ihht. denne IG, men variasjon som legges inn i svarmeldingene der de oppstår gjør at det kan forekomme data som ikke oppfyller alle krav i denne IG. I den grad slike varianter er kjent er de tatt hensyn til i guiden.
+
+## Tjeneste-API
+
+API som tilbyr data ihht. denne IG er beskrevet i [utviklerportalen](https://utviklerportal.nhn.no/informasjonstjenester/pasientens-proevesvar/).
+
+## Brukstilfeller
+
+Denne implementasjonsguiden er tiltenkt klientsystemer som ønsker å hente laboratorie og røntgensvar ut fra Pasientens prøvesvar. I den initielle prosjektfasen ble behovene til Kjernejournal og Helsenorge lagt til grunn. Tjenesten som sådan er imidlertid generisk og kan brukes av andre systemer så langt behovene dekkes.
+
+Eksempler på mulige klienter kan være
+
+* Kjernejournal - visning for helsepersonell
+* Helsenorge - visning for innbygger
+* Journalsystemer - visning for helsepersonell, uten omveien om Kjernejournal
+
+### Brukstilfeller som ikke er tiltenkt
+
+Denne IG skal **ikke** brukes for å **sende data** til Nilar, til det er den for tett knyttet til KITH meldingsstandard. Den er kun ment som en beskrivels av hva man kan forvente **UT** fra Nilar, gitt at datagrunnlaget er meldinger mottatt på KITH meldingsstandard.
+
+## Struktur
+
+I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre ressurser. I kith-meldingene som mottas fra laboratoriene har de en struktur der noen ressurser eksisterer inni en annen ressurs. Mappingen løser opp i dette, men bruker informasjon i strukturer til å hente enkelt verdier fra foreldre-elementer i strukturen. Resultatet er Fhir-ressurser som er så selvstendige som de skal være, men der man i varierende grad finner spor av den opprinnelige strukturen. Mest uttalt er dette ved resistensbestemmelse, der et hierarki av ResultItems/Observations brukes til å sammenstille ulike aspekter ved undersøkelsen. Dette hierarkiet, og nødvendigheten av å se hele sammenstillingen for å få et meningsfullt totalbilde, er bevart i Fhir-ressursene.
+
+## Sammenheng mellom XML dokument og FHIR ressurser
+
+![](Visual%20mapping.png)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "diagnostic.report.nilar",
+  "url" : "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
+  "version" : "1.6.0",
+  "name" : "DiagnosticReportIG",
+  "status" : "active",
+  "date" : "2026-08-28T11:20:46+00:00",
+  "publisher" : "Norsk helsenett - Nilar",
+  "contact" : [{
+    "name" : "Norsk helsenett - Nilar",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhn.no"
+    }]
+  }],
+  "packageId" : "diagnostic.report.nilar",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7_fhir_no_basis",
+    "uri" : "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
+    "packageId" : "hl7.fhir.no.basis",
+    "version" : "2.2.2"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2022+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://nhn.no/fhir/nilar/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2022+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://nhn.no/fhir/nilar/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-accredited.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-accredited"
+      },
+      "name" : "Accredited",
+      "description" : "Used to indicate if the party involved has accreditation for aquiring the specimen or perfoing the analysis in question.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-all-observation-codes-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/all-observation-codes-vs"
+      },
+      "name" : "All Observation Codes VS",
+      "description" : "All codes found in investigation or result. Used in Observation.meta.tag where all codes are accumulated for easy search.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-approval-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-approval-date"
+      },
+      "name" : "Approval Date",
+      "description" : "Time diagnostic report was approved.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-collector-comment-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/collector-comment-vs"
+      },
+      "name" : "Collector Comment VS",
+      "description" : "Coded comments from collector of sample.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-comment.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-comment"
+      },
+      "name" : "Comment",
+      "description" : "This extension is intended to add an element similar to 'Note' in resources that do not have Note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-container-count.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-container-count"
+      },
+      "name" : "Container Count",
+      "description" : "Number of containers or other devices related to a specimen sample.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-counter-sign-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-counter-sign-date"
+      },
+      "name" : "Counter Sign Date",
+      "description" : "Time the investigation was counter signed.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-description-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-description-date"
+      },
+      "name" : "Description Date",
+      "description" : "Time for description of image-based investigation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-deviation-indicator-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/deviation-indicator-vs"
+      },
+      "name" : "Deviation Indicator VS",
+      "description" : "Indicates if a numeric observation value is ouside reference boundaries.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-diagnostic-report-ref.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-diagnostic-report-ref"
+      },
+      "name" : "Diagnostic Report Ref",
+      "description" : "In Nilar the origin of observations is a report. This extension is used to create a reference form each observation back to the report of origin.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-document-restriction-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/document-restriction-vs"
+      },
+      "name" : "Document Restriction VS",
+      "description" : "Codes with furtehr information about a document restriction.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-expertise-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/expertise-vs"
+      },
+      "name" : "Expertise ValueSet",
+      "description" : "Expertise of investigation used in producing an Observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-history.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-history"
+      },
+      "name" : "History",
+      "description" : "Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-identifier-source-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/identifier-source-cs"
+      },
+      "name" : "Identifier Source CS",
+      "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-identifier-source-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/identifier-source-vs"
+      },
+      "name" : "Identifier Source VS",
+      "description" : "Various resources has one or two identifiers, provided by requester or service provider. These are the naming systems used to identify the origin of the identifiers.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item"
+      },
+      "name" : "Inf Item",
+      "description" : "Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item-coded-descr.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-coded-descr"
+      },
+      "name" : "Inf Item Coded Descr",
+      "description" : "Coded description of clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-inf-item-coded-descr-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/inf-item-coded-descr-vs"
+      },
+      "name" : "Inf Item Coded Descr VS",
+      "description" : "Value set for coded description of clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item-descr.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-descr"
+      },
+      "name" : "Inf Item Descr",
+      "description" : "Description of the clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item-end.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-end"
+      },
+      "name" : "Inf Item End",
+      "description" : "End time for clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item-org-time.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-org-time"
+      },
+      "name" : "Inf Item Org Time",
+      "description" : "Time of recording the clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item-start.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-start"
+      },
+      "name" : "Inf Item Start",
+      "description" : "Start time for clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-inf-item-type.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-inf-item-type"
+      },
+      "name" : "Inf Item Type",
+      "description" : "Type of clinical information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-inf-item-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/inf-item-type-vs"
+      },
+      "name" : "Inf Item Type VS",
+      "description" : "Codes for type of clinical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-investigation-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-investigation-date"
+      },
+      "name" : "Investigation Date",
+      "description" : "Time the investigation was performed.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-investigation-id-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/investigation-id-vs"
+      },
+      "name" : "Investigation Id VS",
+      "description" : "Codes used to identify individual investigations leading up to an observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-investigation-method-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/investigation-method-vs"
+      },
+      "name" : "Investigation Method VS",
+      "description" : "Codes used to specify method used in investigation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-investigation-spec-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/investigation-spec-vs"
+      },
+      "name" : "Investigation Spec VS",
+      "description" : "Codes used to specify supplementary information about investigations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-logistics.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-logistics"
+      },
+      "name" : "Logistics",
+      "description" : "How the sample is being sent.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-main-expertise-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/main-expertise-vs"
+      },
+      "name" : "Main Expertise VS",
+      "description" : "The main type of labaratory expertise expressed in a DiagnosticReport.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-medical-validation-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-medical-validation-date"
+      },
+      "name" : "Medical Validation Date",
+      "description" : "Time of medical validation of the investigation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-diagnostic-report.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-diagnostic-report"
+      },
+      "name" : "NilarDiagnosticReport",
+      "description" : "DiagnosticReport for use in Nilar to accomodate laboratory reports received using http://www.kith.no/xmlstds/labsvar/2012-02-15, v1.3 and v1.4.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-observation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-observation"
+      },
+      "name" : "NilarObservation",
+      "description" : "Observation as used in Nilar, referenced from NilarDiagnosticReport.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-operation-outcome.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-operation-outcome"
+      },
+      "name" : "NilarOperationOutcome",
+      "description" : "OperationOutcome used to bring feedback to client. It has some particular used for informing about privacy settings that might influence query results.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-practitioner-role.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-practitioner-role"
+      },
+      "name" : "NilarPractitionerRole",
+      "description" : "PractitionerRole as used in Nilar. Used to combine actors of type Practitioner and Organization. Practitioner and Organization are referenced by their Identifier.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-service-request.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-service-request"
+      },
+      "name" : "NilarServiceRequest",
+      "description" : "ServiceRecuest as used in Nilar, referenced from NilarDiagnosticReport.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-specimen.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-specimen"
+      },
+      "name" : "NilarSpecimen",
+      "description" : "Specimen as used in Nilar, referenced from NilarDiagnosticReport and NilarObservation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-observation-result-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/observation-result-vs"
+      },
+      "name" : "Observation Result VS",
+      "description" : "Codes used to convey textual result values.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-organization-id-type-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/organization-id-type-cs"
+      },
+      "name" : "Organization Id Type CS",
+      "description" : "Id types used to identify organizations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-organization-it-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/organization-it-type-vs"
+      },
+      "name" : "Organization It Type VS",
+      "description" : "Id types for organizations involved in DiagnosticReport/Observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-outcome-details-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/outcome-details-vs"
+      },
+      "name" : "Outcome Details VS",
+      "description" : "A code that gives more details to the outcome, such as privacy settings.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-payment-category.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-payment-category"
+      },
+      "name" : "Payment Category",
+      "description" : "Who pays for these investigations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-payment-category-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/payment-category-vs"
+      },
+      "name" : "Payment Category VS",
+      "description" : "Codes for who will pay for the investigations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-person-id-type-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/person-id-type-cs"
+      },
+      "name" : "Person Id Type CS",
+      "description" : "Id types used to identify persons involved, other than the patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-person-id-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/person-id-type-vs"
+      },
+      "name" : "Person Id Type VS",
+      "description" : "Id types used to identify persons involved, other than the patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-pretreatment.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-pretreatment"
+      },
+      "name" : "Pretreatment",
+      "description" : "Specifies pretreatment of patient from which specimen is sampled.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-pretreatment-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/pretreatment-vs"
+      },
+      "name" : "Pretreatment-VS",
+      "description" : "Codes for pretreatment of patient from which specimen is sampled.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-public-id-type-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/public-id-type-cs"
+      },
+      "name" : "Public Id Type CS",
+      "description" : "Id types used to identify patients",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-public-it-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/public-it-type-vs"
+      },
+      "name" : "PublicIdType_VS",
+      "description" : "Id types used to identify patients",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-pvk-outcome-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/pvk-outcome-cs"
+      },
+      "name" : "Pvk Outcome CS",
+      "description" : "A code that indicates how privacy settings (PVK) may have affected the outcome.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-receipt-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-receipt-date"
+      },
+      "name" : "Receipt Date",
+      "description" : "Time the request was received.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-related-observation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-related-observation"
+      },
+      "name" : "Related Observation",
+      "description" : "Reference to related Observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-report-comment-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/report-comment-vs"
+      },
+      "name" : "Report Comment VS",
+      "description" : "Codes used for comments in diagnostic report.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-report-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-report-date"
+      },
+      "name" : "Report Date",
+      "description" : "Time this report was first published (first version).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-request-reason-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/request-reason-vs"
+      },
+      "name" : "Request Reason VS",
+      "description" : "Type of text reply, indicates reason for request.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-requisition-comment-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/requisition-comment-vs"
+      },
+      "name" : "Requisition Comment VS",
+      "description" : "Codes used in requsition comments. 8234 represents 'heading', 8274 reresents coded text.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-reservation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-reservation"
+      },
+      "name" : "Reservation",
+      "description" : "Reservations the patient might have, regarding registration etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-reservation-codes-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reservation-codes-vs"
+      },
+      "name" : "Reservation Codes",
+      "description" : "Reservations the patient might have, regarding registration etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-sample-handling.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-sample-handling"
+      },
+      "name" : "Sample Handling",
+      "description" : "Precausions or warnings regarding handling of the specimen sample.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-specification.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-specification"
+      },
+      "name" : "Specification",
+      "description" : "This extension is used to convey further specification about an object.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-specimen-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/specimen-type-vs"
+      },
+      "name" : "Specimen Type VS",
+      "description" : "Type og material in specimen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-status-change-date.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-status-change-date"
+      },
+      "name" : "Status Changed Date",
+      "description" : "Time of last state change.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info"
+      },
+      "name" : "Structured Info",
+      "description" : "Used on Observation to convey additional information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-boolean.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-boolean"
+      },
+      "name" : "Structured Info Boolean",
+      "description" : "Boolean information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-coded.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-coded"
+      },
+      "name" : "Structured Info Coded",
+      "description" : "Coded information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-integer.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-integer"
+      },
+      "name" : "Structured Info Integer",
+      "description" : "Integer information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-physical.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-physical"
+      },
+      "name" : "Structured Info Physical",
+      "description" : "Physical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-text.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-text"
+      },
+      "name" : "Structured Info Text",
+      "description" : "Textual information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-type.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-type"
+      },
+      "name" : "Structured Info Type",
+      "description" : "Type of information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-study-product-ref.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-study-product-ref"
+      },
+      "name" : "Study Product Ref",
+      "description" : "Reference to product being studied.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-study-product-type.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-study-product-type"
+      },
+      "name" : "Study Product Type",
+      "description" : "Type of studied product.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-typeof-diagnostic-report-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeof-diagnostic-report-vs"
+      },
+      "name" : "Type of diagnostic report",
+      "description" : "Type of diagnostic report, indication the kind of tests/procedures performed in a DiagnosticReport.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-units-of-measure-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/units-of-measure-vs"
+      },
+      "name" : "Units of measure VS",
+      "description" : "Unified Code for Units of Measure (UCUM).",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}
+
+```

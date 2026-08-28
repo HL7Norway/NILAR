@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,31 +7,39 @@
 
 <http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "investigation-method-vs"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet investigation-method-vs</b></p><a name=\"investigation-method-vs\"> </a><a name=\"hcinvestigation-method-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354</code></li></ul></div>"^^rdf:XMLLiteral
-  ] ; # 
-  fhir:url [ fhir:v "http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.5.0"] ; # 
-  fhir:name [ fhir:v "InvestigationMethod_VS"] ; # 
-  fhir:title [ fhir:v "Investigation Method VS"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-10T06:36:19+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Norsk helsenett - Nilar"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Norsk helsenett - Nilar" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nhn.no" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Codes used to specify method used in investigation."] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354"^^xsd:anyURI ]
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "investigation-method-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet investigation-method-vs</b></p><a name=\"investigation-method-vs\"> </a><a name=\"hcinvestigation-method-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs"] ;
+  fhir:ValueSet.version [ fhir:value "1.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "InvestigationMethod_VS"] ;
+  fhir:ValueSet.title [ fhir:value "Investigation Method VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-28T11:20:46+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Norsk helsenett - Nilar" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.nhn.no" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Codes used to specify method used in investigation."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8354" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,0 +1,97 @@
+# diagnostic.report.nilar#1.6.0: null
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Identifier Source CS](CodeSystem-identifier-source-cs.md)
+* [Organization Id Type CS](CodeSystem-organization-id-type-cs.md)
+* [Person Id Type CS](CodeSystem-person-id-type-cs.md)
+* [Public Id Type CS](CodeSystem-public-id-type-cs.md)
+* [Pvk Outcome CS](CodeSystem-pvk-outcome-cs.md)
+
+### ValueSets
+
+* [All Observation Codes VS](ValueSet-all-observation-codes-vs.md)
+* [Collector Comment VS](ValueSet-collector-comment-vs.md)
+* [Deviation Indicator VS](ValueSet-deviation-indicator-vs.md)
+* [Document Restriction VS](ValueSet-document-restriction-vs.md)
+* [Expertise ValueSet](ValueSet-expertise-vs.md)
+* [Identifier Source VS](ValueSet-identifier-source-vs.md)
+* [Inf Item Coded Descr VS](ValueSet-inf-item-coded-descr-vs.md)
+* [Inf Item Type VS](ValueSet-inf-item-type-vs.md)
+* [Investigation Id VS](ValueSet-investigation-id-vs.md)
+* [Investigation Method VS](ValueSet-investigation-method-vs.md)
+* [Investigation Spec VS](ValueSet-investigation-spec-vs.md)
+* [Main Expertise VS](ValueSet-main-expertise-vs.md)
+* [Observation Result VS](ValueSet-observation-result-vs.md)
+* [Organization It Type VS](ValueSet-organization-it-type-vs.md)
+* [Outcome Details VS](ValueSet-outcome-details-vs.md)
+* [Payment Category VS](ValueSet-payment-category-vs.md)
+* [Person Id Type VS](ValueSet-person-id-type-vs.md)
+* [Pretreatment-VS](ValueSet-pretreatment-vs.md)
+* [PublicIdType_VS](ValueSet-public-it-type-vs.md)
+* [Report Comment VS](ValueSet-report-comment-vs.md)
+* [Request Reason VS](ValueSet-request-reason-vs.md)
+* [Requisition Comment VS](ValueSet-requisition-comment-vs.md)
+* [Reservation Codes](ValueSet-reservation-codes-vs.md)
+* [Specimen Type VS](ValueSet-specimen-type-vs.md)
+* [Type of diagnostic report](ValueSet-typeof-diagnostic-report-vs.md)
+* [Units of measure VS](ValueSet-units-of-measure-vs.md)
+
+### Resource Profiles
+
+* [NilarDiagnosticReport](StructureDefinition-nilar-diagnostic-report.md)
+* [NilarObservation](StructureDefinition-nilar-observation.md)
+* [NilarOperationOutcome](StructureDefinition-nilar-operation-outcome.md)
+* [NilarPractitionerRole](StructureDefinition-nilar-practitioner-role.md)
+* [NilarServiceRequest](StructureDefinition-nilar-service-request.md)
+* [NilarSpecimen](StructureDefinition-nilar-specimen.md)
+
+### Extensions
+
+* [Accredited](StructureDefinition-nilar-accredited.md)
+* [Approval Date](StructureDefinition-nilar-approval-date.md)
+* [Comment](StructureDefinition-nilar-comment.md)
+* [Container Count](StructureDefinition-nilar-container-count.md)
+* [Counter Sign Date](StructureDefinition-nilar-counter-sign-date.md)
+* [Description Date](StructureDefinition-nilar-description-date.md)
+* [Diagnostic Report Ref](StructureDefinition-nilar-diagnostic-report-ref.md)
+* [History](StructureDefinition-nilar-history.md)
+* [Inf Item Coded Descr](StructureDefinition-nilar-inf-item-coded-descr.md)
+* [Inf Item Descr](StructureDefinition-nilar-inf-item-descr.md)
+* [Inf Item End](StructureDefinition-nilar-inf-item-end.md)
+* [Inf Item Org Time](StructureDefinition-nilar-inf-item-org-time.md)
+* [Inf Item Start](StructureDefinition-nilar-inf-item-start.md)
+* [Inf Item Type](StructureDefinition-nilar-inf-item-type.md)
+* [Inf Item](StructureDefinition-nilar-inf-item.md)
+* [Investigation Date](StructureDefinition-nilar-investigation-date.md)
+* [Logistics](StructureDefinition-nilar-logistics.md)
+* [Medical Validation Date](StructureDefinition-nilar-medical-validation-date.md)
+* [Payment Category](StructureDefinition-nilar-payment-category.md)
+* [Pretreatment](StructureDefinition-nilar-pretreatment.md)
+* [Receipt Date](StructureDefinition-nilar-receipt-date.md)
+* [Related Observation](StructureDefinition-nilar-related-observation.md)
+* [Report Date](StructureDefinition-nilar-report-date.md)
+* [Reservation](StructureDefinition-nilar-reservation.md)
+* [Sample Handling](StructureDefinition-nilar-sample-handling.md)
+* [Specification](StructureDefinition-nilar-specification.md)
+* [Status Changed Date](StructureDefinition-nilar-status-change-date.md)
+* [Structured Info Boolean](StructureDefinition-nilar-structured-info-boolean.md)
+* [Structured Info Coded](StructureDefinition-nilar-structured-info-coded.md)
+* [Structured Info Integer](StructureDefinition-nilar-structured-info-integer.md)
+* [Structured Info Physical](StructureDefinition-nilar-structured-info-physical.md)
+* [Structured Info Text](StructureDefinition-nilar-structured-info-text.md)
+* [Structured Info Type](StructureDefinition-nilar-structured-info-type.md)
+* [Structured Info](StructureDefinition-nilar-structured-info.md)
+* [Study Product Ref](StructureDefinition-nilar-study-product-ref.md)
+* [Study Product Type](StructureDefinition-nilar-study-product-type.md)
+
+### ImplementationGuides
+
+* [DiagnosticReportIG](index.md)
