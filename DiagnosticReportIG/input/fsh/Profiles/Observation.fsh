@@ -46,3 +46,4 @@ Description: "Observation as used in Nilar, referenced from NilarDiagnosticRepor
 * extension contains DescriptionDate named descriptiondate 0..1
 * extension contains Specification named specification 0..1
 * extension contains RelatedObservation named relatedobservation 0..1
+* extension contains StructuredInfo named structuredinfo 0..*
