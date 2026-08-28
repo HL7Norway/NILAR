@@ -1,7 +1,7 @@
 DiagnosticReportIG : Validation Results
 =========================================
 
-err = 0, warn = 200, info = 44
+err = 0, warn = 214, info = 51
 $--
 Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = http://nhn.no/fhir/nilar)
  Build Errors : 1 / 6 / 0
@@ -44,6 +44,13 @@ Generated $--. FHIR version $-- for diagnostic.report.nilar#$-- (canonical = htt
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-specification : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-specimen : 0 / 1 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-status-change-date : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info-boolean : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info-coded : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info-integer : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info-physical : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info-text : 0 / 2 / 2
+ /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-structured-info-type : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-study-product-ref : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/StructureDefinition-nilar-study-product-type : 0 / 2 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/ValueSet-all-observation-codes-vs : 0 / 3 / 1
@@ -239,6 +246,34 @@ WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefi
 WARNING: StructureDefinition/nilar-status-change-date: StructureDefinition.context[0]: Review the extension type for nilar-status-change-date: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 INFORMATION: Resource: The resource StructureDefinition/nilar-status-change-date could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-status-change-date'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info.json ==
+WARNING: StructureDefinition/nilar-structured-info: StructureDefinition.context[0]: Review the extension type for nilar-structured-info: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info-boolean.json ==
+WARNING: StructureDefinition/nilar-structured-info-boolean: StructureDefinition.context[0]: Review the extension type for nilar-structured-info-boolean: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info-boolean could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-boolean'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info-coded.json ==
+WARNING: StructureDefinition/nilar-structured-info-coded: StructureDefinition.context[0]: Review the extension type for nilar-structured-info-coded: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info-coded could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-coded'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info-integer.json ==
+WARNING: StructureDefinition/nilar-structured-info-integer: StructureDefinition.context[0]: Review the extension type for nilar-structured-info-integer: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info-integer could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-integer'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info-physical.json ==
+WARNING: StructureDefinition/nilar-structured-info-physical: StructureDefinition.context[0]: Review the extension type for nilar-structured-info-physical: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info-physical could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-physical'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info-text.json ==
+WARNING: StructureDefinition/nilar-structured-info-text: StructureDefinition.context[0]: Review the extension type for nilar-structured-info-text: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info-text could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-text'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-nilar-structured-info-type.json ==
+WARNING: StructureDefinition/nilar-structured-info-type: StructureDefinition.context[0]: Review the extension type for nilar-structured-info-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/nilar-structured-info-type could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nilar-study-product-ref.json ==
 WARNING: StructureDefinition/nilar-study-product-ref: StructureDefinition.context[0]: Review the extension type for nilar-study-product-ref: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 INFORMATION: Resource: The resource StructureDefinition/nilar-study-product-ref could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

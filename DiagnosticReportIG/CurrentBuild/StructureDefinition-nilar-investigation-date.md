@@ -1,4 +1,4 @@
-# Investigation Date - v1.5.0
+# Investigation Date - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:InvestigationDate |
 
 Time the investigation was performed.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-investigation-
   "resourceType" : "StructureDefinition",
   "id" : "nilar-investigation-date",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "InvestigationDate",
   "title" : "Investigation Date",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -91,6 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-investigation-
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "min" : 1,
       "type" : [{
         "code" : "dateTime"
       }]

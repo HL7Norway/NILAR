@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet requisition-comment-vs</b></p><a name=\"requisition-comment-vs\"> </a><a name=\"hcrequisition-comment-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8234</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8274</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "http://nhn.no/fhir/nilar/ValueSet/requisition-comment-vs"] ;
-  fhir:ValueSet.version [ fhir:value "1.5.0"] ;
+  fhir:ValueSet.version [ fhir:value "1.6.0"] ;
   fhir:ValueSet.name [ fhir:value "RequisitionComment_VS"] ;
   fhir:ValueSet.title [ fhir:value "Requisition Comment VS"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
-  fhir:ValueSet.date [ fhir:value "2026-08-28T12:05:03+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-28T12:17:39+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Norsk helsenett - Nilar"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;

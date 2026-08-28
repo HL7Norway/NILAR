@@ -1,4 +1,4 @@
-# Pretreatment - v1.5.0
+# Pretreatment - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:Pretreatment |
 
 Specifies pretreatment of patient from which specimen is sampled.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-pretreatment.c
   "resourceType" : "StructureDefinition",
   "id" : "nilar-pretreatment",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-pretreatment",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "Pretreatment",
   "title" : "Pretreatment",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -93,6 +93,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-pretreatment.c
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "min" : 1,
       "type" : [{
         "code" : "CodeableConcept"
       }],

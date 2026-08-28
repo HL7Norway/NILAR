@@ -1,4 +1,4 @@
-# Request Reason VS - v1.5.0
+# Request Reason VS - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/request-reason-vs | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/ValueSet/request-reason-vs | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:RequestReason_VS |
 
  
@@ -48,11 +48,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "request-reason-vs",
   "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "RequestReason_VS",
   "title" : "Request Reason VS",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

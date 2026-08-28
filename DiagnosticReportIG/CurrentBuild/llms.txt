@@ -1,4 +1,4 @@
-# diagnostic.report.nilar#1.5.0: null
+# diagnostic.report.nilar#1.6.0: null
 
 ## Pages
 
@@ -82,6 +82,13 @@
 * [Sample Handling](StructureDefinition-nilar-sample-handling.md)
 * [Specification](StructureDefinition-nilar-specification.md)
 * [Status Changed Date](StructureDefinition-nilar-status-change-date.md)
+* [Structured Info Boolean](StructureDefinition-nilar-structured-info-boolean.md)
+* [Structured Info Coded](StructureDefinition-nilar-structured-info-coded.md)
+* [Structured Info Integer](StructureDefinition-nilar-structured-info-integer.md)
+* [Structured Info Physical](StructureDefinition-nilar-structured-info-physical.md)
+* [Structured Info Text](StructureDefinition-nilar-structured-info-text.md)
+* [Structured Info Type](StructureDefinition-nilar-structured-info-type.md)
+* [Structured Info](StructureDefinition-nilar-structured-info.md)
 * [Study Product Ref](StructureDefinition-nilar-study-product-ref.md)
 * [Study Product Type](StructureDefinition-nilar-study-product-type.md)
 

@@ -1,4 +1,4 @@
-# Home - v1.5.0
+# Home - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:DiagnosticReportIG |
 
 # Implementasjonsguide for DiagnosticReport i Pasientens Prøvesvar
@@ -55,10 +55,10 @@ I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre re
   "resourceType" : "ImplementationGuide",
   "id" : "diagnostic.report.nilar",
   "url" : "http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "DiagnosticReportIG",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -1663,6 +1663,118 @@ I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre re
       },
       "name" : "Status Changed Date",
       "description" : "Time of last state change.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info"
+      },
+      "name" : "Structured Info",
+      "description" : "Used on Observation to convey additional information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-boolean.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-boolean"
+      },
+      "name" : "Structured Info Boolean",
+      "description" : "Boolean information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-coded.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-coded"
+      },
+      "name" : "Structured Info Coded",
+      "description" : "Coded information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-integer.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-integer"
+      },
+      "name" : "Structured Info Integer",
+      "description" : "Integer information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-physical.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-physical"
+      },
+      "name" : "Structured Info Physical",
+      "description" : "Physical information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-text.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-text"
+      },
+      "name" : "Structured Info Text",
+      "description" : "Textual information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-nilar-structured-info-type.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nilar-structured-info-type"
+      },
+      "name" : "Structured Info Type",
+      "description" : "Type of information.",
       "exampleBoolean" : false
     },
     {

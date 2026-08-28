@@ -1,4 +1,4 @@
-# Logistics - v1.5.0
+# Logistics - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:Logistics |
 
 How the sample is being sent.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-logistics.csv)
   "resourceType" : "StructureDefinition",
   "id" : "nilar-logistics",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-logistics",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "Logistics",
   "title" : "Logistics",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -91,6 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-logistics.csv)
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "min" : 1,
       "type" : [{
         "code" : "string"
       }]

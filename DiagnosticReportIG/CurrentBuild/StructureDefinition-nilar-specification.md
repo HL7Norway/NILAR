@@ -1,4 +1,4 @@
-# Specification - v1.5.0
+# Specification - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:Specification |
 
 This extension is used to convey further specification about an object.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-nilar-specification.
   "resourceType" : "StructureDefinition",
   "id" : "nilar-specification",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "Specification",
   "title" : "Specification",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -91,6 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-specification.
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "min" : 1,
       "type" : [{
         "code" : "CodeableConcept"
       }]

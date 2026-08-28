@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://nhn.no/fhir/nilar/ValueSet/all-observation-codes-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "AllObservationCodes_VS",
     "title" : "All Observation Codes VS",
@@ -17,7 +17,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/collector-comment-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "CollectorComment_VS",
     "title" : "Collector Comment VS",
@@ -26,7 +26,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/deviation-indicator-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "DeviationIndicator_VS",
     "title" : "Deviation Indicator VS",
@@ -35,7 +35,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/document-restriction-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "DocumentRestriction_VS",
     "title" : "Document Restriction VS",
@@ -44,7 +44,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/expertise-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "Expertise_VS",
     "title" : "Expertise ValueSet",
@@ -53,7 +53,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/identifier-source-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "IdentifierSource_VS",
     "title" : "Identifier Source VS",
@@ -62,7 +62,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-coded-descr-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "InfItemCodedDescr_VS",
     "title" : "Inf Item Coded Descr VS",
@@ -75,7 +75,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/inf-item-type-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "InfItemType_VS",
     "title" : "Inf Item Type VS",
@@ -84,7 +84,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-id-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "InvestigationId_VS",
     "title" : "Investigation Id VS",
@@ -97,7 +97,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "InvestigationMethod_VS",
     "title" : "Investigation Method VS",
@@ -106,7 +106,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/investigation-spec-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "InvestigationSpec_VS",
     "title" : "Investigation Spec VS",
@@ -118,7 +118,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/main-expertise-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "MainExpertise_VS",
     "title" : "Main Expertise VS",
@@ -127,7 +127,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/observation-result-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "ObservationResult_VS",
     "title" : "Observation Result VS",
@@ -140,7 +140,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "OrganizationItType_VS",
     "title" : "Organization It Type VS",
@@ -149,7 +149,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/outcome-details-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "OutcomeDetails_VS",
     "title" : "Outcome Details VS",
@@ -158,7 +158,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/payment-category-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "PaymentCategory_VS",
     "title" : "Payment Category VS",
@@ -167,7 +167,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/person-id-type-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "PersonIdType_VS",
     "title" : "Person Id Type VS",
@@ -177,7 +177,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/pretreatment-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "Pretreatment_VS",
     "title" : "Pretreatment-VS",
@@ -186,7 +186,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/public-it-type-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "PublicIdType_VS",
     "title" : "PublicIdType_VS",
@@ -195,7 +195,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/report-comment-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "ReportComment_VS",
     "title" : "Report Comment VS",
@@ -206,7 +206,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/request-reason-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "RequestReason_VS",
     "title" : "Request Reason VS",
@@ -215,7 +215,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/requisition-comment-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "RequisitionComment_VS",
     "title" : "Requisition Comment VS",
@@ -225,7 +225,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/reservation-codes-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "ReservationCodes_VS",
     "title" : "Reservation Codes",
@@ -234,7 +234,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/specimen-type-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "SpecimenType_VS",
     "title" : "Specimen Type VS",
@@ -245,7 +245,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/typeof-diagnostic-report-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "TypeDiagnosticReport_VS",
     "title" : "Type of diagnostic report",
@@ -254,7 +254,7 @@
   },
   {
     "url" : "http://nhn.no/fhir/nilar/ValueSet/units-of-measure-vs",
-    "version" : "1.5.0",
+    "version" : "1.6.0",
     "status" : "active",
     "name" : "UnitsOfMeasure_VS",
     "title" : "Units of measure VS",

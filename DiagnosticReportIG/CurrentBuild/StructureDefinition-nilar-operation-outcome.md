@@ -1,4 +1,4 @@
-# NilarOperationOutcome - v1.5.0
+# NilarOperationOutcome - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:NilarOperationOutcome |
 
  
@@ -37,10 +37,10 @@ Other representations of profile: [CSV](StructureDefinition-nilar-operation-outc
   "resourceType" : "StructureDefinition",
   "id" : "nilar-operation-outcome",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "NilarOperationOutcome",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide diagnostic.report.nilar</b></p><a name="diagnostic.report.nilar"> </a><a name="hcdiagnostic.report.nilar"> </a><h2>DiagnosticReportIG</h2><p>The official URL for this implementation guide is: </p><pre>http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar</pre></div>
   </text>
   <url value="http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar"/>
-  <version value="1.5.0"/>
+  <version value="1.6.0"/>
   <name value="DiagnosticReportIG"/>
   <status value="active"/>
-  <date value="2026-08-28T12:05:03+00:00"/>
+  <date value="2026-08-28T12:17:39+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
@@ -1142,6 +1142,83 @@
       </reference>
       <name value="Status Changed Date"/>
       <description value="Time of last state change."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info"/>
+      </reference>
+      <name value="Structured Info"/>
+      <description value="Used on Observation to convey additional information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info-boolean"/>
+      </reference>
+      <name value="Structured Info Boolean"/>
+      <description value="Boolean information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info-coded"/>
+      </reference>
+      <name value="Structured Info Coded"/>
+      <description value="Coded information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info-integer"/>
+      </reference>
+      <name value="Structured Info Integer"/>
+      <description value="Integer information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info-physical"/>
+      </reference>
+      <name value="Structured Info Physical"/>
+      <description value="Physical information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info-text"/>
+      </reference>
+      <name value="Structured Info Text"/>
+      <description value="Textual information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nilar-structured-info-type"/>
+      </reference>
+      <name value="Structured Info Type"/>
+      <description value="Type of information."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

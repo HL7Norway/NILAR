@@ -1,4 +1,4 @@
-# NilarObservation - v1.5.0
+# NilarObservation - v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation | *Version*:1.5.0 |
+| *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation | *Version*:1.6.0 |
 | Active as of 2026-08-28 | *Computable Name*:NilarObservation |
 
  
@@ -37,10 +37,10 @@ Other representations of profile: [CSV](StructureDefinition-nilar-observation.cs
   "resourceType" : "StructureDefinition",
   "id" : "nilar-observation",
   "url" : "http://nhn.no/fhir/nilar/StructureDefinition/nilar-observation",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "NilarObservation",
   "status" : "active",
-  "date" : "2026-08-28T12:05:03+00:00",
+  "date" : "2026-08-28T12:17:39+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -221,6 +221,17 @@ Other representations of profile: [CSV](StructureDefinition-nilar-observation.cs
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://nhn.no/fhir/nilar/StructureDefinition/nilar-related-observation"]
+      }]
+    },
+    {
+      "id" : "Observation.extension:structuredinfo",
+      "path" : "Observation.extension",
+      "sliceName" : "structuredinfo",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://nhn.no/fhir/nilar/StructureDefinition/nilar-structured-info"]
       }]
     },
     {

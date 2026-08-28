@@ -5,15 +5,15 @@
   "description" : "",
   "status" : "active",
   "package-id" : "diagnostic.report.nilar",
-  "ig-ver" : "1.5.0",
-  "date" : "Fri, 28 Aug, 2026 12:05:03 +0000",
-  "dateISO8601" : "2026-08-28T12:05:03+00:00",
+  "ig-ver" : "1.6.0",
+  "date" : "Fri, 28 Aug, 2026 12:17:39 +0000",
+  "dateISO8601" : "2026-08-28T12:17:39+00:00",
   "errs" : 0,
-  "warnings" : 200,
-  "hints" : 44,
+  "warnings" : 214,
+  "hints" : 51,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1138108888
+  "maxMemory" : 1301311600
 }
