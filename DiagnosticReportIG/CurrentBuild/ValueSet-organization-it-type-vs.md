@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/ValueSet/organization-it-type-vs | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:OrganizationItType_VS |
+| Active as of 2026-08-31 | *Computable Name*:OrganizationItType_VS |
 
  
 Id types for organizations involved in DiagnosticReport/Observation 
@@ -50,7 +50,7 @@ Id types for organizations involved in DiagnosticReport/Observation
   "name" : "OrganizationItType_VS",
   "title" : "Organization It Type VS",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

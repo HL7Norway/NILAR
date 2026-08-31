@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:NilarDiagnosticReport |
+| Active as of 2026-08-31 | *Computable Name*:NilarDiagnosticReport |
 
  
 DiagnosticReport for use in Nilar to accomodate laboratory reports received using http://www.kith.no/xmlstds/labsvar/2012-02-15, v1.3 and v1.4. 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-diagnostic-rep
   "version" : "1.6.0",
   "name" : "NilarDiagnosticReport",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

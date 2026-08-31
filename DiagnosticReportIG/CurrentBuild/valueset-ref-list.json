@@ -73,9 +73,9 @@
     "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
@@ -247,9 +247,9 @@
     "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {

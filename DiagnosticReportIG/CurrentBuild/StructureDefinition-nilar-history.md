@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-history | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:History |
+| Active as of 2026-08-31 | *Computable Name*:History |
 
-Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously.
+Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously.
 
 **Context of Use**
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-history.csv), 
   "name" : "History",
   "title" : "History",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-history.csv), 
       "value" : "https://www.nhn.no"
     }]
   }],
-  "description" : "Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously.",
+  "description" : "Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-history.csv), 
       "id" : "Extension",
       "path" : "Extension",
       "short" : "History",
-      "definition" : "Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously."
+      "definition" : "Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously."
     },
     {
       "id" : "Extension.extension",

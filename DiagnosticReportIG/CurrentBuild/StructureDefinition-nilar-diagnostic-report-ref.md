@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-diagnostic-report-ref | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:DiagnosticReportRef |
+| Active as of 2026-08-31 | *Computable Name*:DiagnosticReportRef |
 
 In Nilar the origin of observations is a report. This extension is used to create a reference form each observation back to the report of origin.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-diagnostic-rep
   "name" : "DiagnosticReportRef",
   "title" : "Diagnostic Report Ref",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-specimen | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:NilarSpecimen |
+| Active as of 2026-08-31 | *Computable Name*:NilarSpecimen |
 
  
 Specimen as used in Nilar, referenced from NilarDiagnosticReport and NilarObservation. 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-specimen.csv),
   "version" : "1.6.0",
   "name" : "NilarSpecimen",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

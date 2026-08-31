@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "PersonIdType_CS"] ;
   fhir:CodeSystem.title [ fhir:value "Person Id Type CS"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-08-28T12:17:39+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-31T14:07:19+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Norsk helsenett - Nilar"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;

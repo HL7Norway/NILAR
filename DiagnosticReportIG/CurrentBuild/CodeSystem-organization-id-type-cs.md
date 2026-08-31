@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/CodeSystem/organization-id-type-cs | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:OrganizationIdType_CS |
+| Active as of 2026-08-31 | *Computable Name*:OrganizationIdType_CS |
 
  
 Id types used to identify organizations. 
@@ -31,7 +31,7 @@ Id types used to identify organizations.
   "name" : "OrganizationIdType_CS",
   "title" : "Organization Id Type CS",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

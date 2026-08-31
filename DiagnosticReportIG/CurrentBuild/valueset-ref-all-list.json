@@ -11,8 +11,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
@@ -97,11 +97,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
-    "StructureDefinition-nilar-observation.html" : "NilarObservation",
-    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+    "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -115,11 +115,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
-    "StructureDefinition-nilar-observation.html" : "NilarObservation",
-    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+    "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/issue-severity",
@@ -161,12 +161,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
-    "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
-    "StructureDefinition-nilar-observation.html" : "NilarObservation",
+    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
     "StructureDefinition-nilar-operation-outcome.html" : "NilarOperationOutcome",
-    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+    "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -364,11 +364,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
+    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
-    "StructureDefinition-nilar-observation.html" : "NilarObservation",
-    "StructureDefinition-nilar-practitioner-role.html" : "NilarPractitionerRole"
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
+    "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -546,9 +546,9 @@
     "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {
@@ -720,9 +720,9 @@
     "systems" : ["http://nhn.no/fhir/nilar/CodeSystem/public-id-type-cs"],
     "uses" : {
     },
-    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-diagnostic-report.html" : "NilarDiagnosticReport",
     "StructureDefinition-nilar-specimen.html" : "NilarSpecimen",
+    "StructureDefinition-nilar-service-request.html" : "NilarServiceRequest",
     "StructureDefinition-nilar-observation.html" : "NilarObservation"
   },
   {

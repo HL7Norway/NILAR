@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-specification | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:Specification |
+| Active as of 2026-08-31 | *Computable Name*:Specification |
 
 This extension is used to convey further specification about an object.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-specification.
   "name" : "Specification",
   "title" : "Specification",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

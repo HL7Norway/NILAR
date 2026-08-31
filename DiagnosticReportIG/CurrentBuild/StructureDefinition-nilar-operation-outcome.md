@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-operation-outcome | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:NilarOperationOutcome |
+| Active as of 2026-08-31 | *Computable Name*:NilarOperationOutcome |
 
  
 OperationOutcome used to bring feedback to client. It has some particular used for informing about privacy settings that might influence query results. 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-operation-outc
   "version" : "1.6.0",
   "name" : "NilarOperationOutcome",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

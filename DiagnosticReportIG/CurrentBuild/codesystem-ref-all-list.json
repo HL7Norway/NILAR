@@ -184,8 +184,8 @@
     "description" : "Id types used to identify patients",
     "uses" : {
     },
-    "ValueSet-person-id-type-vs.html" : "Person Id Type VS",
-    "ValueSet-public-it-type-vs.html" : "PublicIdType_VS"
+    "ValueSet-public-it-type-vs.html" : "PublicIdType_VS",
+    "ValueSet-person-id-type-vs.html" : "Person Id Type VS"
   },
   {
     "url" : "http://nhn.no/fhir/nilar/CodeSystem/pvk-outcome-cs",
@@ -208,18 +208,18 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
     "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
     "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
     "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",

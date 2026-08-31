@@ -33,7 +33,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Counter Sign Date](StructureDefinition-nilar-counter-sign-date.md) | Time the investigation was counter signed. |
 | [Description Date](StructureDefinition-nilar-description-date.md) | Time for description of image-based investigation. |
 | [Diagnostic Report Ref](StructureDefinition-nilar-diagnostic-report-ref.md) | In Nilar the origin of observations is a report. This extension is used to create a reference form each observation back to the report of origin. |
-| [History](StructureDefinition-nilar-history.md) | Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously. |
+| [History](StructureDefinition-nilar-history.md) | Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously. |
 | [Inf Item](StructureDefinition-nilar-inf-item.md) | Used on DiagnosticReport to convey clinical information relevant for correct interpretation of the results in the report. |
 | [Inf Item Coded Descr](StructureDefinition-nilar-inf-item-coded-descr.md) | Coded description of clinical information. |
 | [Inf Item Descr](StructureDefinition-nilar-inf-item-descr.md) | Description of the clinical information. |

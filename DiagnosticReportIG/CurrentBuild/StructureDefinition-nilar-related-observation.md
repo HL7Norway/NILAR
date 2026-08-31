@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-related-observation | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:RelatedObservation |
+| Active as of 2026-08-31 | *Computable Name*:RelatedObservation |
 
 Reference to related Observation.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-related-observ
   "name" : "RelatedObservation",
   "title" : "Related Observation",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-comment | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:Comment |
+| Active as of 2026-08-31 | *Computable Name*:Comment |
 
 This extension is intended to add an element similar to 'Note' in resources that do not have Note.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-comment.csv), 
   "name" : "Comment",
   "title" : "Comment",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

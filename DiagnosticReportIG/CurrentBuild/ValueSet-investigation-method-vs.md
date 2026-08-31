@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/ValueSet/investigation-method-vs | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:InvestigationMethod_VS |
+| Active as of 2026-08-31 | *Computable Name*:InvestigationMethod_VS |
 
  
 Codes used to specify method used in investigation. 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "InvestigationMethod_VS",
   "title" : "Investigation Method VS",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

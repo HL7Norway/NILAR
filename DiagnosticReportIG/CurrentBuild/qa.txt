@@ -3,7 +3,7 @@ DiagnosticReportIG : Validation Results
 
 err = 0, warn = 214, info = 51
 IG Publisher Version: 2.3.3
-Generated Fri Aug 28 12:19:18 UTC 2026. FHIR version 4.0.1 for diagnostic.report.nilar#1.6.0 (canonical = http://nhn.no/fhir/nilar)
+Generated Mon Aug 31 14:08:46 UTC 2026. FHIR version 4.0.1 for diagnostic.report.nilar#1.6.0 (canonical = http://nhn.no/fhir/nilar)
  Build Errors : 1 / 6 / 0
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-identifier-source-cs : 0 / 3 / 2
  /github/workspace/DiagnosticReportIG/fsh-generated/resources/CodeSystem-organization-id-type-cs : 0 / 3 / 2

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/ImplementationGuide/diagnostic.report.nilar | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:DiagnosticReportIG |
+| Active as of 2026-08-31 | *Computable Name*:DiagnosticReportIG |
 
 # Implementasjonsguide for DiagnosticReport i Pasientens Prøvesvar
 
@@ -58,7 +58,7 @@ I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre re
   "version" : "1.6.0",
   "name" : "DiagnosticReportIG",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",
@@ -878,7 +878,7 @@ I Fhir er de ulike ressursene "selvstendige", med mulige referanser til andre re
         "reference" : "StructureDefinition/nilar-history"
       },
       "name" : "History",
-      "description" : "Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously.",
+      "description" : "Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously.",
       "exampleBoolean" : false
     },
     {

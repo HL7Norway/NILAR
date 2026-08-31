@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/CodeSystem/identifier-source-cs | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:IdentifierSource_CS |
+| Active as of 2026-08-31 | *Computable Name*:IdentifierSource_CS |
 
  
 Various resources has one or two identifiers, provided by requester or service provider. These are naming systems used to identify the origin of the identifiers. 
@@ -31,7 +31,7 @@ Various resources has one or two identifiers, provided by requester or service p
   "name" : "IdentifierSource_CS",
   "title" : "Identifier Source CS",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

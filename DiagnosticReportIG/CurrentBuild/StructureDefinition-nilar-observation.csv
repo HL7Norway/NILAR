@@ -61,7 +61,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:history","Observation.extension","history","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-history]]} {[]}
-","History","Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","History","Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:investigationdate","Observation.extension","investigationdate","","",0,1,"","","","Extension {[CanonicalType[http://nhn.no/fhir/nilar/StructureDefinition/nilar-investigation-date]]} {[]}

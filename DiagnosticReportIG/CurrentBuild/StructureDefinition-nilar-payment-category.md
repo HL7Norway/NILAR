@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://nhn.no/fhir/nilar/StructureDefinition/nilar-payment-category | *Version*:1.6.0 |
-| Active as of 2026-08-28 | *Computable Name*:PaymentCategory |
+| Active as of 2026-08-31 | *Computable Name*:PaymentCategory |
 
 Who pays for these investigations.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-nilar-payment-catego
   "name" : "PaymentCategory",
   "title" : "Payment Category",
   "status" : "active",
-  "date" : "2026-08-28T12:17:39+00:00",
+  "date" : "2026-08-31T14:07:19+00:00",
   "publisher" : "Norsk helsenett - Nilar",
   "contact" : [{
     "name" : "Norsk helsenett - Nilar",

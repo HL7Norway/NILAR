@@ -48,7 +48,7 @@
   <version value="1.6.0"/>
   <name value="NilarObservation"/>
   <status value="active"/>
-  <date value="2026-08-28T12:17:39+00:00"/>
+  <date value="2026-08-31T14:07:19+00:00"/>
   <publisher value="Norsk helsenett - Nilar"/>
   <contact>
     <name value="Norsk helsenett - Nilar"/>
@@ -727,7 +727,7 @@
       <path value="Observation.extension"/>
       <sliceName value="history"/>
       <short value="History"/>
-      <definition value="Indicates if an observation (or possibly awhole report) is 'history', i.e. a copy/repetition af information sent previously."/>
+      <definition value="Indicates if an observation (or possibly a whole report) is 'history', i.e. a copy/repetition of information sent previously."/>
       <min value="0"/>
       <max value="1"/>
       <base>
