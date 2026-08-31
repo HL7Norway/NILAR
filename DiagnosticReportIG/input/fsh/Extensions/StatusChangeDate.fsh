@@ -3,3 +3,4 @@ Id: nilar-status-change-date
 Title: "Status Changed Date"
 Description: "Time of last state change."
 * value[x] only dateTime
+* value[x] 1..1
